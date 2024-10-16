@@ -57,10 +57,10 @@ CREATE TABLE clusters (
 -- References 'disorders'.
 CREATE TABLE steps (
     id SERIAL PRIMARY KEY,
-    disorder_id INTEGER NOT NULL,
     step_number INTEGER NOT NULL,
-    step_name VARCHAR(150) NOT NULL,
+    step_name VARCHAR(150) NOT NULL UNIQUE,
     description TEXT NOT NULL,
+    disorder_id INTEGER NOT NULL,
     FOREIGN KEY (disorder_id) REFERENCES disorders(id) ON DELETE CASCADE,
     UNIQUE (disorder_id, step_number),
     UNIQUE (disorder_id, step_name)
@@ -76,7 +76,7 @@ CREATE TABLE differential_diagnosis (
     FOREIGN KEY (differential_disorder_id) REFERENCES disorders(id) ON DELETE CASCADE
 );
 
--- PSYCHOPATHY ELEMENTS (Present in the DSM-5-TR)
+-- PSYCHOPATHOLOGY ITEMS (Present in the DSM-5-TR)
 
 -- Referenced by 'sign_examples', and 'disorders_signs'
 CREATE TABLE signs (
