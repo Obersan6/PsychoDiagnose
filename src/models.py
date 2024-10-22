@@ -72,17 +72,18 @@ class User(db.Model):
 
 # Introduction to what the DSM-5 is.
 # MOVE THIS COMMENT TO THE ROUTE --> SECTION II WILL HAVE A HYPERLINK (NOT THROUGH THE TABLE, JUST ON THE FRONTEND)
-class DSM(db.Model):
-    """Provides an introduction to what the DSM-5 is, what it is for, sections, and general use."""
+# I'm going to remove this model because the information I'll use will be static.
+# class DSM(db.Model):
+#     """Provides an introduction to what the DSM-5 is, what it is for, sections, and general use."""
 
-    __tablename__ = 'dsm'
+#     __tablename__ = 'dsm'
 
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    manual_info = db.Column(db.Text, nullable=False)
-    sections = db.Column(db.Text, nullable=False)
+#     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+#     manual_info = db.Column(db.Text, nullable=False)
+#     sections = db.Column(db.Text, nullable=False)
 
-    def __repr__(self):
-        return f"<DSM id={self.id}, sections={self.sections}>"
+#     def __repr__(self):
+#         return f"<DSM id={self.id}, sections={self.sections}>"
 
 # Categories description
 class Category(db.Model):
