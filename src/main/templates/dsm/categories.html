@@ -1,0 +1,54 @@
+<!-- Syndrome Categories 
+    - Each category has several disorders.
+    - Some categories have clusters (they group some disorders of the category into a sub-category.) -->
+
+    {% extends 'base.html' %}
+
+    {% block title %}Categories{% endblock %}
+    
+    {% block content %}
+    
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Diagnostic Categories in the DSM-5-TR</h1>
+        <br>
+        <br>
+    
+        <p>These are the diagnostic categories in the DSM-5-TR.</p>
+        <br>
+        <br>
+        <p>Each category groups related mental disorders and organizes them into specific diagnoses.</p>
+
+        <br>
+
+        <p>Some categories include clusters, which act as subcategories.</p>
+       
+        <p>Clusters group related disorders within a category into smaller, more specific groups.</p>
+    
+        <ul class="list-group" id="categories">
+            {% for category in categories %}
+            <li class="list-group-item">
+                <a href="{{ url_for('dsm.get_category', category_id=category.id) }}">{{ category.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <!-- Search for a category -->
+        <form method="POST" action="{{ url_for('dsm.search_category') }}">
+            {{ form.hidden_tag() }}
+            {{ form.search_query(placeholder="Search category...", class="form-control mt-3", id="search_category") }}
+            <div id="suggestions-category" class="suggestions-container"></div>
+            <button type="submit" class="btn btn-primary mt-3">Search Category</button>
+        </form>              
+
+    </div>
+    
+    {% endblock %}
+
+    {% block scripts %}
+    <script src="{{ url_for('static', filename='js/autocomplete.js')}}"></script>
+    {% endblock %}
+    

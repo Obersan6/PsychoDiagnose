@@ -1,0 +1,36 @@
+<!-- Show all disorders. -->
+
+{% extends 'base.html' %}
+
+{% block title %}Disorders{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <h1>List of Disorders</h1>
+  <h3>What is a disorder?</h3>
+  <br>
+  <p>A disorder, according to the DSM-5-TR, is a clinically significant disturbance in an individual’s cognition, emotion regulation, or behavior that reflects a dysfunction in psychological, biological, or developmental processes. Disorders are typically associated with significant distress or impairment in personal, social, academic, or occupational functioning. Diagnosis requires careful evaluation to ensure symptoms are not better explained by cultural norms, temporary stressors, or medical conditions.</p>
+  <ul class="list-group" id="disorders">
+  {% for disorder in disorders %}
+        <li class="list-groupt-item">
+          <a href="/disorders/{{ disorder.id }}">{{ disorder.name }}</a>
+        </li>
+  {% endfor %}
+  </ul>
+
+  <!-- Search for disorder related to show_disorders page -->
+  <form method="POST" action="{{ url_for('dsm.search_disorder') }}">
+    {{ form.hidden_tag() }}
+    {{ form.search_query(placeholder="Search disorder...", class="form-control mt-3", id="search_disorder") }}
+    <div id="suggestions-disorder" class="suggestions-container"></div>
+    <button type="submit" class="btn btn-primary mt-3">Search Disorder</button>
+  </form>
+
+ 
+  </div>
+{% endblock %}

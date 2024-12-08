@@ -1,0 +1,41 @@
+<!-- Steps List and search area for a step -->
+
+{% extends 'base.html' %}
+
+{% block title %}Steps{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Diagnostic Steps</h1>
+    <h3>Diagnostic Steps following guidelines of the DSM-5-TR.</h3>
+    <p>This is a list of steps that will guide you through the diagnostic process.</p>
+    <p>Each step ensures a structured, comprehensive approach to mental health diagnosis, consistent with DSM-5-TR guidelines.</p>
+
+    <!-- List of Steps -->
+    <ul class="list-group" id="categories">
+        {% for step in steps %}
+        <li class="list-group-item">
+            <a href="{{ url_for('dsm.get_step', step_id=step.id) }}">{{ step.step_number }}: {{ step.step_name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<form method="POST" action="{{ url_for('dsm.search_step') }}" id="step_form">
+    {{ form.hidden_tag() }}
+
+    <div class="form-group">
+        {{ form.search_query(placeholder="Enter step number or name", class="form-control mt-3") }}
+    </div>
+    
+    <button type="submit" class="btn btn-primary mt-3">Search Step</button>
+</form>
+
+</div>
+
+{% endblock %}

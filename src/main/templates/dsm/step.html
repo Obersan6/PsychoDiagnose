@@ -1,0 +1,17 @@
+<!-- Display a step -->
+
+{% extends 'base.html' %}
+
+{% block title %}Step Details{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Step {{ step.step_number }}: {{ step.step_name }}</h1>
+    <p>{{ step.description }}</p>
+
+    <!-- Link to go back to the list of all steps -->
+    <a href="{{ url_for('dsm.show_steps') }}" class="btn btn-secondary mt-3">Back to Steps List</a>
+</div>
+{% endblock %}
+
+    

@@ -1,0 +1,42 @@
+<!-- Symptom page -->
+<!-- 
+Displays:
+ - The symptom
+ - Symptom examples
+ - Disorders with that symptom
+ - Search input to look for related elements to this route  -->
+
+ {% extends 'base.html' %}
+
+ {% block title %}Symptom Details{% endblock %}
+  
+ {% block content %}
+   <div class="container">
+     <h1>{{ symptom.name }}</h1>
+     <p>{{ symptom.description }}</p>
+ 
+     <h2>Examples:</h2>
+     <ul>
+         {% for example in symptom_examples %}
+           <li> {{ example.example }}</li>
+         {% endfor %}
+     </ul>
+ 
+     <h2>Disorders Associated with this Symptom":</h2>
+     <ul>
+         {% for disorder in disorders %}
+           <li>{{ disorder.name }}</li>
+         {% endfor %}
+     </ul>
+ 
+     <!-- Search for elements related to signs -->
+      <form method="POST" action="{{ url_for('psychopathology.search_symptom') }}">
+         {{ form.hidden_tag}}
+         {{ form.search_query(placeholder="Search symptoms...", class="form-control mt-3") }}
+         <button type="submit" class="btn btn-primary mt-3">Search</button>
+      </form>"
+   </div>
+  
+ {% endblock %}
+ 
+ 

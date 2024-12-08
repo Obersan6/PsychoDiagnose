@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "step_number": 1,
+    "step_name": "Gather Comprehensive Information",
+    "description": "Interview the Patient: Conduct a clinical interview to understand the patient’s history, current symptoms, and impact on daily functioning. Use Additional Sources: Incorporate observations from family, caregivers, or other relevant sources, particularly if the patient's history is incomplete.",
+    "disorder_id": null
+  },
+  {
+    "id": 2,
+    "step_number": 2,
+    "step_name": "Identify Signs and Symptoms",
+    "description": "Review Signs and Symptoms: Compare observed signs and reported symptoms against DSM-5-TR criteria. Assess Duration and Severity: Each DSM-5-TR diagnosis has duration and severity requirements, which you should verify (e.g., two weeks for major depressive episodes). Rule Out Other Causes: Differentiate symptoms potentially caused by medical conditions, substance use, or situational factors.",
+    "disorder_id": null
+  },
+  {
+    "id": 3,
+    "step_number": 3,
+    "step_name": "Determine the Diagnostic Category",
+    "description": "Select a Diagnostic Category: The DSM-5-TR organizes disorders into categories, like 'Anxiety Disorders' or 'Mood Disorders.' Start with the most relevant category. Narrow Down to Specific Disorder: Choose the specific disorder by matching the criteria within the chosen category.",
+    "disorder_id": null
+  },
+  {
+    "id": 4,
+    "step_number": 4,
+    "step_name": "Conduct Differential Diagnosis",
+    "description": "Rule Out Similar Disorders: Use the DSM-5-TR's guidance to distinguish between disorders with overlapping symptoms. Confirm Primary Diagnosis or Comorbidity: Identify if one disorder is primary or if multiple conditions coexist.",
+    "disorder_id": null
+  },
+  {
+    "id": 5,
+    "step_number": 5,
+    "step_name": "Specify Severity and Subtypes",
+    "description": "Determine Severity: Some DSM-5-TR diagnoses include severity ratings, such as mild, moderate, or severe. Add Subtypes or Specifiers: Use relevant subtypes or specifiers, such as 'with psychotic features' or 'in partial remission,' for a precise diagnosis.",
+    "disorder_id": null
+  },
+  {
+    "id": 6,
+    "step_number": 6,
+    "step_name": "Identify Comorbidities",
+    "description": "Check for Co-occurring Disorders: Mental health conditions often coexist, and the DSM-5-TR details common comorbidities for each diagnosis.",
+    "disorder_id": null
+  },
+  {
+    "id": 7,
+    "step_number": 7,
+    "step_name": "Document the Diagnosis",
+    "description": "Record Codes and Justification: Use DSM-5-TR codes for official documentation and note the rationale behind the diagnosis, including differential considerations.",
+    "disorder_id": null
+  },
+  {
+    "id": 8,
+    "step_number": 8,
+    "step_name": "Develop a Treatment Plan",
+    "description": "Create an Individualized Plan: Base the treatment plan on the diagnosis, including options like therapy, medication, or lifestyle changes. Set Goals and Monitor: Establish treatment goals and regularly assess progress, adjusting the diagnosis and plan as needed.",
+    "disorder_id": null
+  }
+]

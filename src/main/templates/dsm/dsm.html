@@ -1,0 +1,88 @@
+<!-- DSM-5-TR static template -->
+<!-- Provides an introduction to what the DSM-5-TR is, what it is for, sections, and general use.
+
+    __tablename__ = 'dsm'
+
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    manual_info = db.Column(db.Text, nullable=False)
+    sections = db.Column(db.Text, nullable=False)  -->
+<!-- TODOS:
+ - Fix the content
+ - Style it
+  -->
+
+{% extends 'base.html' %}
+
+{% block title %}DSM-5-TR{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h1>What is the DSM?</h1>
+    <div>
+        <p>The <strong>DSM—Diagnostic and Statistical Manual of Mental Disorders—is</strong> a comprehensive classification guide used by mental health professionals in the U.S. and many other countries. Published by the <strong>American Psychiatric Association (APA)</strong>, it provides standard criteria for the diagnosis of mental health conditions.</p>
+    </div>
+
+    <div>
+        <h2>The DSM-5-TR</h2>
+        <p>In this app, we reference the <strong>DSM-5-TR</strong> to provide the most current framework for understanding psychopathologies. This version is used as a guiding reference for students of psychology and psychiatry, as well as professionals in related fields, providing a structured and up-to-date foundation for learning about mental health disorders.</p>
+        <p>This is the latest version of the <strong>DSM</strong></p>
+        <p>The DSM-5-TR (Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, Text Revision) is the latest update of the DSM-5, published by the American Psychiatric Association (APA). Released in 2022, the DSM-5-TR maintains the foundational diagnostic criteria established in the DSM-5 (2013) but includes updated language, clarifications, and additional information to improve diagnostic accuracy and reflect recent research.</p>
+        <p>The DSM-5-TR remains the primary tool for mental health professionals worldwide for diagnosing and understanding mental disorders, helping practitioners and students alike to identify symptoms, categorize disorders, and facilitate better communication among mental health professionals. Importantly, the DSM-5-TR addresses cultural and social contexts more comprehensively, helping professionals apply criteria more equitably across diverse populations.</p>
+    </div>
+
+    <div class="container">
+        <h2>Main Key Differneces in the DSM-5-TR</h2>
+        <ul>
+            <li>
+                <h3>Unified Classification System</h3>
+                <p>The multiaxial system from previous editions has been removed, offering a single comprehensive list of mental health diagnoses instead of dividing them into five axes.</p>
+            </li>
+            <li>
+                <h3>Emphasis on Dimensional Diagnoses</h3>
+                <p>Disorders are now recognized on a spectrum, which helps clinicians capture the severity and variety of symptoms. This dimensional approach provides a more accurate reflection of individual experiences.</p> 
+            </li>
+            <li>
+                <h3>New and Revised Diagnoses</h3>
+                <p>DSM-5-TR includes new diagnoses, like Prolonged Grief Disorder, and updates existing ones to reflect recent research and clinical consensus.</p> 
+            </li>
+            <li>
+                <h3>Greater Focus on Cultural Context</h3>
+                <p>DSM-5-TR has expanded sections on cultural considerations, encouraging clinicians to take patients' cultural backgrounds into account when diagnosing and treating disorders.</p> 
+            </li>
+            <li>
+                <h3>Enhanced Coverage of Racial and Ethnic Issues</h3>
+                <p>DSM-5-TR has added content on the influence of race and ethnicity on mental health, improving the manual’s guidance on cultural considerations in diagnosis.</p> 
+            </li>
+            <li>
+                <h3>Changes in Diagnostic Criteria</h3>
+                <p>Some disorders have revised criteria or new specifiers, improving diagnostic precision and better matching current research insights.</p> 
+            </li>
+        </ul>
+    </div>
+
+    <div class="container mt-5">
+        <h2>Structure of the DSM-5-TR</h2>
+        <p>The DSM-5-TR is organized into three main sections, each serving a specific purpose in the understanding and application of mental health diagnosis.</p>
+    
+        <ul>
+            <li>
+                <h3>Section I: Basics</h3>
+                <p>This section provides an introduction to the DSM-5-TR, covering its purpose, intended use, and foundational guidelines. It includes instructions on how to use the manual effectively in clinical practice.</p>
+            </li>
+            
+            <li>
+                <h3>Section II: Diagnostic Criteria and Codes</h3>
+                <p>Section II is the core of the DSM-5-TR, containing detailed diagnostic criteria and classifications for all recognized mental disorders. This section is designed to help clinicians accurately diagnose and categorize mental health conditions.</p>
+            </li>
+            
+            <li>
+                <h3>Section III: Emerging Measures and Models</h3>
+                <p>This final section explores alternative models and measures for assessing and understanding mental health disorders. It includes dimensional assessments, cultural formulations, and emerging models that are still under research but show potential in enhancing clinical understanding and application.</p>
+            </li>
+        </ul>
+    </div>
+    
+</div>
+
+{% endblock %}

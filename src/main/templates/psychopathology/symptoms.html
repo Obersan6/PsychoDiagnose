@@ -1,0 +1,46 @@
+<!-- Display a list of all the symptoms and a one input search form -->
+
+{% extends 'base.html' %}
+
+{% block title %}Symptoms{% endblock %}
+ 
+{% block content %}
+  <div class="container">
+    <h1>Symptoms</h1>
+    <h2>What is a Symptom?</h2>
+    <br>
+    <p>A <strong>symptom</strong> is a subjective experience or sensation reported by an individual that may indicate a deviation from typical well-being or functioning. Symptoms are internal experiences, such as pain, sadness, or fatigue, and cannot be directly observed or measured by others; they rely solely on the individual’s self-report.</p>
+    <p>In the context of diagnostics, a symptom does not automatically indicate the presence of a pathology. Symptoms can vary in intensity and may be influenced by temporary factors, lifestyle, or environmental contexts. Therefore, while certain symptoms may correlate with specific disorders, the presence of a symptom alone is not sufficient for a diagnosis.</p>
+    <br>
+    <h2>Difference between a symptom and a sign:</h2>
+    <p><strong>Symptoms</strong> are subjective and reported by the person experiencing them while <stron>signs</stron> can be observed by others.</p>
+    <p>Both are crucial for understanding health because they give clues about what might be going on, but symptoms rely on the person’s description while signs can be independently verified.</p>
+    <br>
+    <h2>Examples of a symptom</h2>
+    <p>Here are some examples of symptoms commonly noted in psychopathology. These symptoms are indicators of possible mental health conditions, but, their presence alone does not confirm a diagnosis. They are part of a broader picture that helps in understanding the individual’s experiences and potential diagnoses.</p>
+    <ul>
+      <li><strong>Sadness or Persistent Low Mood:</strong> Feelings of sadness or a consistently low mood, often associated with depressive disorders.</li>
+      <li><strong>Insomnia or Hypersomnia:</strong> Difficulty falling asleep, staying asleep, or excessive sleeping, which may appear in mood or anxiety disorders.</li>
+      <li><strong>Hallucinations:</strong> Sensory experiences, such as hearing or seeing things that aren’t present, commonly associated with psychotic disorders like schizophrenia.</li>
+    </ul>
+
+    <h2>List of symptom:</h2>
+    <ul>
+        {% for symptom in symptoms %}
+          <li> {{ symptom.name }}
+          <a href="{{ url_for('psychopathology.get_symptom', symptom_id=symptom.id) }}">{{ symptom.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+
+    <!-- Search for elements related to signs -->
+     <form method="POST" action="{{ url_for('psychopathology.search_symptom') }}">
+        {{ form.hidden_tag()}}
+        {{ form.search_query(placeholder="Search symptom...", class="form-control mt-3") }}
+        <button type="submit" class="btn btn-primary mt-3">Search</button>
+     </form>
+  </div>
+ 
+{% endblock %}
+

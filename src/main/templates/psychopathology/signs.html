@@ -1,0 +1,47 @@
+<!-- Display a list of all the signs and a one input search form -->
+
+{% extends 'base.html' %}
+
+{% block title %}Sigs{% endblock %}
+ 
+{% block content %}
+  <div class="container">
+    <h1>Signs</h1>
+    <h2>What is a Sign?</h2>
+    <br>
+    <p>A <strong>sign</strong> can be defined as an observable or measurable physical or behavioral characteristic that may suggest a deviation from what is typically expected in health or functioning. Signs are objective indicators that can be observed by others, such as clinicians or caretakers, without relying on the person’s self-report.</p>
+    <br>
+    <p>In the context of diagnostics, a sign does not automatically indicate the presence of a pathology. Signs can occur in varying degrees and may be influenced by temporary factors, lifestyle, or environmental contexts. Therefore, while certain signs may correlate with specific disorders, the presence of a sign alone is not sufficient for a diagnosis.</p>
+    <br>
+    <h2>Difference between a sign and a symptom:</h2>
+    <p><strong>Signs</strong> can be observed by others, while <strong>symptoms</strong> are subjective and reported by the person experiencing them.</p>
+    <p>Both are crucial for understanding health because they give clues about what might be going on, but signs can be independently verified, while symptoms rely on the person’s description.</p>
+    <br>
+    <h2>Examples of a sign</h2>
+    <p>Here are a few examples of signs that are often observed in psychological assessments. Remember, these signs can sometimes indicate a health concern but might also occur in individuals without any pathology:</p>
+    <ul>
+      <li><strong>Agitation:</strong> Observable restlessness or inability to remain calm, which may be a sign of anxiety, mania, or other conditions but can also occur temporarily under stress.</li>
+      <li><strong>Speech Irregularities:</strong>Slurred or pressured speech can be signs of neurological issues or mood disorders but can also occur from fatigue, alcohol consumption, or stress.</li>
+      <li><strong>Tremors:</strong>Shaking or involuntary movements in a part of the body, which may suggest neurological or physiological concerns but can also be related to stress or caffeine intake.</li>
+    </ul>
+
+    <h2>List of signs:</h2>
+    <ul>
+        {% for sign in signs %}
+          <li> {{ sign.name }}
+          <a href="{{ url_for('psychopathology.get_sign', sign_id=sign.id) }}">{{ sign.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+
+    <!-- Search for elements related to signs -->
+     <form method="POST" action="{{ url_for('psychopathology.search_sign') }}">
+        {{ form.hidden_tag()}}
+        {{ form.search_query(placeholder="Search signs...", class="form-control mt-3") }}
+        <button type="submit" class="btn btn-primary mt-3">Search Sign</button>
+     </form>
+  </div>
+ 
+{% endblock %}
+

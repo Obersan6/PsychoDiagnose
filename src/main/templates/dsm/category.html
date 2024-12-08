@@ -1,0 +1,39 @@
+<!-- Diagnostic Category -->
+<!-- Show Diagnostic Category:
+    - Name of category
+    - Description of category
+    - List of clusters if the disorder has clusters
+    - List of disorders within the category -->
+
+{% extends 'base.html' %}
+{% block title %}Category{% endblock %}
+
+{% block content %}
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1>{{ category.name }}</h1>
+  <p>{{ category.description }}</p>
+
+  {% if clusters %}
+    <h2>Clusters</h2>
+    <ul>
+      {% for cluster in clusters %}
+        <li>{{ cluster.name }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>{{ category.name }} doesn't have clusters.</p>
+  {% endif %}
+
+  <h2>List of Disorders:</h2>
+  <ul>
+    {% for disorder in disorders %}
+      <li>
+        <a href="{{ url_for('dsm.get_disorder', category_id=category.id, disorder_id=disorder.id) }}">{{ disorder.name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
+    

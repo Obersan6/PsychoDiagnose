@@ -1,0 +1,25 @@
+<!-- Show cluster, description and list of disorders in the cluster -->
+
+{% extends 'base.html' %}
+
+{% block title %}{{ cluster.name }}{% endblock %}
+
+{% block content %}
+  <br><br><br><br><br>
+  <h1>{{ cluster.name }}</h1>
+  <p>{{ cluster.description }}</p>
+
+  <h2>List of disorders in this cluster:</h2>
+<ul>
+  {% for disorder in disorders %}
+    <li>
+      <a href="{{ url_for('dsm.get_disorder', category_id=cluster.category_id, disorder_id=disorder.id) }}">
+        {{ disorder.name }}
+      </a>
+    </li>
+  {% else %}
+    <p>No disorders found in this cluster.</p>
+  {% endfor %}
+</ul>
+
+{% endblock %}

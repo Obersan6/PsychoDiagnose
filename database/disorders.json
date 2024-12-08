@@ -1,0 +1,1706 @@
+[
+    {
+        "name": "Intellectual Developmental Disorder (Intellectual Disability)",
+        "description": "A neurodevelopmental disorder characterized by deficits in intellectual functioning and adaptive functioning. These deficits affect multiple areas, including reasoning, problem-solving, planning, academic learning, and independence, beginning in the developmental period.",
+        "criteria": "Diagnostic Criteria:\n1. Deficits in Intellectual Functioning:\n  o Confirmed through clinical assessment and standardized testing (e.g., IQ < 70 or 2 standard deviations below the mean).\n  o Examples include difficulty in abstract reasoning, problem-solving, and academic performance.\n2. Deficits in Adaptive Functioning:\n  o Limited ability to meet age-appropriate sociocultural standards for personal independence and social responsibility.\n  o Impairments in at least one area:\n     Conceptual domain (e.g., learning, memory, problem-solving).\n     Social domain (e.g., communication, understanding relationships).\n     Practical domain (e.g., daily living skills like dressing or managing finances).\n3. Onset During Developmental Period:\n  o Symptoms present in childhood or adolescence.\n\nSpecifiers:\n• Mild: Minimal support needed in daily life; difficulty with academic concepts.\n• Moderate: Support required for communication, social participation, and daily activities.\n• Severe: Limited spoken language, requires support for all daily activities.\n• Profound: Dependence on caregivers for all aspects of life; may exhibit nonverbal communication.\n\nAssociated Features:\n• Comorbidities: Higher rates of psychiatric disorders such as anxiety, depression, or ADHD.\n• Medical Conditions: Frequently associated with genetic syndromes (e.g., Down syndrome, Fragile X syndrome).\n• Behavioral Issues: Increased likelihood of self-injurious behavior or aggression.\n\nPrevalence:\n• Global prevalence is approximately 1%.\n• Prevalence rates are higher in males compared to females.\n\nDevelopment and Course:\n• Diagnosed in early childhood when developmental milestones are missed.\n• Adaptive functioning deficits often become more apparent with increasing demands for independence (e.g., starting school).\n• Intellectual and adaptive functioning typically remain stable across the lifespan but may improve with early intervention.\n\nRisk and Prognostic Factors:\n• Genetic Factors: Conditions like Down syndrome, Fragile X syndrome, and PKU.\n• Environmental Factors: Prenatal exposure to infections, toxins (e.g., lead), or alcohol (fetal alcohol syndrome).\n• Perinatal Events: Birth complications, such as oxygen deprivation.\n• Social Factors: Access to resources like education and healthcare.\n\nCulture-Related Diagnostic Issues:\n• Differences in societal expectations for independence and self-care may influence the assessment of adaptive functioning.\n• Cultural biases in standardized IQ testing may affect diagnosis.\n\nSex- and Gender-Related Diagnostic Issues:\n• Male Predominance: Slightly higher prevalence in males, potentially due to X-linked genetic conditions.\n• Expression Differences: Behavior may differ between sexes, with males more likely to exhibit aggression.",
+        "id": 1,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Global Developmental Delay",
+        "description": "A diagnosis given to children under the age of 5 who show significant delays in achieving developmental milestones in multiple domains (e.g., motor skills, speech and language, cognitive skills, and social-emotional functioning). This diagnosis is provisional and used when a full assessment of intellectual functioning is not possible.",
+        "criteria": "Diagnostic Criteria:\n1. Significant Developmental Delays:\n  o Observable delays in two or more areas:\n     Cognitive functioning.\n     Language (expressive and/or receptive).\n     Motor skills (fine or gross motor).\n     Social-emotional skills.\n2. Age of Diagnosis:\n  o Reserved for children under 5 years old.\n3. Inability to Assess Intellectual Functioning:\n  o Full IQ assessment is not feasible due to age or developmental factors.\n\nSpecifiers:\n• No specific specifiers; the diagnosis serves as a temporary classification.\n\nAssociated Features:\n• Behavioral Signs: Frustration or withdrawal due to difficulty communicating or interacting with peers.\n• Medical Conditions: May be associated with congenital or acquired conditions (e.g., prematurity, prenatal alcohol exposure).\n• Parental Concerns: Often first noted by caregivers as “falling behind” peers in reaching milestones.\n\nPrevalence:\n• Prevalence varies widely depending on access to early developmental screening and healthcare services.\n• Higher rates in low-resource settings due to limited prenatal care.\n\nDevelopment and Course:\n• Diagnosis is often reassessed as the child ages. By age 5, many children are reevaluated and may meet criteria for intellectual disability or another neurodevelopmental disorder.\n• Early intervention can significantly improve developmental outcomes.\n\nRisk and Prognostic Factors:\n• Genetic Factors: Chromosomal abnormalities like Down syndrome or genetic syndromes such as Fragile X.\n• Environmental Factors: Prenatal exposure to infections, toxins, or malnutrition.\n• Neonatal Factors: Premature birth or low birth weight.\n\nCulture-Related Diagnostic Issues:\n• Cultural differences in milestone expectations may influence the timing of diagnosis.\n• Standardized developmental measures may lack cultural sensitivity.\n\nSex- and Gender-Related Diagnostic Issues:\n• No significant sex differences in diagnosis, but some underlying causes (e.g., Fragile X syndrome) are more common in males.",
+        "id": 2,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Intellectual Developmental Disorder (Intellectual Disability)",
+        "description": "A diagnosis used when deficits in intellectual and adaptive functioning are suspected but cannot be fully evaluated due to sensory, motor, or communication impairments (e.g., in young children or individuals with severe disabilities).",
+        "criteria": "Diagnostic Criteria:\n1. Intellectual and Adaptive Functioning Deficits:\n  o Evidence or suspicion of deficits in reasoning, problem-solving, and independence.\n2. Inability to Complete Standardized Testing:\n  o Full assessment is not feasible due to sensory, motor, or communication impairments.\n3. Provisional Diagnosis:\n  o Reserved for situations requiring further assessment.\n\nSpecifiers:\n• No specific specifiers; this is a temporary diagnosis pending further evaluation.\n\nAssociated Features:\n• Medical Complications: Often associated with severe sensory or physical impairments.\n• Family Impact: Families may struggle to identify appropriate resources or interventions.\n\nPrevalence:\n• Not well-documented due to the provisional nature of the diagnosis.\n\nDevelopment and Course:\n• Diagnosis is temporary and should be revisited as the individual’s abilities are reassessed.\n• Early therapeutic interventions can improve outcomes.\n\nRisk and Prognostic Factors:\n• Factors are similar to those of intellectual disability, including genetic syndromes, prenatal exposure to toxins, and perinatal complications.\n\nCulture-Related Diagnostic Issues:\n• Limited access to appropriate diagnostic tools in some cultures may delay assessment.\n\nSex- and Gender-Related Diagnostic Issues:\n• Underlying conditions may show sex-specific prevalence (e.g., Fragile X syndrome in males).",
+        "id": 3,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Language Disorder",
+        "description": "A neurodevelopmental condition characterized by persistent difficulties in the acquisition and use of language across various modalities (spoken, written, or signed) due to deficits in comprehension or production. These difficulties result in limited vocabulary, impaired sentence structure, and reduced discourse abilities.",
+        "criteria": "Diagnostic Features:\n• Persistent difficulties in acquiring and using language across modalities (e.g., spoken, written, sign language) due to deficits in comprehension or production.\n• Deficits include:\n  o Reduced vocabulary.\n  o Limited sentence structure.\n  o Impairments in discourse (e.g., inability to use vocabulary and connect sentences for coherent conversation).\n• Language abilities are below expectations for age, resulting in functional limitations in communication, social participation, or academic achievement.\n\nAssociated Features:\n• Behavioral Issues: Children may show frustration or withdrawal due to difficulty communicating.\n• Other Developmental Disorders: Often associated with learning disabilities or other communication disorders.\n\nPrevalence:\n• 7% of children in early school years.\n• More common in males than females, at a ratio of approximately 2:1.\n\nDevelopment and Course:\n• Symptoms are typically evident by age 4, when language acquisition lags behind peers.\n• Early intervention improves outcomes, but some deficits may persist into adulthood.\n\nRisk and Prognostic Factors:\n• Genetic/Physiological:\n  o Strong familial pattern with heritability estimated to be 50%-75%.\n  o Neurological differences observed in brain regions associated with language.\n\nSex- and Gender-Related Diagnostic Issues:\n• Higher prevalence in males, though the reason for this disparity is not well understood.",
+        "id": 4,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Speech Sound Disorder",
+        "description": "A condition involving persistent difficulty with speech sound production that interferes with intelligibility or prevents effective verbal communication. Errors may include substitutions, omissions, or distortions of sounds, inappropriate for the individual’s developmental level.",
+        "criteria": "Diagnostic Features:\n• Persistent difficulty with speech sound production that interferes with intelligibility or communication.\n• Errors may involve sound substitutions, omissions, or distortions, not attributable to age, dialect, or neurological conditions.\n\nAssociated Features:\n• May co-occur with language disorder, literacy difficulties, or social challenges.\n\nPrevalence:\n• 8%-9% of young children.\n• By age 8, most speech errors resolve, but 2%-3% continue to have residual errors.\n\nDevelopment and Course:\n• Typically diagnosed after age 3 when speech production errors persist beyond typical developmental norms.\n• Rapid improvement is common with appropriate intervention.\n\nRisk and Prognostic Factors:\n• Genetic/Physiological:\n  o Family history of speech and language disorders increases risk.\n  o Associated with prenatal/perinatal issues or otitis media with effusion.",
+        "id": 5,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Childhood-Onset Fluency Disorder (Stuttering)",
+        "description": "A communication disorder characterized by disturbances in the normal fluency and time patterning of speech, such as sound repetitions, prolongations, or blocks. These disturbances cause anxiety or frustration in speaking situations.",
+        "criteria": "Diagnostic Features:\n• Disturbances in normal fluency and speech patterns, including:\n  o Repetitions of sounds or syllables.\n  o Prolongations of consonants or vowels.\n  o Blockages (pauses in speech).\n• Causes significant anxiety about speaking or limitations in social or academic functioning.\n\nAssociated Features:\n• May result in avoidance behaviors (e.g., avoiding certain words or situations).\n• Secondary motor behaviors, such as eye blinking or facial tension, may accompany speech disturbances.\n\nPrevalence:\n• Approximately 1% of children.\n• Males are affected 3:1 compared to females.\n\nDevelopment and Course:\n• Symptoms often begin between ages 2 and 7, with 65%-85% recovering without treatment.\n• Chronic stuttering is more likely if symptoms persist beyond childhood.\n\nRisk and Prognostic Factors:\n• Genetic/Physiological:\n  o Heritability is about 60%-70%.\n  o Neurological differences in speech-related brain areas are noted.\n\nSex- and Gender-Related Diagnostic Issues:\n• Higher prevalence in males; females are more likely to recover spontaneously.",
+        "id": 6,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Social (Pragmatic) Communication Disorder",
+        "description": "A condition marked by persistent difficulties in the social use of verbal and nonverbal communication. Individuals struggle with adapting communication to context, following conversational rules, or understanding implicit meanings.",
+        "criteria": "Diagnostic Features:\n• Persistent difficulty in the social use of verbal and nonverbal communication, including:\n  o Using communication appropriately for social purposes (e.g., greetings, conversation).\n  o Adjusting communication style based on context or listener.\n  o Following conversational rules (e.g., turn-taking).\n  o Understanding implied meanings or nonliteral language (e.g., sarcasm, idioms).\n\nAssociated Features:\n• Often linked with other neurodevelopmental disorders, such as autism spectrum disorder (ASD) or ADHD.\n\nPrevalence:\n• Not well established; thought to be more prevalent in males.\n\nDevelopment and Course:\n• Symptoms typically manifest by age 4-5, when pragmatic communication skills become evident.\n• May persist into adolescence and adulthood, affecting academic and social functioning.\n\nRisk and Prognostic Factors:\n• Genetic/Physiological:\n  o Familial association with communication disorders and ASD.",
+        "id": 7,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Communication Disorder",
+        "description": "A diagnosis used when symptoms of communication impairment are present but do not meet the full criteria for a specific communication disorder. It allows for flexibility in cases where further evaluation or information is needed.",
+        "criteria": "Diagnostic Features:\n• Significant deficits in communication that do not meet criteria for other specific communication disorders.\n• Examples may include impairments in speech, language, or social communication that cause distress or impairment in functioning.\n\nPrevalence:\n• Prevalence is unclear due to its residual nature, often diagnosed when other communication disorders cannot be specifically identified.",
+        "id": 8,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Autism Spectrum Disorder (ASD)",
+        "description": "A neurodevelopmental disorder characterized by persistent deficits in social communication and interaction, alongside restricted, repetitive patterns of behavior, interests, or activities. The severity of symptoms and support needs vary widely across individuals.",
+        "criteria": "Specifiers:\n• With or without accompanying intellectual impairment.\n• With or without accompanying language impairment.\n• Associated with a known medical or genetic condition or environmental factor.\n• Associated with another neurodevelopmental, mental, or behavioral disorder.\n• With catatonia.\n\nDiagnostic Features:\n• Persistent deficits in social communication and interaction across multiple contexts, such as:\n  o Difficulty with social reciprocity (e.g., back-and-forth conversation, sharing emotions).\n  o Deficits in nonverbal communication (e.g., eye contact, gestures).\n  o Difficulty forming, maintaining, or understanding relationships.\n• Restricted, repetitive patterns of behavior, interests, or activities, such as:\n  o Stereotyped motor movements, use of objects, or speech.\n  o Insistence on sameness or inflexible adherence to routines.\n  o Highly restricted, fixated interests of abnormal intensity or focus.\n  o Hyper- or hypo-reactivity to sensory input (e.g., aversion to certain textures, fascination with lights).\n\nAssociated Features:\n• Intellectual or language impairment is common.\n• Behavioral symptoms (e.g., self-injury, aggression) and medical issues (e.g., seizures) may co-occur.\n\nPrevalence:\n• Approximately 1% worldwide, more common in males (4:1 ratio).\n\nDevelopment and Course:\n• Symptoms typically emerge during the second year of life.\n• Some experience developmental plateaus or regression.\n\nRisk and Prognostic Factors:\n• Genetic/Physiological:\n  o Strong genetic heritability (50%-90%).\n  o Associated with genetic syndromes (e.g., fragile X syndrome) or prenatal/perinatal complications.\n• Environmental:\n  o Advanced parental age, low birth weight.\n\nCulture-Related Diagnostic Issues:\n• Cultural norms may influence the perception of social or communication difficulties.\n\nSex- and Gender-Related Diagnostic Issues:\n• Males are more frequently diagnosed, though females may exhibit subtler symptoms.",
+        "id": 9,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Attention-Deficit/Hyperactivity Disorder (ADHD)",
+        "description": "A neurodevelopmental disorder marked by a persistent pattern of inattention and/or hyperactivity-impulsivity that interferes with functioning or development. Symptoms are present in multiple settings and often emerge before age 12.",
+        "criteria": "Specifiers:\n• Combined presentation.\n• Predominantly inattentive presentation.\n• Predominantly hyperactive/impulsive presentation.\n• In partial remission.\n• Severity: Mild, moderate, severe.\n\nDiagnostic Features:\n• Inattention Symptoms (e.g., distractibility, difficulty organizing tasks, forgetfulness).\n• Hyperactivity/Impulsivity Symptoms (e.g., fidgeting, excessive talking, interrupting others).\n• Symptoms must:\n  o Occur before age 12.\n  o Be present in two or more settings (e.g., school, home).\n  o Interfere with social, academic, or occupational functioning.\n\nAssociated Features:\n• Academic underachievement, peer rejection, and difficulty regulating emotions.\n• Increased risk of injuries or accidents.\n\nPrevalence:\n• 5% of children; 2.5% of adults worldwide.\n• More common in males, though females may present predominantly with inattentive symptoms.\n\nDevelopment and Course:\n• Symptoms typically emerge in early childhood and persist into adulthood for many.\n\nRisk and Prognostic Factors:\n• Genetic/Physiological:\n  o Highly heritable, with altered brain activity in attention and executive function regions.\n• Environmental:\n  o Prematurity, prenatal exposure to tobacco, alcohol, or toxins.\n\nCulture-Related Diagnostic Issues:\n• Expectations of attention and activity levels vary across cultures.\n\nSex- and Gender-Related Diagnostic Issues:\n• Females are less frequently diagnosed but may have greater social or emotional impairment.",
+        "id": 10,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Attention-Deficit/Hyperactivity Disorder",
+        "description": "A category used when symptoms of inattention, hyperactivity, or impulsivity are present and cause significant impairment but do not meet the full diagnostic criteria for ADHD.",
+        "criteria": "Diagnostic Features:\n• This diagnosis applies when symptoms of inattention and/or hyperactivity-impulsivity cause clinically significant impairment but do not fully meet the criteria for ADHD.\n• The clinician specifies the reason the criteria are not met (e.g., symptoms that persist for less than 6 months or insufficient symptoms for a full ADHD diagnosis).\n\nExamples of Presentations:\n• Inattentive symptoms without significant hyperactivity.\n• Symptoms primarily occurring in one setting but still causing distress or functional impairment.\n• Late-onset symptoms, emerging after age 12 but meeting other diagnostic criteria.\n\nPrevalence:\n• Difficult to estimate due to its residual nature but recognized as a less common ADHD presentation.\n\nDevelopment and Course:\n• Symptoms may fluctuate or emerge under specific stressors, such as academic or occupational demands.",
+        "id": 11,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Attention-Deficit/Hyperactivity Disorder",
+        "description": "A category used when symptoms of inattention or hyperactivity-impulsivity cause significant impairment but insufficient information is available to make a full ADHD diagnosis.",
+        "criteria": "Diagnostic Features:\n• This diagnosis applies when symptoms of inattention and/or hyperactivity-impulsivity cause significant impairment but do not meet full ADHD criteria, and the clinician chooses not to specify the reason.\n• Often used in settings where detailed assessment is not possible (e.g., emergency rooms).\n\nPrevalence:\n• Typically a placeholder diagnosis until a full evaluation can be conducted.\n\nDevelopment and Course:\n• Symptoms may be situationally induced or reflect broader, undiagnosed neurodevelopmental challenges.",
+        "id": 12,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Specific Learning Disorder",
+        "description": "A condition characterized by persistent difficulties in learning and using academic skills such as reading, writing, or mathematics. These challenges are not due to intellectual disabilities or inadequate education and cause significant functional impairment.",
+        "criteria": "Specifiers:\n• With impairment in reading (e.g., word reading accuracy, reading rate, or comprehension deficits).\n• With impairment in written expression (e.g., spelling, grammar, or organization difficulties).\n• With impairment in mathematics (e.g., number sense, calculation, or mathematical reasoning problems).\n• Specify severity:\n  o Mild: Some difficulties in one or two academic areas but manageable with accommodations.\n  o Moderate: Marked difficulties in several academic areas requiring intensive teaching and accommodations.\n  o Severe: Severe difficulties affecting most academic areas and requiring specialized instruction and services.\n\nDiagnostic Features:\n• Persistent difficulties in academic skills despite targeted intervention, not explained by intellectual disabilities or sensory impairments.\n• Symptoms typically manifest in elementary school but may not be fully apparent until academic demands increase.\n\nAssociated Features:\n• Emotional distress or frustration due to academic struggles.\n• Increased risk of school dropout, low self-esteem, and social difficulties.\n\nPrevalence:\n• Ranges between 5-15% of school-age children, varying by method of identification and severity.\n\nDevelopment and Course:\n• Symptoms may lessen in adulthood but functional impairments can persist, especially in tasks requiring affected academic skills.\n\nRisk and Prognostic Factors:\n• Genetic and Physiological: Family history of learning disorders or neurodevelopmental conditions.\n• Environmental: Low socioeconomic status or limited access to effective educational interventions.\n\nCulture-Related Diagnostic Issues:\n• Must consider the educational and linguistic background of the individual when assessing performance.\n\nSex- and Gender-Related Diagnostic Issues:\n• More commonly identified in males, potentially due to gender differences in behavioral presentation or referral biases.",
+        "id": 13,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Developmental Coordination Disorder",
+        "description": "A neurodevelopmental condition characterized by significant difficulties in acquiring and executing coordinated motor skills. This affects daily activities requiring motor coordination, such as dressing, handwriting, or sports.",
+        "criteria": "Diagnostic Features:\n• Significant delays in motor skill acquisition, clumsiness, or poor performance in coordinated activities.\n• Difficulties interfere with daily functioning (e.g., self-care, school tasks, sports).\n\nAssociated Features:\n• Low self-esteem or social isolation due to inability to participate in age-appropriate physical activities.\n\nPrevalence:\n• Estimated at 5-6% of children aged 5-11 years.\n\nDevelopment and Course:\n• Symptoms typically emerge in early childhood and may persist into adolescence and adulthood.\n\nRisk and Prognostic Factors:\n• Genetic and Physiological:\n  o Higher prevalence in individuals with preterm birth or low birth weight.\n• Environmental:\n  o Lack of opportunities to develop motor skills.\n\nCulture-Related Diagnostic Issues:\n• Must account for culturally specific expectations of motor development.\n\nSex- and Gender-Related Diagnostic Issues:\n• Diagnosed more often in males, but no significant differences in symptom severity by sex.",
+        "id": 14,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Stereotypic Movement Disorder",
+        "description": "A condition involving repetitive, purposeless motor behaviors such as hand-waving, rocking, or head-banging. These behaviors interfere with daily functioning and may lead to self-injury.",
+        "criteria": "Specifiers:\n• With self-injurious behavior (e.g., head banging, biting).\n• Without self-injurious behavior.\n\nSpecify severity:\n  o Mild: Easily managed with monitoring or behavioral interventions.\n  o Moderate: Requires protective measures and some specialized interventions.\n  o Severe: Continuous monitoring and specialized interventions are necessary.\n\nDiagnostic Features:\n• Repetitive, purposeless motor behaviors that interfere with normal activities or result in physical injury.\n\nAssociated Features:\n• Commonly co-occurs with intellectual disabilities or other neurodevelopmental disorders.\n\nPrevalence:\n• Estimated at 3-4% in children, higher in those with intellectual disabilities (up to 16%).\n\nDevelopment and Course:\n• Onset typically before age 3, with varying course depending on severity and interventions.\n\nRisk and Prognostic Factors:\n• Genetic and Physiological:\n  o Increased prevalence in individuals with intellectual disabilities or sensory impairments.\n• Environmental:\n  o Limited access to enriched environments can exacerbate symptoms.\n\nSex- and Gender-Related Diagnostic Issues:\n• More frequent in males, particularly in those with neurodevelopmental conditions.",
+        "id": 15,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Tic Disorders",
+        "description": "A group of conditions characterized by sudden, rapid, recurrent, non-rhythmic motor movements or vocalizations. These include Tourette's Disorder, Persistent (Chronic) Motor or Vocal Tic Disorder, and Provisional Tic Disorder.",
+        "criteria": "Diagnostic Features:\n• Tourette’s Disorder: Multiple motor tics and at least one vocal tic, present for more than a year.\n• Persistent (Chronic) Motor or Vocal Tic Disorder: Single or multiple motor or vocal tics (but not both) for more than a year.\n• Provisional Tic Disorder: Single or multiple motor and/or vocal tics present for less than a year.\n\nAssociated Features:\n• Symptoms often worsen during stress or fatigue and improve during focused activities.\n\nPrevalence:\n• Tourette’s: 0.3-0.8% of school-age children.\n• Persistent Tic Disorder: Slightly more common than Tourette’s.\n• Provisional Tic Disorder: Higher prevalence in younger children.\n\nDevelopment and Course:\n• Onset typically between ages 4-6, peaking in severity between ages 10-12, with many symptoms improving in adolescence.\n\nRisk and Prognostic Factors:\n• Genetic and Physiological:\n  o High heritability and associations with prenatal stressors.\n• Environmental:\n  o Maternal smoking during pregnancy or perinatal complications.\n\nCulture-Related Diagnostic Issues:\n• Cultural interpretations of tics (e.g., possession or deliberate behaviors) may influence diagnosis.\n\nSex- and Gender-Related Diagnostic Issues:\n• More common in males, with higher severity often reported.",
+        "id": 16,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Tic Disorder",
+        "description": "A diagnosis given when tic symptoms cause significant distress or impairment but do not meet the full criteria for any specific tic disorder.",
+        "criteria": "",
+        "id": 17,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Tic Disorder",
+        "description": "Used when tic symptoms cause impairment but do not meet criteria for other tic disorders, and reasons are not specified.",
+        "criteria": "",
+        "id": 18,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Neurodevelopmental Disorder",
+        "description": "Symptoms of a neurodevelopmental disorder that cause significant distress or impairment but do not meet full criteria for any specific condition.",
+        "criteria": "Examples:\n• Symptoms of ADHD in partial remission.",
+        "id": 19,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Neurodevelopmental Disorder",
+        "description": "Symptoms causing impairment but do not meet criteria for specific neurodevelopmental disorders. Used in contexts where specific reasons for not meeting criteria are not detailed.",
+        "criteria": "",
+        "id": 20,
+        "category_id": 1,
+        "cluster_id": null
+    },
+    {
+        "name": "Schizotypal (Personality) Disorder",
+        "description": "A personality disorder characterized by pervasive social and interpersonal deficits, cognitive or perceptual distortions, and eccentricities in behavior. Individuals often exhibit odd beliefs, paranoia, or inappropriate affect.",
+        "criteria": "Diagnostic Features:\n• Marked by pervasive patterns of social and interpersonal deficits, discomfort with close relationships, and eccentric behaviors.\n• Cognitive and perceptual distortions (e.g., ideas of reference, odd beliefs, or magical thinking).\n\nAssociated Features:\n• Often misunderstood as odd or eccentric by others.\n• Increased risk of developing depressive disorders or other psychotic disorders.\n\nPrevalence:\n• Estimated at 3-4% in the general population.\n\nDevelopment and Course:\n• Typically identified in adolescence or early adulthood.\n• Symptoms may remain stable or evolve into other psychotic disorders.\n\nRisk and Prognostic Factors:\n• Genetic and Physiological: Increased prevalence in individuals with relatives diagnosed with schizophrenia.\n\nCulture-Related Diagnostic Issues:\n• Cultural or religious practices (e.g., belief in spirits, superstitions) should not be pathologized.",
+        "id": 21,
+        "category_id": 4,
+        "cluster_id": null
+    },
+    {
+        "name": "Delusional Disorder",
+        "description": "A psychotic disorder characterized by one or more delusions lasting at least one month. Other psychotic features (e.g., hallucinations) are absent, and functioning outside the delusion is relatively intact.",
+        "criteria": "Diagnostic Features:\n• Persistent delusions (e.g., persecutory, grandiose, jealous, somatic, or erotomanic) lasting at least one month.\n• No significant impairments in daily functioning outside delusions.\n\nSpecifiers:\n• Type of delusion (e.g., grandiose, persecutory).\n• With bizarre content (delusions implausible or not derived from ordinary life experiences).\n\nPrevalence:\n• Around 0.2% in the general population, with persecutory type being most common.\n\nDevelopment and Course:\n• Onset typically in middle to late adulthood.\n• May progress to schizophrenia in rare cases.\n\nRisk and Prognostic Factors:\n• Environmental: Sensory impairment or social isolation may increase susceptibility.\n• Genetic and Physiological: Relatives with schizophrenia may elevate risk.\n\nCulture-Related Diagnostic Issues:\n• Content of delusions must be evaluated within the individual's cultural context.",
+        "id": 22,
+        "category_id": 2,
+        "cluster_id": null
+    },
+    {
+        "name": "Brief Psychotic Disorder",
+        "description": "A psychotic disorder characterized by the sudden onset of one or more psychotic symptoms (e.g., delusions, hallucinations) lasting less than one month, with eventual full recovery.",
+        "criteria": "Diagnostic Features:\n• Sudden onset of psychotic symptoms (e.g., delusions, hallucinations, disorganized speech) lasting less than one month.\n• Full recovery is common after the episode.\n\nSpecifiers:\n• With marked stressor(s): Triggered by an identifiable stressor.\n• Without marked stressor(s): No clear trigger.\n• With postpartum onset: Symptoms occur within four weeks postpartum.\n\nPrevalence:\n• Estimated at 9% of first-onset psychosis cases.\n\nDevelopment and Course:\n• Typically occurs in adolescence or early adulthood.\n• Risk of recurrence is higher in individuals with predisposition to psychotic disorders.",
+        "id": 23,
+        "category_id": 2,
+        "cluster_id": null
+    },
+    {
+        "name": "Schizophreniform Disorder",
+        "description": "A psychotic disorder with symptoms similar to schizophrenia, including hallucinations, delusions, or disorganized speech, lasting between one and six months. It may or may not impair functioning.",
+        "criteria": "Diagnostic Features:\n• Symptoms identical to schizophrenia but lasting 1 to 6 months.\n• May or may not impair social or occupational functioning.\n\nSpecifiers:\n• With good prognostic features: Quick onset, confusion, good premorbid functioning.\n• Without good prognostic features: Lack of the above.\n\nPrevalence:\n• About 0.1-0.2% in the general population.\n\nDevelopment and Course:\n• Approximately two-thirds of cases progress to schizophrenia or schizoaffective disorder.",
+        "id": 24,
+        "category_id": 2,
+        "cluster_id": null
+    },
+    {
+        "name": "Schizophrenia",
+        "description": "A severe mental disorder characterized by two or more psychotic symptoms (e.g., delusions, hallucinations) that persist for at least six months, causing significant functional impairment.",
+        "criteria": "Diagnostic Features:\n• Two or more of the following symptoms, present for at least one month:\n  o Delusions.\n  o Hallucinations.\n  o Disorganized speech.\n  o Grossly disorganized or catatonic behavior.\n  o Negative symptoms (e.g., diminished emotional expression).\n• Impairment in functioning for at least six months.\n\nSpecifiers:\n• Severity rated based on primary symptoms.\n\nAssociated Features:\n• Cognitive impairments, lack of insight, and social withdrawal are common.\n\nPrevalence:\n• Around 0.3-0.7% globally.\n\nDevelopment and Course:\n• Onset typically occurs in late adolescence to early adulthood.\n• Course varies; many experience relapses and residual symptoms.\n\nRisk and Prognostic Factors:\n• Genetic and Physiological: High heritability.\n• Environmental: Prenatal complications, urban upbringing.\n\nCulture-Related Diagnostic Issues:\n• Hallucinatory or delusional content must be evaluated within cultural norms.\n\nSex- and Gender-Related Diagnostic Issues:\n• Earlier onset and more severe course in males.",
+        "id": 25,
+        "category_id": 2,
+        "cluster_id": null
+    },
+    {
+        "name": "Schizoaffective Disorder",
+        "description": "A condition characterized by symptoms of schizophrenia combined with mood disorder episodes (depressive or manic). Psychotic symptoms must also occur independently of mood episodes for at least two weeks.",
+        "criteria": "Diagnostic Features:\n• Uninterrupted period of illness with both major mood episode and schizophrenia symptoms.\n• Delusions or hallucinations for at least two weeks without mood symptoms.\n\nSpecifiers:\n• Bipolar type: With manic or mixed episodes.\n• Depressive type: With depressive episodes only.\n\nPrevalence:\n• Estimated at 0.3%.\n\nDevelopment and Course:\n• Onset typically in early adulthood.\n• Course varies; prognosis is better than schizophrenia but worse than mood disorders.",
+        "id": 26,
+        "category_id": 2,
+        "cluster_id": null
+    },
+    {
+        "name": "Substance/Medication-Induced Psychotic Disorder",
+        "description": "A disorder where delusions or hallucinations are caused by the use, intoxication, or withdrawal of a substance or medication, and are not better explained by another mental disorder.",
+        "criteria": "Diagnostic Features:\n• Presence of delusions or hallucinations during or soon after substance use or withdrawal.\n• Symptoms must not be better explained by another condition.\n\nAssociated Features:\n• Symptoms typically resolve after substance use stops.\n\nPrevalence:\n• High in emergency and clinical settings due to drug misuse.\n\nRisk and Prognostic Factors:\n• Substance type and dose are key factors.",
+        "id": 27,
+        "category_id": 2,
+        "cluster_id": null
+    },
+    {
+        "name": "Psychotic Disorder Due to Another Medical Condition",
+        "description": "A psychotic disorder where delusions or hallucinations are directly attributable to a medical condition such as brain injury or metabolic abnormalities.",
+        "criteria": "Diagnostic Features:\n• Prominent hallucinations or delusions attributable to a medical condition (e.g., brain injury, metabolic abnormalities).\n• Must not occur exclusively during delirium.\n\nRisk and Prognostic Factors:\n• Conditions like epilepsy or dementia elevate risk.",
+        "id": 28,
+        "category_id": 2,
+        "cluster_id": null
+    },
+    {
+        "name": "Catatonia Associated With Another Mental Disorder (Catatonia Specifier)",
+        "description": "A condition characterized by at least three symptoms of catatonia (e.g., stupor, mutism, posturing) occurring in the context of another mental disorder, such as schizophrenia or mood disorders.",
+        "criteria": "Diagnostic Features:\n• At least three of the following:\n  o Stupor, catalepsy, waxy flexibility, mutism, negativism, posturing, mannerisms, stereotypies, agitation, grimacing, echolalia, or echopraxia.",
+        "id": 29,
+        "category_id": 2,
+        "cluster_id": null
+    },
+    {
+        "name": "Catatonic Disorder Due to Another Medical Condition",
+        "description": "A condition where catatonic symptoms (e.g., immobility, mutism) are directly attributable to a medical condition.",
+        "criteria": "Diagnostic Features:\n• Catatonia symptoms linked to a medical condition.\n\nPrevalence:\n• Rare but more common in mood or psychotic disorders.",
+        "id": 30,
+        "category_id": 2,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Catatonia",
+        "description": "A diagnosis is applied when symptoms of catatonia are present but do not meet criteria for a specific catatonic disorder or there is insufficient information for a full diagnosis.",
+        "criteria": "",
+        "id": 31,
+        "category_id": 2,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Schizophrenia Spectrum and Other Psychotic Disorder",
+        "description": "A category used for psychotic symptoms that cause significant distress or impairment but do not meet full criteria for any specific psychotic disorder.",
+        "criteria": "",
+        "id": 32,
+        "category_id": 2,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Schizophrenia Spectrum and Other Psychotic Disorder",
+        "description": "A diagnosis used when psychotic symptoms cause significant distress or impairment but there is insufficient information to make a specific diagnosis.",
+        "criteria": "",
+        "id": 33,
+        "category_id": 2,
+        "cluster_id": null
+    },
+    {
+        "name": "Bipolar I Disorder",
+        "description": "Bipolar I Disorder is characterized by at least one manic episode lasting at least one week, involving elevated, expansive, or irritable mood and abnormally increased activity or energy. Depressive episodes are common but not required for diagnosis.",
+        "criteria": "Specifiers:\n• With anxious distress\n• With mixed features\n• With rapid cycling\n• With melancholic features\n• With atypical features\n• With psychotic features (mood-congruent or incongruent)\n• With catatonia\n• With peripartum onset\n• With seasonal pattern\n\nDiagnostic Features:\n• The manic episode represents a distinct period of abnormal mood and energy levels.\n• Impairment in social or occupational functioning, or hospitalization due to risk of harm, is common.\n• Episodes are not attributable to substance use or medical conditions.\n\nAssociated Features:\n• Cognitive impairments, such as difficulty concentrating.\n• Impulsivity leading to risky behaviors (e.g., excessive spending, unsafe sexual activity).\n• Psychotic features during manic episodes are possible.\n\nPrevalence:\n• Lifetime prevalence in the general population: approximately 0.6%.\n\nDevelopment and Course:\n• Average age of onset: 18 years.\n• Episodes may increase in frequency over time.\n• Recovery between episodes may be incomplete.\n\nRisk and Prognostic Factors:\n• Genetic and physiological: Strong familial risk.\n• Environmental: Stressful life events may precipitate episodes.\n\nCulture-Related Diagnostic Issues:\n• Cultural expression of mood may affect symptom presentation, such as verbal expressiveness in mania.\n\nSex- and Gender-Related Diagnostic Issues:\n• Males are more likely to have manic episodes, while females are more likely to have mixed or depressive episodes.",
+        "id": 34,
+        "category_id": 3,
+        "cluster_id": null
+    },
+    {
+        "name": "Bipolar II Disorder",
+        "description": "Bipolar II Disorder is characterized by at least one hypomanic episode and one major depressive episode. Hypomania does not cause severe functional impairment or require hospitalization.",
+        "criteria": "Specifiers:\n• Same specifiers as Bipolar I Disorder.\n\nDiagnostic Features:\n• Hypomanic episodes last at least four days and are noticeable by others.\n• Depressive episodes are more frequent and severe than hypomanic episodes.\n\nAssociated Features:\n• Impulsivity, often leading to high-risk behaviors.\n• Suicide risk is higher compared to Bipolar I Disorder.\n\nPrevalence:\n• Lifetime prevalence in the general population: approximately 0.3-0.8%.\n\nDevelopment and Course:\n• Average age of onset: mid-20s.\n• Depressive episodes often dominate the clinical course.\n• Hypomanic episodes may be underreported.\n\nRisk and Prognostic Factors:\n• Same as Bipolar I Disorder.\n\nCulture-Related Diagnostic Issues:\n• Cultural factors may affect the recognition of hypomania.\n\nSex- and Gender-Related Diagnostic Issues:\n• Females may have more rapid cycling and depressive symptoms.",
+        "id": 35,
+        "category_id": 3,
+        "cluster_id": null
+    },
+    {
+        "name": "Cyclothymic Disorder",
+        "description": "Cyclothymic Disorder is characterized by at least two years (one year in children and adolescents) of numerous periods of hypomanic symptoms and depressive symptoms that do not meet full criteria for hypomanic or major depressive episodes.",
+        "criteria": "Specifiers:\n• With anxious distress\n\nDiagnostic Features:\n• Symptoms cause significant distress or impairment in functioning.\n• Periods of symptom-free stability last less than two months.\n\nAssociated Features:\n• Individuals may be perceived as temperamental or unpredictable.\n\nPrevalence:\n• Lifetime prevalence: approximately 0.4-1%.\n\nDevelopment and Course:\n• Often begins in adolescence or early adulthood.\n• Risk of progression to Bipolar I or II Disorder.\n\nRisk and Prognostic Factors:\n• Genetic and physiological: Familial risk of Bipolar I and II Disorders.",
+        "id": 36,
+        "category_id": 3,
+        "cluster_id": null
+    },
+    {
+        "name": "Substance/Medication-Induced Bipolar and Related Disorder",
+        "description": "This disorder involves a prominent and persistent mood disturbance (e.g., mania, hypomania) that develops during or shortly after substance intoxication, withdrawal, or medication     use.",
+        "criteria": "Specifiers:\n• With onset during intoxication\n• With onset during withdrawal\n\nDiagnostic Features:\n• Mood disturbance is temporally related to substance use.\n• Symptoms persist beyond intoxication or withdrawal periods.\n\nAssociated Features:\n• Symptoms may include irritability, euphoria, or hyperactivity.\n\nRisk and Prognostic Factors:\n• Substances   commonly involved: Stimulants, steroids, and hallucinogens.",
+        "id": 37,
+        "category_id": 3,
+        "cluster_id": null
+    },
+    {
+        "name": "Bipolar and Related Disorder Due to Another Medical Condition",
+        "description": "This disorder involves manic or hypomanic symptoms that are directly attributable to    a medical condition (e.g., hyperthyroidism, multiple sclerosis).",
+        "criteria": "Specifiers:\n• With manic features\n• With manic- or hypomanic-like episode\n• With mixed features\n\nDiagnostic Features:\n• The mood disturbance is temporally related to the onset or exacerbation of the medical condition.\n• Symptoms are not better explained by another mental disorder.\n\nAssociated Features:\n• May occur in conjunction with other neurocognitive changes     caused by the medical condition.",
+        "id": 38,
+        "category_id": 3,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Bipolar and Related Disorder",
+        "description": "This diagnosis is applied when symptoms characteristic of bipolar and related disorders cause significant distress or impairment but do not meet full criteria for any specific     bipolar disorder.",
+        "criteria": "Examples include:\n• Short-duration hypomanic episodes.\n• Insufficient symptom episodes   for hypomania or depression.",
+        "id": 39,
+        "category_id": 3,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Bipolar and Related Disorder",
+        "description": "This diagnosis is used when symptoms of bipolarity cause significant impairment but insufficient information is available to make a specific diagnosis (e.g., in emergency room settings)   ",
+        "criteria": "No additional criteria provided.",
+        "id": 40,
+        "category_id": 3,
+        "cluster_id": null
+    },
+    {
+        "name": "Disruptive Mood Dysregulation Disorder (DMDD)",
+        "description": "DMDD is characterized by severe, recurrent temper outbursts that are out of proportion to the situation, occurring frequently (at least three times a week) in individuals aged 6–18 years. It is marked by a persistently irritable or angry mood between outbursts.",
+        "criteria": "Specifiers:\n• None.\n\nDiagnostic Features:\n• Temper outbursts may be verbal (e.g., yelling) or behavioral (e.g., physical aggression).\n• Mood between outbursts is persistently irritable or angry, observable by others.\n• Symptoms are present for at least 12 months in two or more settings (e.g., school, home).\n\nAssociated Features:\n• Difficulty maintaining peer relationships.\n• Academic underachievement.\n• Increased risk of anxiety and depressive disorders in adulthood.\n\nPrevalence:\n• Estimated at 2–5% among children and adolescents.\n\nDevelopment and Course:\n• Onset before age 10.\n• Symptoms often diminish with age, but emotional dysregulation may persist.\n\nRisk and Prognostic Factors:\n• Temperamental: Chronic irritability as a developmental precursor.\n• Environmental: Family conflict and parental mental health issues increase risk.\n\nCulture-Related Diagnostic Issues:\n• Expression of irritability may vary across cultural contexts.\n\nSex- and Gender-Related Diagnostic Issues:\n• More common in males than females.",
+        "id": 41,
+        "category_id": 4,
+        "cluster_id": null
+    },
+    {
+        "name": "Major Depressive Disorder (MDD)",
+        "description": "MDD is characterized by one or more major depressive episodes, with at least five symptoms (e.g., depressed mood, anhedonia, changes in weight, sleep disturbances) present for at least two weeks. Symptoms cause significant distress or impairment.",
+        "criteria": "Specifiers:\n• With anxious distress\n• With mixed features\n• With melancholic features\n• With atypical features\n• With psychotic features\n• With catatonia\n• With peripartum onset\n• With seasonal pattern\n\nDiagnostic Features:\n• Depressed mood or anhedonia is required for diagnosis.\n• Physical symptoms like fatigue or psychomotor changes are common.\n• Symptoms must not be attributable to substance use or medical conditions.\n\nAssociated Features:\n• Increased risk of suicide, especially in severe cases.\n• Cognitive impairments, such as difficulty concentrating or decision-making.\n\nPrevalence:\n• Lifetime prevalence: 16.6%.\n\nDevelopment and Course:\n• Average onset: mid-20s, but can occur at any age.\n• Episodes may recur, with periods of remission in between.\n\nRisk and Prognostic Factors:\n• Genetic and physiological: Heritability is estimated at 40%.\n• Environmental: Childhood adversity increases risk.\n\nCulture-Related Diagnostic Issues:\n• Somatic symptoms may predominate in non-Western cultures.\n\nSex- and Gender-Related Diagnostic Issues:\n• Higher prevalence in females, often associated with hormonal factors.",
+        "id": 42,
+        "category_id": 4,
+        "cluster_id": null
+    },
+    {
+        "name": "Persistent Depressive Disorder (Dysthymia)",
+        "description": "Persistent Depressive Disorder involves a chronic depressed mood lasting at least two years (one year for children/adolescents) with additional depressive symptoms.",
+        "criteria": "Specifiers:\n• Same specifiers as MDD.\n\nDiagnostic Features:\n• Symptoms are less severe than MDD but longer-lasting.\n• There may be intermittent periods of normal mood lasting less than two months.\n\nAssociated Features:\n• Low self-esteem, pessimism, and chronic fatigue.\n• Increased risk of co-occurring anxiety and substance use disorders.\n\nPrevalence:\n• Lifetime prevalence: 0.5–1.5%.\n\nDevelopment and Course:\n• Often begins in childhood or adolescence.\n• Risk of developing MDD.\n\nRisk and Prognostic Factors:\n• Same as MDD.\n\nSex- and Gender-Related Diagnostic Issues:\n• More common in females.",
+        "id": 43,
+        "category_id": 4,
+        "cluster_id": null
+    },
+    {
+        "name": "Premenstrual Dysphoric Disorder (PMDD)",
+        "description": "PMDD involves severe mood and physical symptoms occurring during the luteal phase of the menstrual cycle and improving within a few days after menstruation begins.",
+        "criteria": "Specifiers:\n• None.\n\nDiagnostic Features:\n• Emotional symptoms include mood swings, irritability, and anxiety.\n• Physical symptoms include fatigue, bloating, and joint/muscle pain.\n\nAssociated Features:\n• Impairment in social, academic, or occupational functioning.\n• May co-occur with other mood disorders.\n\nPrevalence:\n• Estimated at 1.8–5.8% of menstruating individuals.\n\nDevelopment and Course:\n• Symptoms worsen in late reproductive years and cease with menopause.\n\nRisk and Prognostic Factors:\n• Genetic and physiological: Sensitivity to hormonal changes.\n• Environmental: Stress exacerbates symptoms.",
+        "id": 44,
+        "category_id": 4,
+        "cluster_id": null
+    },
+    {
+        "name": "Substance/Medication-Induced Depressive Disorder",
+        "description": "This disorder involves depressive symptoms directly caused by substance intoxication, withdrawal, or medication use.",
+        "criteria": "Specifiers:\n• With onset during intoxication\n• With onset during withdrawal\n\nDiagnostic Features:\n• Symptoms occur soon after substance use or withdrawal.\n• Symptoms resolve after substance discontinuation.\n\nAssociated Features:\n• Irritability and anhedonia are common.\n\nPrevalence:\n• Varies by substance; particularly common with alcohol and sedative use.\n\nRisk and Prognostic Factors:\n• Long-term use of substances increases risk.",
+        "id": 45,
+        "category_id": 4,
+        "cluster_id": null
+    },
+    {
+        "name": "Depressive Disorder Due to Another Medical Condition",
+        "description": "This disorder involves depressive symptoms caused by a medical condition, such as hypothyroidism or stroke.",
+        "criteria": "Specifiers:\n• With depressive features\n• With major depressive-like episode\n• With mixed features\n\nDiagnostic Features:\n• Symptoms are temporally related to the medical condition.\n• Symptoms are not better explained by another mental disorder.\n\nAssociated Features:\n• Medical conditions may also exacerbate symptoms.",
+        "id": 46,
+        "category_id": 4,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Depressive Disorder",
+        "description": "This diagnosis applies to depressive symptoms that cause significant distress or impairment but do not meet full criteria for other depressive disorders.",
+        "criteria": "Examples:\n• Short-duration depressive episodes.\n• Depressive episodes with insufficient symptoms.",
+        "id": 47,
+        "category_id": 4,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Depressive Disorder",
+        "description": "This diagnosis is used when depressive symptoms cause significant distress or impairment but insufficient information is available to make a specific diagnosis (e.g., in emergency settings).",
+        "criteria": "No additional criteria specified.",
+        "id": 48,
+        "category_id": 4,
+        "cluster_id": null
+    },
+    {
+        "name": "Separation Anxiety Disorder",
+        "description": "Separation Anxiety Disorder (SAD) is characterized by excessive fear or anxiety about being separated from an attachment figure (e.g., a parent or caregiver). While separation anxiety is a normal part of development in young children, in SAD, the fear is developmentally inappropriate and causes significant distress or impairment in functioning. This condition may manifest as persistent worry about harm befalling the attachment figure, reluctance to be alone, nightmares about separation, or physical symptoms (e.g., headaches, nausea) when separation occurs. The anxiety often disrupts social, academic, or occupational functioning and can affect both children and adults.",
+        "criteria": "Specifiers:\n• None.\n\nDiagnostic Features:\n• Persistent and excessive distress when anticipating or experiencing separation.\n• Worry about losing attachment figures or experiencing harm (e.g., illness, accidents).\n• Reluctance to go to school, work, or other places away from attachment figures.\n• Physical symptoms are often reported, especially in children, during periods of separation.\n\nAssociated Features:\n• Clinginess, refusal to sleep away from attachment figures, and fear of being alone.\n\nPrevalence:\n• Prevalence is approximately 4% in children, 1.6% in adolescents, and 0.9–1.9% in adults.\n\nDevelopment and Course:\n• Onset often occurs during childhood but may persist into adulthood if untreated. The course can vary, with some individuals experiencing remission while others face chronic symptoms.\n\nRisk and Prognostic Factors:\n• Environmental: Loss of a loved one or caregiver can trigger symptoms.\n• Genetic and physiological: Family history of anxiety disorders increases risk.\n\nCulture-Related Diagnostic Issues:\n• Cultural norms regarding dependence and independence can influence symptom expression.\n\nSex- and Gender-Related Diagnostic Issues:\n• More common in females than males.",
+        "id": 49,
+        "category_id": 5,
+        "cluster_id": null
+    },
+    {
+        "name": "Selective Mutism",
+        "description": "Selective Mutism is a rare anxiety disorder characterized by an inability to speak in specific social situations where there is an expectation to speak (e.g., school) despite speaking in other situations (e.g., home). This disorder is not due to a lack of knowledge, comfort with the spoken language, or a communication disorder. It is often associated with excessive shyness, fear of embarrassment, and social withdrawal, leading to significant impairment in academic, social, or occupational functioning.",
+        "criteria": "Specifiers:\n• None.\n\nDiagnostic Features:\n• Consistent failure to speak in certain social situations despite speaking in others.\n• Symptoms must persist for at least one month and interfere with functioning.\n\nAssociated Features:\n• Social anxiety and communication difficulties are common.\n• May lead to academic underachievement or social isolation.\n\nPrevalence:\n• Estimated prevalence is 0.03–1% in children.\n\nDevelopment and Course:\n• Onset typically occurs before age 5 but is often not recognized until school age.\n• Symptoms may remit with treatment, but untreated cases may lead to long-term social difficulties.\n\nRisk and Prognostic Factors:\n• Temperamental: Behavioral inhibition and a family history of social anxiety are common.\n• Environmental: Overprotective parenting may increase risk.\n\nCulture-Related Diagnostic Issues:\n• Consideration must be given to linguistic differences or cultural norms regarding speaking.\n\nSex- and Gender-Related Diagnostic Issues:\n• More common in females.",
+        "id": 50,
+        "category_id": 5,
+        "cluster_id": null
+    },
+    {
+        "name": "Specific Phobia",
+        "description": "Specific Phobia involves an intense, persistent fear or anxiety about a specific object or situation (e.g., heights, animals, flying). The fear is out of proportion to the actual danger posed and leads to avoidance or severe distress when exposed to the phobic stimulus. The phobia can significantly impair daily functioning and is often recognized by the individual as excessive or irrational. Specific phobias can involve various categories, including animals, natural environments, blood-injection-injury, situational fears, and other stimuli.",
+        "criteria": "Specifiers:\n• Animal, natural environment, blood-injection-injury, situational, and other.\n\nDiagnostic Features:\n• Immediate fear response upon exposure to the phobic stimulus.\n• Persistent avoidance of the feared object or situation.\n• Fear or anxiety lasting at least six months.\n\nAssociated Features:\n• Physical symptoms, such as sweating or heart palpitations, are common.\n• Fear can generalize to related stimuli.\n\nPrevalence:\n• Lifetime prevalence is about 7–9%.\n\nDevelopment and Course:\n• Onset typically occurs in childhood or early adolescence.\n• Without treatment, phobias can persist into adulthood.\n\nRisk and Prognostic Factors:\n• Temperamental: Negative emotionality and behavioral inhibition.\n• Environmental: Traumatic encounters with the phobic stimulus.\n\nCulture-Related Diagnostic Issues:\n• Cultural beliefs and practices may influence the focus of phobic fears.\n\nSex- and Gender-Related Diagnostic Issues:\n• More common in females.",
+        "id": 51,
+        "category_id": 5,
+        "cluster_id": null
+    },
+    {
+        "name": "Social Anxiety Disorder (Social Phobia)",
+        "description": "Social Anxiety Disorder is marked by intense fear or anxiety in social or performance situations where an individual may be scrutinized by others (e.g., public speaking, meeting new people). This fear often leads to avoidance or enduring these situations with extreme distress. The anxiety is disproportionate to the actual threat and can interfere significantly with daily functioning.",
+        "criteria": "Specifiers:\n• Performance only: Fear limited to speaking or performing in public.\n\nDiagnostic Features:\n• Fear of being humiliated, embarrassed, or negatively judged.\n• Symptoms last at least six months and cause significant impairment.\n\nAssociated Features:\n• Blushing, trembling, or sweating are common physical symptoms.\n• Difficulty forming relationships and academic or occupational challenges.\n\nPrevalence:\n• Lifetime prevalence: 7%.\n\nDevelopment and Course:\n• Onset typically occurs in early adolescence, often following a humiliating experience.\n\nRisk and Prognostic Factors:\n• Temperamental: Behavioral inhibition and fear of negative evaluation.\n• Environmental: Parenting styles or early social rejection.\n\nCulture-Related Diagnostic Issues:\n• Cultural norms regarding public behavior may affect diagnosis.\n\nSex- and Gender-Related Diagnostic Issues:\n• More common in females, but males may seek treatment more often.",
+        "id": 52,
+        "category_id": 5,
+        "cluster_id": null
+    },
+    {
+        "name": "Panic Disorder",
+        "description": "Panic Disorder is characterized by recurrent, unexpected panic attacks—sudden episodes of intense fear or discomfort that peak within minutes. These attacks may include physical symptoms (e.g., palpitations, chest pain, dizziness) and cognitive symptoms (e.g., fear of losing control, fear of dying). The disorder often involves persistent worry about having additional attacks or significant behavioral changes to avoid triggering them. The fear and avoidance can severely impact daily functioning.",
+        "criteria": "Specifiers:\n• None.\n\nDiagnostic Features:\n• Recurrent, unexpected panic attacks.\n• Persistent concern or worry about future panic attacks.\n• Maladaptive behaviors to avoid attacks.\n\nAssociated Features:\n• Fear or avoidance of situations perceived as panic-inducing.\n• Depersonalization or derealization during attacks.\n\nPrevalence:\n• Lifetime prevalence: 2–3%.\n• More common in females.\n\nDevelopment and Course:\n• Onset typically occurs in late adolescence to early adulthood.\n• May wax and wane, but some individuals experience chronic symptoms.\n\nRisk and Prognostic Factors:\n• Temperamental: High anxiety sensitivity and neuroticism.\n• Environmental: History of childhood trauma or major life stressors.\n• Genetic and physiological: Increased risk in individuals with a family history of anxiety or mood disorders.\n\nCulture-Related Diagnostic Issues:\n• Symptom expression can vary culturally; somatic complaints may be emphasized in some groups.\n\nSex- and Gender-Related Diagnostic Issues:\n• Females are twice as likely to be diagnosed as males.",
+        "id": 53,
+        "category_id": 5,
+        "cluster_id": null
+    },
+    {
+        "name": "Agoraphobia",
+        "description": "Agoraphobia involves intense fear or anxiety about being in situations where escape might be difficult or help unavailable during a panic attack or embarrassing symptoms (e.g., being in crowds, using public transportation). Individuals with agoraphobia often avoid these situations or endure them with significant distress. The avoidance can severely restrict daily activities, including work and social interactions.",
+        "criteria": "Specifiers:\n• None.\n\nDiagnostic Features:\n• Marked fear or anxiety about two or more specific situations:\n  o Using public transportation.\n  o Being in open spaces.\n  o Being in enclosed spaces.\n  o Standing in line or being in a crowd.\n  o Being outside the home alone.\n• Persistent avoidance of these situations for at least six months.\n\nAssociated Features:\n• Dependency on others for assistance or safety.\n• Comorbid conditions, especially panic disorder.\n\nPrevalence:\n• Lifetime prevalence: 1.7%.\n• More common in females.\n\nDevelopment and Course:\n• Onset is usually in late adolescence or early adulthood but can occur at any age.\n• Often chronic if untreated.\n\nRisk and Prognostic Factors:\n• Temperamental: High neuroticism and sensitivity to anxiety.\n• Environmental: Negative childhood experiences or major life stressors.\n\nCulture-Related Diagnostic Issues:\n• Cultural context may affect the interpretation of avoidance behaviors.\n\nSex- and Gender-Related Diagnostic Issues:\n• Females report more avoidance and comorbid depression.",
+        "id": 54,
+        "category_id": 5,
+        "cluster_id": null
+    },
+    {
+        "name": "Generalized Anxiety Disorder (GAD)",
+        "description": "Generalized Anxiety Disorder is characterized by excessive, uncontrollable worry about various aspects of life, such as work, health, or relationships, lasting for at least six months. The worry is often accompanied by physical symptoms like restlessness, fatigue, or muscle tension. GAD significantly impacts daily functioning and is often associated with other anxiety or depressive disorders.",
+        "criteria": "Specifiers:\n• None.\n\nDiagnostic Features:\n• Excessive anxiety or worry occurring more days than not for at least six months.\n• Difficulty controlling worry.\n• At least three of the following symptoms (one in children):\n  o Restlessness or feeling on edge.\n  o Fatigue.\n  o Difficulty concentrating.\n  o Irritability.\n  o Muscle tension.\n  o Sleep disturbances.\n\nAssociated Features:\n• Physical symptoms such as trembling, sweating, or gastrointestinal discomfort.\n• Overpreparation or procrastination in daily tasks.\n\nPrevalence:\n• Lifetime prevalence: 2.9% in adults; 0.9% in adolescents.\n\nDevelopment and Course:\n• Onset often occurs in childhood or adolescence.\n• Chronic course with fluctuations in severity.\n\nRisk and Prognostic Factors:\n• Temperamental: High harm avoidance and behavioral inhibition.\n• Environmental: Parental overprotection and adverse life events.\n• Genetic and physiological: Family history of anxiety disorders.\n\nCulture-Related Diagnostic Issues:\n• Cultural norms can influence the focus of worry (e.g., somatic vs. psychological symptoms).\n\nSex- and Gender-Related Diagnostic Issues:\n• More common in females, with differences in symptom focus (e.g., somatic complaints in males).",
+        "id": 55,
+        "category_id": 5,
+        "cluster_id": null
+    },
+    {
+        "name": "Substance/Medication-Induced Anxiety Disorder",
+        "description": "Substance/Medication-Induced Anxiety Disorder involves anxiety symptoms directly caused by substance intoxication, withdrawal, or medication use. Symptoms can mimic other anxiety disorders but are attributable to the effects of a substance (e.g., alcohol, stimulants, or prescribed medications).",
+        "criteria": "Specifiers:\n• With onset during intoxication.\n• With onset during withdrawal.\n• With onset after medication use.\n\nDiagnostic Features:\n• Anxiety or panic attacks predominate the clinical picture.\n• Symptoms develop soon after substance use or withdrawal.\n\nAssociated Features:\n• Symptoms typically resolve once the substance is eliminated or its effects subside.\n\nPrevalence:\n• Prevalence varies based on the substance but is highest among individuals using stimulants.\n\nDevelopment and Course:\n• Symptoms emerge during substance intoxication or withdrawal.\n• Duration depends on substance metabolism and clearance.\n\nRisk and Prognostic Factors:\n• Environmental: Access to substances of abuse.\n• Genetic and physiological: Family history of substance use disorders.\n\nCulture-Related Diagnostic Issues:\n• Cultural attitudes toward substance use can affect diagnosis and presentation.",
+        "id": 56,
+        "category_id": 5,
+        "cluster_id": null
+    },
+    {
+        "name": "Anxiety Disorder Due to Another Medical Condition",
+        "description": "Anxiety Disorder Due to Another Medical Condition involves prominent anxiety symptoms directly caused by a medical condition (e.g., hyperthyroidism, cardiac arrhythmias). The anxiety can manifest as generalized anxiety, panic attacks, or obsessive-compulsive symptoms, and it must cause significant distress or impairment.",
+        "criteria": "Specifiers:\n• With panic attacks.\n• With generalized anxiety.\n\nDiagnostic Features:\n• Evidence that anxiety symptoms are the direct physiological consequence of a medical condition.\n• Symptoms must not be better explained by another mental disorder.\n\nAssociated Features:\n• Symptoms may fluctuate with changes in the underlying medical condition.\n\nPrevalence:\n• Prevalence varies depending on the medical condition.\n\nDevelopment and Course:\n• Symptoms typically parallel the course of the underlying medical condition.\n\nRisk and Prognostic Factors:\n• Medical conditions: Conditions affecting the central nervous system or endocrine systems are most commonly associated.",
+        "id": 57,
+        "category_id": 5,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Anxiety Disorder",
+        "description": "Other Specified Anxiety Disorder applies to cases where anxiety symptoms cause significant distress or impairment but do not meet the full criteria for any specific anxiety disorder. The clinician specifies the reason (e.g., \"limited-symptom panic attacks\").",
+        "criteria": "Specifiers:\n• None.\n\nDiagnostic Features:\n• Symptoms include elements of anxiety disorders but lack one or more key criteria.\n\nAssociated Features:\n• Similar to those of related anxiety disorders but may be less severe.\n\nPrevalence:\n• Prevalence is unknown but likely significant in clinical settings.\n\nDevelopment and Course:\n• Onset and course vary depending on the specific symptom pattern.",
+        "id": 58,
+        "category_id": 5,
+        "cluster_id": null
+    },
+    {
+        "name": "Obsessive-Compulsive Disorder (OCD)",
+        "description": "Obsessive-Compulsive Disorder is characterized by the presence of obsessions (intrusive, distressing, and persistent thoughts, urges, or images) and/or compulsions (repetitive behaviors or mental acts performed to reduce anxiety or prevent feared events). These symptoms consume significant time, typically more than an hour per day, and cause distress or impairment in functioning.",
+        "criteria": "Specifiers:\n• With good or fair insight.\n• With poor insight.\n• With absent insight/delusional beliefs.\n• Tic-related.\n\nDiagnostic Features:\n• Obsessions: Unwanted and intrusive thoughts, images, or urges that cause significant anxiety or distress.\n• Compulsions: Repeated behaviors (e.g., checking, washing) or mental acts (e.g., counting, praying) performed to neutralize obsessions or reduce anxiety.\n\nAssociated Features:\n• Avoidance of triggers for obsessions.\n• High levels of distress in interpersonal or occupational functioning.\n\nPrevalence:\n• 1.2% annually, slightly higher prevalence in females.\n\nDevelopment and Course:\n• Onset typically occurs in adolescence or early adulthood.\n• Chronic course with waxing and waning symptoms.\n\nRisk and Prognostic Factors:\n• Temperamental: Internalizing symptoms and behavioral inhibition.\n• Genetic and physiological: First-degree relatives have increased risk; linked to hyperactivity in specific brain circuits.\n\nCulture-Related Diagnostic Issues:\n• Symptom content may vary by culture (e.g., contamination concerns in one culture vs. religious fears in another).\n\nSex- and Gender-Related Diagnostic Issues:\n• Males have earlier onset and more tic-related OCD; females have higher prevalence in adulthood.",
+        "id": 59,
+        "category_id": 6,
+        "cluster_id": null
+    },
+    {
+        "name": "Body Dysmorphic Disorder (BDD)",
+        "description": "Body Dysmorphic Disorder involves preoccupation with perceived physical defects or flaws that are not observable or appear minor to others. Individuals engage in repetitive behaviors (e.g., mirror checking) or mental acts (e.g., comparing appearances) that significantly impact daily functioning.",
+        "criteria": "Specifiers:\n• With muscle dysmorphia.\n• With good or fair insight.\n• With poor insight.\n• With absent insight/delusional beliefs.\n\nDiagnostic Features:\n• Preoccupation with perceived flaws in appearance.\n• Repetitive behaviors or mental acts related to appearance concerns.\n\nAssociated Features:\n• High levels of shame, social anxiety, and avoidance of social situations.\n• High comorbidity with major depressive disorder.\n\nPrevalence:\n• 2.4%, slightly higher in females.\n\nDevelopment and Course:\n• Onset typically occurs in adolescence, coinciding with physical changes.\n• Chronic if untreated.\n\nRisk and Prognostic Factors:\n• Environmental: History of abuse or neglect.\n• Genetic and physiological: Increased risk in first-degree relatives.\n\nCulture-Related Diagnostic Issues:\n• Cultural values influence specific concerns (e.g., skin tone or body size).\n\nSex- and Gender-Related Diagnostic Issues:\n• Males often focus on muscle dysmorphia; females may focus on weight or skin.",
+        "id": 60,
+        "category_id": 6,
+        "cluster_id": null
+    },
+    {
+        "name": "Hoarding Disorder",
+        "description": "Hoarding Disorder is characterized by persistent difficulty discarding possessions, regardless of value, due to a perceived need to save them. The resulting clutter significantly disrupts living spaces and daily functioning.",
+        "criteria": "Specifiers:\n• With excessive acquisition.\n• With good or fair insight.\n• With poor insight.\n• With absent insight/delusional beliefs.\n\nDiagnostic Features:\n• Difficulty discarding possessions leading to cluttered living spaces.\n• Significant distress or impairment due to hoarding behaviors.\n\nAssociated Features:\n• Indecisiveness, perfectionism, and avoidance behaviors.\n• Risk of falls, poor sanitation, and fire hazards.\n\nPrevalence:\n• 2–6%, higher in males in community samples but more females in clinical settings.\n\nDevelopment and Course:\n• Symptoms begin early in life but worsen with age.\n• Chronic course without treatment.\n\nRisk and Prognostic Factors:\n• Temperamental: Indecisiveness is a key factor.\n• Environmental: Traumatic or stressful life events.\n\nCulture-Related Diagnostic Issues:\n• The perceived value of possessions may vary by culture.\n\nSex- and Gender-Related Diagnostic Issues:\n• Females report more excessive acquisition; males have higher prevalence in studies.",
+        "id": 61,
+        "category_id": 6,
+        "cluster_id": null
+    },
+    {
+        "name": "Trichotillomania (Hair-Pulling Disorder)",
+        "description": "Trichotillomania is characterized by recurrent hair-pulling, resulting in hair loss, with repeated attempts to stop. It leads to significant distress or functional impairment.",
+        "criteria": "Specifiers:\n• None.\n\nDiagnostic Features:\n• Recurrent pulling out of hair.\n• Efforts to decrease or stop the behavior.\n\nAssociated Features:\n• Preference for specific hair types.\n• Engaging in hair-related rituals (e.g., chewing or inspecting hair).\n\nPrevalence:\n• 1–2%, more common in females.\n\nDevelopment and Course:\n• Onset typically during puberty.\n• Chronic if untreated, with periods of remission.\n\nRisk and Prognostic Factors:\n• Temperamental: High stress or tension.\n• Genetic and physiological: Elevated prevalence in first-degree relatives.",
+        "id": 62,
+        "category_id": 6,
+        "cluster_id": null
+    },
+    {
+        "name": "Excoriation (Skin-Picking) Disorder",
+        "description": "Excoriation Disorder involves recurrent skin-picking that results in skin lesions, with repeated attempts to stop. The behavior causes significant distress or impairment.",
+        "criteria": "Specifiers:\n• None.\n\nDiagnostic Features:\n• Recurrent picking at skin, leading to lesions.\n• Efforts to stop the behavior.\n\nAssociated Features:\n• Focus on specific areas, such as the face.\n• High comorbidity with OCD and depression.\n\nPrevalence:\n• 1.4–5.4%, higher in females.\n\nDevelopment and Course:\n• Onset often occurs in adolescence.\n• Chronic course with waxing and waning symptoms.\n\nRisk and Prognostic Factors:\n• Temperamental: Perfectionism and emotional regulation difficulties.",
+        "id": 63,
+        "category_id": 6,
+        "cluster_id": null
+    },
+    {
+        "name": "Substance/Medication-Induced Obsessive-Compulsive and Related Disorder",
+        "description": "This disorder involves obsessive-compulsive symptoms caused directly by substance intoxication, withdrawal, or medication use.",
+        "criteria": "Specifiers:\n• With onset during intoxication.\n• With onset during withdrawal.\n• With onset after medication use.\n\nDiagnostic Features:\n• Obsessive-compulsive symptoms related to substance use.\n• Symptoms develop after exposure to a substance or medication.",
+        "id": 64,
+        "category_id": 6,
+        "cluster_id": null
+    },
+    {
+        "name": "Obsessive-Compulsive and Related Disorder Due to Another Medical Condition",
+        "description": "This disorder involves obsessive-compulsive symptoms that are directly caused by a medical condition (e.g., neurological disorder).",
+        "criteria": "Specifiers:\n• With obsessive-compulsive symptoms.\n• With appearance preoccupations.\n• With hoarding symptoms.\n• With hair-pulling symptoms.\n• With skin-picking symptoms.\n\nDiagnostic Features:\n• Symptoms are directly attributable to a medical condition.",
+        "id": 65,
+        "category_id": 6,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Obsessive-Compulsive and Related Disorder",
+        "description": "This category applies to conditions with significant obsessive-compulsive symptoms that do not meet the criteria for specific disorders (e.g., obsessional jealousy or body-focused repetitive behaviors).",
+        "criteria": "",
+        "id": 66,
+        "category_id": 6,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Obsessive-Compulsive and Related Disorder",
+        "description": "This category applies to cases where obsessive-compulsive symptoms cause distress or impairment but do not meet full criteria for a specific disorder, and the clinician chooses not to specify the reason.",
+        "criteria": "",
+        "id": 67,
+        "category_id": 6,
+        "cluster_id": null
+    },
+    {
+        "name": "Reactive Attachment Disorder (RAD)",
+        "description": "Reactive Attachment Disorder (RAD) occurs in children who have experienced extreme neglect or insufficient caregiving during early development. These children fail to form healthy emotional attachments to their primary caregivers. The disorder is characterized by emotionally withdrawn behavior toward caregivers and minimal emotional responsiveness.",
+        "criteria": "Specifiers:\n• None.\n\nDiagnostic Features:\n• Consistent pattern of inhibited, emotionally withdrawn behavior toward adult caregivers.\n• Rarely seeks or responds to comfort when distressed.\n• Persistent social and emotional disturbance, including minimal social and emotional responsiveness, limited positive affect, and episodes of unexplained irritability or fearfulness.\n• History of insufficient care (e.g., neglect, frequent changes in caregivers, institutional upbringing).\n\nAssociated Features:\n• Developmental delays, especially in cognitive and language development.\n• Stereotypies or other signs of severe neglect.\n\nPrevalence:\n• Rare, though more common in populations exposed to extreme neglect.\n\nDevelopment and Course:\n• Onset typically occurs before age 5. Symptoms may persist without appropriate intervention, though they are unlikely to emerge after this age.\n\nRisk and Prognostic Factors:\n• Environmental: Extreme neglect, frequent changes in caregivers, institutional care.\n\nCulture-Related Diagnostic Issues:\n• Attachment behaviors vary across cultures; symptoms should be assessed relative to cultural norms.\n\nSex- and Gender-Related Diagnostic Issues:\n• No significant differences in prevalence between boys and girls.",
+        "id": 68,
+        "category_id": 7,
+        "cluster_id": null
+    },
+    {
+        "name": "Disinhibited Social Engagement Disorder (DSED)",
+        "description": "Disinhibited Social Engagement Disorder (DSED) involves a pattern of behavior in which a child actively approaches and interacts with unfamiliar adults in a socially disinhibited manner. This disorder results from inadequate caregiving or neglect during early development.",
+        "criteria": "Specifiers:\n• None.\n\nDiagnostic Features:\n• Reduced or absent fear in approaching unfamiliar adults.\n• Overly familiar verbal or physical behavior inconsistent with cultural norms.\n• Diminished checking back with caregivers in unfamiliar settings.\n• Willingness to go with unfamiliar adults without hesitation.\n• History of insufficient care, such as neglect, deprivation, or frequent changes in caregivers.\n\nAssociated Features:\n• May co-occur with developmental delays, particularly in cognition and language.\n\nPrevalence:\n• Rare but seen in 20% of children raised in high-risk settings like orphanages.\n\nDevelopment and Course:\n• Can persist even after placement in a stable caregiving environment.\n\nRisk and Prognostic Factors:\n• Environmental: Severe social neglect during early childhood.\n\nCulture-Related Diagnostic Issues:\n• Social norms about appropriate behavior toward strangers must be considered in diagnosis.\n\nSex- and Gender-Related Diagnostic Issues:\n• Prevalence is similar in boys and girls.",
+        "id": 69,
+        "category_id": 7,
+        "cluster_id": null
+    },
+    {
+        "name": "Posttraumatic Stress Disorder (PTSD)",
+        "description": "Posttraumatic Stress Disorder (PTSD) develops following exposure to a traumatic event involving actual or threatened death, serious injury, or sexual violence. It is characterized by intrusive symptoms, avoidance of trauma-related stimuli, negative changes in cognition and mood, and increased arousal.",
+        "criteria": "Specifiers:\n• With dissociative symptoms (depersonalization or derealization).\n• With delayed expression.\n\nDiagnostic Features:\n• Intrusion symptoms (e.g., flashbacks, distressing memories).\n• Avoidance of reminders of the trauma.\n• Negative alterations in cognition and mood (e.g., persistent negative beliefs, inability to experience positive emotions).\n• Arousal symptoms (e.g., hypervigilance, sleep disturbances).\n\nAssociated Features:\n• Relationship difficulties, anger, and guilt.\n• Elevated risk of suicide.\n\nPrevalence:\n• Lifetime prevalence is approximately 8.7%.\n\nDevelopment and Course:\n• Symptoms typically emerge within three months of trauma but can appear later.\n\nRisk and Prognostic Factors:\n• Temperamental: Preexisting anxiety or depression.\n• Environmental: Prolonged exposure to trauma.\n• Genetic and physiological: Genetic vulnerabilities, smaller hippocampal volume.\n\nCulture-Related Diagnostic Issues:\n• Expression of distress may vary by culture.\n\nSex- and Gender-Related Diagnostic Issues:\n• More common in females, often associated with sexual assault.",
+        "id": 70,
+        "category_id": 7,
+        "cluster_id": null
+    },
+    {
+        "name": "Acute Stress Disorder (ASD)",
+        "description": "Acute Stress Disorder (ASD) involves the development of PTSD-like symptoms immediately following a traumatic event. Symptoms occur within three days to one month of the trauma and include intrusive thoughts, avoidance, negative mood, dissociation, and hyperarousal.",
+        "criteria": "Specifiers:\n• None.\n\nDiagnostic Features:\n• Exposure to a traumatic event.\n• Symptoms from five categories: intrusion, negative mood, dissociation, avoidance, and arousal.\n• Symptoms cause distress or functional impairment.\n\nPrevalence:\n• Varies depending on the trauma; higher in interpersonal violence.\n\nDevelopment and Course:\n• Symptoms typically begin immediately after the trauma and resolve within a month.\n\nRisk and Prognostic Factors:\n• Temperamental: High emotional reactivity.\n• Environmental: Severe trauma exposure.",
+        "id": 71,
+        "category_id": 7,
+        "cluster_id": null
+    },
+    {
+        "name": "Adjustment Disorders",
+        "description": "Adjustment Disorders involve emotional or behavioral symptoms in response to an identifiable stressor. Symptoms develop within three months of the stressor and cause significant distress or functional impairment.",
+        "criteria": "Specifiers:\n• With depressed mood.\n• With anxiety.\n• With mixed anxiety and depressed mood.\n• With disturbance of conduct.\n• With mixed disturbance of emotions and conduct.\n• Unspecified.\n\nDiagnostic Features:\n• Development of symptoms in response to a stressor.\n• Symptoms exceed what would be expected based on cultural norms.\n\nPrevalence:\n• Common, though precise prevalence rates are unclear.\n\nDevelopment and Course:\n• Symptoms begin shortly after the stressor and resolve within six months after the stressor ends.",
+        "id": 72,
+        "category_id": 7,
+        "cluster_id": null
+    },
+    {
+        "name": "Prolonged Grief Disorder",
+        "description": "Prolonged Grief Disorder involves intense and persistent grief following the death of a loved one. The grieving process is prolonged, and symptoms include preoccupation with the deceased, emotional numbness, and functional impairment.",
+        "criteria": "Specifiers:\n• None.\n\nDiagnostic Features:\n• Persistent yearning for the deceased.\n• Difficulty moving forward with life.\n• Significant impairment in functioning.\n\nPrevalence:\n• Approximately 10% of bereaved individuals.\n\nDevelopment and Course:\n• Symptoms persist for at least 12 months (6 months in children).",
+        "id": 73,
+        "category_id": 7,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Trauma- and Stressor-Related Disorder",
+        "description": "This category applies to trauma- and stressor-related disorders that cause significant distress but do not meet the full criteria for specific disorders (e.g., adjustment-like disorders or cultural syndromes).",
+        "criteria": "",
+        "id": 74,
+        "category_id": 7,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Trauma- and Stressor-Related Disorder",
+        "description": "This category applies to trauma- and stressor-related presentations that cause significant distress or impairment but do not meet the criteria for a specific diagnosis, and the clinician chooses not to specify the reasons.",
+        "criteria": "",
+        "id": 75,
+        "category_id": 7,
+        "cluster_id": null
+    },
+    {
+        "name": "Dissociative Identity Disorder (DID)",
+        "description": "Dissociative Identity Disorder (DID) is characterized by the presence of two or more distinct personality states or identities, often accompanied by memory gaps regarding daily events, personal information, or traumatic experiences. These alternate identities may have their own unique behaviors, memories, and ways of interacting with the world.",
+        "criteria": "Specifiers:\n• None.\n\nDiagnostic Features:\n• Disruption of identity involving marked discontinuity in sense of self and alterations in behavior, consciousness, memory, perception, and motor functioning.\n• Gaps in recall of everyday events, personal information, or traumatic events inconsistent with ordinary forgetfulness.\n• Symptoms cause significant distress or impairment in social, occupational, or other areas of functioning.\n\nAssociated Features:\n• Often associated with severe and prolonged trauma in childhood.\n• High rates of comorbidity with PTSD, depression, anxiety, and substance use disorders.\n• Reports of dissociative flashbacks, self-injury, or suicidal behaviors are common.\n\nPrevalence:\n• Prevalence estimates range from 1.5% in the general population to 3% in clinical settings.\n\nDevelopment and Course:\n• Onset often occurs in childhood, though symptoms may not be recognized until later in life.\n• Symptoms may worsen during periods of stress or trauma.\n\nRisk and Prognostic Factors:\n• Environmental: Severe childhood abuse or neglect.\n• Genetic and physiological: Increased suggestibility or hypnotizability may increase vulnerability.\n\nCulture-Related Diagnostic Issues:\n• Presentation may vary; in some cultures, symptoms may be mistaken for possession states.\n\nSex- and Gender-Related Diagnostic Issues:\n• More commonly diagnosed in females; males may exhibit more externalizing behaviors.",
+        "id": 76,
+        "category_id": 8,
+        "cluster_id": null
+    },
+    {
+        "name": "Dissociative Amnesia",
+        "description": "Dissociative Amnesia is characterized by an inability to recall important personal information, usually of a traumatic or stressful nature, that cannot be explained by ordinary forgetfulness. It may involve localized, selective, or generalized amnesia.",
+        "criteria": "Specifiers:\n• With dissociative fugue: Sudden, unexpected travel away from home or workplace with amnesia for identity or important personal information.\n\nDiagnostic Features:\n• Inability to recall autobiographical information, often related to trauma or stress.\n• Memory loss is inconsistent with ordinary forgetting and does not result from substance use, neurological conditions, or other medical issues.\n\nAssociated Features:\n• May co-occur with PTSD, depression, or suicidal ideation.\n• Individuals may be unaware of memory gaps until confronted with evidence of forgotten events.\n\nPrevalence:\n• Lifetime prevalence is approximately 1.8%.\n\nDevelopment and Course:\n• Onset is usually sudden, often following a traumatic or stressful event.\n• Amnesia may resolve spontaneously or persist for extended periods.\n\nRisk and Prognostic Factors:\n• Environmental: Trauma or severe stress.\n• Cultural: Stigmatized views of mental illness may delay diagnosis.",
+        "id": 77,
+        "category_id": 8,
+        "cluster_id": null
+    },
+    {
+        "name": "Depersonalization/Derealization Disorder",
+        "description": "Depersonalization/Derealization Disorder involves persistent or recurrent experiences of feeling detached from oneself (depersonalization) or from one’s surroundings (derealization). While individuals remain aware that their experiences are not real, they find them highly distressing.",
+        "criteria": "Specifiers:\n• None.\n\nDiagnostic Features:\n• Depersonalization: Feeling like an outside observer of one’s own thoughts, feelings, or actions.\n• Derealization: Experiencing the environment as unreal, dreamlike, or distorted.\n• Reality testing remains intact.\n\nAssociated Features:\n• May co-occur with anxiety, depression, or trauma-related disorders.\n• Symptoms can be triggered or worsened by stress, sleep deprivation, or substance use.\n\nPrevalence:\n• Lifetime prevalence is approximately 2%.\n\nDevelopment and Course:\n• Onset is most common in adolescence or early adulthood.\n• Symptoms may be episodic or chronic, with varying severity.\n\nRisk and Prognostic Factors:\n• Environmental: Severe stress or trauma.\n• Temperamental: High levels of harm avoidance or emotional sensitivity.\n\nCulture-Related Diagnostic Issues:\n• Experiences of dissociation may be normal or culturally sanctioned in some contexts (e.g., meditation, religious rituals).",
+        "id": 78,
+        "category_id": 8,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Dissociative Disorder",
+        "description": "This category applies to dissociative symptoms causing significant distress or impairment but not meeting full criteria for specific dissociative disorders. Clinicians specify the presentation, such as dissociative trance or incomplete DID symptoms.",
+        "criteria": "Examples:\n• Chronic identity disturbance without fully meeting criteria for DID.\n• Dissociative states during cultural rituals or possession states causing impairment.\n• Acute dissociative reactions to stress lasting longer than typical.",
+        "id": 79,
+        "category_id": 8,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Dissociative Disorder",
+        "description": "Unspecified Dissociative Disorder includes dissociative symptoms that cause significant distress or impairment but do not meet the full criteria for any specific dissociative disorder. This diagnosis is used when the clinician chooses not to specify the reasons.",
+        "criteria": "",
+        "id": 80,
+        "category_id": 8,
+        "cluster_id": null
+    },
+    {
+        "name": "Somatic Symptom Disorder",
+        "description": "Somatic Symptom Disorder is characterized by one or more somatic symptoms that cause significant distress or functional impairment. These symptoms are often accompanied by excessive thoughts, feelings, or behaviors related to the symptoms, leading to persistent preoccupation with health concerns. The focus is on the individual's response to the symptoms rather than the presence of a medical explanation.",
+        "criteria": "Specifiers:\n• With predominant pain: Somatic symptoms primarily involve pain.\n• Persistent: Severe symptoms, marked impairment, and a duration of more than 6 months.\n• Severity: Mild, moderate, or severe, based on the extent of cognitive, emotional, and behavioral involvement.\n\nDiagnostic Features:\n• Somatic symptoms are distressing or disrupt daily life.\n• Excessive thoughts, feelings, or behaviors related to the somatic symptoms, including:\n  o Disproportionate and persistent thoughts about the seriousness of the symptoms.\n  o High levels of health-related anxiety.\n  o Excessive time and energy devoted to health concerns.\n• Symptoms may fluctuate but persist for more than 6 months.\n\nAssociated Features:\n• Frequent medical visits or seeking of multiple opinions.\n• Co-occurring anxiety and depressive disorders.\n• Increased sensitivity to bodily sensations.\n\nPrevalence:\n• Estimated prevalence is 5%–7% in the general population.\n\nDevelopment and Course:\n• Onset is most common in adolescence or early adulthood.\n• Symptoms and distress may wax and wane but persist over time.\n\nRisk and Prognostic Factors:\n• Temperamental: High levels of negative affectivity.\n• Environmental: Childhood adversity, abuse, or chronic illness exposure.\n• Cultural: Differences in symptom expression across cultures.",
+        "id": 81,
+        "category_id": 9,
+        "cluster_id": null
+    },
+    {
+        "name": "Illness Anxiety Disorder",
+        "description": "Illness Anxiety Disorder involves excessive worry about having or developing a serious illness despite minimal or no somatic symptoms. Individuals may exhibit health-related behaviors such as frequent checking or avoidance of medical care due to fear of diagnosis.",
+        "criteria": "Specifiers:\n• Care-seeking type: Frequent medical visits and tests.\n• Care-avoidant type: Avoidance of healthcare despite health concerns.\n\nDiagnostic Features:\n• Preoccupation with having or acquiring a serious illness.\n• High health anxiety, often without significant somatic symptoms.\n• Repeated health-related behaviors (e.g., checking) or avoidance of medical care.\n• Preoccupation persists for at least 6 months.\n\nAssociated Features:\n• Misinterpretation of normal bodily sensations as signs of illness.\n• Frequent internet searches about symptoms and diseases.\n\nPrevalence:\n• Estimated prevalence is 1.3%–10% in the general population.\n\nDevelopment and Course:\n• Onset often occurs in early to middle adulthood.\n• May follow a waxing-and-waning course.\n\nRisk and Prognostic Factors:\n• Environmental: High rates of stress and exposure to severe illness in others.\n• Temperamental: Tendency toward anxiety or preoccupation with health.",
+        "id": 82,
+        "category_id": 9,
+        "cluster_id": null
+    },
+    {
+        "name": "Functional Neurological Symptom Disorder (Conversion Disorder)",
+        "description": "Functional Neurological Symptom Disorder, or Conversion Disorder, involves one or more neurological symptoms (e.g., motor, sensory, or seizure-like) that are inconsistent with known medical or neurological conditions. Symptoms are not intentionally produced and cause significant distress or functional impairment.",
+        "criteria": "Specifiers:\n• Symptom type: Motor, sensory, or mixed symptoms.\n• Acute episode: Symptoms present for less than 6 months.\n• Persistent: Symptoms lasting 6 months or more.\n• With psychological stressor: Identified precipitating stressor.\n• Without psychological stressor: No obvious stressor identified.\n\nDiagnostic Features:\n• Symptoms do not conform to typical neurological patterns.\n• Examination findings are inconsistent with a medical condition.\n• Symptoms cause distress or impairment.\n\nAssociated Features:\n• High rates of comorbid anxiety, depression, and trauma history.\n• La belle indifférence: Lack of concern about symptoms in some individuals.\n\nPrevalence:\n• Estimated at 2%–5% in neurological clinics.\n\nDevelopment and Course:\n• Symptoms may appear suddenly after stress or trauma.\n• Symptoms are often transient but may become chronic in some cases.\n\nRisk and Prognostic Factors:\n• Environmental: Physical or sexual abuse, trauma.\n• Temperamental: Maladaptive personality traits.\n• Cultural: Symptom expression varies by cultural context.",
+        "id": 83,
+        "category_id": 9,
+        "cluster_id": null
+    },
+    {
+        "name": "Psychological Factors Affecting Other Medical Conditions",
+        "description": "This disorder involves psychological or behavioral factors that adversely affect a diagnosed medical condition by influencing its course, treatment adherence, or overall prognosis.",
+        "criteria": "Specifiers:\n• Severity: Mild, moderate, severe, or extreme, based on the level of impact on the medical condition.\n\nDiagnostic Features:\n• A medical condition is present and exacerbated by psychological or behavioral factors.\n• Examples include denial of illness, poor adherence to treatment, or stress exacerbating symptoms.\n\nAssociated Features:\n• Commonly co-occurs with mood, anxiety, or personality disorders.\n\nPrevalence:\n• Prevalence depends on the medical condition and population studied.\n\nDevelopment and Course:\n• Onset and progression depend on the interaction between psychological and medical factors.\n\nRisk and Prognostic Factors:\n• Environmental: Chronic stress or trauma.\n• Temperamental: High levels of neuroticism or health anxiety.",
+        "id": 84,
+        "category_id": 9,
+        "cluster_id": null
+    },
+    {
+        "name": "Factitious Disorder",
+        "description": "Factitious Disorder involves falsification of physical or psychological symptoms or induction of injury to oneself or another (Factitious Disorder Imposed on Another), motivated by the desire to assume a sick role. There is no external reward, unlike malingering.",
+        "criteria": "Specifiers:\n• Single episode: One-time occurrence.\n• Recurrent episodes: Two or more episodes of symptom fabrication.\n\nDiagnostic Features:\n• Intentional falsification or exaggeration of symptoms.\n• Deceptive behavior persists even without external incentives.\n• Symptoms often involve medical or psychological presentations.\n\nAssociated Features:\n• Extensive knowledge of medical terminology and procedures.\n• Frequent hospitalizations or medical visits.\n\nPrevalence:\n• Estimated prevalence is unclear but believed to be 1% in hospital settings.\n\nDevelopment and Course:\n• Onset is often in early adulthood.\n• Symptoms may persist over many years.\n\nRisk and Prognostic Factors:\n• Environmental: History of severe childhood abuse or neglect.\n• Temperamental: Personality traits associated with borderline personality disorder.",
+        "id": 85,
+        "category_id": 9,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Somatic Symptom and Related Disorder",
+        "description": "This category applies to presentations where somatic symptoms cause significant distress or impairment but do not meet full criteria for any specific somatic symptom-related disorder. The clinician specifies the reason for the diagnosis (e.g., brief somatic symptom disorder).",
+        "criteria": "",
+        "id": 86,
+        "category_id": 9,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Somatic Symptom and Related Disorder",
+        "description": "This category is used when somatic symptoms cause significant distress or impairment but insufficient information is available to make a more specific diagnosis. It is often used in emergency settings or when symptom duration is unclear.",
+        "criteria": "",
+        "id": 87,
+        "category_id": 9,
+        "cluster_id": null
+    },
+    {
+        "name": "Pica",
+        "description": "Pica is characterized by the persistent eating of non-nutritive, non-food substances inappropriate to the individual's developmental level and cultural norms. The behavior must persist for at least one month and not be part of another mental disorder where such behavior might be developmentally or culturally appropriate.",
+        "criteria": "Diagnostic Features:\n• Consumption of non-nutritive substances, such as dirt, chalk, paper, or soap.\n• Behavior occurs beyond the age where eating such substances is developmentally normal.\n• Not culturally supported or socially normative.\n\nAssociated Features:\n• Commonly associated with nutritional deficiencies (e.g., iron or zinc).\n• May occur in pregnancy, individuals with developmental disabilities, or certain cultural practices.\n\nPrevalence:\n• More common in individuals with developmental disabilities and in certain populations (e.g., pregnant women).\n\nDevelopment and Course:\n• Onset can occur in childhood, adolescence, or adulthood.\n• Behavior often remits spontaneously but may persist if untreated.\n\nRisk and Prognostic Factors:\n• Environmental: Neglect, lack of supervision, or food insecurity.\n• Medical: Nutritional deficiencies or other medical conditions.\n\nCulture-Related Diagnostic Issues:\n• Cultural norms regarding the ingestion of non-food substances vary widely and must be considered during diagnosis.",
+        "id": 88,
+        "category_id": 10,
+        "cluster_id": null
+    },
+    {
+        "name": "Rumination Disorder",
+        "description": "Rumination Disorder involves the repeated regurgitation of food, which may be re-chewed, re-swallowed, or spit out. This behavior persists for at least one month and is not due to a medical condition or other eating disorders.",
+        "criteria": "Diagnostic Features:\n• Regurgitation occurs shortly after eating, without nausea or disgust.\n• Not attributable to a medical condition like gastroesophageal reflux.\n• Causes significant distress or impairment in social or occupational functioning.\n\nAssociated Features:\n• May lead to malnutrition, weight loss, or growth issues.\n• More common in infants, children, and individuals with intellectual disabilities.\n\nPrevalence:\n• Prevalence is unclear but believed to be higher in individuals with developmental disabilities.\n\nDevelopment and Course:\n• Onset is often in infancy but may occur at any age.\n• In infants, rumination may stop spontaneously or persist into childhood if untreated.\n\nRisk and Prognostic Factors:\n• Environmental: Neglect or lack of stimulation in infants.\n• Medical: Concurrent gastrointestinal issues.",
+        "id": 89,
+        "category_id": 10,
+        "cluster_id": null
+    },
+    {
+        "name": "Avoidant/Restrictive Food Intake Disorder (ARFID)",
+        "description": "ARFID is characterized by an avoidance of food intake leading to significant nutritional deficiencies, weight loss, or dependence on enteral feeding or nutritional supplements. The behavior is not due to lack of food availability or cultural practices.",
+        "criteria": "Diagnostic Features:\n• Avoidance based on sensory characteristics, lack of interest in food, or fear of choking/vomiting.\n• Results in significant nutritional deficits or psychosocial impairment.\n\nAssociated Features:\n• Commonly co-occurs with anxiety disorders, autism spectrum disorder, or obsessive-compulsive traits.\n• Physical signs include malnutrition and growth issues.\n\nPrevalence:\n• Estimated prevalence is unclear but likely more common in children and adolescents.\n\nDevelopment and Course:\n• Onset often occurs in childhood and may persist into adulthood if untreated.\n\nRisk and Prognostic Factors:\n• Temperamental: High sensory sensitivity or fearfulness.\n• Environmental: Parental anxiety about feeding or early traumatic experiences related to eating.",
+        "id": 90,
+        "category_id": 10,
+        "cluster_id": null
+    },
+    {
+        "name": "Anorexia Nervosa",
+        "description": "Anorexia Nervosa is marked by a persistent restriction of energy intake, leading to significantly low body weight. It involves an intense fear of gaining weight and a distorted body image.",
+        "criteria": "Specifiers:\n• Restricting Type: Weight loss achieved through dieting, fasting, or excessive exercise.\n• Binge-Eating/Purging Type: Episodes of binge eating or purging behaviors.\n• Severity: Based on BMI (e.g., mild, moderate, severe, extreme).\n\nAssociated Features:\n• Amenorrhea, cold intolerance, dry skin, hair loss, or lanugo (fine body hair).\n• High levels of perfectionism and obsessive-compulsive traits.\n\nPrevalence:\n• Lifetime prevalence of approximately 0.4% among females; less common in males.\n\nDevelopment and Course:\n• Onset typically occurs in adolescence or early adulthood.\n• Chronic course with periods of remission and relapse.\n\nRisk and Prognostic Factors:\n• Temperamental: Perfectionism or obsessive traits.\n• Environmental: Sociocultural emphasis on thinness.\n• Genetic/Physiological: Familial history of eating disorders or mood disorders.\n\nCulture-Related Diagnostic Issues:\n• Preoccupation with thinness varies across cultures.\n\nSex- and Gender-Related Diagnostic Issues:\n• More prevalent in females, though males may also present with excessive exercise behaviors.",
+        "id": 91,
+        "category_id": 10,
+        "cluster_id": null
+    },
+    {
+        "name": "Bulimia Nervosa",
+        "description": "Bulimia Nervosa involves recurrent binge-eating episodes followed by inappropriate compensatory behaviors (e.g., vomiting, excessive exercise). These behaviors occur at least once a week for three months and are associated with a preoccupation with body weight and shape.",
+        "criteria": "Specifiers:\n• Severity: Based on frequency of compensatory behaviors (e.g., mild, moderate, severe, extreme).\n\nAssociated Features:\n• Tooth enamel erosion, gastrointestinal issues, and electrolyte imbalances.\n• Impulsivity and emotional instability.\n\nPrevalence:\n• Lifetime prevalence of 1%–1.5% among females; less common in males.\n\nDevelopment and Course:\n• Onset is typically in late adolescence or early adulthood.\n• Can persist chronically or remit with treatment.\n\nRisk and Prognostic Factors:\n• Temperamental: Impulsivity or negative emotionality.\n• Environmental: Dieting or sociocultural pressures.\n• Genetic/Physiological: Family history of eating disorders.",
+        "id": 92,
+        "category_id": 10,
+        "cluster_id": null
+    },
+    {
+        "name": "Binge-Eating Disorder",
+        "description": "Binge-Eating Disorder is characterized by recurrent episodes of binge eating without compensatory behaviors. Episodes involve consuming large quantities of food in a short period, accompanied by feelings of loss of control and distress.",
+        "criteria": "Specifiers:\n• Severity: Based on the frequency of binge-eating episodes (e.g., mild, moderate, severe, extreme).\n\nAssociated Features:\n• High rates of obesity, depression, and anxiety.\n• Physical complications, such as hypertension and diabetes.\n\nPrevalence:\n• Lifetime prevalence is 1.6% for females and 0.8% for males.\n\nDevelopment and Course:\n• Onset typically occurs in adolescence or early adulthood.\n• Often associated with chronic dieting.\n\nRisk and Prognostic Factors:\n• Temperamental: Emotional instability.\n• Environmental: History of dieting or adverse childhood experiences.\n• Genetic/Physiological: Familial tendency toward eating disorders.",
+        "id": 93,
+        "category_id": 10,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Feeding or Eating Disorder",
+        "description": "This category is used when feeding or eating symptoms cause significant distress or impairment but do not meet full criteria for specific disorders. Examples include atypical anorexia nervosa or purging disorder.",
+        "criteria": "",
+        "id": 94,
+        "category_id": 10,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Feeding or Eating Disorder",
+        "description": "This category is used when feeding or eating symptoms cause significant distress or impairment but do not meet the criteria for a specific disorder, and insufficient information is available to make a more specific diagnosis.",
+        "criteria": "",
+        "id": 95,
+        "category_id": 10,
+        "cluster_id": null
+    },
+    {
+        "name": "Enuresis",
+        "description": "Enuresis is characterized by repeated, voluntary or involuntary voiding of urine into bed or clothes. It is diagnosed when this behavior occurs at least twice a week for three consecutive months, or when it causes significant distress or impairment. Enuresis may occur during the day (diurnal), night (nocturnal), or both.",
+        "criteria": "Specifiers:\n• Nocturnal Only: Occurs exclusively during nighttime sleep.\n• Diurnal Only: Occurs during waking hours.\n• Nocturnal and Diurnal: Occurs during both waking and sleeping hours.\n\nAssociated Features:\n• Emotional distress, such as shame or embarrassment.\n• Possible avoidance of social situations like sleepovers.\n• Increased risk of psychosocial challenges.\n\nPrevalence:\n• More common in younger children, with prevalence decreasing with age.\n• Estimated to affect 5%-10% of 5-year-olds, 3%-5% of 10-year-olds, and 1% of adolescents.\n\nDevelopment and Course:\n• Most children achieve bladder control by age 4 or 5, but enuresis may persist into adolescence or adulthood if untreated.\n• Can remit spontaneously or with treatment.\n\nRisk and Prognostic Factors:\n• Genetic: Strong familial patterns; higher risk if one or both parents had enuresis.\n• Physiological: Delayed maturation of the bladder or sleep-arousal mechanisms.\n\nSex- and Gender-Related Diagnostic Issues:\n• More common in males for nocturnal enuresis, but diurnal enuresis is more evenly distributed between sexes.",
+        "id": 96,
+        "category_id": 11,
+        "cluster_id": null
+    },
+    {
+        "name": "Encopresis",
+        "description": "Encopresis involves repeated passage of feces into inappropriate places, such as clothing or the floor, either voluntarily or involuntarily. To be diagnosed, this behavior must occur at least once a month for three months and in individuals who are at least 4 years old developmentally.",
+        "criteria": "Specifiers:\n• With Constipation and Overflow Incontinence: Fecal retention leading to leakage or incontinence.\n• Without Constipation and Overflow Incontinence: Fecal incontinence unrelated to constipation.\n\nAssociated Features:\n• Shame, embarrassment, and avoidance of social interactions.\n• Possible physical discomfort, such as abdominal pain, especially in constipation cases.\n• Family stress and behavioral challenges.\n\nPrevalence:\n• Estimated at 1%–4% of 5-year-old children.\n• More common in boys than girls.\n\nDevelopment and Course:\n• Often associated with chronic constipation in young children.\n• May resolve spontaneously or with intervention.\n\nRisk and Prognostic Factors:\n• Environmental: Stressful life events or inconsistent toilet training.\n• Medical: History of painful defecation, leading to withholding behavior.\n\nSex- and Gender-Related Diagnostic Issues:\n• More common in males, particularly the subtype with constipation.",
+        "id": 97,
+        "category_id": 11,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Elimination Disorder",
+        "description": "This category applies to elimination symptoms that cause significant distress or impairment but do not meet full criteria for enuresis or encopresis. The clinician specifies the reason the presentation does not meet full criteria (e.g., \"urinary incontinence due to psychological stress\").",
+        "criteria": "",
+        "id": 98,
+        "category_id": 11,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Elimination Disorder",
+        "description": "This category applies to elimination symptoms that cause significant distress or impairment but do not meet full criteria for enuresis or encopresis. This diagnosis is used when there is insufficient information to make a more specific diagnosis.",
+        "criteria": "",
+        "id": 99,
+        "category_id": 11,
+        "cluster_id": null
+    },
+    {
+        "name": "Insomnia Disorder",
+        "description": "Insomnia Disorder is characterized by persistent difficulty initiating or maintaining sleep, or waking up too early and being unable to return to sleep. This occurs despite adequate opportunity for sleep and leads to significant distress or impairment in daily functioning.",
+        "criteria": "Diagnosis Features:\n• Sleep difficulties occur at least 3 nights per week.\n• Symptoms persist for at least 3 months.\n• The disturbance causes daytime impairment (e.g., fatigue, mood disturbance, or cognitive difficulties).\n\nAssociated Features:\n• Increased arousal or hyperactivity, even when attempting to relax.\n• Anxiety or worry about sleep.\n• Increased risk of psychiatric disorders like depression and anxiety.\n\nPrevalence:\n• Affects 10%-15% of adults chronically; more common in women and older adults.\n\nDevelopment and Course:\n• Often begins in young adulthood but may occur at any age.\n• Chronic insomnia may lead to or exacerbate other mental health disorders.\n\nRisk and Prognostic Factors:\n• Environmental: Stressful life events, noise, or environmental discomfort.\n• Physiological: Hyperarousal and poor sleep hygiene.\n\nSex- and Gender-Related Diagnostic Issues:\n• More common in women, particularly during hormonal transitions like menopause.",
+        "id": 100,
+        "category_id": 12,
+        "cluster_id": null
+    },
+    {
+        "name": "Hypersomnolence Disorder",
+        "description": "Hypersomnolence Disorder is marked by excessive sleepiness despite a main sleep period of at least 7 hours. This includes difficulty staying awake during the day or prolonged, unrefreshing sleep.",
+        "criteria": "Diagnosis Features:\n• Occurs at least 3 times per week for 3 months.\n• Daytime sleep episodes are unintended and interfere with daily functioning.\n\nSpecifiers:\n• Acute: Duration less than 1 month.\n• Subacute: Duration 1–3 months.\n• Persistent: Duration longer than 3 months.\n\nAssociated Features:\n• Cognitive impairments, including memory issues and difficulty concentrating.\n• Irritability or mood disturbances.\n\nPrevalence:\n• Affects approximately 1% of the population.\n\nDevelopment and Course:\n• Often begins in adolescence or early adulthood.\n• May develop gradually or follow a sudden onset.",
+        "id": 101,
+        "category_id": 12,
+        "cluster_id": null
+    },
+    {
+        "name": "Narcolepsy",
+        "description": "Narcolepsy is characterized by recurrent episodes of an irresistible need to sleep or lapses into sleep, often accompanied by symptoms such as cataplexy, hypocretin deficiency, or REM sleep abnormalities.",
+        "criteria": "Diagnosis Features:\n• Episodes occur at least 3 times per week for 3 months.\n• Evidence of hypocretin deficiency or reduced REM sleep latency.\n\nAssociated Features:\n• Sleep paralysis, hypnagogic or hypnopompic hallucinations.\n• Fragmented nighttime sleep.\n\nPrevalence:\n• Affects 0.02%-0.04% of the population.\n\nDevelopment and Course:\n• Typically begins in childhood or adolescence and persists throughout life.\n\nRisk and Prognostic Factors:\n• Genetic: Strong association with HLA-DQB1*06:02 genotype.",
+        "id": 102,
+        "category_id": 12,
+        "cluster_id": null
+    },
+    {
+        "name": "Obstructive Sleep Apnea Hypopnea",
+        "description": "Obstructive Sleep Apnea Hypopnea is characterized by repeated episodes of upper airway obstruction during sleep, leading to reduced airflow or pauses in breathing.",
+        "criteria": "Diagnosis Features:\n• Polysomnographic evidence of obstructive apneas or hypopneas.\n• Symptoms include snoring, gasping, or choking during sleep.\n\nAssociated Features:\n• Daytime fatigue, morning headaches, or irritability.\n• Increased risk of cardiovascular and metabolic disorders.\n\nPrevalence:\n• Estimated 2%-15% of adults.",
+        "id": 103,
+        "category_id": 12,
+        "cluster_id": null
+    },
+    {
+        "name": "Central Sleep Apnea",
+        "description": "Central Sleep Apnea involves repeated episodes of apneas caused by diminished respiratory effort during sleep.",
+        "criteria": "Specifiers:\n• Idiopathic: No known cause.\n• Cheyne-Stokes Breathing: Rhythmic fluctuations in breathing patterns.\n• Comorbid with Opioid Use: Associated with opioid use.",
+        "id": 104,
+        "category_id": 12,
+        "cluster_id": null
+    },
+    {
+        "name": "Sleep-Related Hypoventilation",
+        "description": "Sleep-Related Hypoventilation involves episodes of decreased respiration during sleep, leading to elevated blood carbon dioxide levels.",
+        "criteria": "Specifiers:\n• Idiopathic Hypoventilation.\n• Congenital Central Alveolar Hypoventilation.\n• Comorbid with Pulmonary Disease.",
+        "id": 105,
+        "category_id": 12,
+        "cluster_id": null
+    },
+    {
+        "name": "Circadian Rhythm Sleep-Wake Disorders",
+        "description": "Circadian Rhythm Sleep-Wake Disorders involve a misalignment between the individual’s sleep-wake schedule and their environment, leading to insomnia or excessive sleepiness.",
+        "criteria": "Specifiers:\n• Delayed Sleep Phase.\n• Advanced Sleep Phase.\n• Non-24-Hour Sleep-Wake Type.\n• Irregular Sleep-Wake Type.",
+        "id": 106,
+        "category_id": 12,
+        "cluster_id": null
+    },
+    {
+        "name": "Non-Rapid Eye Movement Sleep Arousal Disorders",
+        "description": "These disorders involve partial arousals from NREM sleep, often resulting in sleepwalking or night terrors.",
+        "criteria": "Specifiers:\n• Sleepwalking.\n• Sleep Terrors.",
+        "id": 107,
+        "category_id": 12,
+        "cluster_id": null
+    },
+    {
+        "name": "Nightmare Disorder",
+        "description": "Nightmare Disorder is characterized by repeated, vivid, and distressing dreams that often involve threats to survival, security, or physical integrity.",
+        "criteria": "Associated Features:\n• Difficulty returning to sleep after nightmares.\n• Emotional distress related to sleep.",
+        "id": 108,
+        "category_id": 12,
+        "cluster_id": null
+    },
+    {
+        "name": "Rapid Eye Movement Sleep Behavior Disorder",
+        "description": "REM Sleep Behavior Disorder involves vocalizations or complex motor behaviors during REM sleep, often associated with dream enactment.",
+        "criteria": "",
+        "id": 109,
+        "category_id": 12,
+        "cluster_id": null
+    },
+    {
+        "name": "Restless Legs Syndrome",
+        "description": "Restless Legs Syndrome involves an irresistible urge to move the legs, usually accompanied by uncomfortable sensations.",
+        "criteria": "",
+        "id": 110,
+        "category_id": 12,
+        "cluster_id": null
+    },
+    {
+        "name": "Substance/Medication-Induced Sleep Disorder",
+        "description": "This disorder involves significant sleep disturbances caused by substance intoxication, withdrawal, or medication use.",
+        "criteria": "",
+        "id": 111,
+        "category_id": 12,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Insomnia Disorder",
+        "description": "This diagnosis applies to insomnia symptoms that do not fully meet the criteria for Insomnia Disorder but still cause significant distress or impairment.",
+        "criteria": "",
+        "id": 112,
+        "category_id": 12,
+        "cluster_id": null
+    },
+    {
+        "name": "Delayed Ejaculation",
+        "description": "Delayed Ejaculation is characterized by a significant delay or absence of ejaculation during partnered sexual activity despite the presence of adequate sexual arousal and stimulation. This condition can cause significant distress or interpersonal difficulties.",
+        "criteria": "Diagnosis Features:\n• Marked delay in ejaculation or infrequency/absence of ejaculation.\n• Symptoms persist for at least 6 months.\n• Not better explained by another mental disorder, medical condition, substance use, or severe relational distress.\n\nAssociated Features:\n• Individuals may experience frustration or diminished sexual satisfaction.\n• Often associated with low sexual confidence.\n\nPrevalence:\n• Estimated prevalence is less than 1% in men.",
+        "id": 113,
+        "category_id": 13,
+        "cluster_id": null
+    },
+    {
+        "name": "Erectile Disorder",
+        "description": "Erectile Disorder involves persistent difficulty in obtaining or maintaining an erection during sexual activity or a marked reduction in erectile rigidity.",
+        "criteria": "Diagnosis Features:\n• Difficulty obtaining or maintaining an erection or reduced erectile rigidity on nearly all occasions of sexual activity.\n• Symptoms persist for at least 6 months.\n\nSpecifiers:\n• Lifelong or Acquired.\n• Generalized or Situational.\n\nAssociated Features:\n• Anxiety about sexual performance.\n• Avoidance of sexual situations.\n• Reduced sexual self-esteem.\n\nPrevalence:\n• Common in older men, with rates increasing with age.",
+        "id": 114,
+        "category_id": 13,
+        "cluster_id": null
+    },
+    {
+        "name": "Female Orgasmic Disorder",
+        "description": "Female Orgasmic Disorder is characterized by a significant delay, infrequency, or absence of orgasm or a reduced intensity of orgasmic sensations during sexual activity.",
+        "criteria": "Diagnosis Features:\n• Difficulty achieving orgasm in nearly all sexual activities.\n• Symptoms cause significant distress and persist for at least 6 months.\n\nSpecifiers:\n• Lifelong or Acquired.\n• Generalized or Situational.\n\nAssociated Features:\n• Often linked to feelings of inadequacy or relationship dissatisfaction.\n\nPrevalence:\n• Prevalence ranges from 10%-42% depending on definition and cultural factors.",
+        "id": 115,
+        "category_id": 13,
+        "cluster_id": null
+    },
+    {
+        "name": "Female Sexual Interest/Arousal Disorder",
+        "description": "This disorder involves a lack of, or significantly reduced, sexual interest or arousal in women, encompassing both subjective sexual interest and physical arousal responses.",
+        "criteria": "Diagnosis Features:\n• Absence or reduction in at least three of the following:\n  o Sexual thoughts or fantasies.\n  o Initiation or receptivity to sexual activity.\n  o Excitement or pleasure during sexual activity.\n  o Genital or non-genital sensations during sexual activity.\n\nSpecifiers:\n• Lifelong or Acquired.\n• Generalized or Situational.\n\nPrevalence:\n• Affects approximately 20% of women, with higher rates in postmenopausal populations.\n\nRisk Factors:\n• Biological: Hormonal changes, medical conditions.\n• Psychosocial: Relationship discord, stress.",
+        "id": 116,
+        "category_id": 13,
+        "cluster_id": null
+    },
+    {
+        "name": "Genito-Pelvic Pain/Penetration Disorder",
+        "description": "This disorder is characterized by persistent difficulties with vaginal penetration, pain during intercourse, fear or anxiety about pain, or involuntary tensing of the pelvic floor muscles during attempted penetration.",
+        "criteria": "Diagnosis Features:\n• Pain or difficulty during penetration attempts.\n• Fear or marked anxiety about vaginal penetration.\n• Tensing or tightening of the pelvic muscles.\n\nAssociated Features:\n• May be linked with sexual trauma, anxiety, or relationship issues.\n\nPrevalence:\n• Approximately 15%-20% of women report related symptoms during their lifetime.",
+        "id": 117,
+        "category_id": 13,
+        "cluster_id": null
+    },
+    {
+        "name": "Male Hypoactive Sexual Desire Disorder",
+        "description": "This disorder involves a persistent lack of sexual thoughts, fantasies, or desire for sexual activity in men, leading to significant distress or interpersonal difficulties.",
+        "criteria": "Diagnosis Features:\n• Low or absent sexual thoughts and fantasies.\n• Symptoms persist for at least 6 months.\n\nSpecifiers:\n• Lifelong or Acquired.\n• Generalized or Situational.\n\nPrevalence:\n• Rates increase with age, affecting up to 15% of men.",
+        "id": 118,
+        "category_id": 13,
+        "cluster_id": null
+    },
+    {
+        "name": "Premature (Early) Ejaculation",
+        "description": "Premature Ejaculation involves ejaculation occurring within approximately 1 minute of vaginal penetration or before the individual wishes it, leading to distress or difficulty in sexual relationships.",
+        "criteria": "Diagnosis Features:\n• Ejaculation occurring too quickly during nearly all sexual encounters.\n• Symptoms persist for at least 6 months.\n\nSpecifiers:\n• Lifelong or Acquired.\n• Generalized or Situational.\n\nPrevalence:\n• Affects approximately 20%-30% of men at some point in their lives.",
+        "id": 119,
+        "category_id": 13,
+        "cluster_id": null
+    },
+    {
+        "name": "Substance/Medication-Induced Sexual Dysfunction",
+        "description": "This disorder involves significant sexual dysfunction caused directly by substance intoxication, withdrawal, or medication effects.",
+        "criteria": "Diagnosis Features:\n• Dysfunction includes disturbances in sexual desire, arousal, or orgasm.\n• Symptoms develop soon after substance use or withdrawal.\n\nSpecifiers:\n• With Onset During Intoxication.\n• With Onset During Withdrawal.\n\nPrevalence:\n• Varies widely depending on substance or medication.",
+        "id": 120,
+        "category_id": 13,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Sexual Dysfunction",
+        "description": "This diagnosis applies to sexual dysfunctions that cause significant distress or impairment but do not meet full criteria for any specific sexual dysfunction disorder.",
+        "criteria": "Specifiers:\n• Examples include situational sexual dysfunction or sexual dysfunction due to psychological factors.",
+        "id": 121,
+        "category_id": 13,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Sexual Dysfunction",
+        "description": "Unspecified Sexual Dysfunction applies to cases where symptoms of sexual dysfunction cause distress but lack sufficient information to make a more specific diagnosis.",
+        "criteria": "",
+        "id": 122,
+        "category_id": 13,
+        "cluster_id": null
+    },
+    {
+        "name": "Gender Dysphoria in Children",
+        "description": "Gender Dysphoria in Children is characterized by a marked incongruence between a child's experienced/expressed gender and their assigned gender, lasting at least 6 months, accompanied by significant distress or impairment in functioning. It involves a strong desire to be of another gender and a rejection of traits or roles typically associated with their assigned gender.",
+        "criteria": "Diagnosis Features:\n• A marked incongruence between experienced/expressed gender and assigned gender, with at least six of the following:\n  1. Strong desire to be of another gender or insistence that one is the other gender.\n  2. Preference for wearing clothing typical of another gender and rejection of clothing associated with assigned gender.\n  3. Preference for cross-gender roles in play or activities.\n  4. Preference for toys, games, or activities typically associated with another gender.\n  5. Preference for playmates of another gender.\n  6. Rejection of assigned gender traits, including anatomy.\n  7. Strong dislike for one’s sexual anatomy.\n  8. Strong desire for the physical traits of the experienced gender.\n\nSpecifiers:\n• With a Disorder of Sex Development: Includes children with congenital adrenal hyperplasia or androgen insensitivity syndrome.\n\nAssociated Features:\n• Children may experience social isolation, anxiety, depression, or bullying.\n\nPrevalence:\n• Rare, with estimated rates of 0.005%-0.014% for natal males and 0.002%-0.003% for natal females.\n\nDevelopment and Course:\n• For many children, gender dysphoria resolves by adolescence, while for others, it persists and intensifies.\n\nRisk and Prognostic Factors:\n• Environmental: Supportive family and social environments are critical.\n• Cultural: Varying societal norms and acceptance levels influence outcomes.",
+        "id": 123,
+        "category_id": 14,
+        "cluster_id": null
+    },
+    {
+        "name": "Gender Dysphoria in Adolescents and Adults",
+        "description": "Gender Dysphoria in Adolescents and Adults is marked by a profound incongruence between an individual’s experienced/expressed gender and their assigned gender, lasting at least 6 months, causing significant distress or impairment in social, occupational, or other areas of functioning.",
+        "criteria": "Diagnosis Features:\n• A marked incongruence between experienced/expressed gender and assigned gender, with at least two of the following:\n  1. Incongruence between experienced gender and primary/secondary sex characteristics.\n  2. Desire to be rid of primary/secondary sex characteristics due to incongruence.\n  3. Desire for the primary/secondary sex characteristics of another gender.\n  4. Strong desire to be of another gender.\n  5. Desire to be treated as another gender.\n  6. Conviction of having the typical feelings and reactions of another gender.\n\nSpecifiers:\n• With a Disorder of Sex Development: Includes individuals with conditions like congenital adrenal hyperplasia.\n• Posttransition: Applicable to individuals who have transitioned and are living full-time as their experienced gender.\n\nAssociated Features:\n• Individuals may experience discrimination, social rejection, or mental health challenges like depression or anxiety.\n\nPrevalence:\n• Approximately 0.005%-0.014% in assigned males and 0.002%-0.003% in assigned females.\n\nDevelopment and Course:\n• The onset may occur in childhood or adolescence. Gender dysphoria often persists if present in adolescence.\n\nRisk and Prognostic Factors:\n• Environmental: Supportive environments improve outcomes.\n• Genetic/Biological: Hormonal influences during fetal development are implicated.\n\nCulture-Related Diagnostic Issues:\n• Diagnostic presentation and acceptance vary significantly across cultures.\n\nSex- and Gender-Related Diagnostic Issues:\n• Male-to-female transitions are more common than female-to-male transitions.",
+        "id": 124,
+        "category_id": 14,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Gender Dysphoria",
+        "description": "This category applies to cases where symptoms characteristic of gender dysphoria cause significant distress or impairment but do not fully meet the criteria for Gender Dysphoria. Clinicians specify the particular reason the full criteria are not met (e.g., symptoms of shorter duration).",
+        "criteria": "",
+        "id": 125,
+        "category_id": 14,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Gender Dysphoria",
+        "description": "Unspecified Gender Dysphoria is diagnosed when symptoms cause significant distress or impairment but insufficient information is available to make a more specific diagnosis or when symptoms do not fully meet the criteria for Gender Dysphoria.",
+        "criteria": "",
+        "id": 126,
+        "category_id": 14,
+        "cluster_id": null
+    },
+    {
+        "name": "Oppositional Defiant Disorder (ODD)",
+        "description": "Oppositional Defiant Disorder is characterized by a pattern of angry/irritable mood, argumentative/defiant behavior, or vindictiveness lasting at least 6 months, evident during interactions with at least one individual who is not a sibling. It often results in significant impairment in social, academic, or occupational functioning.",
+        "criteria": "Diagnosis Features:\n• Angry/Irritable Mood: Frequent temper outbursts, being touchy or easily annoyed, and persistent anger or resentment.\n• Argumentative/Defiant Behavior: Often argues with authority figures, actively defies or refuses to comply with requests or rules, deliberately annoys others, and blames others for mistakes.\n• Vindictiveness: Displays spiteful or vindictive behavior at least twice within the past 6 months.\n\nSpecifiers:\n• Mild: Symptoms confined to one setting (e.g., home or school).\n• Moderate: Symptoms present in at least two settings.\n• Severe: Symptoms occur in three or more settings.\n\nAssociated Features:\n• Difficulties in peer relationships and increased risk of later mood, anxiety, or substance use disorders.\n\nPrevalence:\n• Ranges from 1%-11%, with a median of approximately 3.3%.\n\nDevelopment and Course:\n• Symptoms typically appear in preschool years and rarely develop after early adolescence. Severity often decreases with age.\n\nRisk and Prognostic Factors:\n• Temperamental: Emotional dysregulation and difficulty managing frustration.\n• Environmental: Harsh or inconsistent parenting practices and exposure to adverse conditions.",
+        "id": 127,
+        "category_id": 15,
+        "cluster_id": null
+    },
+    {
+        "name": "Intermittent Explosive Disorder",
+        "description": "Intermittent Explosive Disorder is characterized by recurrent, impulsive outbursts of aggression that are disproportionate to the provocation or stressor. Episodes are not premeditated and are not committed for tangible objectives.",
+        "criteria": "Diagnosis Features:\n• Verbal or physical aggression occurring twice weekly on average for 3 months, or three behavioral outbursts causing damage, destruction, or injury within 12 months.\n• Aggression is impulsive and out of proportion to the situation.\n• Outbursts cause significant distress or impairment in functioning.\n\nAssociated Features:\n• Comorbid mood, anxiety, or substance use disorders are common.\n• Increased risk of cardiovascular and metabolic disorders.\n\nPrevalence:\n• Approximately 2.7%.\n\nDevelopment and Course:\n• Typically begins in late childhood or adolescence. Frequency of episodes may decrease with age.\n\nRisk and Prognostic Factors:\n• Temperamental: Impulsivity and emotional reactivity.\n• Environmental: Exposure to trauma or harsh environments.",
+        "id": 128,
+        "category_id": 15,
+        "cluster_id": null
+    },
+    {
+        "name": "Conduct Disorder",
+        "description": "Conduct Disorder involves a repetitive and persistent pattern of behavior in which the basic rights of others or societal norms/rules are violated. The behaviors fall into categories such as aggression, destruction of property, deceitfulness, and serious rule violations.",
+        "criteria": "Diagnosis Features:\n• Aggression to people and animals, destruction of property, deceitfulness or theft, and serious rule violations.\n\nSpecifiers:\n• With Limited Prosocial Emotions: Lack of remorse or empathy, shallow affect.\n• Onset: Childhood-onset, adolescent-onset, or unspecified onset.\n• Severity: Mild, moderate, or severe based on the number and intensity of symptoms.\n\nAssociated Features:\n• Often precedes adult antisocial personality disorder.\n• Increased risk of legal issues, substance use, and poor academic outcomes.\n\nPrevalence:\n• Varies widely but estimated at 2%-10%.\n\nDevelopment and Course:\n• Symptoms often appear as early as preschool. Childhood-onset tends to have a worse prognosis.\n\nRisk and Prognostic Factors:\n• Genetic: Familial risk for antisocial behavior.\n• Environmental: Harsh parenting, peer influences, and low socioeconomic status.",
+        "id": 129,
+        "category_id": 15,
+        "cluster_id": null
+    },
+    {
+        "name": "Pyromania",
+        "description": "Pyromania is characterized by deliberate and purposeful fire-setting on multiple occasions, accompanied by emotional arousal before the act and gratification or relief afterward.",
+        "criteria": "Diagnosis Features:\n• Repeated fire-setting with fascination or attraction to fire and its effects.\n• Fire-setting is not for personal, financial, or ideological gain.\n\nAssociated Features:\n• Individuals may show a lack of remorse or rationalize the behavior as acceptable.\n\nPrevalence:\n• Rare, with limited epidemiological data.\n\nDevelopment and Course:\n• Often begins in childhood but may persist into adulthood if untreated.\n\nRisk and Prognostic Factors:\n• Environmental: Exposure to parental neglect or abuse, association with delinquent peers.",
+        "id": 130,
+        "category_id": 15,
+        "cluster_id": null
+    },
+    {
+        "name": "Kleptomania",
+        "description": "Kleptomania is characterized by recurrent, irresistible urges to steal objects that are not needed for personal use or financial gain. The act of stealing is driven by tension relief or gratification.",
+        "criteria": "Diagnosis Features:\n• Tension before theft and pleasure or relief afterward.\n• The stealing is not an expression of anger, vengeance, or hallucinations.\n\nAssociated Features:\n• High rates of comorbid mood, anxiety, and substance use disorders.\n\nPrevalence:\n• Approximately 0.3%-0.6% of the population.\n\nDevelopment and Course:\n• Onset can occur at any age. Symptoms may fluctuate or persist over time.\n\nRisk and Prognostic Factors:\n• Temperamental: Impulsivity and emotional dysregulation.\n• Environmental: Stressful life events.",
+        "id": 131,
+        "category_id": 15,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Disruptive, Impulse-Control, and Conduct Disorder",
+        "description": "This category is used when symptoms characteristic of disruptive, impulse-control, and conduct disorders cause significant distress or impairment but do not meet the full criteria for any specific disorder. The clinician specifies the reason.",
+        "criteria": "",
+        "id": 132,
+        "category_id": 15,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Disruptive, Impulse-Control, and Conduct Disorder",
+        "description": "Unspecified Disruptive, Impulse-Control, and Conduct Disorder is diagnosed when significant symptoms are present but insufficient information is available to assign a more specific diagnosis or when symptoms do not fully meet criteria for a specific disorder.",
+        "criteria": "",
+        "id": 133,
+        "category_id": 15,
+        "cluster_id": null
+    },
+    {
+        "name": "Alcohol Use Disorder",
+        "description": "Alcohol Use Disorder (AUD) is characterized by a problematic pattern of alcohol use leading to significant distress or impairment.",
+        "criteria": "At least two of the following within a 12-month period:\n• Difficulty controlling alcohol consumption.\n• Persistent desire or unsuccessful efforts to cut down.\n• Significant time spent obtaining, using, or recovering from alcohol.\n• Craving for alcohol.\n• Recurrent alcohol use leading to failure in major obligations.\n• Continued use despite social or interpersonal problems.\n• Giving up or reducing activities due to alcohol use.\n• Use in hazardous situations.\n• Continued use despite physical or psychological problems.\n• Development of tolerance.\n• Withdrawal symptoms.",
+        "specifiers": "Severity:\n• Mild: 2–3 symptoms.\n• Moderate: 4–5 symptoms.\n• Severe: 6 or more symptoms.\n\nAdditional Specifiers:\n• In Early Remission: No criteria met for 3–12 months.\n• In Sustained Remission: No criteria met for 12 months or more.\n• Controlled Environment: Use restricted by setting.",
+        "id": 134,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Alcohol Intoxication",
+        "description": "Involves recent ingestion of alcohol causing significant behavioral or psychological changes.",
+        "criteria": "Symptoms:\n• Slurred speech.\n• Incoordination.\n• Unsteady gait.\n• Nystagmus.\n• Impairment in attention or memory.\n• Stupor or coma.",
+        "id": 135,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Alcohol Withdrawal",
+        "description": "Occurs after cessation or reduction in prolonged, heavy alcohol use.",
+        "criteria": "Symptoms:\n• Autonomic hyperactivity (e.g., sweating, tachycardia).\n• Hand tremor.\n• Insomnia.\n• Nausea or vomiting.\n• Transient hallucinations or illusions.\n• Psychomotor agitation.\n• Anxiety.\n• Seizures.",
+        "specifiers": "With Perceptual Disturbances: Hallucinations or illusions present.",
+        "id": 136,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Alcohol-Related Disorder",
+        "description": "Applies to cases where alcohol-related symptoms cause distress or impairment but do not meet full criteria for a specific disorder.",
+        "id": 137,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Caffeine Intoxication",
+        "description": "Occurs after consuming high doses of caffeine, leading to behavioral or physical symptoms.",
+        "criteria": "At least five symptoms:\n• Restlessness.\n• Nervousness.\n• Excitement.\n• Insomnia.\n• Flushed face.\n• Diuresis.\n• Gastrointestinal disturbance.\n• Muscle twitching.\n• Rambling speech or thoughts.\n• Tachycardia.\n• Psychomotor agitation.",
+        "id": 138,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Caffeine Withdrawal",
+        "description": "Occurs after cessation or reduction in prolonged caffeine consumption.",
+        "criteria": "Symptoms:\n• Headache.\n• Fatigue or drowsiness.\n• Dysphoric mood or irritability.\n• Difficulty concentrating.\n• Flu-like symptoms (e.g., nausea, muscle pain).",
+        "id": 139,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Cannabis-Related Disorder",
+        "description": "Applies to cases where cannabis-related symptoms cause distress or impairment but do not meet full criteria for a specific disorder.",
+        "id": 140,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Hallucinogen-Related",
+        "description": "This diagnosis applies to presentations where symptoms of hallucinogen-related disorders cause distress or impairment but do not meet full criteria for a specific hallucinogen-related diagnosis.",
+        "id": 141,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Phencyclidine Use Disorder",
+        "description": "Phencyclidine Use Disorder is characterized by a problematic pattern of phencyclidine (or similar substance) use leading to distress or impairment.",
+        "criteria": "Criteria are similar to those for other substance use disorders.",
+        "id": 142,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Hallucinogen Use Disorder",
+        "description": "Other Hallucinogen Use Disorder involves a problematic pattern of use of hallucinogens other than phencyclidine, leading to distress or impairment.",
+        "criteria": "Criteria are similar to those for other substance use disorders.",
+        "id": 143,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Phencyclidine Intoxication",
+        "description": "Phencyclidine Intoxication is marked by recent use of phencyclidine, leading to significant behavioral changes such as belligerence or aggression.",
+        "criteria": "Symptoms may include:\n\n• Vertical or horizontal nystagmus.\n\n• Hypertension or tachycardia.\n\n• Numbness or reduced pain sensation.\n\n• Ataxia or dysarthria.\n\n• Muscle rigidity.\n\n• Seizures or coma.",
+        "id": 144,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Hallucinogen Intoxication",
+        "description": "Intoxication from other hallucinogens presents with behavioral changes like anxiety or perceptual distortions.",
+        "criteria": "Symptoms include:\n\n• Pupil dilation.\n\n• Tachycardia.\n\n• Sweating or chills.\n\n• Tremors or incoordination.",
+        "id": 145,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Hallucinogen Persisting Perception Disorder",
+        "description": "This disorder involves re-experiencing perceptual disturbances following cessation of hallucinogen use.",
+        "criteria": "Symptoms include visual disturbances like flashes of color or geometric patterns.",
+        "id": 146,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Phencyclidine-Induced Mental Disorders",
+        "description": "Mental disturbances (e.g., psychosis, mood, or anxiety symptoms) occurring during or shortly after phencyclidine use, attributable to the substance.",
+        "criteria": "No additional criteria provided.",
+        "id": 147,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Hallucinogen-Induced Mental Disorders",
+        "description": "Mental disturbances (e.g., hallucinations, delusions, or mood symptoms) occurring during or shortly after hallucinogen use, attributable to the substance.",
+        "criteria": "No additional criteria provided.",
+        "id": 148,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Phencyclidine-Related Disorder",
+        "description": "This diagnosis applies to symptoms related to phencyclidine use that cause distress or impairment but do not meet full criteria for a specific disorder.",
+        "criteria": "No additional criteria provided.",
+        "id": 149,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Hallucinogen-Related Disorder (Substance_related_category)",
+        "description": "Unspecified Hallucinogen-Related Disorder is a diagnostic category used when symptoms associated with hallucinogen use cause clinically significant distress or impairment in social, occupational, or other important areas of functioning but do not meet the full criteria for any specific hallucinogen-related disorder. This diagnosis may be applied when there is insufficient information to make a more specific diagnosis (e.g., in emergency settings) or when the presentation does not clearly fit into another hallucinogen-related category.",
+        "criteria": "Diagnostic Features:\n\n• Symptoms must be related to hallucinogen use but do not meet the criteria for conditions like hallucinogen intoxication, hallucinogen use disorder, or hallucinogen persisting perception disorder.\n\n• Symptoms may include perceptual disturbances, mood alterations, or cognitive impairments, but these do not fulfill the complete criteria for a defined hallucinogen-related disorder.\n\nAssociated Features:\n\n• The individual may report anxiety, confusion, or distress tied to hallucinogen use.\n\n• Physical symptoms, such as pupil dilation or tachycardia, may be present but not predominant.\n\nDiagnostic Notes:\n\n• This diagnosis is used when there is a clear link to hallucinogen use, but the presentation is atypical or incomplete for other specific disorders in this category.\n\n• Clinicians should rule out other medical or mental health conditions, including substance use involving other classes of drugs.",
+        "id": 150,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Inhalant Use Disorder",
+        "description": "Inhalant Use Disorder involves a problematic pattern of inhalant use leading to distress or impairment, with criteria similar to other substance use disorders.",
+        "criteria": "No additional criteria provided.",
+        "id": 151,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Inhalant Intoxication",
+        "description": "Intoxication from inhalant use is marked by behavioral changes such as belligerence or lethargy.",
+        "criteria": "Symptoms include:\n\n• Dizziness.\n\n• Incoordination.\n\n• Slurred speech.\n\n• Euphoria or depressed reflexes.",
+        "id": 152,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Inhalant-Induced Mental Disorders",
+        "description": "Mental disturbances (e.g., mood, psychotic, or cognitive symptoms) related to inhalant use.",
+        "criteria": "No additional criteria provided.",
+        "id": 153,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Inhalant-Related Disorder",
+        "description": "This diagnosis applies to symptoms related to inhalant use that cause distress or impairment but do not meet full criteria for a specific disorder.",
+        "criteria": "No additional criteria provided.",
+        "id": 154,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Opioid Use Disorder",
+        "description": "Opioid Use Disorder involves a problematic pattern of opioid use leading to distress or impairment, with criteria similar to other substance use disorders.",
+        "criteria": "No additional criteria provided.",
+        "id": 155,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Opioid Intoxication",
+        "description": "Opioid Intoxication involves behavioral changes such as euphoria followed by apathy or impaired functioning.",
+        "criteria": "Symptoms include:\n\n• Pupil constriction.\n\n• Drowsiness or coma.\n\n• Slurred speech.",
+        "id": 156,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Opioid Withdrawal",
+        "description": "Opioid Withdrawal occurs after abrupt cessation or reduction in opioid use.",
+        "criteria": "Symptoms include:\n\n• Dysphoria.\n\n• Nausea or vomiting.\n\n• Muscle aches.\n\n• Lacrimation or rhinorrhea.\n\n• Goosebumps or sweating.\n\n• Diarrhea.\n\n• Yawning.\n\n• Fever.\n\n• Insomnia.",
+        "id": 157,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Sedative, Hypnotic, or Anxiolytic Use Disorder",
+        "description": "This disorder involves a problematic pattern of sedative, hypnotic, or anxiolytic use leading to distress or impairment, with criteria similar to other substance use disorders.",
+        "criteria": "No additional criteria provided.",
+        "id": 158,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Sedative, Hypnotic, or Anxiolytic Intoxication",
+        "description": "Intoxication involves behavioral changes like incoordination or impaired judgment.",
+        "criteria": "Symptoms include:\n\n• Slurred speech.\n\n• Unsteady gait.\n\n• Nystagmus.",
+        "id": 159,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Sedative, Hypnotic, or Anxiolytic Withdrawal",
+        "description": "Withdrawal occurs after cessation or reduction in use.",
+        "criteria": "Symptoms include:\n\n• Autonomic hyperactivity (e.g., sweating, tachycardia).\n\n• Hand tremor.\n\n• Insomnia.\n\n• Nausea or vomiting.\n\n• Psychomotor agitation.\n\n• Seizures.",
+        "id": 160,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Sedative-, Hypnotic-, or Anxiolytic-Induced Mental Disorders",
+        "description": "Sedative-, Hypnotic-, or Anxiolytic-Induced Mental Disorders involve mental health disturbances directly caused by the use, intoxication, or withdrawal of sedative, hypnotic, or anxiolytic substances. These disturbances can include mood, anxiety, psychosis, or cognitive impairments and typically resolve when the substance's effects subside.",
+        "criteria": "Diagnostic Features:\n\n• Symptoms of a mental disorder (e.g., anxiety, depression, psychosis, or memory impairment) that develop during or soon after sedative, hypnotic, or anxiolytic use or withdrawal.\n\n• The substance's involvement must be evident and temporally related to the mental disturbance.\n\n• The symptoms cannot be better explained by an independent mental disorder.",
+        "id": 161,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Sedative-, Hypnotic-, or Anxiolytic-Related Disorder",
+        "description": "Unspecified Sedative-, Hypnotic-, or Anxiolytic-Related Disorder is diagnosed when the symptoms are related to the use of sedative, hypnotic, or anxiolytic substances but do not meet the criteria for specific related disorders or there is insufficient information to make a detailed diagnosis.",
+        "criteria": "Diagnostic Features:\n\n• Symptoms linked to sedative, hypnotic, or anxiolytic use causing distress or impairment in functioning.\n\n• Symptoms do not meet the criteria for intoxication, withdrawal, or another induced mental disorder.",
+        "id": 162,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Stimulant Use Disorder",
+        "description": "Stimulant Use Disorder is a problematic pattern of stimulant use (e.g., cocaine, amphetamines) leading to significant impairment or distress, involving compulsive use, tolerance, withdrawal, and continued use despite harm.",
+        "criteria": "Specifiers:\n\n• Severity: Mild (2–3 symptoms), Moderate (4–5 symptoms), Severe (6+ symptoms).\n\n• In early remission: No criteria met for 3–12 months.\n\n• In sustained remission: No criteria met for 12+ months.\n\nDiagnostic Features:\n\n• Cravings, inability to cut down, social/occupational disruption, tolerance, and withdrawal.\n\nAssociated Features:\n\n• Weight loss, insomnia, and erratic behavior.",
+        "id": 163,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Stimulant Intoxication",
+        "description": "Stimulant Intoxication involves recent stimulant use resulting in significant behavioral or psychological changes, such as euphoria, hyperactivity, or paranoia.",
+        "criteria": "Diagnostic Features:\n\n• Physical signs: Tachycardia, hypertension, dilated pupils.\n\n• Behavioral symptoms: Aggressiveness, grandiosity, repetitive behaviors.",
+        "id": 164,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Stimulant Withdrawal",
+        "description": "Stimulant Withdrawal is characterized by psychological distress, fatigue, and physical symptoms following the cessation of prolonged stimulant use.",
+        "criteria": "Diagnostic Features:\n\n• Dysphoria, fatigue, vivid dreams, increased appetite, insomnia/hypersomnia.",
+        "id": 165,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Stimulant-Induced Mental Disorders",
+        "description": "Stimulant-Induced Mental Disorders include anxiety, psychosis, or mood disturbances resulting from stimulant intoxication or withdrawal.",
+        "criteria": "Diagnostic Features:\n\n• Symptoms resolve with the cessation of stimulant effects.\n\n• Not better explained by a primary mental health disorder.",
+        "id": 166,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Stimulant-Related Disorder",
+        "description": "This diagnosis applies when stimulant-related symptoms do not meet full criteria for a specific stimulant disorder.",
+        "criteria": "Diagnostic Features:\n\n• Symptoms of distress or dysfunction temporally linked to stimulant use.",
+        "id": 167,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Tobacco Use Disorder",
+        "description": "Tobacco Use Disorder is a problematic pattern of nicotine use leading to addiction and health complications, including tolerance and withdrawal.",
+        "criteria": "Specifiers:\n\n• Same remission criteria as Stimulant Use Disorder.\n\nDiagnostic Features:\n\n• Cravings, inability to quit despite health consequences.",
+        "id": 168,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Tobacco Withdrawal",
+        "description": "Tobacco Withdrawal involves unpleasant symptoms following cessation or reduction of tobacco use.",
+        "criteria": "Diagnostic Features:\n\n• Irritability, anxiety, difficulty concentrating, increased appetite, insomnia.",
+        "id": 169,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Tobacco-Induced Mental Disorders",
+        "description": "Tobacco-Induced Mental Disorders involve mood or anxiety disturbances caused by nicotine use or withdrawal.",
+        "criteria": "Diagnostic Features:\n\n• Temporally related to tobacco use or cessation.",
+        "id": 170,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Tobacco-Related Disorder",
+        "description": "Unspecified Tobacco-Related Disorder is used when tobacco-related symptoms cause significant impairment but do not meet criteria for specific disorders.",
+        "criteria": "Diagnostic Features:\n\n• Atypical or incomplete presentation of tobacco-related issues.",
+        "id": 171,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Other (or Unknown) Substance Use Disorder",
+        "description": "This category involves problematic use of substances not classified under other specific substance categories, leading to distress or impairment.",
+        "criteria": "No additional criteria provided.",
+        "id": 172,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Other (or Unknown) Substance Intoxication",
+        "description": "Intoxication from an unknown or unspecified substance with significant behavioral or physical changes.",
+        "criteria": "No additional criteria provided.",
+        "id": 173,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Other (or Unknown) Substance Withdrawal",
+        "description": "Withdrawal symptoms following the cessation of an unknown or unspecified substance.",
+        "criteria": "No additional criteria provided.",
+        "id": 174,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Other (or Unknown) Substance–Induced Mental Disorders",
+        "description": "Mental health symptoms caused by an unknown or unspecified substance.",
+        "criteria": "No additional criteria provided.",
+        "id": 175,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Other (or Unknown) Substance–Related Disorder",
+        "description": "Symptoms related to unknown substances that do not fit established categories but cause distress or dysfunction.",
+        "criteria": "No additional criteria provided.",
+        "id": 176,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Gambling Disorder",
+        "description": "Gambling Disorder is characterized by persistent and problematic gambling behavior leading to significant distress or impairment.",
+        "criteria": "Specifiers:\n\n• Episodic or Persistent.\n\n• Severity: Mild, Moderate, Severe.\n\nDiagnostic Features:\n\n• Preoccupation with gambling, inability to stop, chasing losses, jeopardizing relationships or work.\n\nAssociated Features:\n\n• Financial distress, deceitfulness.",
+        "id": 177,
+        "category_id": 16,
+        "cluster_id": null
+    },
+    {
+        "name": "Delirium",
+        "description": "Delirium is a disturbance in attention, awareness, and cognition that develops over a short period (hours to days) and tends to fluctuate throughout the day. It is often associated with an underlying medical condition, substance intoxication, or withdrawal.",
+        "criteria": "Specifiers:\n\n• Acute: Lasting a few hours or days.\n\n• Persistent: Lasting weeks or months.\n\n• Hyperactive, Hypoactive, or Mixed Presentation.\n\nDiagnostic Features:\n\n• Disturbance in attention and awareness.\n\n• Cognitive disturbance (e.g., memory, language, perception).\n\n• Symptoms are not better explained by another neurocognitive disorder.\n\n• Evidence of an underlying medical cause.\n\nAssociated Features:\n\n• Emotional disturbances (e.g., fear, anxiety, anger).\n\n• Sleep-wake cycle disruption.\n\nRisk Factors:\n\n• Older age.\n\n• Pre-existing brain conditions.\n\n• Substance use or withdrawal.",
+        "id": 178,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Other Specified Delirium",
+        "description": "Used when symptoms of delirium cause significant distress or impairment but do not meet the full diagnostic criteria, with the specific reason documented (e.g., subsyndromal delirium).",
+        "criteria": "No additional criteria provided.",
+        "id": 179,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Delirium",
+        "description": "Diagnosed when symptoms of delirium cause significant distress or impairment, but there is insufficient information to make a more specific diagnosis.",
+        "criteria": "No additional criteria provided.",
+        "id": 180,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Major Neurocognitive Disorder",
+        "description": "Major Neurocognitive Disorder involves significant cognitive decline from a previous level of functioning in one or more domains (e.g., memory, language, executive function), interfering with independence in daily activities.",
+        "criteria": "No additional criteria provided.",
+        "id": 181,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Mild Neurocognitive Disorder",
+        "description": "Mild Neurocognitive Disorder involves modest cognitive decline in one or more domains that do not interfere with independence but require greater effort or compensatory strategies.",
+        "criteria": "No additional criteria provided.",
+        "id": 182,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Major or Mild Neurocognitive Disorder Due to Alzheimer’s Disease",
+        "description": "A progressive neurodegenerative disorder characterized by gradual onset and continuing cognitive decline due to Alzheimer’s pathology.",
+        "criteria": "Specifiers:\n\n• With or Without Behavioral Disturbance.\n\n• Mild, Moderate, or Severe.\n\nRisk Factors:\n\n• Advanced age.\n\n• Family history of Alzheimer’s.\n\n• Genetic mutations (e.g., APOE ε4 allele).",
+        "id": 183,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Major or Mild Frontotemporal Neurocognitive Disorder",
+        "description": "Characterized by progressive decline in behavior, language, or both due to atrophy in the frontal and/or temporal lobes.",
+        "criteria": "Diagnostic Features:\n\n• Behavioral variant: Personality changes, disinhibition.\n\n• Language variant: Speech production or comprehension deficits.",
+        "id": 184,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Major or Mild Neurocognitive Disorder With Lewy Bodies",
+        "description": "A progressive disorder characterized by cognitive decline, visual hallucinations, fluctuating attention, and parkinsonian motor symptoms due to Lewy body pathology.",
+        "criteria": "No additional criteria provided.",
+        "id": 185,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Major or Mild Vascular Neurocognitive Disorder",
+        "description": "Cognitive impairment caused by vascular damage to the brain, often with abrupt onset and a stepwise decline.",
+        "criteria": "Risk Factors:\n\n• Hypertension.\n\n• Diabetes.\n\n• Stroke history.",
+        "id": 186,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Major or Mild Neurocognitive Disorder Due to Traumatic Brain Injury",
+        "description": "Cognitive impairment following significant head trauma, including symptoms such as memory loss, attention deficits, and mood changes.",
+        "criteria": "No additional criteria provided.",
+        "id": 187,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Substance/Medication-Induced Major or Mild Neurocognitive Disorder",
+        "description": "Cognitive decline caused by prolonged substance use or withdrawal, affecting memory, attention, or executive function.",
+        "criteria": "No additional criteria provided.",
+        "id": 188,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Major or Mild Neurocognitive Disorder Due to HIV Infection",
+        "description": "Cognitive impairment caused by HIV infection, often affecting attention, executive function, and motor skills.",
+        "criteria": "No additional criteria provided.",
+        "id": 189,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Major or Mild Neurocognitive Disorder Due to Prion Disease",
+        "description": "A rapidly progressive neurocognitive disorder caused by prion protein misfolding, often leading to myoclonus and ataxia.",
+        "criteria": "No additional criteria provided.",
+        "id": 190,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Major or Mild Neurocognitive Disorder Due to Parkinson’s Disease",
+        "description": "Cognitive decline in individuals with Parkinson’s disease, often with executive dysfunction and visuospatial deficits.",
+        "criteria": "No additional criteria provided.",
+        "id": 191,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Major or Mild Neurocognitive Disorder Due to Huntington’s Disease",
+        "description": "Cognitive impairment due to Huntington’s disease, involving executive dysfunction, memory loss, and psychiatric symptoms like depression.",
+        "criteria": "No additional criteria provided.",
+        "id": 192,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Major or Mild Neurocognitive Disorder Due to Another Medical Condition",
+        "description": "Cognitive decline caused by a specific medical condition (e.g., hypothyroidism, brain tumors).",
+        "criteria": "No additional criteria provided.",
+        "id": 193,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Major or Mild Neurocognitive Disorder Due to Multiple Etiologies",
+        "description": "Cognitive decline caused by a combination of factors (e.g., Alzheimer’s and vascular disease).",
+        "criteria": "No additional criteria provided.",
+        "id": 194,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Unspecified Neurocognitive Disorder",
+        "description": "Used when cognitive decline causes significant distress or impairment but does not meet the criteria for a specific neurocognitive disorder.",
+        "criteria": "No additional criteria provided.",
+        "id": 195,
+        "category_id": 17,
+        "cluster_id": null
+    },
+    {
+        "name": "Paranoid Personality Disorder",
+        "description": "Paranoid Personality Disorder is characterized by pervasive distrust and suspicion of others, interpreting their motives as malevolent. This pattern begins by early adulthood and is evident in various contexts.",
+        "criteria": "\n\n• Suspicion that others are exploiting, harming, or deceiving them without sufficient evidence.\n\n• Preoccupation with unjustified doubts about the loyalty or trustworthiness of friends or associates.\n\n• Reluctance to confide in others due to fear that information will be used maliciously.\n\n• Reading hidden threats or insults into benign remarks or events.\n\n• Persistently bearing grudges.\n\n• Quick to perceive attacks on their character or reputation and respond with anger.\n\n• Recurrent, unjustified suspicions of partner’s fidelity.\n\n\nAssociated Features:\n\n• Tend to be controlling in relationships due to fear of betrayal.\n\n• May appear cold, aloof, or argumentative.\n\nPrevalence:\n\n• Estimated at 2-4% in the general population.\n\nDevelopment and Course:\n\n• Symptoms may first appear in childhood or adolescence with solitariness, social anxiety, and hypersensitivity.\n\nRisk and Prognostic Factors:\n\n• Family history of schizophrenia increases risk.\n\nCulture-Related Diagnostic Issues:\n\n• Behavior must be outside cultural norms to diagnose.",
+        "id": 196,
+        "category_id": 18,
+        "cluster_id": 1
+    },
+    {
+        "name": "Schizoid Personality Disorder",
+        "description": "Schizoid Personality Disorder is characterized by a pervasive pattern of detachment from social relationships and a limited range of emotional expression in interpersonal settings.",
+        "criteria": "\n\n• Lack of interest in or desire for close relationships.\n\n• Preference for solitary activities.\n\n• Minimal pleasure from most activities.\n\n• Emotional coldness, detachment, or flattened affectivity.\n\n• Lack of close friends other than first-degree relatives.\n\n• Indifference to praise or criticism.\n\n• Minimal or absent sexual interest.\n\n\nAssociated Features:\n\n• May have difficulty expressing anger or reacting to life events appropriately.\n\nPrevalence:\n\n• Estimated at less than 1% in the general population.\n\nDevelopment and Course:\n\n• Symptoms often emerge in childhood or adolescence as solitariness, poor peer relationships, and underachievement.\n\nRisk Factors:\n\n• Potential increased prevalence in relatives of individuals with schizophrenia or schizotypal personality disorder.",
+        "id": 197,
+        "category_id": 18,
+        "cluster_id": 1
+    },
+    {
+        "name": "Schizotypal Personality Disorder",
+        "description": "Schizotypal Personality Disorder is characterized by pervasive social and interpersonal deficits, cognitive or perceptual distortions, and eccentric behavior.",
+        "criteria": "\n\n• Odd beliefs or magical thinking inconsistent with cultural norms.\n\n• Unusual perceptual experiences (e.g., sensing a presence).\n\n• Suspiciousness or paranoid ideation.\n\n• Inappropriate or constricted affect.\n\n• Behavior or appearance that is odd, eccentric, or peculiar.\n\n• Lack of close friends outside of family.\n\n• Excessive social anxiety that does not diminish with familiarity.\n\n\nPrevalence:\n\n• Estimated at about 3-4% in the general population.\n\nDevelopment and Course:\n\n• Often identified in childhood or adolescence with social anxiety, eccentric behavior, and peculiar thinking.\n\nRisk Factors:\n\n• Genetic and environmental factors associated with schizophrenia increase risk.",
+        "id": 198,
+        "category_id": 18,
+        "cluster_id": 1
+    },
+    {
+        "name": "Antisocial Personality Disorder",
+        "description": "Antisocial Personality Disorder involves a pervasive pattern of disregard for and violation of the rights of others, beginning in childhood or adolescence and continuing into adulthood.",
+        "criteria": "\n\n• Failure to conform to social norms or lawful behavior.\n\n• Deceitfulness (e.g., repeated lying or use of aliases).\n\n• Impulsivity and failure to plan ahead.\n\n• Irritability and aggressiveness (e.g., physical fights or assaults).\n\n• Reckless disregard for safety of self or others.\n\n• Consistent irresponsibility in work or financial obligations.\n\n• Lack of remorse after harming others.\n\n\nAssociated Features:\n\n• May be arrogant, callous, and manipulative.\n\n• High comorbidity with substance use disorders.\n\nPrevalence:\n\n• Estimated at 1-4% in the general population; more common in males.\n\nDevelopment and Course:\n\n• Symptoms often evident by age 15 and persist into adulthood.\n\nRisk Factors:\n\n• Genetic predisposition and adverse childhood experiences.",
+        "id": 199,
+        "category_id": 18,
+        "cluster_id": 2
+    },
+    {
+        "name": "Borderline Personality Disorder",
+        "description": "Borderline Personality Disorder is marked by pervasive instability in interpersonal relationships, self-image, and affect, as well as marked impulsivity.",
+        "criteria": "\n\n• Intense fear of abandonment and frantic efforts to avoid it.\n\n• Unstable, intense relationships alternating between idealization and devaluation.\n\n• Unstable self-image or sense of identity.\n\n• Impulsivity in areas like spending, sex, substance use, or reckless driving.\n\n• Recurrent suicidal behavior, threats, or self-harm.\n\n• Intense mood swings.\n\n• Chronic feelings of emptiness.\n\n• Inappropriate or intense anger.\n\n• Stress-related paranoia or dissociative symptoms.\n\n\nAssociated Features:\n\n• Difficulty tolerating being alone.\n\n• Comorbid mood, anxiety, and substance use disorders.\n\nPrevalence:\n\n• Estimated at 1.6-5.9% in the general population.\n\nDevelopment and Course:\n\n• Symptoms often diminish with age.",
+        "id": 200,
+        "category_id": 18,
+        "cluster_id": 2
+    },
+    {
+        "name": "Histrionic Personality Disorder",
+        "description": "Histrionic Personality Disorder involves pervasive patterns of excessive emotionality and attention-seeking behavior.",
+        "criteria": "\n\n• Discomfort when not the center of attention.\n\n• Inappropriate sexually seductive or provocative behavior.\n\n• Rapidly shifting and shallow emotions.\n\n• Use of physical appearance to draw attention.\n\n• Speech that is impressionistic and lacking in detail.\n\n• Overly dramatic, theatrical behavior.\n\n• Easily influenced by others or circumstances.\n\n• Perceives relationships as more intimate than they are.\n\n\nAssociated Features:\n\n• May appear flamboyant or overly concerned with appearance.\n\nPrevalence:\n\n• Estimated at about 2% in the general population.",
+        "id": 201,
+        "category_id": 18,
+        "cluster_id": 2
+    },
+    {
+        "name": "Narcissistic Personality Disorder",
+        "description": "Narcissistic Personality Disorder involves grandiosity, a need for admiration, and a lack of empathy.",
+        "criteria": "\n\n• Inflated sense of self-importance.\n\n• Preoccupation with fantasies of unlimited success, power, or beauty.\n\n• Belief they are special and should associate only with high-status individuals.\n\n• Need for excessive admiration.\n\n• Sense of entitlement.\n\n• Exploitation of others.\n\n• Lack of empathy.\n\n• Envy of others or belief others envy them.\n\n• Arrogant or haughty behaviors.\n\n\nPrevalence:\n\n• Estimated at less than 1% in the general population.",
+        "id": 202,
+        "category_id": 18,
+        "cluster_id": 2
+    },
+    {
+        "name": "Avoidant Personality Disorder",
+        "description": "Avoidant Personality Disorder involves pervasive social inhibition, feelings of inadequacy, and hypersensitivity to criticism.",
+        "criteria": "\n\n• Avoidance of social interactions due to fear of criticism or rejection.\n\n• Reluctance to engage in new activities due to fear of embarrassment.\n\n• Preoccupation with being criticized or rejected.\n\n• Inhibition in social situations due to feelings of inadequacy.\n\n• Self-view as socially inept or inferior.\n\n• Reluctance to take personal risks.",
+        "id": 203,
+        "category_id": 18,
+        "cluster_id": 3
+    },
+    {
+        "name": "Dependent Personality Disorder",
+        "description": "Dependent Personality Disorder is characterized by excessive need to be taken care of, leading to submissive and clinging behaviors.",
+        "criteria": "\n\n• Difficulty making decisions without excessive advice.\n\n• Fear of disagreeing with others.\n\n• Difficulty initiating projects due to lack of confidence.\n\n• Excessive efforts to obtain nurturing and support.\n\n• Urgent need to establish a new relationship after one ends.",
+        "id": 204,
+        "category_id": 18,
+        "cluster_id": 3
+    },
+    {
+        "name": "Obsessive-Compulsive Personality Disorder",
+        "description": "Obsessive-Compulsive Personality Disorder involves preoccupation with orderliness, perfectionism, and control at the expense of flexibility and efficiency.",
+        "criteria": "\n\n• Preoccupation with details, rules, or schedules.\n\n• Perfectionism interfering with task completion.\n\n• Excessive devotion to work at the expense of leisure.\n\n• Rigidity and stubbornness.\n\n• Reluctance to delegate tasks.",
+        "id": 205,
+        "category_id": 6,
+        "cluster_id": 3
+    },
+    {
+        "name": "Voyeuristic Disorder",
+        "description": "Voyeuristic Disorder involves intense and recurrent sexual arousal from observing an unsuspecting person who is naked, undressing, or engaging in sexual activity. This arousal is associated with fantasies, urges, or behaviors and occurs over at least six months. The individual must either act on these urges or experience significant distress or impairment as a result.",
+        "criteria": "\n\n• Sexual arousal derived from watching unsuspecting individuals.\n\n• Urges or behaviors persist for at least six months.\n\n• The individual is at least 18 years old.\n\n• The observed individual is unaware and has not consented to being watched.\n\nAssociated Features:\n\n• May use binoculars, cameras, or other means to facilitate voyeurism.\n\n• Often avoids direct interaction with the observed person.\n\nPrevalence:\n\nMore common in males; prevalence estimates are uncertain.",
+        "id": 206,
+        "category_id": 19,
+        "cluster_id": null
+    },
+    {
+        "name": "Exhibitionistic Disorder",
+        "description": "Exhibitionistic Disorder involves recurrent and intense sexual arousal from exposing one’s genitals to an unsuspecting person. This arousal is accompanied by fantasies, urges, or behaviors lasting at least six months. The individual must act on these urges or experience distress or impairment.",
+        "criteria": "\n\n• Sexual arousal from exposing genitals to unsuspecting individuals.\n\n• Episodes occur repeatedly and persistently.\n\n• May occur in public settings or through digital platforms.\n\nSpecifiers:\n\nSpecify if the arousal is directed toward prepubertal children, physically mature individuals, or both.\n\nAssociated Features:\n\n• The individual may fantasize about the shock or humiliation of the observer.\n\n• May exhibit socially isolated or antisocial tendencies.\n\nPrevalence:\n\nMost commonly reported in males.",
+        "id": 207,
+        "category_id": 19,
+        "cluster_id": null
+    },
+    {
+        "name": "Frotteuristic Disorder",
+        "description": "Frotteuristic Disorder is characterized by recurrent and intense sexual arousal from touching or rubbing against a non-consenting person. This arousal includes fantasies, urges, or behaviors that persist for at least six months. The individual must act on these urges or experience significant distress or impairment.",
+        "criteria": "\n\n• Sexual arousal achieved through non-consensual physical contact.\n\n• Acts often occur in crowded or public spaces.\n\nAssociated Features:\n\n• Behavior is typically concealed, and the individual may seek opportunities in congested areas to avoid detection.\n\nPrevalence:\n\nMore common in males; often begins in adolescence.",
+        "id": 208,
+        "category_id": 19,
+        "cluster_id": null
+    },
+    {
+        "name": "Sexual Sadism Disorder",
+        "description": "Sexual Sadism Disorder involves intense sexual arousal from the physical or psychological suffering of another person. This arousal, associated with fantasies, urges, or behaviors, lasts at least six months. The individual must act on these urges with a non-consenting person or experience distress or impairment.",
+        "criteria": "\n\n• Recurrent sexual fantasies or actions involving humiliation, bondage, or pain inflicted on others.\n\n• Behavior is typically deliberate and designed to cause harm or humiliation.\n\nAssociated Features:\n\n• May involve planned scenarios or compulsive behavior.\n\nPrevalence:\n\nRare but predominantly diagnosed in males.",
+        "id": 209,
+        "category_id": 19,
+        "cluster_id": null
+    },
+    {
+        "name": "Sexual Masochism Disorder",
+        "description": "Sexual Masochism Disorder is characterized by recurrent and intense sexual arousal from being humiliated, bound, beaten, or otherwise made to suffer. This arousal, tied to fantasies, urges, or behaviors, lasts for at least six months and causes significant distress or impairment.",
+        "criteria": "\n\n• Desire to experience physical or psychological suffering for sexual arousal.\n\n• Acts may include self-inflicted or partner-inflicted harm.\n\nSpecifiers:\n\nWith asphyxiophilia: Sexual arousal related to oxygen deprivation.\n\nPrevalence:\n\nFound in both genders; prevalence estimates are low.",
+        "id": 210,
+        "category_id": 19,
+        "cluster_id": null
+    },
+    {
+        "name": "Pedophilic Disorder",
+        "description": "Pedophilic Disorder involves recurrent, intense sexual arousal from prepubescent children (generally 13 years old or younger). This arousal includes fantasies, urges, or behaviors that persist for at least six months. The individual must act on these urges or experience significant distress or impairment.",
+        "criteria": "\n\n• Recurrent attraction to prepubescent children.\n\n• The individual must be at least 16 years old and at least five years older than the child.\n\nSpecifiers:\n\n• Exclusive type (attracted only to children) or nonexclusive type.\n\n• Sexual attraction to males, females, or both.\n\nAssociated Features:\n\n• May attempt to gain access to children through professions, hobbies, or social connections.\n\nPrevalence:\n\nHigher prevalence in males; exact rates are unknown.",
+        "id": 211,
+        "category_id": 19,
+        "cluster_id": null
+    },
+    {
+        "name": "Fetishistic Disorder",
+        "description": "Fetishistic Disorder involves intense and recurrent sexual arousal from non-living objects or specific body parts other than genitals. This arousal, associated with fantasies, urges, or behaviors, lasts for at least six months and causes significant distress or impairment.",
+        "criteria": "\n\n• Sexual focus on non-living objects (e.g., shoes, leather) or non-erogenous body parts (e.g., feet).\n\n• Objects or body parts are necessary for arousal and often replace a partner in sexual activities.\n\nSpecifiers:\n\nSpecify whether the fetish is for body parts, non-living objects, or other elements.\n\nAssociated Features:\n\n• Compulsive use of fetish objects in sexual activity.\n\nPrevalence:\n\nRare; predominantly affects males.",
+        "id": 212,
+        "category_id": 19,
+        "cluster_id": null
+    },
+    {
+        "name": "Transvestic Disorder",
+        "description": "Transvestic Disorder is characterized by recurrent and intense sexual arousal from cross-dressing. This arousal, tied to fantasies, urges, or behaviors, persists for at least six months and causes significant distress or impairment.",
+        "criteria": "\n\n• Cross-dressing is associated with sexual arousal.\n\n• Acts lead to personal distress or impair functioning.\n\nSpecifiers:\n\n• With fetishism: Sexual arousal from fabrics, materials, or garments.\n\n• With autogynephilia: Sexual arousal from thoughts or images of oneself as the opposite sex.\n\nAssociated Features:\n\n• Often begins in adolescence; may diminish with age.\n\nPrevalence:\n\nRare; primarily reported in males.",
+        "id": 213,
+        "category_id": 19,
+        "cluster_id": null
+    }
+]
+    

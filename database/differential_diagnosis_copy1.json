@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "disorder_id": 1,
+        "disorder_name": "Intellectual Developmental Disorder (Intellectual Disability)",
+        "description": "Differentiation from: Neurocognitive disorders, communication disorders, autism spectrum disorder (ASD), and specific learning disorder.\n\nKey distinctions:\n\n• Neurocognitive disorders: These occur later in life (e.g., dementia) and result in cognitive decline rather than a developmental delay. Intellectual disability begins in the developmental period (before 18 years old).\n\n• Communication disorders: These involve difficulties in language or speech, but intellectual functioning (reasoning, problem-solving) is normal.\n\n• Autism spectrum disorder (ASD): While ASD can co-occur with intellectual disability, the hallmark is social communication deficits and restricted/repetitive behaviors. Intellectual disability does not inherently include these traits.\n\n• Specific learning disorder: Affects skills like reading or math but does not include deficits in general intellectual functioning or adaptive skills."
+    },
+    {
+        "id": 2,
+        "disorder_id": 2,
+        "disorder_name": "Global Developmental Delay",
+        "description": "Differentiation from: Specific learning disorders, speech/language disorders, and sensory impairments (e.g., hearing loss).\n\nKey distinctions:\n\n• This diagnosis is for children under 5 who fail to meet developmental milestones, but their condition cannot yet be fully assessed with standardized tests.\n\n• Specific learning disorder or speech/language disorders: These are more specific and often diagnosed after age 5, once formal evaluations become reliable.\n\n• Sensory impairments: Issues like hearing loss or vision problems may cause developmental delays but are distinct conditions requiring different interventions."
+    },
+    {
+        "id": 3,
+        "disorder_id": 3,
+        "disorder_name": "Unspecified Intellectual Developmental Disorder",
+        "description": "Differentiation from: Other intellectual disabilities, ASD, or cognitive decline (e.g., due to trauma or neurological conditions).\n\nKey distinctions:\n\n• Used when significant barriers (e.g., physical, cultural, or sensory impairments) prevent complete assessment.\n\n• Other intellectual disabilities: Have clear, confirmed deficits in intellectual and adaptive functioning, while this diagnosis is provisional."
+    },    
+    {
+        "id": 4,
+        "disorder_id": 4,
+        "disorder_name": "Language Disorder",
+        "description": "Differentiation from: Speech sound disorder, social (pragmatic) communication disorder, and ASD.\n\nKey distinctions:\n\n• Focuses on difficulties in vocabulary, grammar, and discourse (the ability to organize thoughts and communicate).\n\n• Speech sound disorder: The issue is articulation of sounds, not the structure or meaning of language.\n\n• ASD: Deficits in social communication and repetitive behaviors are not typical in language disorder.\n\n• Social (pragmatic) communication disorder: Involves using language in social contexts (e.g., conversation rules), not structural language deficits."
+    },
+    {
+        "id": 5,
+        "disorder_id": 5,
+        "disorder_name": "Speech Sound Disorder",
+        "description": "Differentiation from: Childhood-onset fluency disorder (stuttering), language disorder, and ASD.\n\nKey distinctions:\n\n• Difficulty producing speech sounds correctly, leading to unintelligible speech.\n\n• Language disorder: Language structure and meaning (not sound production) are affected.\n\n• Childhood-onset fluency disorder (stuttering): This involves disruptions in the flow of speech, not sound articulation.\n\n• ASD: May include unusual speech patterns, but it is accompanied by social and behavioral deficits."
+    },
+    {
+        "id": 6,
+        "disorder_id": 6,
+        "disorder_name": "Childhood-Onset Fluency Disorder (Stuttering)",
+        "description": "Differentiation from: Social anxiety disorder, speech sound disorder, and tics.\n\nKey distinctions:\n\n• Disruptions in fluency (e.g., sound/syllable repetition, blocks, or prolongations).\n\n• Social anxiety disorder: Fear of speaking due to social evaluation, but speech patterns are fluent.\n\n• Tics: Sudden, involuntary vocalizations, unlike the purposeful effort seen in stuttering."
+    },
+        {
+            "id": 25,
+            "disorder_id": 25,
+            "disorder_name": "Premenstrual Dysphoric Disorder (PMDD)",
+            "description": "Differentiation from: MDD, generalized anxiety disorder (GAD), and dysmenorrhea.\n\nKey distinctions:\n\n• Severe mood, physical, and behavioral symptoms occur specifically in the luteal phase of the menstrual cycle and resolve after menstruation begins.\n\n• MDD: Lacks the cyclical pattern tied to the menstrual cycle seen in PMDD.\n\n• GAD: Anxiety symptoms are not linked to menstrual phases in GAD.\n\n• Dysmenorrhea: Focuses on physical pain during menstruation without the mood changes of PMDD."
+        },
+        {
+            "id": 26,
+            "disorder_id": 26,
+            "disorder_name": "Substance/Medication-Induced Depressive Disorder",
+            "description": "Differentiation from: Major depressive disorder (MDD), bipolar disorders, and depressive disorder due to another medical condition.\n\nKey distinctions:\n\n• Depressive symptoms occur during or shortly after substance use, intoxication, or withdrawal.\n\n• MDD: Symptoms persist independently of substance use.\n\n• Bipolar disorders: If depressive symptoms occur alongside manic or hypomanic episodes, consider bipolar disorder.\n\n• Depressive disorder due to another medical condition: Symptoms are directly caused by a medical condition, not substance use."
+        },
+        {
+            "id": 27,
+            "disorder_id": 27,
+            "disorder_name": "Depressive Disorder Due to Another Medical Condition",
+            "description": "Differentiation from: Substance/medication-induced depressive disorder, MDD, and adjustment disorder with depressed mood.\n\nKey distinctions:\n\n• Depressive symptoms are directly caused by the physiological effects of a medical condition (e.g., hypothyroidism, stroke).\n\n• Substance/medication-induced depressive disorder: Symptoms are related to substance use or withdrawal rather than a medical condition.\n\n• Adjustment disorder with depressed mood: Triggered by a stressor, not a medical condition."
+        },
+        {
+            "id": 28,
+            "disorder_id": 28,
+            "disorder_name": "Other Specified Depressive Disorder",
+            "description": "Differentiation from: Unspecified depressive disorder, MDD, and adjustment disorders.\n\nKey distinctions:\n\n• Depressive symptoms cause significant distress or impairment but do not meet criteria for specific depressive disorders (e.g., MDD or PDD).\n\n• Unspecified depressive disorder: Used when insufficient details are available to specify the condition.\n\n• Adjustment disorders: Depressive symptoms are directly tied to an identifiable stressor."
+        },
+        {
+            "id": 29,
+            "disorder_id": 29,
+            "disorder_name": "Unspecified Depressive Disorder",
+            "description": "Differentiation from: Other specified depressive disorder and primary depressive disorders (e.g., MDD).\n\nKey distinctions:\n\n• Depressive symptoms are present but insufficient information is available to make a more specific diagnosis (e.g., in emergency settings).\n\n• Other specified depressive disorder: Used when more details are known but do not meet criteria for a specific depressive disorder."
+        }
+
+
+
+
+        
+
+    
+
+
+
+
+
+]

@@ -1,0 +1,63 @@
+<!-- Disorder template -->
+<!-- Show Disorder:
+    - Name of disorder
+    - Name of category
+    - Name of cluster if there is one
+    - Description of disorder
+    - Criteria
+    - List of signs 
+    - List of symptoms -->
+
+    {% extends 'base.html' %}
+    {% block title %}{disorder.name}{% endblock %}
+    
+    {% block content %}
+      <h1>{{ disorder.name }}</h1>
+      <h3>Category: {{ category.name }}</h3>
+      <p>{{ category.description }}</p>
+    
+      {% if cluster %}
+        <h4>Cluster:</h4>
+        <p><strong>{{ cluster.name }}</strong>: {{ cluster.description }}</p>
+      {% else %}
+        <p>This disorder does not belong to any clusters.</p>
+      {% endif %}
+
+      <h2>Disorder Description:</h2>
+      <p>{{ disorder.description }}</p>
+      <h3>Criteria:</h3>
+      <p>{{ disorder.criteria }}</p>
+    
+      <h2>List of Signs:</h2>
+      <ul>
+        {% for disorder_sign in signs %}
+          <li>
+            <a href="{{ url_for('psychopathology.get_sign', sign_id=disorder_sign.sign.id) }}">{{ disorder_sign.sign.name }}</a>
+          </li>
+        {% else %}
+          <p>No signs available for this disorder.</p>
+        {% endfor %}
+      </ul>
+      
+      <h2>List of Symptoms:</h2>
+      <ul>
+        {% for disorder_symptom in symptoms %}
+          <li>
+            <a href="{{ url_for('psychopathology.get_symptom', symptom_id=disorder_symptom.symptom.id) }}">{{ disorder_symptom.symptom.name }}</a>
+          </li>
+        {% else %}
+          <p>No symptoms available for this disorder.</p>
+        {% endfor %}
+      </ul>
+    
+      <h2>Differential Diagnosis:</h2>
+      <ul>
+        {% for diff in differential_diagnoses %}
+          <li>
+            {{ diff.description }}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endblock %}
+    
+    

@@ -1,0 +1,186 @@
+<!-- homepage: 
+
+- Description of the app & how to use it.
+- Brief description of the DSM-5-TR -->
+
+<!-- THINGS TO WORK ON:
+ - The content
+ - Make sure the below works propertly:
+    - Sending to home version when user is logged in
+    - Senting to home version when user is loggedout -->
+
+    {% extends 'base.html' %}
+
+    {% block title %}Home{% endblock %}
+    
+    {% block content %}
+    
+      {% if user_logged_in %}
+      
+      <!-- Logged-In User Content -->
+      <div class="container mt-5 pt-5">
+        <div class="row">
+          <!-- User Sidebar -->
+          <aside class="col-md-4 col-lg-3 col-sm-12 mb-4" id="home-aside">
+            <div class="card user-card shadow">
+              <div class="card-body text-center">
+                <img src="{{ img_url }}" alt="{{ username }}'s profile picture" class="rounded-circle mb-3" width="100" height="100">
+                <h5 class="card-title">{{ username }}</h5>
+              </div>
+            </div>    
+          </aside>
+    
+          <!-- Main Content -->
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <h1 class="mb-4">Hello, {{ username }}. Welcome to PsychoDiagnose!</h1>
+            <p class="mb-4">Your Free Learning Companion for Understanding Psychopathologies</p>
+    
+            <!-- Search Form -->
+            <form method="POST" action="{{ url_for('homepage.homepage') }}">
+              {{ form.hidden_tag() }}
+              <div class="mb-3">
+                {{ form.search_query(class="form-control", placeholder="Enter a search term...") }}
+              </div>
+              {{ form.submit(class="btn btn-primary") }}
+            </form>
+    
+            <!-- Flash Messages -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+              {% if messages %}
+                {% for category, message in messages %}
+                  <div class="alert alert-{{ category }} mt-3" role="alert">
+                    {{ message }}
+                  </div>
+                {% endfor %}
+              {% endif %}
+            {% endwith %}
+          </div>
+        </div>
+      </div>
+    
+      {% else %}
+    
+      <!-- Logged-Out User Landing Page -->
+      <style>
+        .bg-soft-blue {
+          background-color: #e9f5fc;
+        }
+      </style>
+    
+      <!-- Welcome Section -->
+      <section class="bg-light text-center py-5">
+        <div class="container">
+          <h2 class="display-4">Welcome to PsychoDiagnose</h2>
+          <p class="lead">Your Free Learning Companion for Understanding Psychopathologies</p>
+        </div>
+      </section>
+    
+      <!-- About PsychoDiagnose Section -->
+      <section class="bg-soft-blue py-5">
+        <div class="container text-center">
+          <h3 class="mb-4">About PsychoDiagnose</h3>
+          <p>
+            <strong>PsychoDiagnose</strong> is a free, interactive learning tool designed specifically for psychology and psychiatry students. Our application guides you through the intricate diagnostic process outlined in the <strong>DSM-5-TR</strong>, helping you build a solid foundation in psychopathology without providing actual diagnoses.
+          </p>
+        </div>
+      </section>
+    
+      <!-- What is DSM-5-TR? Section -->
+      <section class="bg-light py-5">
+        <div class="container text-center">
+          <h3 class="mb-4">What is the DSM-5-TR?</h3>
+          <p>
+            The <strong>Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, Text Revision (DSM-5-TR)</strong> is a widely recognized and utilized guide by mental health professionals around the world. Published by the <em>American Psychiatric Association</em>, the DSM-5-TR establishes standardized criteria for diagnosing mental disorders, facilitating clear and consistent communication among professionals and enhancing the quality of patient care. It is fundamental in clinics, hospitals, research centers, and academic settings, serving as an essential reference in over 150 countries.
+          </p>
+        </div>
+      </section>
+    
+      <!-- How It Works Section -->
+      <section class="bg-soft-blue py-5">
+        <div class="container text-center">
+          <h3 class="mb-4">How It Works</h3>
+          <h5>Step-by-Step Diagnostic Guidance</h5>
+          <p>
+            <strong>PsychoDiagnose</strong> walks you through each phase of the diagnostic process, offering detailed explanations and insights into how mental health professionals arrive at their conclusions. Whether you're working on a case study or preparing for exams, our tool ensures you understand every step involved.
+          </p>
+        </div>
+      </section>
+    
+      <!-- Key Features Section -->
+      <section class="bg-light py-5">
+        <div class="container text-center">
+          <h3 class="mb-4">Key Features</h3>
+          <h5 class="mb-4">Comprehensive Resource Access</h5>
+          <ul class="list-group text-dark mb-4">
+            <li class="list-group-item">
+              <strong>Signs and Symptoms:</strong> Explore an extensive list of signs and symptoms, complete with examples to help you recognize and understand various indicators of mental health disorders.
+            </li>
+            <li class="list-group-item">
+              <strong>Diagnostic Categories:</strong> Navigate through different diagnostic categories to see how disorders are grouped and related.
+            </li>
+            <li class="list-group-item">
+              <strong>Disorders Database:</strong> Access detailed information on a wide range of disorders, including descriptions, diagnostic criteria, signs and symptoms, and differential diagnoses.
+            </li>
+            <li class="list-group-item">
+              <strong>Interactive References:</strong> When you view a sign or symptom, see a list of disorders associated with it, allowing for easy cross-referencing and deeper understanding.
+            </li>
+          </ul>
+        </div>
+      </section>
+    
+      <!-- Why Choose PsychoDiagnose Section -->
+      <section class="bg-soft-blue py-5">
+        <div class="container text-center">
+          <h3 class="mb-4">Why Choose PsychoDiagnose</h3>
+          <h5 class="mb-4">Enhance Your Learning Experience</h5>
+          <ul class="list-group mb-4">
+            <li class="list-group-item">
+              <strong>Educational Focus:</strong> Designed to support your studies, PsychoDiagnose provides a structured approach to learning psychopathologies based on the latest DSM-5-TR guidelines.
+            </li>
+            <li class="list-group-item">
+              <strong>User-Friendly Interface:</strong> Intuitive design ensures that you can easily navigate through the diagnostic process and access the information you need.
+            </li>
+            <li class="list-group-item">
+              <strong>No Diagnosis Provided:</strong> Our tool is strictly educational and does not offer any form of medical diagnosis, ensuring a safe and focused learning environment.
+            </li>
+          </ul>
+        </div>
+      </section>
+    
+      <!-- Get Started Section -->
+      <section class="bg-light text-center py-5">
+        <div class="container">
+          <h3 class="mb-4">Get Started Today!</h3>
+          <h5>Free and Easy to Access</h5>
+          <p class="mb-4">
+            PsychoDiagnose is completely free to use. To begin your journey in mastering psychopathologies:
+          </p>
+          <ul class="list-group list-group-flush text-dark mb-4">
+            <li class="list-group-item">
+              <strong>Sign Up:</strong> Create a free account to access all features and start exploring the diagnostic process.
+            </li>
+            <li class="list-group-item">
+              <strong>Sign In:</strong> If you already have an account, simply sign in to continue your learning experience.
+            </li>
+          </ul>
+          <div class="d-flex justify-content-center">
+            <a href="{{ url_for('user.signup') }}" class="btn btn-primary me-3">Sign Up Now</a>
+            <a href="{{ url_for('user.signin') }}" class="btn btn-secondary">Sign In</a>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Join Our Community Section -->
+      <section class="bg-soft-blue text-center py-5">
+        <div class="container">
+          <h3 class="mb-4">Join Our Community</h3>
+          <p class="mb-0">
+            Become part of a growing community of psychology and psychiatry students dedicated to understanding and mastering the complexities of mental health diagnostics. Start using PsychoDiagnose today and take the next step in your educational journey!
+          </p>
+        </div>
+      </section>
+    
+      {% endif %}
+          
+    {% endblock %}
+    

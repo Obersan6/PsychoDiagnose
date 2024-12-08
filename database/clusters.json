@@ -1,0 +1,22 @@
+
+[
+    {
+      "id": 1,
+      "name": "Cluster A: Odd or Eccentric Personality Disorders",
+      "description": "Cluster A includes personality disorders where individuals may seem socially awkward, emotionally distant, or behaviorally odd. Their thinking and behaviors are often perceived as strange or eccentric, making it difficult for them to form close relationships. People in this cluster may be mistrustful, detached, or highly focused on their unique ways of seeing the world.\n\nKey Features:\n- Social detachment: Difficulty connecting with others.\n- Unusual thoughts and behaviors: Ideas or actions that others may find peculiar.\n- Suspiciousness: A tendency to distrust or question others' motives.",
+      "category_id": 18
+    },
+    {
+      "id": 2,
+      "name": "Cluster B: Dramatic, Emotional, or Erratic Personality Disorders",
+      "description": "Disorders in this cluster are characterized by intense, unstable emotions and unpredictable behavior. People with these disorders may struggle with self-identity and relationships, often seeking attention or acting impulsively. Their dramatic or erratic behavior can create challenges in managing emotions and interpersonal connections.\n\nKey Features:\n- Emotional instability: Rapid shifts in mood or overly intense emotions.\n- Impulsivity: Acting without considering long-term consequences.\n- Relationship difficulties: Often unstable or intense connections with others.\n- Dramatic or attention-seeking behavior: A focus on being noticed or admired.",
+      "category_id": 18
+    },
+    {
+      "id": 3,
+      "name": "Cluster C: Anxious or Fearful Personality Disorders",
+      "description": "Cluster C includes personality disorders where individuals exhibit patterns of extreme anxiety, fear, or a strong need for control. These individuals often feel inadequate, fear rejection, or rely heavily on others for reassurance. Their behaviors are dominated by caution, avoidance, or a rigid focus on orderliness.\n\nKey Features:\n- Fear of rejection: Avoidance of social interactions to prevent being judged or criticized.\n- Dependence on others: Difficulty making decisions or functioning independently.\n- Perfectionism or rigidity: An excessive focus on rules, order, or control.",
+      "category_id": 18
+    }
+  ]
+  

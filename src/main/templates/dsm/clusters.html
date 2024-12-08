@@ -1,0 +1,27 @@
+<!-- Show a list with all the clusters. -->
+
+{% extends 'base.html' %}
+
+{% block title %}Clusters{% endblock %}
+
+{% block content %}
+  <h1>All Clusters</h1>
+  <p>Clusters group related disorders within a category into smaller, more specific groups.</p>
+
+  {% if clusters %}
+    <ul>
+      {% for cluster in clusters %}
+        <li>
+          <a href="{{ url_for('dsm.get_cluster', cluster_id=cluster.id) }}">{{ cluster.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No clusters available.</p>
+  {% endif %}
+{% endblock %}
+
+
+
+
+

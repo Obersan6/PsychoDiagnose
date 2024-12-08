@@ -16,13 +16,13 @@ CREATE TABLE users (
 -- Provides an introduction to what the DSM-5 is, what it is for, sections, and general use
 -- MOVE THIS COMMENT TO THE ROUTE --> SECTION II WILL HAVE A HYPERLINK (NOT THROUGH THE TABLE, JUST ON THE FRONTEND)
 -- I'M REMOVING THIS TABLE BECAUSE I'M NOT GOING TO USE IT CONSIDERING THE INFO IT'S GOING TO BE STATIC AND NEVER DYNAMIC (FOR THE CAPSTONE PURPOSES).
-CREATE TABLE dsm (
-    id SERIAL PRIMARY KEY,
-    manual_info TEXT NOT NULL,
-    sections TEXT NOT NULL
-)
+-- CREATE TABLE dsm (
+--     id SERIAL PRIMARY KEY,
+--     manual_info TEXT NOT NULL,
+--     sections TEXT NOT NULL
+-- )
 
--- Categories description (each category contain several disorders). 
+-- Categories description (each category contains several disorders). 
 -- Referenced by the tables: 'disorders', and 'clusters'. Some categories have "clusters" (they group some disorders of the category into a sub-category).
 CREATE TABLE categories (
     id SERIAL PRIMARY KEY,
@@ -35,7 +35,7 @@ CREATE TABLE categories (
 -- It's referenced by the tables: 'steps', 'disorders_signs', 'disorders_symptoms', and 'differential_diagnosis'.
 CREATE TABLE disorders (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(150) NOT NULL UNIQUE,
+    name VARCHAR(150) NOT NULL,
     description TEXT NOT NULL,
     criteria TEXT NOT NULL
     category_id INTEGER NOT NULL,
@@ -59,30 +59,34 @@ CREATE TABLE clusters (
 CREATE TABLE steps (
     id SERIAL PRIMARY KEY,
     step_number INTEGER NOT NULL,
-    step_name VARCHAR(150) NOT NULL UNIQUE,
+    step_name VARCHAR(150) NOT NULL,
     description TEXT NOT NULL,
-    disorder_id INTEGER NOT NULL,
+    disorder_id INTEGER NULL,  -- Allow NULL values for this version
     FOREIGN KEY (disorder_id) REFERENCES disorders(id) ON DELETE CASCADE,
-    UNIQUE (disorder_id, step_number),
-    UNIQUE (disorder_id, step_name)
+    -- Change UNIQUE constraints to include only non-NULL `disorder_id`
+    UNIQUE (disorder_id, step_number) WHERE disorder_id IS NOT NULL,
+    UNIQUE (disorder_id, step_name) WHERE disorder_id IS NOT NULL
 );
 
 -- Junction table - References 'disorders'.
 CREATE TABLE differential_diagnosis (
+    id SERIAL PRIMARY KEY,
     disorder_id INTEGER NOT NULL,
-    differential_disorder_id INTEGER NOT NULL,
+    differential_disorder_id INTEGER,
+    disorder_name VARCHAR(150) NOT NULL,
     description TEXT NOT NULL,
-    PRIMARY KEY (disorder_id, differential_disorder_id),
     FOREIGN KEY (disorder_id) REFERENCES disorders(id) ON DELETE CASCADE,
     FOREIGN KEY (differential_disorder_id) REFERENCES disorders(id) ON DELETE CASCADE
 );
+
+
 
 -- PSYCHOPATHOLOGY ITEMS (Present in the DSM-5-TR)
 
 -- Referenced by 'sign_examples', and 'disorders_signs'
 CREATE TABLE signs (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(150) NOT NULL UNIQUE,
+    name VARCHAR(150) NOT NULL,
     description TEXT NOT NULL
 );
 
@@ -98,7 +102,7 @@ CREATE TABLE sign_examples (
 -- Referenced by 'symptom_examples', and 'disorders_symptoms'.
 CREATE TABLE symptoms (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(150) NOT NULL UNIQUE,
+    name VARCHAR(150) NOT NULL,
     description TEXT NOT NULL
 );
 

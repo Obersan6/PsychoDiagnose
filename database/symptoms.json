@@ -1,0 +1,2193 @@
+
+[
+  {
+      "id": 1,
+      "name": "Deficits in intellectual functioning",
+      "description": "Impairments in reasoning, problem-solving, planning, abstract thinking, judgment, academic learning, and learning from experience."
+  },
+  {
+      "id": 2,
+      "name": "Deficits in adaptive functioning",
+      "description": "Limitations in meeting developmental and sociocultural standards for independence and responsibility."
+  },
+  {
+      "id": 3,
+      "name": "Delays in developmental milestones",
+      "description": "Significant delays in achieving typical milestones such as walking and talking."
+  },
+  {
+      "id": 4,
+      "name": "Difficulty with problem-solving and abstract thinking",
+      "description": "Challenges in understanding and solving problems, as well as difficulties grasping abstract concepts."
+  },
+  {
+      "id": 5,
+      "name": "Poor academic performance compared to peers",
+      "description": "Struggles to achieve educational success at a level comparable to individuals of the same age."
+  },
+  {
+      "id": 6,
+      "name": "Difficulty with daily living activities",
+      "description": "Challenges with performing essential daily tasks such as dressing and feeding."
+  },
+  {
+      "id": 7,
+      "name": "Delayed or impaired speech development",
+      "description": "Significant delays or abnormalities in the development of speech."
+  },
+  {
+      "id": 8,
+      "name": "Misarticulations",
+      "description": "Incorrect production of sounds in words, such as substituting or omitting sounds."
+  },
+  {
+      "id": 9,
+      "name": "Difficulty maintaining a conversation",
+      "description": "Challenges in initiating, sustaining, or appropriately responding during conversations."
+  },
+  {
+      "id": 10,
+      "name": "Limited vocabulary",
+      "description": "Restricted range of words used, or inability to follow conversational norms."
+  },
+  {
+      "id": 11,
+      "name": "Persistent difficulties in speech sound production",
+      "description": "Speech production challenges that interfere with intelligibility or communication."
+  },
+  {
+      "id": 12,
+      "name": "Fluency disturbances",
+      "description": "Interruptions in the flow of speech, such as stuttering or repetitive blocks."
+  },
+  {
+      "id": 13,
+      "name": "Deficits in social-emotional reciprocity",
+      "description": "Difficulty understanding and responding to social cues or interactions."
+  },
+  {
+      "id": 14,
+      "name": "Deficits in nonverbal communicative behaviors",
+      "description": "Limited or atypical use of gestures, facial expressions, or eye contact."
+  },
+  {
+      "id": 15,
+      "name": "Deficits in developing and understanding relationships",
+      "description": "Difficulty forming and maintaining appropriate social connections."
+  },
+  {
+      "id": 16,
+      "name": "Repetitive motor movements or speech patterns",
+      "description": "Repetitive behaviors such as hand-flapping, echolalia, or rigid routines."
+  },
+  {
+      "id": 17,
+      "name": "Hyper- or hypo-reactivity to sensory input",
+      "description": "Extreme sensitivity or lack of sensitivity to sensory stimuli like sound or touch."
+  },
+  {
+      "id": 18,
+      "name": "Inattention",
+      "description": "Difficulty focusing on tasks or maintaining attention, often leading to incomplete tasks."
+  },
+  {
+      "id": 19,
+      "name": "Hyperactivity and impulsivity",
+      "description": "Excessive movement, inability to remain seated, talking excessively, or acting without thinking."
+  },
+  {
+      "id": 20,
+      "name": "Difficulty with academic skills",
+      "description": "Struggles with reading, writing, spelling, or mathematics, even after intervention."
+  },
+  {
+      "id": 21,
+      "name": "Clumsiness or poor coordination",
+      "description": "Difficulty with fine or gross motor skills, such as handwriting or catching a ball."
+  },
+  {
+      "id": 22,
+      "name": "Repetitive, purposeless motor behaviors",
+      "description": "Stereotypic movements like hand-flapping or rocking that interfere with functioning."
+  },
+  {
+      "id": 23,
+      "name": "Motor tics",
+      "description": "Involuntary, repetitive movements such as eye blinking or facial grimacing."
+  },
+  {
+      "id": 24,
+      "name": "Vocal tics",
+      "description": "Involuntary, repetitive vocalizations such as throat clearing or repetitive phrases."
+  },
+  {
+      "id": 25,
+      "name": "Hallucinations",
+      "description": "Perceptual experiences without external stimuli, such as hearing voices or seeing visions. Auditory hallucinations are the most common."
+  },
+  {
+      "id": 26,
+      "name": "Delusions",
+      "description": "Fixed, false beliefs that are not changed despite conflicting evidence. Examples include persecutory, grandiose, somatic, and erotomanic delusions."
+  },
+  {
+      "id": 27,
+      "name": "Disorganized Thinking",
+      "description": "Inferred from speech patterns such as loose associations (shifting between unrelated topics), tangentiality (answers diverge from the topic), or word salad (incoherent mixing of words)."
+  },
+  {
+      "id": 28,
+      "name": "Grossly Disorganized or Abnormal Motor Behavior",
+      "description": "Includes unpredictable agitation or restlessness, inappropriate emotional responses, difficulty initiating or completing tasks, and catatonic behaviors such as immobility, mutism, or bizarre postures."
+  },
+  {
+      "id": 29,
+      "name": "Negative Symptoms",
+      "description": "Includes affective flattening (reduced emotional expression), avolition (decreased motivation for purposeful activities), anhedonia (loss of interest or pleasure in activities), alogia (reduced speech output), and social withdrawal (decreased engagement with others)."
+  },
+  {
+      "id": 30,
+      "name": "Schizophrenia Symptoms",
+      "description": "Two or more core symptoms (delusions, hallucinations, disorganized thinking) present for a significant portion of time within a month, with impaired functioning in work, interpersonal relations, or self-care."
+  },
+  {
+      "id": 31,
+      "name": "Schizophreniform Disorder Symptoms",
+      "description": "Similar to schizophrenia symptoms but lasting 1 to 6 months, with functioning that may not be impaired."
+  },
+  {
+      "id": 32,
+      "name": "Brief Psychotic Disorder Symptoms",
+      "description": "Sudden onset of one or more psychotic symptoms such as delusions, hallucinations, disorganized thinking, or catatonic behavior, lasting at least 1 day but less than 1 month."
+  },
+  {
+      "id": 33,
+      "name": "Schizoaffective Disorder Symptoms",
+      "description": "Major mood episode (depressive or manic) concurrent with schizophrenia symptoms, with delusions or hallucinations present for 2 or more weeks without a mood episode."
+  },
+  {
+      "id": 34,
+      "name": "Delusional Disorder Symptoms",
+      "description": "Presence of one or more delusions lasting at least 1 month, with no marked impairment in functioning or bizarre behavior."
+  },
+  {
+      "id": 35,
+      "name": "Catatonia Symptoms",
+      "description": "Includes stupor (no psychomotor activity or response to environment), mutism (minimal or no verbal response), negativism (opposition or lack of response to instructions), posturing (rigid pose), echolalia (mimicking another's speech), and echopraxia (mimicking another's movements)."
+  },
+  {
+      "id": 36,
+      "name": "Other Specified/Unspecified Psychotic Disorders Symptoms",
+      "description": "Symptoms characteristic of schizophrenia spectrum disorders that cause significant distress or impairment but do not meet full criteria for any specific disorder."
+  },
+  {
+      "id": 37,
+      "name": "Manic Episode Symptoms",
+      "description": "Abnormally elevated, expansive, or irritable mood lasting at least 1 week (or any duration if hospitalization is necessary), with three or more (four if mood is only irritable) of the following: increased energy or activity, inflated self-esteem or grandiosity, decreased need for sleep, pressured speech, flight of ideas, distractibility, and risky behaviors."
+  },
+  {
+      "id": 38,
+      "name": "Hypomanic Episode Symptoms",
+      "description": "Same symptoms as a manic episode but lasting at least 4 consecutive days, not causing marked impairment in functioning or necessitating hospitalization, and without psychotic features."
+  },
+  {
+      "id": 39,
+      "name": "Depressive Episode Symptoms",
+      "description": "Five or more symptoms during a 2-week period (at least one must be depressed mood or loss of interest/pleasure): depressed mood, anhedonia, weight changes, sleep disturbances, psychomotor agitation or retardation, fatigue, feelings of worthlessness or guilt, difficulty concentrating, and suicidal ideation."
+  },
+  {
+      "id": 40,
+      "name": "Mixed Features",
+      "description": "Manic/hypomanic and depressive symptoms occur simultaneously, such as symptoms of depression during a manic/hypomanic episode or vice versa, with observable rapid mood shifts or behaviors indicative of both states."
+  },
+  {
+      "id": 41,
+      "name": "Bipolar I Disorder Symptoms",
+      "description": "At least one manic episode is required. Depressive episodes are common but not required for diagnosis."
+  },
+  {
+      "id": 42,
+      "name": "Bipolar II Disorder Symptoms",
+      "description": "At least one hypomanic episode and one major depressive episode are required. There is no history of a manic episode."
+  },
+  {
+      "id": 43,
+      "name": "Cyclothymic Disorder Symptoms",
+      "description": "For at least 2 years (1 year in children/adolescents): periods of hypomanic symptoms that do not meet criteria for a hypomanic episode and periods of depressive symptoms that do not meet criteria for a major depressive episode."
+  },
+  {
+      "id": 44,
+      "name": "Substance/Medication-Induced Bipolar and Related Disorder Symptoms",
+      "description": "Mood disturbances (manic, hypomanic, or depressive symptoms) directly related to substance use or withdrawal."
+  },
+  {
+      "id": 45,
+      "name": "Bipolar and Related Disorder Due to Another Medical Condition Symptoms",
+      "description": "Mood disturbances (manic, hypomanic, or depressive symptoms) caused by a medical condition such as hyperthyroidism or brain injury."
+  },
+  {
+      "id": 46,
+      "name": "Other Specified/Unspecified Bipolar and Related Disorders Symptoms",
+      "description": "Significant symptoms of bipolarity that do not fully meet criteria for a specific disorder."
+  },
+  {
+      "id": 47,
+      "name": "Depressed mood",
+      "description": "Feeling sad, empty, or hopeless most of the day, nearly every day (may appear as irritability in children or adolescents)."
+  },
+  {
+      "id": 48,
+      "name": "Anhedonia",
+      "description": "Markedly diminished interest or pleasure in almost all activities most of the day."
+  },
+  {
+      "id": 49,
+      "name": "Significant weight or appetite changes",
+      "description": "Weight loss or gain, or changes in appetite (e.g., eating too little or too much)."
+  },
+  {
+      "id": 50,
+      "name": "Sleep disturbances",
+      "description": "Insomnia or hypersomnia nearly every day."
+  },
+  {
+      "id": 51,
+      "name": "Psychomotor agitation or retardation",
+      "description": "Observable restlessness or slowing down of physical and emotional reactions."
+  },
+  {
+      "id": 52,
+      "name": "Fatigue or loss of energy",
+      "description": "Feeling drained nearly every day."
+  },
+  {
+      "id": 53,
+      "name": "Feelings of worthlessness or excessive guilt",
+      "description": "Disproportionate self-blame or feelings of failure."
+  },
+  {
+      "id": 54,
+      "name": "Difficulty concentrating or indecisiveness",
+      "description": "Trouble focusing on tasks, making decisions, or following through."
+  },
+  {
+      "id": 55,
+      "name": "Suicidal ideation",
+      "description": "Recurrent thoughts of death, suicidal thoughts, plans, or attempts."
+  },
+  {
+      "id": 56,
+      "name": "Severe temper outbursts",
+      "description": "Verbal or behavioral outbursts grossly disproportionate in intensity or duration to the situation."
+  },
+  {
+      "id": 57,
+      "name": "Chronic irritability",
+      "description": "Persistently irritable or angry mood most of the day, nearly every day."
+  },
+  {
+      "id": 58,
+      "name": "Poor appetite or overeating",
+      "description": "Noticeable changes in eating patterns leading to weight loss or gain."
+  },
+  {
+      "id": 59,
+      "name": "Low energy or fatigue",
+      "description": "Persistent tiredness or lack of physical or mental energy."
+  },
+  {
+      "id": 60,
+      "name": "Low self-esteem",
+      "description": "Feelings of inadequacy or worthlessness."
+  },
+  {
+      "id": 61,
+      "name": "Feelings of hopelessness",
+      "description": "Pervasive sense of despair and lack of optimism about the future."
+  },
+  {
+      "id": 62,
+      "name": "Marked affective lability",
+      "description": "Mood swings or increased sensitivity to rejection, especially premenstrually."
+  },
+  {
+      "id": 63,
+      "name": "Marked irritability or anger",
+      "description": "Significant frustration or outbursts, particularly related to hormonal changes."
+  },
+  {
+      "id": 64,
+      "name": "Physical symptoms of PMDD",
+      "description": "Symptoms such as breast tenderness, bloating, or joint/muscle pain."
+  },
+  {
+      "id": 65,
+      "name": "Mood reactivity",
+      "description": "Mood brightens in response to positive events."
+  },
+  {
+      "id": 66,
+      "name": "Leaden paralysis",
+      "description": "Heavy feelings in limbs making movement effortful."
+  },
+  {
+      "id": 67,
+      "name": "Psychotic features",
+      "description": "Delusions or hallucinations related to depressive states."
+  },
+  {
+      "id": 68,
+      "name": "Catatonic features",
+      "description": "Mutism, stupor, or bizarre postures observed during depressive episodes."
+  },
+  {
+      "id": 69,
+      "name": "Excessive worry",
+      "description": "Persistent and uncontrollable worry about various aspects of life (e.g., work, relationships)."
+  },
+  {
+      "id": 70,
+      "name": "Restlessness or feeling keyed up",
+      "description": "A sense of being 'on edge.'"
+  },
+  {
+      "id": 71,
+      "name": "Easily fatigued",
+      "description": "Persistent tiredness even without physical exertion."
+  },
+  {
+      "id": 72,
+      "name": "Difficulty concentrating",
+      "description": "Mind going blank or trouble focusing due to worry."
+  },
+  {
+      "id": 73,
+      "name": "Irritability",
+      "description": "Frequent frustration or agitation."
+  },
+  {
+      "id": 74,
+      "name": "Muscle tension",
+      "description": "Tightness or aches in the muscles."
+  },
+  {
+      "id": 75,
+      "name": "Sleep disturbances",
+      "description": "Difficulty falling or staying asleep, or restless, unsatisfying sleep."
+  },
+  {
+      "id": 76,
+      "name": "Palpitations",
+      "description": "Pounding or racing heart."
+  },
+  {
+      "id": 77,
+      "name": "Sweating",
+      "description": "Excessive perspiration during episodes of anxiety."
+  },
+  {
+      "id": 78,
+      "name": "Trembling or shaking",
+      "description": "Observable physical trembling, often in hands."
+  },
+  {
+      "id": 79,
+      "name": "Shortness of breath",
+      "description": "Feeling smothered or unable to breathe."
+  },
+  {
+      "id": 80,
+      "name": "Feelings of choking",
+      "description": "A sensation of constriction in the throat."
+  },  
+  {
+      "id": 81,
+      "name": "Chest pain or discomfort",
+      "description": "A common symptom during panic attacks."
+  },
+  {
+      "id": 82,
+      "name": "Nausea or abdominal distress",
+      "description": "Gastrointestinal discomfort, including queasiness or cramps."
+  },
+  {
+      "id": 83,
+      "name": "Dizziness or lightheadedness",
+      "description": "Feeling faint or unsteady."
+  },
+  {
+      "id": 84,
+      "name": "Chills or hot flashes",
+      "description": "Sudden changes in body temperature perception."
+  },
+  {
+      "id": 85,
+      "name": "Numbness or tingling",
+      "description": "Paresthesias often felt in extremities."
+  },
+  {
+      "id": 86,
+      "name": "Derealization or depersonalization",
+      "description": "Feeling detached from reality or oneself."
+  },
+  {
+      "id": 87,
+      "name": "Fear of losing control or 'going crazy'",
+      "description": "An overwhelming sense of helplessness or instability."
+  },
+  {
+      "id": 88,
+      "name": "Fear of dying",
+      "description": "A common fear during intense panic episodes."
+  },
+  {
+      "id": 89,
+      "name": "Marked fear or anxiety",
+      "description": "Disproportionate to the actual danger posed by specific objects or situations."
+  },
+  {
+      "id": 90,
+      "name": "Avoidance behavior",
+      "description": "Efforts to avoid feared situations, objects, or scenarios."
+  },
+  {
+      "id": 91,
+      "name": "Immediate fear response",
+      "description": "Anxiety occurs as soon as exposure to the feared object or situation happens."
+  },
+  {
+      "id": 92,
+      "name": "Intense fear or anxiety in social situations",
+      "description": "Triggered by performance situations where embarrassment or scrutiny is possible."
+  },
+  {
+      "id": 93,
+      "name": "Avoidance of social situations",
+      "description": "Avoidance of interactions or enduring them with intense anxiety."
+  },
+  {
+      "id": 94,
+      "name": "Fear of humiliation",
+      "description": "Worry about being judged, appearing anxious, or behaving inappropriately."
+  },
+  {
+      "id": 95,
+      "name": "Marked fear of using public transportation",
+      "description": "A key feature of agoraphobia related to transportation."
+  },
+  {
+      "id": 96,
+      "name": "Marked fear of open spaces",
+      "description": "Fear of locations such as parking lots, bridges, or fields."
+  },
+  {
+      "id": 97,
+      "name": "Marked fear of enclosed spaces",
+      "description": "Fear of being in theaters, elevators, or similar areas."
+  },
+  {
+      "id": 98,
+      "name": "Marked fear of standing in line or being in a crowd",
+      "description": "Fear associated with being surrounded by people or in close proximity."
+  },
+  {
+      "id": 99,
+      "name": "Marked fear of being outside the home alone",
+      "description": "Fear arises due to concerns about escape or access to help."
+  },
+  {
+      "id": 100,
+      "name": "Excessive distress about separation from attachment figures",
+      "description": "Observable distress when anticipating or experiencing separation."
+  },
+  {
+      "id": 101,
+      "name": "Excessive worry about losing attachment figures",
+      "description": "Fear of harm coming to loved ones."
+  },
+  {
+      "id": 102,
+      "name": "Worry about events causing separation",
+      "description": "Concerns about events like getting lost or being kidnapped."
+  },
+  {
+      "id": 103,
+      "name": "Reluctance to leave home due to separation fears",
+      "description": "Avoidance of leaving safe spaces to prevent separation."
+  },
+  {
+      "id": 104,
+      "name": "Failure to speak in specific social situations",
+      "description": "Despite being able to speak in other contexts (e.g., selective mutism)."
+  },
+  {
+      "id": 105,
+      "name": "Hypervigilance",
+      "description": "Constant scanning of the environment for potential threats."
+  },
+  {
+      "id": 106,
+      "name": "Impairment in daily life due to anxiety",
+      "description": "Interference in relationships, work, or routines caused by fear or worry."
+  },
+  {
+      "id": 107,
+      "name": "Recurrent, persistent thoughts, urges, or images",
+      "description": "Intrusive and unwanted, causing marked anxiety or distress."
+  },
+  {
+      "id": 108,
+      "name": "Attempts to ignore or suppress obsessions",
+      "description": "Efforts to neutralize intrusive thoughts through other thoughts or actions."
+  },
+  {
+      "id": 109,
+      "name": "Repetitive behaviors or mental acts",
+      "description": "Performed in response to obsessions, such as handwashing, checking, or counting."
+  },
+  {
+      "id": 110,
+      "name": "Behaviors aim to reduce distress",
+      "description": "Actions performed to prevent or reduce distress, often unrealistic or excessive."
+  },  
+  {
+      "id": 111,
+      "name": "Preoccupation with physical appearance",
+      "description": "Focus on perceived physical flaws, often unnoticeable to others."
+  },
+  {
+      "id": 112,
+      "name": "Repetitive behaviors related to appearance",
+      "description": "Behaviors such as mirror checking, skin picking, excessive grooming, or seeking reassurance."
+  },
+  {
+      "id": 113,
+      "name": "Difficulty discarding possessions",
+      "description": "Persistent difficulty discarding or parting with possessions, regardless of value."
+  },
+  {
+      "id": 114,
+      "name": "Accumulation of clutter",
+      "description": "Living areas become unusable due to excessive accumulation of items."
+  },
+  {
+      "id": 115,
+      "name": "Recurrent hair-pulling",
+      "description": "Pulling out one's hair, leading to noticeable hair loss."
+  },
+  {
+      "id": 116,
+      "name": "Attempts to stop hair-pulling",
+      "description": "Efforts to resist or reduce hair-pulling, often unsuccessful."
+  },
+  {
+      "id": 117,
+      "name": "Recurrent skin-picking",
+      "description": "Skin picking that results in lesions or noticeable damage."
+  },
+  {
+      "id": 118,
+      "name": "Attempts to stop skin-picking",
+      "description": "Efforts to resist or reduce skin-picking, often unsuccessful."
+  },
+  {
+      "id": 119,
+      "name": "Obsessions without compulsions",
+      "description": "Intrusive, distressing thoughts without associated ritualistic behaviors."
+  },
+  {
+      "id": 120,
+      "name": "Body-focused repetitive behaviors",
+      "description": "Behaviors such as nail-biting, lip-chewing, or other repetitive actions focused on the body."
+  },
+  {
+      "id": 121,
+      "name": "Cultural-specific obsessions",
+      "description": "Examples include obsession with perceived body odor or similar culturally specific concerns."
+  },
+  {
+      "id": 122,
+      "name": "Recurrent, distressing thoughts or urges",
+      "description": "Central to OCD, body dysmorphic disorder, and related conditions."
+  },
+  {
+      "id": 123,
+      "name": "Repetitive behaviors or rituals",
+      "description": "Actions performed to alleviate distress, such as compulsive checking or grooming."
+  },
+  {
+      "id": 124,
+      "name": "Attempts to resist or control behaviors",
+      "description": "Efforts to stop repetitive behaviors, often without success."
+  },
+  {
+      "id": 125,
+      "name": "Functional impairment",
+      "description": "Symptoms that interfere with work, relationships, or other important aspects of life."
+  },
+  {
+      "id": 126,
+      "name": "Recurrent, distressing memories of trauma",
+      "description": "Involuntary and distressing memories of the traumatic event, occurring repeatedly."
+  },
+  {
+      "id": 127,
+      "name": "Distressing dreams related to trauma",
+      "description": "Recurrent distressing dreams associated with the traumatic event."
+  },
+  {
+      "id": 128,
+      "name": "Dissociative reactions (flashbacks)",
+      "description": "Episodes where the individual feels as though the traumatic event is recurring."
+  },
+  {
+      "id": 129,
+      "name": "Intense psychological distress to trauma cues",
+      "description": "Severe emotional distress when exposed to reminders of the traumatic event."
+  },
+  {
+      "id": 130,
+      "name": "Physiological reactions to trauma cues",
+      "description": "Physical responses such as increased heart rate or sweating triggered by reminders of the trauma."
+  },
+  {
+      "id": 131,
+      "name": "Avoidance of distressing thoughts or feelings",
+      "description": "Efforts to avoid internal reminders such as memories or emotions related to the trauma."
+  },
+  {
+      "id": 132,
+      "name": "Avoidance of external trauma reminders",
+      "description": "Avoidance of places, people, or objects associated with the traumatic event."
+  },
+  {
+      "id": 133,
+      "name": "Inability to recall trauma details",
+      "description": "Difficulty remembering key aspects of the traumatic event."
+  },
+  {
+      "id": 134,
+      "name": "Persistent negative beliefs",
+      "description": "Ongoing negative perceptions about oneself, others, or the world (e.g., 'I am bad,' 'The world is dangerous')."
+  },
+  {
+      "id": 135,
+      "name": "Distorted blame related to trauma",
+      "description": "Faulty thoughts leading to self-blame or blaming others for the traumatic event."
+  },
+  {
+      "id": 136,
+      "name": "Persistent negative emotional states",
+      "description": "Chronic feelings of fear, anger, shame, or similar emotions."
+  },
+  {
+      "id": 137,
+      "name": "Diminished interest in activities",
+      "description": "Reduced participation in or enjoyment of previously engaging activities."
+  },
+  {
+      "id": 138,
+      "name": "Feelings of detachment from others",
+      "description": "Experiencing estrangement or emotional disconnection from others."
+  },
+  {
+      "id": 139,
+      "name": "Persistent inability to feel positive emotions",
+      "description": "Difficulty experiencing happiness, satisfaction, or love."
+  },
+  {
+      "id": 140,
+      "name": "Irritable or angry outbursts",
+      "description": "Frequent episodes of anger or irritability with little provocation."
+  },
+  {
+      "id": 141,
+      "name": "Reckless or self-destructive behavior",
+      "description": "Engaging in dangerous or harmful actions without regard for consequences."
+  },
+  {
+      "id": 142,
+      "name": "Hypervigilance",
+      "description": "Heightened state of awareness and scanning for potential threats."
+  },
+  {
+      "id": 143,
+      "name": "Exaggerated startle response",
+      "description": "Strong and disproportionate reaction to sudden stimuli."
+  },
+  {
+      "id": 144,
+      "name": "Difficulty concentrating",
+      "description": "Trouble focusing on tasks or maintaining attention."
+  },
+  {
+      "id": 145,
+      "name": "Sleep disturbances",
+      "description": "Difficulty falling asleep, staying asleep, or experiencing restful sleep."
+  },
+  {
+      "id": 146,
+      "name": "Marked distress disproportionate to stressor",
+      "description": "Emotional responses that exceed what would be expected for the given stressor."
+  },
+  {
+      "id": 147,
+      "name": "Persistent sadness or emotional discomfort",
+      "description": "Feelings of sadness, hopelessness, or ongoing emotional unease."
+  },
+  {
+      "id": 148,
+      "name": "Significant impairment in functioning",
+      "description": "Difficulty maintaining social, occupational, or other responsibilities due to stress."
+  },
+  {
+      "id": 149,
+      "name": "Minimal emotional responsiveness",
+      "description": "Limited emotional reactions to others, often appearing unengaged."
+  },
+  {
+      "id": 150,
+      "name": "Episodes of unexplained irritability or sadness",
+      "description": "Unexpected emotional outbursts of sadness, fear, or irritability."
+  },
+  {
+      "id": 151,
+      "name": "Failure to seek comfort when distressed",
+      "description": "Lack of effort to seek or respond to caregivers when upset."
+  },
+  {
+      "id": 152,
+      "name": "Overly familiar behavior with strangers",
+      "description": "Engaging in behavior that is unusually open or familiar with unfamiliar adults."
+  },
+  {
+      "id": 153,
+      "name": "Willingness to leave with unfamiliar adults",
+      "description": "Showing no hesitation to leave a safe environment with a stranger."
+  },
+  {
+      "id": 154,
+      "name": "Diminished checking back with caregivers",
+      "description": "Reduced tendency to stay close or return to caregivers after venturing away."
+  },
+  {
+      "id": 155,
+      "name": "Presence of distinct personality states",
+      "description": "Observable presence of two or more distinct personality states or identities, often with changes in behavior, memory, or cognition."
+  },
+  {
+      "id": 156,
+      "name": "Discontinuity in sense of self or agency",
+      "description": "Disruption in a person’s sense of self or control over their actions."
+  },
+  {
+      "id": 157,
+      "name": "Recurrent gaps in memory",
+      "description": "Significant memory lapses for everyday events, personal information, or traumatic experiences, beyond typical forgetfulness."
+  },
+  {
+      "id": 158,
+      "name": "Significant distress or dysfunction",
+      "description": "Dissociative symptoms causing distress or impairment in social, occupational, or other important areas of functioning."
+  },
+  {
+      "id": 159,
+      "name": "Symptoms unrelated to cultural or religious practices",
+      "description": "Dissociative experiences that cannot be better explained by cultural or religious norms, such as possession states."
+  },
+  {
+      "id": 160,
+      "name": "Exclusion of substance use or medical condition",
+      "description": "Dissociative symptoms not caused by substance use or medical conditions like seizures."
+  },
+  {
+      "id": 161,
+      "name": "Inability to recall personal information",
+      "description": "Difficulty remembering significant personal details, often related to trauma or stress."
+  },
+  {
+      "id": 162,
+      "name": "Localized amnesia",
+      "description": "Loss of memory for a specific period, such as events following a trauma."
+  },
+  {
+      "id": 163,
+      "name": "Selective amnesia",
+      "description": "Partial recall of only certain aspects of a traumatic event."
+  },
+  {
+      "id": 164,
+      "name": "Generalized amnesia",
+      "description": "Complete loss of memory for one’s entire life history."
+  },
+  {
+      "id": 165,
+      "name": "Depersonalization",
+      "description": "Experiences of detachment or being an outside observer of one’s thoughts, feelings, or actions."
+  },
+  {
+      "id": 166,
+      "name": "Derealization",
+      "description": "Experiences of detachment or unreality concerning surroundings, which may feel foggy or distorted."
+  },
+  {
+      "id": 167,
+      "name": "Reality testing remains intact",
+      "description": "Despite feelings of detachment, the individual understands their experiences are not real."
+  },
+  {
+      "id": 168,
+      "name": "Disorientation",
+      "description": "Difficulty identifying time, place, or personal identity."
+  },
+  {
+      "id": 169,
+      "name": "Sudden re-experiencing of traumatic memories",
+      "description": "Flashbacks or intrusive recollections of traumatic events."
+  },
+  {
+      "id": 170,
+      "name": "Emotional numbing",
+      "description": "Feeling detached or disconnected from one’s emotions."
+  },
+  {
+      "id": 171,
+      "name": "Fugue states",
+      "description": "Unexpected travel or wandering without memory of how or why the individual left."
+  },
+  {
+      "id": 172,
+      "name": "Distressing physical symptoms",
+      "description": "One or more somatic symptoms causing significant distress or functional impairment, including pain, fatigue, or other unexplained physical complaints."
+  },
+  {
+      "id": 173,
+      "name": "Excessive thoughts about symptoms",
+      "description": "Persistent thoughts about the seriousness of the symptoms, often disproportionate to their actual impact."
+  },
+  {
+      "id": 174,
+      "name": "Health-related anxiety",
+      "description": "High levels of anxiety specifically about health or somatic symptoms."
+  },
+  {
+      "id": 175,
+      "name": "Excessive time and energy devoted to health concerns",
+      "description": "Spending disproportionate time and energy managing or worrying about symptoms or health-related issues."
+  },
+  {
+      "id": 176,
+      "name": "Chronicity of symptoms",
+      "description": "Somatic symptoms persist for more than six months, even if specific complaints change over time."
+  },
+  {
+      "id": 177,
+      "name": "Preoccupation with serious illness",
+      "description": "Persistent worry about developing or having a serious health condition despite minimal or no somatic symptoms."
+  },
+  {
+      "id": 178,
+      "name": "Excessive health-related behaviors",
+      "description": "Frequent self-checks for signs of illness or avoidance of medical care out of fear of diagnosis."
+  },
+  {
+      "id": 179,
+      "name": "Alterations in motor or sensory function",
+      "description": "Symptoms such as paralysis, seizures, weakness, abnormal movement, or sensory loss without a recognized neurological cause."
+  },
+  {
+      "id": 180,
+      "name": "Incompatibility with medical conditions",
+      "description": "Symptoms inconsistent with known medical or neurological conditions."
+  }, 
+  {
+      "id": 181,
+      "name": "Falsification of symptoms",
+      "description": "Intentional fabrication or exaggeration of physical or psychological symptoms without clear external rewards."
+  },
+  {
+      "id": 182,
+      "name": "Induction of symptoms in oneself or another",
+      "description": "Inflicting illness or injury to oneself or another person, often a dependent."
+  },
+  {
+      "id": 183,
+      "name": "Psychological factors exacerbating medical conditions",
+      "description": "Psychological or behavioral factors such as stress or denial worsen a diagnosed medical condition or interfere with its treatment."
+  },
+  {
+      "id": 184,
+      "name": "Somatic preoccupation",
+      "description": "Excessive focus on physical sensations or conditions, often leading to distress or dysfunction."
+  },
+  {
+      "id": 185,
+      "name": "Social or occupational impairment due to somatic concerns",
+      "description": "Somatic symptoms cause significant disruption in daily functioning, relationships, or professional life."
+  },
+  {
+      "id": 186,
+      "name": "Persistent eating of non-nutritive, non-food substances",
+      "description": "Consumption of items such as dirt, chalk, paper, or soap, inappropriate for developmental level and not culturally supported or socially normative."
+  },
+  {
+      "id": 187,
+      "name": "Repeated regurgitation of food",
+      "description": "Food is re-chewed, re-swallowed, or spit out, causing significant distress or impairment and not attributable to a medical condition."
+  },
+  {
+      "id": 188,
+      "name": "Avoidance of food intake",
+      "description": "Significant restriction in eating leading to weight loss, nutritional deficiencies, dependence on nutritional supplements, or psychosocial impairment."
+  },
+  {
+      "id": 189,
+      "name": "Lack of interest in eating or food",
+      "description": "Avoidance based on sensory characteristics of food or fear of adverse consequences like choking or vomiting, not due to lack of food availability or cultural practices."
+  },
+  {
+      "id": 190,
+      "name": "Restriction of energy intake",
+      "description": "Maintaining a significantly low body weight relative to age, sex, developmental stage, and physical health."
+  },
+  {
+      "id": 191,
+      "name": "Intense fear of gaining weight",
+      "description": "Persistent fear of becoming fat, even while underweight."
+  },
+  {
+      "id": 192,
+      "name": "Disturbance in body image",
+      "description": "Distorted perception of body weight/shape or undue influence of body weight on self-evaluation, often with denial of the seriousness of low weight."
+  },
+  {
+      "id": 193,
+      "name": "Recurrent episodes of binge eating",
+      "description": "Eating a larger-than-normal amount of food within a discrete period, accompanied by feelings of lack of control."
+  },
+  {
+      "id": 194,
+      "name": "Inappropriate compensatory behaviors",
+      "description": "Behaviors such as self-induced vomiting, misuse of laxatives or diuretics, fasting, or excessive exercise to prevent weight gain."
+  },
+  {
+      "id": 195,
+      "name": "Body image disturbance",
+      "description": "Excessive concern with body shape and weight."
+  },
+  {
+      "id": 196,
+      "name": "Eating rapidly or until uncomfortably full",
+      "description": "Associated features of binge-eating episodes include rapid consumption or eating beyond satiety."
+  },
+  {
+      "id": 197,
+      "name": "Eating large amounts when not physically hungry",
+      "description": "Consuming food in the absence of physical hunger during binge episodes."
+  },
+  {
+      "id": 198,
+      "name": "Eating alone due to embarrassment",
+      "description": "Avoidance of eating in social settings because of shame about the quantity consumed."
+  },
+  {
+      "id": 199,
+      "name": "Negative emotions after eating",
+      "description": "Feelings of disgust, depression, or guilt following eating episodes."
+  },
+  {
+      "id": 200,
+      "name": "Preoccupation with food, weight, or body shape",
+      "description": "Persistent mental focus on food or body image across feeding and eating disorders."
+  },  
+  {
+      "id": 201,
+      "name": "Guilt or shame related to eating",
+      "description": "Negative emotions tied to eating behaviors, often associated with episodes of overeating or restriction."
+  },
+  {
+      "id": 202,
+      "name": "Nutritional deficiency",
+      "description": "Observable effects such as anemia, fatigue, or malnourishment due to restrictive or excessive eating behaviors."
+  },
+  {
+      "id": 203,
+      "name": "Medical complications",
+      "description": "Physical issues such as heart irregularities, gastrointestinal problems, or electrolyte imbalances caused by disordered eating behaviors."
+  },
+  {
+      "id": 204,
+      "name": "Difficulty initiating sleep",
+      "description": "Trouble falling asleep despite adequate opportunity to sleep."
+  },
+  {
+      "id": 205,
+      "name": "Difficulty maintaining sleep",
+      "description": "Frequent awakenings or trouble returning to sleep."
+  },
+  {
+      "id": 206,
+      "name": "Early-morning awakening",
+      "description": "Waking up too early and being unable to return to sleep."
+  },
+  {
+      "id": 207,
+      "name": "Daytime impairment or distress",
+      "description": "Fatigue, mood disturbances, or reduced functioning during the day."
+  },
+  {
+      "id": 208,
+      "name": "Excessive sleepiness despite adequate sleep",
+      "description": "Feeling excessively sleepy despite a sleep period of at least 7 hours."
+  },
+  {
+      "id": 209,
+      "name": "Recurrent daytime naps",
+      "description": "Experiencing frequent daytime lapses into sleep."
+  },
+  {
+      "id": 210,
+      "name": "Difficulty being fully awake after abrupt awakening",
+      "description": "Feeling groggy or disoriented after waking up."
+  },
+  {
+      "id": 211,
+      "name": "Prolonged main sleep episode",
+      "description": "Sleeping more than 9 hours but still feeling unrefreshed."
+  },
+  {
+      "id": 212,
+      "name": "Recurrent episodes of need to sleep during the day",
+      "description": "Episodes of falling asleep or extreme sleepiness during the day."
+  },
+  {
+      "id": 213,
+      "name": "Cataplexy",
+      "description": "Sudden loss of muscle tone triggered by strong emotions."
+  },
+  {
+      "id": 214,
+      "name": "Deficiency of hypocretin",
+      "description": "Confirmed through cerebrospinal fluid (CSF) testing."
+  },
+  {
+      "id": 215,
+      "name": "Disturbed nighttime sleep",
+      "description": "Fragmented and interrupted sleep patterns at night."
+  },
+  {
+      "id": 216,
+      "name": "Repeated episodes of airflow reduction",
+      "description": "Snoring, gasping, or choking during sleep due to obstructive apnea."
+  },
+  {
+      "id": 217,
+      "name": "Daytime fatigue from obstructive apnea",
+      "description": "Feeling excessively tired during the day due to interrupted nighttime breathing."
+  },
+  {
+      "id": 218,
+      "name": "Observed apneas",
+      "description": "Breathing pauses during sleep noticed by a bed partner."
+  },
+  {
+      "id": 219,
+      "name": "Repeated breathing pauses without effort",
+      "description": "Episodes of breathing cessation during sleep with no respiratory effort."
+  },
+  {
+      "id": 220,
+      "name": "Shallow breathing during sleep",
+      "description": "Reduced airflow during sleep leading to symptoms such as fatigue or headaches."
+  },
+  {
+      "id": 221,
+      "name": "Persistent sleep-wake pattern misalignment",
+      "description": "Conflict between sleep schedule and environmental or social demands."
+  },
+  {
+      "id": 222,
+      "name": "Daytime sleepiness due to circadian misalignment",
+      "description": "Excessive sleepiness caused by inability to align sleep patterns with external schedules."
+  },
+  {
+      "id": 223,
+      "name": "Sleepwalking",
+      "description": "Rising from bed and walking around during sleep without awareness."
+  },
+  {
+      "id": 224,
+      "name": "Sleep terrors",
+      "description": "Sudden arousals during sleep with intense fear and autonomic activation."
+  },
+  {
+      "id": 225,
+      "name": "Recurrent nightmares",
+      "description": "Disturbing and vivid dreams that awaken the individual and cause distress."
+  },
+  {
+      "id": 226,
+      "name": "Difficulty returning to sleep after nightmares",
+      "description": "Trouble resuming sleep following an awakening caused by a nightmare."
+  },
+  {
+      "id": 227,
+      "name": "Vocalizations during REM sleep",
+      "description": "Talking, shouting, or making sounds during rapid eye movement (REM) sleep."
+  },
+  {
+      "id": 228,
+      "name": "Dream enactment behaviors",
+      "description": "Performing actions such as punching or kicking during REM sleep."
+  },
+  {
+      "id": 229,
+      "name": "Unpleasant sensations in the legs",
+      "description": "Feelings of discomfort or unease in the legs, particularly when at rest."
+  },
+  {
+      "id": 230,
+      "name": "Relief from movement",
+      "description": "Symptoms improve with walking or stretching."
+  },
+  {
+      "id": 231,
+      "name": "Sleep disturbance due to leg discomfort",
+      "description": "Difficulty sleeping due to discomfort or restlessness in the legs."
+  }, 
+  {
+      "id": 232,
+      "name": "Significant delay in ejaculation",
+      "description": "Noticeable delay in ejaculation during sexual activity despite adequate stimulation."
+  },
+  {
+      "id": 233,
+      "name": "Infrequency or absence of ejaculation",
+      "description": "Rare or absent ejaculation even with appropriate stimulation."
+  },
+  {
+      "id": 234,
+      "name": "Distress related to delayed or absent ejaculation",
+      "description": "Emotional or interpersonal difficulties stemming from ejaculation issues."
+  },
+  {
+      "id": 235,
+      "name": "Difficulty obtaining an erection",
+      "description": "Challenges in achieving an erection during sexual activity."
+  },
+  {
+      "id": 236,
+      "name": "Difficulty maintaining an erection",
+      "description": "Inability to sustain an erection until the completion of sexual activity."
+  },
+  {
+      "id": 237,
+      "name": "Decrease in erectile rigidity",
+      "description": "Reduced firmness of erection that interferes with penetration or satisfaction."
+  },
+  {
+      "id": 238,
+      "name": "Significant delay or absence of orgasm",
+      "description": "Delayed, infrequent, or absent orgasm during sexual activity."
+  },
+  {
+      "id": 239,
+      "name": "Reduced intensity of orgasmic sensations",
+      "description": "Diminished experience of pleasure during orgasm."
+  },
+  {
+      "id": 240,
+      "name": "Distress related to orgasmic issues",
+      "description": "Emotional or interpersonal difficulties caused by orgasmic challenges."
+  },
+  {
+      "id": 241,
+      "name": "Absent or reduced sexual interest",
+      "description": "Lack of sexual fantasies, thoughts, or desire for sexual activity."
+  },
+  {
+      "id": 242,
+      "name": "Decreased initiation of sexual activity",
+      "description": "Reduced willingness or responsiveness to a partner's sexual advances."
+  },
+  {
+      "id": 243,
+      "name": "Reduced excitement during sexual activity",
+      "description": "Decreased enjoyment or pleasure during sexual encounters."
+  },
+  {
+      "id": 244,
+      "name": "Reduced genital or non-genital sensations",
+      "description": "Diminished physical sensations during sexual activity."
+  },
+  {
+      "id": 245,
+      "name": "Difficulty with vaginal penetration",
+      "description": "Challenges or pain experienced during vaginal intercourse or penetration attempts."
+  },
+  {
+      "id": 246,
+      "name": "Pelvic pain during penetration",
+      "description": "Marked vulvovaginal or pelvic pain associated with intercourse or penetration."
+  },
+  {
+      "id": 247,
+      "name": "Fear of pain related to vaginal penetration",
+      "description": "Anxiety or distress associated with anticipated pain during penetration."
+  },
+  {
+      "id": 248,
+      "name": "Tensing of pelvic muscles during penetration",
+      "description": "Involuntary tightening of pelvic muscles during attempted vaginal penetration."
+  },
+  {
+      "id": 249,
+      "name": "Absent sexual thoughts or fantasies",
+      "description": "Persistent lack of sexual thoughts or fantasies."
+  },
+  {
+      "id": 250,
+      "name": "Low desire for sexual activity",
+      "description": "Deficient or absent interest in engaging in sexual activity."
+  },
+  {
+      "id": 251,
+      "name": "Persistent or recurrent early ejaculation",
+      "description": "Ejaculation occurring within approximately 1 minute of vaginal penetration or before desired."
+  },
+  {
+      "id": 252,
+      "name": "Distress related to early ejaculation",
+      "description": "Emotional or interpersonal difficulties stemming from premature ejaculation."
+  },
+  {
+      "id": 253,
+      "name": "Substance-induced sexual dysfunction",
+      "description": "Disturbance in sexual function related to substance intoxication, medication, or withdrawal."
+  },
+  {
+      "id": 254,
+      "name": "Decreased libido due to substances or medications",
+      "description": "Reduction in sexual desire linked to substance use or medication."
+  },
+  {
+      "id": 255,
+      "name": "Difficulty achieving or maintaining an erection due to substances",
+      "description": "Erectile challenges associated with substance intoxication, medication, or withdrawal."
+  },
+  {
+      "id": 256,
+      "name": "Difficulty reaching orgasm due to substances",
+      "description": "Challenges in achieving orgasm caused by substance use or medication."
+  },
+  {
+      "id": 257,
+      "name": "Strong desire to be of the other gender",
+      "description": "A persistent and strong desire to be of the other gender or an insistence that one is the other gender."
+  },
+  {
+      "id": 258,
+      "name": "Preference for clothing associated with the other gender",
+      "description": "A marked preference for wearing clothing typical of the other gender and rejection of clothing aligned with their assigned gender."
+  },
+  {
+      "id": 259,
+      "name": "Preference for cross-gender roles in play",
+      "description": "A strong preference for role-playing or pretending to be characters or people of the other gender."
+  },
+  {
+      "id": 260,
+      "name": "Preference for toys or activities associated with the other gender",
+      "description": "A marked preference for toys, games, or activities stereotypically associated with the other gender, accompanied by rejection of those linked to their assigned gender."
+  },  
+  {
+      "id": 261,
+      "name": "Preference for playmates of the other gender",
+      "description": "A persistent preference for socializing and playing with children of the other gender."
+  },
+  {
+      "id": 262,
+      "name": "Rejection of assigned gender traits",
+      "description": "Avoidance or rejection of physical traits, roles, or behaviors associated with their assigned gender."
+  },
+  {
+      "id": 263,
+      "name": "Strong dislike of one’s sexual anatomy",
+      "description": "Significant distress or dislike toward physical characteristics associated with their assigned gender, such as genitals or secondary sexual traits."
+  },
+  {
+      "id": 264,
+      "name": "Desire for physical traits of the experienced gender",
+      "description": "A strong wish to have physical characteristics or sexual anatomy that align with their experienced gender."
+  },
+  {
+      "id": 265,
+      "name": "Incongruence between experienced and assigned gender",
+      "description": "Discomfort or incongruence between one’s experienced gender and physical characteristics, such as breasts or genitals, associated with the assigned gender."
+  },
+  {
+      "id": 266,
+      "name": "Desire to remove primary or secondary sexual characteristics",
+      "description": "A strong desire to be rid of primary or secondary sexual characteristics associated with the assigned gender."
+  },
+  {
+      "id": 267,
+      "name": "Desire for physical traits of the experienced gender",
+      "description": "A strong wish to possess physical sexual characteristics that align with their experienced gender."
+  },
+  {
+      "id": 268,
+      "name": "Desire to be treated as the other gender",
+      "description": "A persistent desire to be treated as the other gender or as a gender different from their assigned one."
+  },
+  {
+      "id": 269,
+      "name": "Conviction of having typical feelings of the other gender",
+      "description": "A firm conviction that one possesses the feelings or reactions typical of the other gender."
+  },
+  {
+      "id": 270,
+      "name": "Distress or impairment due to gender incongruence",
+      "description": "Significant distress or functional impairment in social, occupational, or other important areas due to gender incongruence."
+  },
+  {
+      "id": 271,
+      "name": "Frequent temper outbursts",
+      "description": "Recurring episodes of intense anger or frustration, often disproportionate to the situation."
+  },
+  {
+      "id": 272,
+      "name": "Easily annoyed or touchy",
+      "description": "Heightened sensitivity to perceived annoyances or slights, leading to irritability."
+  },
+  {
+      "id": 273,
+      "name": "Angry and resentful",
+      "description": "Persistent feelings of anger and a tendency to hold grudges."
+  },
+  {
+      "id": 274,
+      "name": "Argues with authority figures",
+      "description": "Frequent conflicts with parents, teachers, or other authority figures."
+  },
+  {
+      "id": 275,
+      "name": "Refuses to comply with requests or rules",
+      "description": "Persistent defiance of rules or directives from authority figures."
+  },
+  {
+      "id": 276,
+      "name": "Deliberately annoys others",
+      "description": "Purposeful actions intended to irritate or provoke others."
+  },
+  {
+      "id": 277,
+      "name": "Blames others for mistakes or behavior",
+      "description": "Refusal to accept responsibility for one’s actions, often shifting blame onto others."
+  },
+  {
+      "id": 278,
+      "name": "Spiteful or vindictive",
+      "description": "Exhibits spiteful or vengeful behavior at least twice in the past six months."
+  },
+  {
+      "id": 279,
+      "name": "Bullies, threatens, or intimidates others",
+      "description": "Aggressive behavior aimed at dominating or harming others."
+  },
+  {
+      "id": 280,
+      "name": "Initiates physical fights",
+      "description": "Repeated involvement in physical altercations."
+  },
+  {
+      "id": 281,
+      "name": "Uses a weapon that can cause serious harm",
+      "description": "Engages in violence with weapons like bats, knives, or firearms."
+  },
+  {
+      "id": 282,
+      "name": "Physically cruel to people or animals",
+      "description": "Intentional harm or cruelty directed at people or animals."
+  },
+  {
+      "id": 283,
+      "name": "Steals while confronting a victim",
+      "description": "Acts of theft involving direct confrontation, such as mugging or extortion."
+  },
+  {
+      "id": 284,
+      "name": "Forced sexual activity",
+      "description": "Coercing or forcing another person into sexual acts."
+  },
+  {
+      "id": 285,
+      "name": "Deliberate fire-setting",
+      "description": "Intentional setting of fires to cause harm or destruction."
+  },
+  {
+      "id": 286,
+      "name": "Destruction of property",
+      "description": "Willful acts of vandalism or destruction of others’ belongings."
+  },
+  {
+      "id": 287,
+      "name": "Breaking and entering",
+      "description": "Illegally entering buildings to commit theft or other offenses."
+  },
+  {
+      "id": 288,
+      "name": "Deceitfulness to obtain goods or favors",
+      "description": "Lying or manipulation to acquire resources or avoid obligations."
+  },
+  {
+      "id": 289,
+      "name": "Stealing items without confrontation",
+      "description": "Theft of objects without directly confronting a victim, such as shoplifting."
+  },
+  {
+      "id": 290,
+      "name": "Stays out late despite parental prohibitions",
+      "description": "Repeated disobedience of curfews, beginning before age 13."
+  },
+  {
+      "id": 291,
+      "name": "Runs away from home",
+      "description": "Leaving home overnight at least twice without parental consent."
+  },
+  {
+      "id": 292,
+      "name": "Frequent truancy",
+      "description": "Chronic absence from school without valid excuse, starting before age 13."
+  },
+  {
+      "id": 293,
+      "name": "Verbal or physical aggression",
+      "description": "Recurrent outbursts involving shouting, hitting, or property damage."
+  },
+  {
+      "id": 294,
+      "name": "Outbursts grossly disproportionate to provocation",
+      "description": "Aggressive responses that exceed the level of provocation or stress."
+  },
+  {
+      "id": 295,
+      "name": "Deliberate fire-setting on multiple occasions",
+      "description": "Repeated acts of intentionally setting fires for personal gratification."
+  },
+  {
+      "id": 296,
+      "name": "Fascination with fire",
+      "description": "Preoccupation with the uses, consequences, or imagery of fire."
+  },
+  {
+      "id": 297,
+      "name": "Pleasure or relief from fire-setting",
+      "description": "Feelings of satisfaction or calmness after setting or witnessing fires."
+  },
+  {
+      "id": 298,
+      "name": "Failure to resist impulses to steal",
+      "description": "Recurrent episodes of theft without need or monetary value."
+  },
+  {
+      "id": 299,
+      "name": "Tension before theft",
+      "description": "Heightened arousal or tension preceding acts of stealing."
+  },
+  {
+      "id": 300,
+      "name": "Pleasure or relief after theft",
+      "description": "Feelings of gratification or calmness following theft."
+  },
+  {
+      "id": 301,
+      "name": "Memory impairment",
+      "description": "Difficulty recalling recent events, forgetting personal information, or repeating questions or conversations."
+  },
+  {
+      "id": 302,
+      "name": "Executive functioning impairment",
+      "description": "Difficulty planning, organizing, multitasking, or making decisions. Includes poor judgment and struggles with problem-solving."
+  },
+  {
+      "id": 303,
+      "name": "Attention impairment",
+      "description": "Reduced ability to focus or sustain attention, easily distracted or overwhelmed by tasks."
+  },
+  {
+      "id": 304,
+      "name": "Language deficits",
+      "description": "Difficulty finding the right words, using nonspecific terms, or trouble understanding language."
+  },
+  {
+      "id": 305,
+      "name": "Perceptual-motor impairments",
+      "description": "Difficulty with spatial orientation, hand-eye coordination, or recognizing objects, faces, or environments."
+  },
+  {
+      "id": 306,
+      "name": "Social cognition deficits",
+      "description": "Reduced empathy, inappropriate behavior, or difficulty interpreting social cues."
+  },
+  {
+      "id": 307,
+      "name": "Behavioral and emotional changes",
+      "description": "Includes irritability, aggression, apathy, mood swings, and emotional instability."
+  },
+  {
+      "id": 308,
+      "name": "Hallucinations and delusions",
+      "description": "Perceiving things that are not present or having fixed, false beliefs such as paranoia or grandiosity."
+  },
+  {
+      "id": 309,
+      "name": "Fluctuating attention (delirium)",
+      "description": "Rapid shifts in alertness or awareness throughout the day."
+  },
+  {
+      "id": 310,
+      "name": "Disorganized thinking (delirium)",
+      "description": "Confusion or incoherent speech patterns."
+  },
+  {
+      "id": 311,
+      "name": "Perceptual disturbances (delirium)",
+      "description": "Hallucinations or misinterpreting stimuli."
+  },
+  {
+      "id": 312,
+      "name": "Disturbed sleep-wake cycle (delirium)",
+      "description": "Reversal of day-night sleep patterns or difficulty sleeping."
+  },
+  {
+      "id": 313,
+      "name": "Severe cognitive decline (major neurocognitive disorder)",
+      "description": "Profound loss in memory, language, or executive functioning."
+  },
+  {
+      "id": 314,
+      "name": "Loss of independence (major neurocognitive disorder)",
+      "description": "Inability to perform daily activities like cooking, dressing, or managing finances."
+  },
+  {
+      "id": 315,
+      "name": "Mild cognitive decline",
+      "description": "Subtle difficulties with memory, planning, or language, while maintaining daily activities with effort or strategies."
+  },
+  {
+      "id": 316,
+      "name": "Personality changes (frontotemporal neurocognitive disorder)",
+      "description": "Disinhibition, apathy, or compulsive behaviors characteristic of the behavioral variant."
+  },
+  {
+      "id": 317,
+      "name": "Language loss (frontotemporal neurocognitive disorder)",
+      "description": "Progressive loss of speech or comprehension."
+  },
+  {
+      "id": 318,
+      "name": "Gradual cognitive decline (Alzheimer’s disease)",
+      "description": "Progressive worsening of memory and cognitive function over time."
+  },
+  {
+      "id": 319,
+      "name": "Impaired recognition (Alzheimer’s disease)",
+      "description": "Difficulty recognizing familiar people or places."
+  },
+  {
+      "id": 320,
+      "name": "Physical symptoms (traumatic brain injury)",
+      "description": "Headaches, dizziness, or sensitivity to light/noise."
+  },
+  {
+      "id": 321,
+      "name": "Cognitive impairments (traumatic brain injury)",
+      "description": "Memory and attention deficits following injury."
+  },
+  {
+      "id": 322,
+      "name": "Neurological symptoms (substance/medication-induced)",
+      "description": "Tremors, ataxia, or slurred speech related to substance effects."
+  },
+  {
+      "id": 323,
+      "name": "Motor symptoms (Parkinson’s disease)",
+      "description": "Bradykinesia, rigidity, and tremors."
+  },
+  {
+      "id": 324,
+      "name": "Cognitive symptoms (Parkinson’s disease)",
+      "description": "Memory and executive function impairments."
+  },
+  {
+      "id": 325,
+      "name": "Chorea (Huntington’s disease)",
+      "description": "Involuntary, jerky movements characteristic of Huntington's disease."
+  },
+  {
+      "id": 326,
+      "name": "Rapid cognitive decline (prion disease)",
+      "description": "Marked deterioration in memory, coordination, and language."
+  },
+  {
+      "id": 327,
+      "name": "Myoclonus (prion disease)",
+      "description": "Involuntary muscle jerks associated with prion disease."
+  },  
+  {
+      "id": 328,
+      "name": "Persistent distrust and suspicion of others",
+      "description": "Ongoing belief that others are exploiting, harming, or deceiving them without sufficient basis."
+  },
+  {
+      "id": 329,
+      "name": "Belief that others are exploiting, harming, or deceiving them",
+      "description": "Unfounded conviction that others have malicious intentions toward them."
+  },
+  {
+      "id": 330,
+      "name": "Reluctance to confide in others",
+      "description": "Hesitation or refusal to share personal information due to fear it will be used against them."
+  },
+  {
+      "id": 331,
+      "name": "Misinterpretation of benign remarks as demeaning or threatening",
+      "description": "Perceiving neutral or kind comments as critical or hostile."
+  },
+  {
+      "id": 332,
+      "name": "Holding grudges for perceived slights or wrongs",
+      "description": "Difficulty forgiving others and maintaining long-term resentment for minor offenses."
+  },
+  {
+      "id": 333,
+      "name": "Unjustified suspicion of partner's fidelity",
+      "description": "Baseless doubts or accusations about a romantic partner's loyalty."
+  },
+  {
+      "id": 334,
+      "name": "Rapid defensiveness or hostility in response to perceived criticism",
+      "description": "Quick and intense anger or aggression triggered by a belief of being attacked or criticized."
+  },
+  {
+      "id": 335,
+      "name": "Lack of interest in forming or maintaining close relationships",
+      "description": "Persistent disinterest in establishing or sustaining social bonds, including with family and peers."
+  },
+  {
+      "id": 336,
+      "name": "Preference for solitary activities",
+      "description": "Strong inclination toward spending time alone and engaging in activities that do not require social interaction."
+  },
+  {
+      "id": 337,
+      "name": "Limited pleasure in most activities, including hobbies",
+      "description": "Minimal enjoyment derived from various activities, even those typically found pleasurable."
+  },
+  {
+      "id": 338,
+      "name": "Emotional coldness or detachment",
+      "description": "Noticeable lack of emotional warmth, connection, or responsiveness in interactions with others."
+  },
+  {
+      "id": 339,
+      "name": "Indifference to praise or criticism",
+      "description": "Absence of concern or reaction to feedback from others, whether positive or negative."
+  },
+  {
+      "id": 340,
+      "name": "Minimal or absent desire for sexual experiences",
+      "description": "Little to no interest in engaging in sexual activities, even within close relationships."
+  },
+  {
+      "id": 341,
+      "name": "Lack of close friends or confidants outside of family",
+      "description": "Few or no meaningful relationships outside immediate family due to preference for solitude."
+  },
+  {
+      "id": 342,
+      "name": "Eccentric behaviors, beliefs, or appearance",
+      "description": "Unusual or peculiar mannerisms, beliefs, or style of dress that deviate significantly from societal norms."
+  },
+  {
+      "id": 343,
+      "name": "Odd speech patterns or thinking",
+      "description": "Speech or thought patterns that are vague, metaphorical, overly elaborate, or difficult to follow."
+  },
+  {
+      "id": 344,
+      "name": "Suspiciousness or paranoid ideation",
+      "description": "A persistent sense of mistrust or paranoia about the motives or intentions of others."
+  },
+  {
+      "id": 345,
+      "name": "Social anxiety due to paranoid fears, not judgment of others",
+      "description": "Avoidance or discomfort in social interactions driven by fear of others’ intentions rather than fear of being judged."
+  },
+  {
+      "id": 346,
+      "name": "Inappropriate or constricted emotional expression",
+      "description": "Emotional reactions that are either excessively limited or inappropriate for the situation."
+  },
+  {
+      "id": 347,
+      "name": "Unusual perceptual experiences",
+      "description": "Experiences such as sensing the presence of others when no one is present or other distortions in perception."
+  },
+  {
+      "id": 348,
+      "name": "Lack of close friends or confidants outside of family",
+      "description": "Few or no meaningful personal relationships beyond immediate family, often due to social discomfort or eccentric behavior."
+  },
+  {
+      "id": 349,
+      "name": "Repeated disregard for the rights of others",
+      "description": "A consistent pattern of violating the rights of others, including unlawful or unethical behaviors."
+  },
+  {
+      "id": 350,
+      "name": "Deceitfulness",
+      "description": "Engaging in lying, use of aliases, or conning others for personal gain or pleasure."
+  },
+  {
+      "id": 351,
+      "name": "Impulsivity or failure to plan ahead",
+      "description": "Acting without forethought or failing to consider consequences of actions."
+  },
+  {
+      "id": 352,
+      "name": "Irritability and aggressiveness",
+      "description": "Frequent displays of anger or aggression, often leading to physical altercations."
+  },
+  {
+      "id": 353,
+      "name": "Reckless disregard for the safety of self or others",
+      "description": "Engaging in dangerous behaviors with little or no concern for safety."
+  },
+  {
+      "id": 354,
+      "name": "Consistent irresponsibility",
+      "description": "A pattern of failing to meet obligations such as work, finances, or social duties."
+  },
+  {
+      "id": 355,
+      "name": "Lack of remorse after harming others",
+      "description": "An absence of guilt or regret for causing harm to others."
+  },
+  {
+      "id": 356,
+      "name": "Intense fear of abandonment",
+      "description": "A pervasive fear of being rejected or left alone, often leading to frantic efforts to avoid it."
+  },
+  {
+      "id": 357,
+      "name": "Unstable relationships",
+      "description": "Patterns of alternating between idealization and devaluation in interpersonal relationships."
+  },
+  {
+      "id": 358,
+      "name": "Identity disturbance",
+      "description": "An unstable or distorted self-image or sense of self."
+  },
+  {
+      "id": 359,
+      "name": "Impulsivity in self-damaging behaviors",
+      "description": "Engaging in risky activities such as substance abuse, reckless spending, or unsafe sexual practices."
+  },
+  {
+      "id": 360,
+      "name": "Recurrent suicidal behaviors or self-harm",
+      "description": "Frequent expressions of suicidal ideation, gestures, or attempts, along with self-injurious behaviors."
+  },
+  {
+      "id": 361,
+      "name": "Intense mood instability",
+      "description": "Rapid and unpredictable changes in emotional states."
+  },
+  {
+      "id": 362,
+      "name": "Chronic feelings of emptiness",
+      "description": "A pervasive sense of inner void or lack of fulfillment."
+  },
+  {
+      "id": 363,
+      "name": "Inappropriate or intense anger",
+      "description": "Episodes of intense or poorly controlled anger, often disproportionate to the situation."
+  },
+  {
+      "id": 364,
+      "name": "Transient paranoia or dissociation under stress",
+      "description": "Short episodes of paranoid thinking or feeling detached from reality, triggered by stress."
+  },
+  {
+      "id": 365,
+      "name": "Discomfort when not the center of attention",
+      "description": "A strong need to be the focus of attention in social situations, leading to discomfort if not achieved."
+  },
+  {
+      "id": 366,
+      "name": "Inappropriate sexually seductive or provocative behavior",
+      "description": "Behaviors aimed at gaining attention or approval through sexual means, inappropriate to the situation."
+  },
+  {
+      "id": 367,
+      "name": "Rapidly shifting and shallow emotional expressions",
+      "description": "Emotions that change quickly and lack depth or authenticity."
+  },
+  {
+      "id": 368,
+      "name": "Use of physical appearance to draw attention",
+      "description": "Excessive focus on appearance to gain attention or approval."
+  },
+  {
+      "id": 369,
+      "name": "Excessively impressionistic and vague speech",
+      "description": "Speech that is overly dramatic but lacks detail or clarity."
+  },
+  {
+      "id": 370,
+      "name": "Overly dramatic, theatrical, or exaggerated emotions",
+      "description": "Expressing emotions in an exaggerated manner to gain attention."
+  },
+  {
+      "id": 371,
+      "name": "Suggestibility",
+      "description": "Being easily influenced by others or circumstances."
+  },
+  {
+      "id": 372,
+      "name": "Perception of relationships as more intimate than they are",
+      "description": "Viewing casual or superficial relationships as deeper or more meaningful than they actually are."
+  },
+  {
+      "id": 373,
+      "name": "Grandiose sense of self-importance",
+      "description": "Exaggerated self-view, often involving overstatement of achievements or abilities."
+  },
+  {
+      "id": 374,
+      "name": "Preoccupation with fantasies of success, power, or beauty",
+      "description": "Persistent daydreaming about unattainable ideals such as unlimited power or beauty."
+  },
+  {
+      "id": 375,
+      "name": "Belief in being 'special' and only understood by high-status individuals",
+      "description": "Viewing oneself as unique and associating only with those perceived as equally special."
+  },
+  {
+      "id": 376,
+      "name": "Need for excessive admiration",
+      "description": "A craving for constant attention and approval from others."
+  },
+  {
+      "id": 377,
+      "name": "Sense of entitlement",
+      "description": "Unreasonable expectations of favorable treatment or compliance with one's desires."
+  },
+  {
+      "id": 378,
+      "name": "Exploitativeness in relationships",
+      "description": "Using others for personal gain without regard for their feelings or needs."
+  },
+  {
+      "id": 379,
+      "name": "Lack of empathy for others",
+      "description": "Inability or unwillingness to recognize or understand the feelings of others."
+  },
+  {
+      "id": 380,
+      "name": "Envy of others or belief others are envious",
+      "description": "Persistent feelings of jealousy or the belief that others are jealous of them."
+  },
+  {
+      "id": 381,
+      "name": "Arrogant or haughty behaviors or attitudes",
+      "description": "Displaying an overt sense of superiority or dismissiveness toward others."
+  },   
+  {
+      "id": 382,
+      "name": "Avoidance of social interactions due to fear of criticism or rejection",
+      "description": "Persistent avoidance of social situations stemming from a fear of being negatively judged or rejected by others."
+  },
+  {
+      "id": 383,
+      "name": "Reluctance to engage in new activities due to fear of embarrassment",
+      "description": "Hesitation to try new experiences or activities because of a fear of being humiliated."
+  },
+  {
+      "id": 384,
+      "name": "Preoccupation with being criticized or rejected in social settings",
+      "description": "Excessive worry about negative evaluation or rejection in interpersonal interactions."
+  },
+  {
+      "id": 385,
+      "name": "Inhibition in interpersonal situations due to feelings of inadequacy",
+      "description": "Limited or restrained behavior in social situations because of a sense of inferiority."
+  },
+  {
+      "id": 386,
+      "name": "View of self as socially inept or inferior",
+      "description": "Belief that one lacks social skills or is fundamentally less capable than others."
+  },
+  {
+      "id": 387,
+      "name": "Reluctance to take personal risks or try new things",
+      "description": "Avoidance of risks or unfamiliar situations due to fear of failure or embarrassment."
+  },
+  {
+      "id": 388,
+      "name": "Extreme sensitivity to negative evaluation",
+      "description": "Heightened awareness and distress about being judged or criticized by others."
+  },
+  {
+      "id": 389,
+      "name": "Difficulty making decisions without excessive advice or reassurance",
+      "description": "Inability to make choices independently and seeking constant guidance or confirmation from others."
+  },
+  {
+      "id": 390,
+      "name": "Fear of disagreeing with others due to fear of losing support",
+      "description": "Reluctance to express differing opinions because of the worry that it may lead to loss of approval or assistance."
+  },
+  {
+      "id": 391,
+      "name": "Difficulty initiating projects or tasks independently",
+      "description": "Reliance on others for direction and a lack of self-confidence to start tasks on one’s own."
+  },
+  {
+      "id": 392,
+      "name": "Extreme efforts to obtain nurturing and support",
+      "description": "Engaging in excessive behaviors to ensure care and approval from others, even at the cost of personal boundaries."
+  },
+  {
+      "id": 393,
+      "name": "Feelings of discomfort or helplessness when alone",
+      "description": "A strong sense of unease or inability to function independently without companionship."
+  },
+  {
+      "id": 394,
+      "name": "Urgent need to establish a new relationship after one ends",
+      "description": "Compulsive pursuit of a new relationship to replace a lost source of support or care."
+  },
+  {
+      "id": 395,
+      "name": "Unrealistic fears of being left to care for oneself",
+      "description": "An intense and disproportionate fear of abandonment and being unable to cope alone."
+  },
+  {
+      "id": 396,
+      "name": "Preoccupation with details, rules, or schedules to the detriment of productivity",
+      "description": "Fixation on organizational aspects that impairs efficiency and goal achievement."
+  },
+  {
+      "id": 397,
+      "name": "Perfectionism that interferes with task completion",
+      "description": "Unrealistically high standards that prevent timely completion of tasks."
+  },
+  {
+      "id": 398,
+      "name": "Excessive devotion to work or productivity at the expense of leisure",
+      "description": "Neglect of social or recreational activities due to overcommitment to work or responsibilities."
+  },
+  {
+      "id": 399,
+      "name": "Rigidity and stubbornness in behavior or attitudes",
+      "description": "Inflexible adherence to personal routines or beliefs, resisting changes or alternative ideas."
+  },
+  {
+      "id": 400,
+      "name": "Reluctance to delegate tasks unless done their way",
+      "description": "Hesitation to assign tasks to others unless they follow exact instructions."
+  },
+  {
+      "id": 401,
+      "name": "Hoarding items of no sentimental or monetary value",
+      "description": "Retention of objects without practical use, leading to clutter and difficulty discarding them."
+  },
+  {
+      "id": 402,
+      "name": "Misery over spending, viewing money as something to be hoarded",
+      "description": "Excessive frugality and reluctance to spend money, even when it is reasonable or necessary."
+  },  
+  {
+      "id": 403,
+      "name": "Compulsive engagement in specific activities",
+      "description": "Repetitive or ritualistic behaviors related to atypical sexual interests."
+  },
+  {
+      "id": 404,
+      "name": "Difficulty controlling impulses",
+      "description": "Failure to resist urges or behaviors despite negative consequences."
+  },
+  {
+      "id": 405,
+      "name": "Violation of social or legal norms",
+      "description": "Actions breaching social, moral, or legal boundaries, such as voyeurism or exhibitionism."
+  },
+  {
+      "id": 406,
+      "name": "Distress or impairment",
+      "description": "Persistent preoccupation with atypical interests leading to emotional or functional problems."
+  },
+  {
+      "id": 407,
+      "name": "Risky or harmful behaviors",
+      "description": "Engagement in activities that endanger oneself or others, such as exposing oneself or coercing others."
+  },
+  {
+      "id": 408,
+      "name": "Exposure of genitals to unsuspecting individuals",
+      "description": "Revealing one's genitals to people without their consent for shock or attention, characteristic ofExhibitionistic Disorder."
+  },
+    {
+      "id": 409,
+      "name": "Engaging in inappropriate or public sexual acts",
+      "description": "Performing sexual acts in public settings to shock or gain attention, associated with Exhibitionistic Disorder."
+  },
+  {
+      "id": 410,
+      "name": "Intense focus on non-living objects or specific body parts",
+      "description": "Sexual arousal tied to fetishized items or body parts, such as shoes or feet, seen in Fetishistic Disorder."
+  },
+  {
+      "id": 411,
+      "name": "Difficulty engaging in typical sexual activities without fetishized items",
+      "description": "Dependence on specific objects or body parts for sexual arousal, part of Fetishistic Disorder."
+  },
+  {
+      "id": 412,
+      "name": "Touching or rubbing against non-consenting individuals",
+      "description": "Seeking sexual arousal by physical contact with others without consent, often in crowded spaces, associated withFrotteuristic Disorder."
+  },
+    {
+      "id": 413,
+      "name": "Seeking physical proximity to unsuspecting individuals for sexual arousal",
+      "description": "Positioning oneself close to others to achieve sexual stimulation, linked to Frotteuristic Disorder."
+  },
+  {
+      "id": 414,
+      "name": "Persistent sexual focus on prepubescent children",
+      "description": "Sexual attraction or fantasies involving children, defining Pedophilic Disorder."
+  },
+  {
+      "id": 415,
+      "name": "Engaging in activities or seeking opportunities to be alone with children",
+      "description": "Actions driven by a sexual focus on children, characteristic of Pedophilic Disorder."
+  },
+  {
+      "id": 416,
+      "name": "Seeking situations involving humiliation, pain, or suffering for sexual arousal",
+      "description": "Deriving sexual gratification from being subjected to pain or humiliation, part of Sexual Masochism Disorder."
+  },
+  {
+      "id": 417,
+      "name": "Physical marks or injuries indicative of self-inflicted harm",
+      "description": "Visible signs of harm resulting from masochistic activities, linked to Sexual Masochism Disorder."
+  },
+  {
+      "id": 418,
+      "name": "Infliction of pain, humiliation, or suffering on others for sexual gratification",
+      "description": "Gaining sexual pleasure from causing others pain or suffering, associated with Sexual Sadism Disorder."
+  },
+  {
+      "id": 419,
+      "name": "Coercing or manipulating others into participating in harmful activities",
+      "description": "Forcing others into painful or humiliating situations for sexual pleasure, part of Sexual Sadism Disorder."
+  },
+  {
+      "id": 420,
+      "name": "Preoccupation with cross-dressing for sexual arousal",
+      "description": "Using clothing associated with another gender to achieve sexual stimulation, characteristic of TransvesticDisorder."
+  },
+    {
+      "id": 421,
+      "name": "Distress or compulsive behaviors related to cross-dressing",
+      "description": "Experiencing emotional discomfort or compulsions tied to cross-dressing, linked to Transvestic Disorder."
+  },
+  {
+      "id": 422,
+      "name": "Secretly watching others engaged in private activities",
+      "description": "Observing people in private acts, such as undressing or sexual activities, without their consent, associatedwith Voyeuristic Disorder."
+  },
+    {
+      "id": 423,
+      "name": "Using tools or strategies to facilitate surveillance",
+      "description": "Employing items like binoculars or cameras to observe others secretly, linked to Voyeuristic Disorder."
+  },
+  {
+      "id": 424,
+      "name": "Unusual or Atypical Behaviors",
+      "description": "Actions or behaviors that deviate significantly from cultural or social norms, such as bizarre actions orunpredictable reactions to routine events."
+  },
+    {
+      "id": 425,
+      "name": "Cognitive Impairments",
+      "description": "Observable confusion or disorganized thinking, as well as memory difficulties not attributable to neurocognitivedisorders."
+  },
+    {
+      "id": 426,
+      "name": "Affective Instability",
+      "description": "Intense, rapid emotional fluctuations and inappropriate emotional responses, such as laughing during a sad event"
+  },
+    {
+      "id": 427,
+      "name": "Behavioral Changes",
+      "description": "Sudden or prolonged shifts in daily routines, social interactions, work performance, or personal care behaviors."
+  },
+  {
+      "id": 428,
+      "name": "Psychomotor Abnormalities",
+      "description": "Slowed movements or agitation without medical explanation, including behaviors such as fidgeting, restlessness,or lethargy."
+  },
+    {
+      "id": 429,
+      "name": "Unexplained Distress or Functional Impairment",
+      "description": "Difficulties in social, academic, or occupational functioning, with emotional or behavioral symptoms that do notmeet criteria for another disorder."
+  },
+    {
+      "id": 430,
+      "name": "Tardive Dyskinesia",
+      "description": "The individual reports experiencing involuntary, repetitive movements of the face, tongue, lips, or limbs, whichmay include sensations of uncontrollable lip-smacking, grimacing, or rapid blinking."
+  },
+    {
+      "id": 431,
+      "name": "Parkinsonism",
+      "description": "The individual describes symptoms resembling Parkinson’s disease, such as tremors at rest, feelings of musclerigidity or stiffness, slowed movements (bradykinesia), and difficulty maintaining balance (postural instability), often linkedto medication use."
+    },
+    {
+      "id": 432,
+      "name": "Akathisia",
+      "description": "The individual feels a strong inner restlessness and an urge to move, leading to behaviors such as pacing,shifting weight from one foot to the other, or an inability to remain still."
+  },
+    {
+      "id": 433,
+      "name": "Acute Dystonia",
+      "description": "The individual experiences sudden, painful muscle contractions leading to twisting or abnormal postures, such asneck twisting (torticollis), upward eye movement (oculogyric crisis), or jaw clenching."
+  },
+    {
+      "id": 434,
+      "name": "Neuroleptic Malignant Syndrome",
+      "description": "A potentially life-threatening reaction involving severe muscle rigidity, rapid heart rate, fluctuating bloodpressure, extreme heat sensations (hyperthermia), and altered mental states such as confusion or agitation, often occurringafter starting or increasing antipsychotic medication."
+    },
+    {
+      "id": 435,
+      "name": "Medication-Induced Postural Tremor",
+      "description": "The individual notices rhythmic, involuntary shaking when maintaining a posture, such as tremors in the hands,head, or other body parts, especially while still."
+  },
+    {
+      "id": 436,
+      "name": "Tardive Dystonia",
+      "description": "The individual experiences persistent muscle contractions that cause twisting movements, particularly affectingthe neck, trunk, or limbs, often after prolonged medication use."
+  },
+    {
+      "id": 437,
+      "name": "Tardive Akathisia",
+      "description": "A feeling of persistent restlessness or an inability to stay still, with behaviors such as repetitive pacing orleg movements, occurring after long-term use of certain medications."
+  },
+    {
+      "id": 438,
+      "name": "Other Dyskinesias",
+      "description": "The individual reports uncontrolled, involuntary movements, such as jerking, writhing, or slow and purposelessmotions, that affect various muscle groups."
+  }
+]

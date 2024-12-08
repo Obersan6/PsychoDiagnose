@@ -1,0 +1,963 @@
+2024-11-25 14:57:00,782:INFO:Project Root: C:\Users\obell\onedrive\desktop\springboard-projects\capstone-project-one-a594b10cc10749ee801fe8f275555050
+2024-11-25 14:57:00,783:INFO:Current sys.path:
+2024-11-25 14:57:00,783:INFO:  C:\Users\obell\onedrive\desktop\springboard-projects\capstone-project-one-a594b10cc10749ee801fe8f275555050
+2024-11-25 14:57:00,783:INFO:  C:\Users\obell\onedrive\desktop\springboard-projects\capstone-project-one-a594b10cc10749ee801fe8f275555050\database
+2024-11-25 14:57:00,783:INFO:  c:\python312\python312.zip
+2024-11-25 14:57:00,783:INFO:  c:\python312\DLLs
+2024-11-25 14:57:00,784:INFO:  c:\python312\Lib
+2024-11-25 14:57:00,784:INFO:  c:\python312
+2024-11-25 14:57:00,784:INFO:  C:\Users\obell\onedrive\desktop\springboard-projects\capstone-project-one-a594b10cc10749ee801fe8f275555050\venv
+2024-11-25 14:57:00,784:INFO:  C:\Users\obell\onedrive\desktop\springboard-projects\capstone-project-one-a594b10cc10749ee801fe8f275555050\venv\Lib\site-packages
+2024-11-25 14:57:00,784:INFO:'app.py' found at C:\Users\obell\onedrive\desktop\springboard-projects\capstone-project-one-a594b10cc10749ee801fe8f275555050\src\main\app.py
+2024-11-25 14:57:05,322:INFO:select pg_catalog.version()
+2024-11-25 14:57:05,323:INFO:[raw sql] {}
+2024-11-25 14:57:05,327:INFO:select current_schema()
+2024-11-25 14:57:05,328:INFO:[raw sql] {}
+2024-11-25 14:57:05,331:INFO:show standard_conforming_strings
+2024-11-25 14:57:05,332:INFO:[raw sql] {}
+2024-11-25 14:57:05,333:INFO:BEGIN (implicit)
+2024-11-25 14:57:05,339:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,340:INFO:[generated in 0.00198s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,349:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,350:INFO:[cached since 0.01172s ago] {'table_name': 'categories', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,352:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,353:INFO:[cached since 0.01535s ago] {'table_name': 'disorders', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,356:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,358:INFO:[cached since 0.01895s ago] {'table_name': 'clusters', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,359:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,360:INFO:[cached since 0.02212s ago] {'table_name': 'steps', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,363:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,364:INFO:[cached since 0.0255s ago] {'table_name': 'differential_diagnosis', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,366:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,367:INFO:[cached since 0.02862s ago] {'table_name': 'signs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,369:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,371:INFO:[cached since 0.03273s ago] {'table_name': 'sign_examples', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,373:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,375:INFO:[cached since 0.03655s ago] {'table_name': 'symptoms', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,377:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,377:INFO:[cached since 0.03954s ago] {'table_name': 'symptom_examples', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,379:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,380:INFO:[cached since 0.04249s ago] {'table_name': 'disorders_signs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,382:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,383:INFO:[cached since 0.04491s ago] {'table_name': 'disorders_symptoms', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,385:INFO:COMMIT
+2024-11-25 14:57:05,386:INFO:Successfully imported 'app' from src.main.app.
+2024-11-25 14:57:05,387:INFO:Loaded categories and built category_map.
+2024-11-25 14:57:05,390:INFO:Loaded 213 disorders from disorders.json.
+2024-11-25 14:57:05,396:WARNING:No suitable category found for disorder 'Intellectual Developmental Disorder (Intellectual Disability)' (Best match: 'Neurodevelopmental Disorders' with score 74).
+2024-11-25 14:57:05,397:WARNING:No suitable category found for disorder 'Global Developmental Delay' (Best match: 'Neurodevelopmental Disorders' with score 63).
+2024-11-25 14:57:05,398:WARNING:No suitable category found for disorder 'Unspecified Intellectual Developmental Disorder (Intellectual Disability)' (Best match: 'Neurodevelopmental Disorders' with score 74).
+2024-11-25 14:57:05,399:WARNING:No suitable category found for disorder 'Language Disorder' (Best match: 'Anxiety Disorders' with score 71).
+2024-11-25 14:57:05,400:WARNING:No suitable category found for disorder 'Speech Sound Disorder' (Best match: 'Depressive Disorders' with score 59).
+2024-11-25 14:57:05,401:WARNING:No suitable category found for disorder 'Childhood-Onset Fluency Disorder (Stuttering)' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,401:WARNING:No suitable category found for disorder 'Social (Pragmatic) Communication Disorder' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,402:WARNING:No suitable category found for disorder 'Unspecified Communication Disorder' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,402:INFO:Fuzzy matched 'Autism Spectrum Disorder (ASD)' to category 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 86.
+2024-11-25 14:57:05,403:INFO:Assigned category_id 2 to disorder 'Autism Spectrum Disorder (ASD)'.
+2024-11-25 14:57:05,404:WARNING:No suitable category found for disorder 'Attention-Deficit/Hyperactivity Disorder (ADHD)' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,405:WARNING:No suitable category found for disorder 'Other Specified Attention-Deficit/Hyperactivity Disorder' (Best match: 'Anxiety Disorders' with score 68).
+2024-11-25 14:57:05,406:WARNING:No suitable category found for disorder 'Unspecified Attention-Deficit/Hyperactivity Disorder' (Best match: 'Anxiety Disorders' with score 68).
+2024-11-25 14:57:05,407:WARNING:No suitable category found for disorder 'Specific Learning Disorder' (Best match: 'Anxiety Disorders' with score 66).
+2024-11-25 14:57:05,408:WARNING:No suitable category found for disorder 'Developmental Coordination Disorder' (Best match: 'Neurodevelopmental Disorders' with score 70).
+2024-11-25 14:57:05,408:WARNING:No suitable category found for disorder 'Stereotypic Movement Disorder' (Best match: 'Neurodevelopmental Disorders' with score 63).
+2024-11-25 14:57:05,411:INFO:Fuzzy matched 'Tic Disorders' to category 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 90.
+2024-11-25 14:57:05,411:INFO:Assigned category_id 2 to disorder 'Tic Disorders'.
+2024-11-25 14:57:05,412:INFO:Fuzzy matched 'Other Specified Tic Disorder' to category 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 86.
+2024-11-25 14:57:05,412:INFO:Assigned category_id 2 to disorder 'Other Specified Tic Disorder'.
+2024-11-25 14:57:05,412:WARNING:No suitable category found for disorder 'Unspecified Tic Disorder' (Best match: 'Anxiety Disorders' with score 63).
+2024-11-25 14:57:05,413:INFO:Fuzzy matched 'Other Specified Neurodevelopmental Disorder' to category 'Neurodevelopmental Disorders' with score 88.
+2024-11-25 14:57:05,413:INFO:Assigned category_id 1 to disorder 'Other Specified Neurodevelopmental Disorder'.
+2024-11-25 14:57:05,414:INFO:Fuzzy matched 'Unspecified Neurodevelopmental Disorder' to category 'Neurodevelopmental Disorders' with score 81.
+2024-11-25 14:57:05,414:INFO:Assigned category_id 1 to disorder 'Unspecified Neurodevelopmental Disorder'.
+2024-11-25 14:57:05,415:WARNING:No suitable category found for disorder 'Schizotypal (Personality) Disorder' (Best match: 'Anxiety Disorders' with score 71).
+2024-11-25 14:57:05,416:WARNING:No suitable category found for disorder 'Delusional Disorder' (Best match: 'Neurodevelopmental Disorders' with score 68).
+2024-11-25 14:57:05,418:INFO:Fuzzy matched 'Brief Psychotic Disorder' to category 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 86.
+2024-11-25 14:57:05,418:INFO:Assigned category_id 2 to disorder 'Brief Psychotic Disorder'.
+2024-11-25 14:57:05,419:WARNING:No suitable category found for disorder 'Schizophreniform Disorder' (Best match: 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 60).
+2024-11-25 14:57:05,419:INFO:Assigned category_id 2 to disorder 'Schizophrenia'.
+2024-11-25 14:57:05,421:WARNING:No suitable category found for disorder 'Schizoaffective Disorder' (Best match: 'Depressive Disorders' with score 59).
+2024-11-25 14:57:05,422:WARNING:No suitable category found for disorder 'Substance/Medication-Induced Psychotic Disorder' (Best match: 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 61).
+2024-11-25 14:57:05,424:WARNING:No suitable category found for disorder 'Psychotic Disorder Due to Another Medical Condition' (Best match: 'Anxiety Disorders' with score 61).
+2024-11-25 14:57:05,426:WARNING:No suitable category found for disorder 'Catatonia Associated With Another Mental Disorder (Catatonia Specifier)' (Best match: 'Anxiety Disorders' with score 61).
+2024-11-25 14:57:05,428:WARNING:No suitable category found for disorder 'Catatonic Disorder Due to Another Medical Condition' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,430:WARNING:No suitable category found for disorder 'Unspecified Catatonia' (Best match: 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 41).
+2024-11-25 14:57:05,432:INFO:Fuzzy matched 'Other Specified Schizophrenia Spectrum and Other Psychotic Disorder' to category 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 87.
+2024-11-25 14:57:05,432:INFO:Assigned category_id 2 to disorder 'Other Specified Schizophrenia Spectrum and Other Psychotic Disorder'.
+2024-11-25 14:57:05,434:INFO:Fuzzy matched 'Unspecified Schizophrenia Spectrum and Other Psychotic Disorder' to category 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 89.
+2024-11-25 14:57:05,434:INFO:Assigned category_id 2 to disorder 'Unspecified Schizophrenia Spectrum and Other Psychotic Disorder'.
+2024-11-25 14:57:05,434:INFO:Assigned category_id 3 to disorder 'Bipolar I Disorder'.
+2024-11-25 14:57:05,435:INFO:Fuzzy matched 'Bipolar II Disorder' to category 'Bipolar and Related Disorders' with score 86.
+2024-11-25 14:57:05,435:INFO:Assigned category_id 3 to disorder 'Bipolar II Disorder'.
+2024-11-25 14:57:05,436:WARNING:No suitable category found for disorder 'Cyclothymic Disorder' (Best match: 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 68).
+2024-11-25 14:57:05,438:INFO:Fuzzy matched 'Substance/Medication-Induced Bipolar and Related Disorder' to category 'Bipolar and Related Disorders' with score 88.
+2024-11-25 14:57:05,438:INFO:Assigned category_id 3 to disorder 'Substance/Medication-Induced Bipolar and Related Disorder'.
+2024-11-25 14:57:05,440:INFO:Fuzzy matched 'Bipolar and Related Disorder Due to Another Medical Condition' to category 'Bipolar and Related Disorders' with score 87.
+2024-11-25 14:57:05,440:INFO:Assigned category_id 3 to disorder 'Bipolar and Related Disorder Due to Another Medical Condition'.
+2024-11-25 14:57:05,441:INFO:Fuzzy matched 'Other Specified Bipolar and Related Disorder' to category 'Bipolar and Related Disorders' with score 88.
+2024-11-25 14:57:05,441:INFO:Assigned category_id 3 to disorder 'Other Specified Bipolar and Related Disorder'.
+2024-11-25 14:57:05,442:INFO:Fuzzy matched 'Unspecified Bipolar and Related Disorder' to category 'Bipolar and Related Disorders' with score 81.
+2024-11-25 14:57:05,442:INFO:Assigned category_id 3 to disorder 'Unspecified Bipolar and Related Disorder'.
+2024-11-25 14:57:05,443:WARNING:No suitable category found for disorder 'Disruptive Mood Dysregulation Disorder (DMDD)' (Best match: 'Anxiety Disorders' with score 58).
+2024-11-25 14:57:05,444:INFO:Fuzzy matched 'Major Depressive Disorder (MDD)' to category 'Depressive Disorders' with score 86.
+2024-11-25 14:57:05,444:INFO:Assigned category_id 4 to disorder 'Major Depressive Disorder (MDD)'.
+2024-11-25 14:57:05,445:INFO:Fuzzy matched 'Persistent Depressive Disorder (Dysthymia)' to category 'Depressive Disorders' with score 86.
+2024-11-25 14:57:05,445:INFO:Assigned category_id 4 to disorder 'Persistent Depressive Disorder (Dysthymia)'.
+2024-11-25 14:57:05,446:WARNING:No suitable category found for disorder 'Premenstrual Dysphoric Disorder (PMDD)' (Best match: 'Depressive Disorders' with score 58).
+2024-11-25 14:57:05,447:INFO:Fuzzy matched 'Substance/Medication-Induced Depressive Disorder' to category 'Depressive Disorders' with score 87.
+2024-11-25 14:57:05,447:INFO:Assigned category_id 4 to disorder 'Substance/Medication-Induced Depressive Disorder'.
+2024-11-25 14:57:05,449:INFO:Fuzzy matched 'Depressive Disorder Due to Another Medical Condition' to category 'Depressive Disorders' with score 86.
+2024-11-25 14:57:05,449:INFO:Assigned category_id 4 to disorder 'Depressive Disorder Due to Another Medical Condition'.
+2024-11-25 14:57:05,449:INFO:Fuzzy matched 'Other Specified Depressive Disorder' to category 'Depressive Disorders' with score 87.
+2024-11-25 14:57:05,449:INFO:Assigned category_id 4 to disorder 'Other Specified Depressive Disorder'.
+2024-11-25 14:57:05,450:INFO:Fuzzy matched 'Unspecified Depressive Disorder' to category 'Depressive Disorders' with score 87.
+2024-11-25 14:57:05,450:INFO:Assigned category_id 4 to disorder 'Unspecified Depressive Disorder'.
+2024-11-25 14:57:05,451:INFO:Fuzzy matched 'Separation Anxiety Disorder' to category 'Anxiety Disorders' with score 87.
+2024-11-25 14:57:05,451:INFO:Assigned category_id 5 to disorder 'Separation Anxiety Disorder'.
+2024-11-25 14:57:05,452:WARNING:No suitable category found for disorder 'Selective Mutism' (Best match: 'Obsessive-Compulsive and Related Disorders' with score 50).
+2024-11-25 14:57:05,453:WARNING:No suitable category found for disorder 'Specific Phobia' (Best match: 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 45).
+2024-11-25 14:57:05,454:INFO:Fuzzy matched 'Social Anxiety Disorder (Social Phobia)' to category 'Anxiety Disorders' with score 86.
+2024-11-25 14:57:05,454:INFO:Assigned category_id 5 to disorder 'Social Anxiety Disorder (Social Phobia)'.
+2024-11-25 14:57:05,455:WARNING:No suitable category found for disorder 'Panic Disorder' (Best match: 'Anxiety Disorders' with score 77).
+2024-11-25 14:57:05,456:WARNING:No suitable category found for disorder 'Agoraphobia' (Best match: 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 40).
+2024-11-25 14:57:05,457:INFO:Fuzzy matched 'Generalized Anxiety Disorder (GAD)' to category 'Anxiety Disorders' with score 86.
+2024-11-25 14:57:05,457:INFO:Assigned category_id 5 to disorder 'Generalized Anxiety Disorder (GAD)'.
+2024-11-25 14:57:05,458:INFO:Fuzzy matched 'Substance/Medication-Induced Anxiety Disorder' to category 'Anxiety Disorders' with score 87.
+2024-11-25 14:57:05,458:INFO:Assigned category_id 5 to disorder 'Substance/Medication-Induced Anxiety Disorder'.
+2024-11-25 14:57:05,459:INFO:Fuzzy matched 'Anxiety Disorder Due to Another Medical Condition' to category 'Anxiety Disorders' with score 86.
+2024-11-25 14:57:05,459:INFO:Assigned category_id 5 to disorder 'Anxiety Disorder Due to Another Medical Condition'.
+2024-11-25 14:57:05,460:INFO:Fuzzy matched 'Other Specified Anxiety Disorder' to category 'Anxiety Disorders' with score 87.
+2024-11-25 14:57:05,460:INFO:Assigned category_id 5 to disorder 'Other Specified Anxiety Disorder'.
+2024-11-25 14:57:05,461:WARNING:No suitable category found for disorder 'Obsessive-Compulsive Disorder (OCD)' (Best match: 'Obsessive-Compulsive and Related Disorders' with score 79).
+2024-11-25 14:57:05,463:WARNING:No suitable category found for disorder 'Body Dysmorphic Disorder (BDD)' (Best match: 'Anxiety Disorders' with score 56).
+2024-11-25 14:57:05,464:WARNING:No suitable category found for disorder 'Hoarding Disorder' (Best match: 'Anxiety Disorders' with score 65).
+2024-11-25 14:57:05,465:WARNING:No suitable category found for disorder 'Trichotillomania (Hair-Pulling Disorder)' (Best match: 'Anxiety Disorders' with score 55).
+2024-11-25 14:57:05,466:WARNING:No suitable category found for disorder 'Excoriation (Skin-Picking) Disorder' (Best match: 'Anxiety Disorders' with score 55).
+2024-11-25 14:57:05,466:INFO:Fuzzy matched 'Substance/Medication-Induced Obsessive-Compulsive and Related Disorder' to category 'Obsessive-Compulsive and Related Disorders' with score 89.
+2024-11-25 14:57:05,466:INFO:Assigned category_id 6 to disorder 'Substance/Medication-Induced Obsessive-Compulsive and Related Disorder'.
+2024-11-25 14:57:05,467:INFO:Fuzzy matched 'Obsessive-Compulsive and Related Disorder Due to Another Medical Condition' to category 'Obsessive-Compulsive and Related Disorders' with score 88.
+2024-11-25 14:57:05,467:INFO:Assigned category_id 6 to disorder 'Obsessive-Compulsive and Related Disorder Due to Another Medical Condition'.
+2024-11-25 14:57:05,468:INFO:Fuzzy matched 'Other Specified Obsessive-Compulsive and Related Disorder' to category 'Bipolar and Related Disorders' with score 86.
+2024-11-25 14:57:05,468:INFO:Assigned category_id 3 to disorder 'Other Specified Obsessive-Compulsive and Related Disorder'.
+2024-11-25 14:57:05,468:INFO:Fuzzy matched 'Unspecified Obsessive-Compulsive and Related Disorder' to category 'Bipolar and Related Disorders' with score 86.
+2024-11-25 14:57:05,468:INFO:Assigned category_id 3 to disorder 'Unspecified Obsessive-Compulsive and Related Disorder'.
+2024-11-25 14:57:05,469:WARNING:No suitable category found for disorder 'Reactive Attachment Disorder (RAD)' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,469:WARNING:No suitable category found for disorder 'Disinhibited Social Engagement Disorder (DSED)' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,469:WARNING:No suitable category found for disorder 'Posttraumatic Stress Disorder (PTSD)' (Best match: 'Depressive Disorders' with score 63).
+2024-11-25 14:57:05,470:WARNING:No suitable category found for disorder 'Acute Stress Disorder (ASD)' (Best match: 'Depressive Disorders' with score 65).
+2024-11-25 14:57:05,470:INFO:Fuzzy matched 'Adjustment Disorders' to category 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 86.
+2024-11-25 14:57:05,470:INFO:Assigned category_id 2 to disorder 'Adjustment Disorders'.
+2024-11-25 14:57:05,471:WARNING:No suitable category found for disorder 'Prolonged Grief Disorder' (Best match: 'Bipolar and Related Disorders' with score 64).
+2024-11-25 14:57:05,471:INFO:Fuzzy matched 'Other Specified Trauma- and Stressor-Related Disorder' to category 'Bipolar and Related Disorders' with score 86.
+2024-11-25 14:57:05,471:INFO:Assigned category_id 3 to disorder 'Other Specified Trauma- and Stressor-Related Disorder'.
+2024-11-25 14:57:05,472:INFO:Fuzzy matched 'Unspecified Trauma- and Stressor-Related Disorder' to category 'Bipolar and Related Disorders' with score 86.
+2024-11-25 14:57:05,472:INFO:Assigned category_id 3 to disorder 'Unspecified Trauma- and Stressor-Related Disorder'.
+2024-11-25 14:57:05,472:WARNING:No suitable category found for disorder 'Dissociative Identity Disorder (DID)' (Best match: 'Anxiety Disorders' with score 68).
+2024-11-25 14:57:05,473:WARNING:No suitable category found for disorder 'Dissociative Amnesia' (Best match: 'Bipolar and Related Disorders' with score 47).
+2024-11-25 14:57:05,473:WARNING:No suitable category found for disorder 'Depersonalization/Derealization Disorder' (Best match: 'Anxiety Disorders' with score 60).
+2024-11-25 14:57:05,473:WARNING:No suitable category found for disorder 'Other Specified Dissociative Disorder' (Best match: 'Anxiety Disorders' with score 66).
+2024-11-25 14:57:05,474:WARNING:No suitable category found for disorder 'Unspecified Dissociative Disorder' (Best match: 'Anxiety Disorders' with score 66).
+2024-11-25 14:57:05,474:WARNING:No suitable category found for disorder 'Somatic Symptom Disorder' (Best match: 'Anxiety Disorders' with score 59).
+2024-11-25 14:57:05,475:WARNING:No suitable category found for disorder 'Illness Anxiety Disorder' (Best match: 'Anxiety Disorders' with score 79).
+2024-11-25 14:57:05,475:WARNING:No suitable category found for disorder 'Functional Neurological Symptom Disorder (Conversion Disorder)' (Best match: 'Depressive Disorders' with score 60).
+2024-11-25 14:57:05,476:WARNING:No suitable category found for disorder 'Psychological Factors Affecting Other Medical Conditions' (Best match: 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 50).
+2024-11-25 14:57:05,476:WARNING:No suitable category found for disorder 'Factitious Disorder' (Best match: 'Anxiety Disorders' with score 67).
+2024-11-25 14:57:05,477:INFO:Fuzzy matched 'Other Specified Somatic Symptom and Related Disorder' to category 'Bipolar and Related Disorders' with score 86.
+2024-11-25 14:57:05,477:INFO:Assigned category_id 3 to disorder 'Other Specified Somatic Symptom and Related Disorder'.
+2024-11-25 14:57:05,477:INFO:Fuzzy matched 'Unspecified Somatic Symptom and Related Disorder' to category 'Bipolar and Related Disorders' with score 86.
+2024-11-25 14:57:05,477:INFO:Assigned category_id 3 to disorder 'Unspecified Somatic Symptom and Related Disorder'.
+2024-11-25 14:57:05,478:WARNING:No suitable category found for disorder 'Pica' (Best match: 'Bipolar and Related Disorders' with score 45).
+2024-11-25 14:57:05,478:WARNING:No suitable category found for disorder 'Rumination Disorder' (Best match: 'Anxiety Disorders' with score 61).
+2024-11-25 14:57:05,479:WARNING:No suitable category found for disorder 'Avoidant/Restrictive Food Intake Disorder (ARFID)' (Best match: 'Anxiety Disorders' with score 61).
+2024-11-25 14:57:05,479:WARNING:No suitable category found for disorder 'Anorexia Nervosa' (Best match: 'Anxiety Disorders' with score 48).
+2024-11-25 14:57:05,479:WARNING:No suitable category found for disorder 'Bulimia Nervosa' (Best match: 'Obsessive-Compulsive and Related Disorders' with score 42).
+2024-11-25 14:57:05,479:WARNING:No suitable category found for disorder 'Binge-Eating Disorder' (Best match: 'Bipolar and Related Disorders' with score 64).
+2024-11-25 14:57:05,480:WARNING:No suitable category found for disorder 'Other Specified Feeding or Eating Disorder' (Best match: 'Anxiety Disorders' with score 60).
+2024-11-25 14:57:05,480:WARNING:No suitable category found for disorder 'Unspecified Feeding or Eating Disorder' (Best match: 'Anxiety Disorders' with score 60).
+2024-11-25 14:57:05,481:WARNING:No suitable category found for disorder 'Enuresis' (Best match: 'Depressive Disorders' with score 56).
+2024-11-25 14:57:05,481:WARNING:No suitable category found for disorder 'Encopresis' (Best match: 'Depressive Disorders' with score 54).
+2024-11-25 14:57:05,482:WARNING:No suitable category found for disorder 'Other Specified Elimination Disorder' (Best match: 'Anxiety Disorders' with score 60).
+2024-11-25 14:57:05,482:WARNING:No suitable category found for disorder 'Unspecified Elimination Disorder' (Best match: 'Anxiety Disorders' with score 60).
+2024-11-25 14:57:05,482:WARNING:No suitable category found for disorder 'Insomnia Disorder' (Best match: 'Neurodevelopmental Disorders' with score 68).
+2024-11-25 14:57:05,483:WARNING:No suitable category found for disorder 'Hypersomnolence Disorder' (Best match: 'Depressive Disorders' with score 59).
+2024-11-25 14:57:05,483:WARNING:No suitable category found for disorder 'Narcolepsy' (Best match: 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 45).
+2024-11-25 14:57:05,484:WARNING:No suitable category found for disorder 'Obstructive Sleep Apnea Hypopnea' (Best match: 'Obsessive-Compulsive and Related Disorders' with score 46).
+2024-11-25 14:57:05,484:WARNING:No suitable category found for disorder 'Central Sleep Apnea' (Best match: 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 42).
+2024-11-25 14:57:05,485:WARNING:No suitable category found for disorder 'Sleep-Related Hypoventilation' (Best match: 'Bipolar and Related Disorders' with score 49).
+2024-11-25 14:57:05,485:INFO:Fuzzy matched 'Circadian Rhythm Sleep-Wake Disorders' to category 'Depressive Disorders' with score 86.
+2024-11-25 14:57:05,485:INFO:Assigned category_id 4 to disorder 'Circadian Rhythm Sleep-Wake Disorders'.
+2024-11-25 14:57:05,486:INFO:Fuzzy matched 'Non-Rapid Eye Movement Sleep Arousal Disorders' to category 'Neurodevelopmental Disorders' with score 86.
+2024-11-25 14:57:05,486:INFO:Assigned category_id 1 to disorder 'Non-Rapid Eye Movement Sleep Arousal Disorders'.
+2024-11-25 14:57:05,486:WARNING:No suitable category found for disorder 'Nightmare Disorder' (Best match: 'Anxiety Disorders' with score 69).
+2024-11-25 14:57:05,486:WARNING:No suitable category found for disorder 'Rapid Eye Movement Sleep Behavior Disorder' (Best match: 'Anxiety Disorders' with score 60).
+2024-11-25 14:57:05,487:WARNING:No suitable category found for disorder 'Restless Legs Syndrome' (Best match: 'Trauma- and Stressor-Related Disorders' with score 45).
+2024-11-25 14:57:05,487:WARNING:No suitable category found for disorder 'Substance/Medication-Induced Sleep Disorder' (Best match: 'Depressive Disorders' with score 58).
+2024-11-25 14:57:05,488:INFO:Fuzzy matched 'Other Specified Insomnia Disorder' to category 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 86.
+2024-11-25 14:57:05,488:INFO:Assigned category_id 2 to disorder 'Other Specified Insomnia Disorder'.
+2024-11-25 14:57:05,488:WARNING:No suitable category found for disorder 'Delayed Ejaculation' (Best match: 'Obsessive-Compulsive and Related Disorders' with score 48).
+2024-11-25 14:57:05,489:WARNING:No suitable category found for disorder 'Erectile Disorder' (Best match: 'Depressive Disorders' with score 76).
+2024-11-25 14:57:05,489:WARNING:No suitable category found for disorder 'Female Orgasmic Disorder' (Best match: 'Depressive Disorders' with score 59).
+2024-11-25 14:57:05,489:WARNING:No suitable category found for disorder 'Female Sexual Interest/Arousal Disorder' (Best match: 'Anxiety Disorders' with score 55).
+2024-11-25 14:57:05,490:WARNING:No suitable category found for disorder 'Genito-Pelvic Pain/Penetration Disorder' (Best match: 'Anxiety Disorders' with score 60).
+2024-11-25 14:57:05,490:WARNING:No suitable category found for disorder 'Male Hypoactive Sexual Desire Disorder' (Best match: 'Depressive Disorders' with score 65).
+2024-11-25 14:57:05,490:WARNING:No suitable category found for disorder 'Premature (Early) Ejaculation' (Best match: 'Trauma- and Stressor-Related Disorders' with score 42).
+2024-11-25 14:57:05,491:WARNING:No suitable category found for disorder 'Substance/Medication-Induced Sexual Dysfunction' (Best match: 'Bipolar and Related Disorders' with score 37).
+2024-11-25 14:57:05,492:INFO:Fuzzy matched 'Other Specified Sexual Dysfunction' to category 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 86.
+2024-11-25 14:57:05,492:INFO:Assigned category_id 2 to disorder 'Other Specified Sexual Dysfunction'.
+2024-11-25 14:57:05,492:WARNING:No suitable category found for disorder 'Unspecified Sexual Dysfunction' (Best match: 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 37).
+2024-11-25 14:57:05,493:WARNING:No suitable category found for disorder 'Gender Dysphoria in Children' (Best match: 'Depressive Disorders' with score 44).
+2024-11-25 14:57:05,493:WARNING:No suitable category found for disorder 'Gender Dysphoria in Adolescents and Adults' (Best match: 'Trauma- and Stressor-Related Disorders' with score 44).
+2024-11-25 14:57:05,494:INFO:Fuzzy matched 'Other Specified Gender Dysphoria' to category 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 86.
+2024-11-25 14:57:05,494:INFO:Assigned category_id 2 to disorder 'Other Specified Gender Dysphoria'.
+2024-11-25 14:57:05,494:WARNING:No suitable category found for disorder 'Unspecified Gender Dysphoria' (Best match: 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 45).
+2024-11-25 14:57:05,495:WARNING:No suitable category found for disorder 'Oppositional Defiant Disorder (ODD)' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,495:WARNING:No suitable category found for disorder 'Intermittent Explosive Disorder' (Best match: 'Depressive Disorders' with score 69).
+2024-11-25 14:57:05,496:WARNING:No suitable category found for disorder 'Conduct Disorder' (Best match: 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 68).
+2024-11-25 14:57:05,496:WARNING:No suitable category found for disorder 'Pyromania' (Best match: 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 50).
+2024-11-25 14:57:05,497:WARNING:No suitable category found for disorder 'Kleptomania' (Best match: 'Neurodevelopmental Disorders' with score 40).
+2024-11-25 14:57:05,498:INFO:Fuzzy matched 'Other Specified Disruptive, Impulse-Control, and Conduct Disorder' to category 'Bipolar and Related Disorders' with score 86.
+2024-11-25 14:57:05,498:INFO:Assigned category_id 3 to disorder 'Other Specified Disruptive, Impulse-Control, and Conduct Disorder'.
+2024-11-25 14:57:05,498:INFO:Fuzzy matched 'Unspecified Disruptive, Impulse-Control, and Conduct Disorder' to category 'Bipolar and Related Disorders' with score 86.
+2024-11-25 14:57:05,498:INFO:Assigned category_id 3 to disorder 'Unspecified Disruptive, Impulse-Control, and Conduct Disorder'.
+2024-11-25 14:57:05,499:WARNING:No suitable category found for disorder 'Alcohol Use Disorder' (Best match: 'Anxiety Disorders' with score 59).
+2024-11-25 14:57:05,499:WARNING:No suitable category found for disorder 'Alcohol Intoxication' (Best match: 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 38).
+2024-11-25 14:57:05,500:WARNING:No suitable category found for disorder 'Alcohol Withdrawal' (Best match: 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 35).
+2024-11-25 14:57:05,500:WARNING:No suitable category found for disorder 'Unspecified Alcohol-Related Disorder' (Best match: 'Obsessive-Compulsive and Related Disorders' with score 64).
+2024-11-25 14:57:05,501:WARNING:No suitable category found for disorder 'Caffeine Intoxication' (Best match: 'Anxiety Disorders' with score 37).
+2024-11-25 14:57:05,501:WARNING:No suitable category found for disorder 'Caffeine Withdrawal' (Best match: 'Anxiety Disorders' with score 39).
+2024-11-25 14:57:05,501:WARNING:No suitable category found for disorder 'Unspecified Cannabis-Related Disorder' (Best match: 'Bipolar and Related Disorders' with score 64).
+2024-11-25 14:57:05,502:WARNING:No suitable category found for disorder 'Unspecified Hallucinogen-Related Disorder' (Best match: 'Obsessive-Compulsive and Related Disorders' with score 63).
+2024-11-25 14:57:05,502:WARNING:No suitable category found for disorder 'Phencyclidine Use Disorder' (Best match: 'Anxiety Disorders' with score 60).
+2024-11-25 14:57:05,503:INFO:Fuzzy matched 'Other Hallucinogen Use Disorder' to category 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 86.
+2024-11-25 14:57:05,503:INFO:Assigned category_id 2 to disorder 'Other Hallucinogen Use Disorder'.
+2024-11-25 14:57:05,503:WARNING:No suitable category found for disorder 'Phencyclidine Intoxication' (Best match: 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 36).
+2024-11-25 14:57:05,504:INFO:Fuzzy matched 'Other Hallucinogen Intoxication' to category 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 86.
+2024-11-25 14:57:05,504:INFO:Assigned category_id 2 to disorder 'Other Hallucinogen Intoxication'.
+2024-11-25 14:57:05,504:WARNING:No suitable category found for disorder 'Hallucinogen Persisting Perception Disorder' (Best match: 'Depressive Disorders' with score 60).
+2024-11-25 14:57:05,504:INFO:Fuzzy matched 'Phencyclidine-Induced Mental Disorders' to category 'Depressive Disorders' with score 86.
+2024-11-25 14:57:05,504:INFO:Assigned category_id 4 to disorder 'Phencyclidine-Induced Mental Disorders'.
+2024-11-25 14:57:05,505:INFO:Fuzzy matched 'Hallucinogen-Induced Mental Disorders' to category 'Depressive Disorders' with score 86.
+2024-11-25 14:57:05,505:INFO:Assigned category_id 4 to disorder 'Hallucinogen-Induced Mental Disorders'.
+2024-11-25 14:57:05,505:WARNING:No suitable category found for disorder 'Unspecified Phencyclidine-Related Disorder' (Best match: 'Obsessive-Compulsive and Related Disorders' with score 62).
+2024-11-25 14:57:05,506:WARNING:No suitable category found for disorder 'Unspecified Hallucinogen-Related Disorder' (Best match: 'Obsessive-Compulsive and Related Disorders' with score 63).
+2024-11-25 14:57:05,506:WARNING:No suitable category found for disorder 'Inhalant Use Disorder' (Best match: 'Anxiety Disorders' with score 63).
+2024-11-25 14:57:05,507:WARNING:No suitable category found for disorder 'Inhalant Intoxication' (Best match: 'Anxiety Disorders' with score 37).
+2024-11-25 14:57:05,507:INFO:Fuzzy matched 'Inhalant-Induced Mental Disorders' to category 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 86.
+2024-11-25 14:57:05,507:INFO:Assigned category_id 2 to disorder 'Inhalant-Induced Mental Disorders'.
+2024-11-25 14:57:05,509:WARNING:No suitable category found for disorder 'Unspecified Inhalant-Related Disorder' (Best match: 'Bipolar and Related Disorders' with score 64).
+2024-11-25 14:57:05,510:WARNING:No suitable category found for disorder 'Opioid Use Disorder' (Best match: 'Depressive Disorders' with score 62).
+2024-11-25 14:57:05,511:WARNING:No suitable category found for disorder 'Opioid Intoxication' (Best match: 'Anxiety Disorders' with score 42).
+2024-11-25 14:57:05,512:WARNING:No suitable category found for disorder 'Opioid Withdrawal' (Best match: 'Neurodevelopmental Disorders' with score 32).
+2024-11-25 14:57:05,512:WARNING:No suitable category found for disorder 'Sedative, Hypnotic, or Anxiolytic Use Disorder' (Best match: 'Anxiety Disorders' with score 61).
+2024-11-25 14:57:05,512:WARNING:No suitable category found for disorder 'Sedative, Hypnotic, or Anxiolytic Intoxication' (Best match: 'Anxiety Disorders' with score 42).
+2024-11-25 14:57:05,513:WARNING:No suitable category found for disorder 'Sedative, Hypnotic, or Anxiolytic Withdrawal' (Best match: 'Anxiety Disorders' with score 48).
+2024-11-25 14:57:05,514:INFO:Fuzzy matched 'Sedative-, Hypnotic-, or Anxiolytic-Induced Mental Disorders' to category 'Neurodevelopmental Disorders' with score 86.
+2024-11-25 14:57:05,514:INFO:Assigned category_id 1 to disorder 'Sedative-, Hypnotic-, or Anxiolytic-Induced Mental Disorders'.
+2024-11-25 14:57:05,515:INFO:Fuzzy matched 'Unspecified Sedative-, Hypnotic-, or Anxiolytic-Related Disorder' to category 'Bipolar and Related Disorders' with score 86.
+2024-11-25 14:57:05,515:INFO:Assigned category_id 3 to disorder 'Unspecified Sedative-, Hypnotic-, or Anxiolytic-Related Disorder'.
+2024-11-25 14:57:05,516:WARNING:No suitable category found for disorder 'Stimulant Use Disorder' (Best match: 'Anxiety Disorders' with score 62).
+2024-11-25 14:57:05,517:WARNING:No suitable category found for disorder 'Stimulant Intoxication' (Best match: 'Obsessive-Compulsive and Related Disorders' with score 38).
+2024-11-25 14:57:05,517:WARNING:No suitable category found for disorder 'Stimulant Withdrawal' (Best match: 'Obsessive-Compulsive and Related Disorders' with score 39).
+2024-11-25 14:57:05,518:INFO:Fuzzy matched 'Stimulant-Induced Mental Disorders' to category 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 86.
+2024-11-25 14:57:05,518:INFO:Assigned category_id 2 to disorder 'Stimulant-Induced Mental Disorders'.
+2024-11-25 14:57:05,519:WARNING:No suitable category found for disorder 'Unspecified Stimulant-Related Disorder' (Best match: 'Obsessive-Compulsive and Related Disorders' with score 68).
+2024-11-25 14:57:05,519:WARNING:No suitable category found for disorder 'Tobacco Use Disorder' (Best match: 'Anxiety Disorders' with score 59).
+2024-11-25 14:57:05,520:WARNING:No suitable category found for disorder 'Tobacco Withdrawal' (Best match: 'Trauma- and Stressor-Related Disorders' with score 34).
+2024-11-25 14:57:05,521:INFO:Fuzzy matched 'Tobacco-Induced Mental Disorders' to category 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 86.
+2024-11-25 14:57:05,521:INFO:Assigned category_id 2 to disorder 'Tobacco-Induced Mental Disorders'.
+2024-11-25 14:57:05,521:WARNING:No suitable category found for disorder 'Unspecified Tobacco-Related Disorder' (Best match: 'Bipolar and Related Disorders' with score 62).
+2024-11-25 14:57:05,522:WARNING:No suitable category found for disorder 'Other (or Unknown) Substance Use Disorder' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,522:WARNING:No suitable category found for disorder 'Other (or Unknown) Substance Intoxication' (Best match: 'Anxiety Disorders' with score 40).
+2024-11-25 14:57:05,523:WARNING:No suitable category found for disorder 'Other (or Unknown) Substance Withdrawal' (Best match: 'Trauma- and Stressor-Related Disorders' with score 39).
+2024-11-25 14:57:05,524:INFO:Fuzzy matched 'Other (or Unknown) Substance–Induced Mental Disorders' to category 'Neurodevelopmental Disorders' with score 86.
+2024-11-25 14:57:05,524:INFO:Assigned category_id 1 to disorder 'Other (or Unknown) Substance–Induced Mental Disorders'.
+2024-11-25 14:57:05,525:INFO:Fuzzy matched 'Unspecified Other (or Unknown) Substance–Related Disorder' to category 'Bipolar and Related Disorders' with score 86.
+2024-11-25 14:57:05,525:INFO:Assigned category_id 3 to disorder 'Unspecified Other (or Unknown) Substance–Related Disorder'.
+2024-11-25 14:57:05,526:WARNING:No suitable category found for disorder 'Gambling Disorder' (Best match: 'Anxiety Disorders' with score 65).
+2024-11-25 14:57:05,526:WARNING:No suitable category found for disorder 'Delirium' (Best match: 'Neurodevelopmental Disorders' with score 45).
+2024-11-25 14:57:05,527:INFO:Fuzzy matched 'Other Specified Delirium' to category 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 86.
+2024-11-25 14:57:05,527:INFO:Assigned category_id 2 to disorder 'Other Specified Delirium'.
+2024-11-25 14:57:05,527:WARNING:No suitable category found for disorder 'Unspecified Delirium' (Best match: 'Depressive Disorders' with score 40).
+2024-11-25 14:57:05,528:WARNING:No suitable category found for disorder 'Major Neurocognitive Disorder' (Best match: 'Anxiety Disorders' with score 66).
+2024-11-25 14:57:05,529:WARNING:No suitable category found for disorder 'Mild Neurocognitive Disorder' (Best match: 'Anxiety Disorders' with score 66).
+2024-11-25 14:57:05,530:WARNING:No suitable category found for disorder 'Major or Mild Neurocognitive Disorder Due to Alzheimer’s Disease' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,531:WARNING:No suitable category found for disorder 'Major or Mild Frontotemporal Neurocognitive Disorder' (Best match: 'Anxiety Disorders' with score 66).
+2024-11-25 14:57:05,531:WARNING:No suitable category found for disorder 'Major or Mild Neurocognitive Disorder With Lewy Bodies' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,532:WARNING:No suitable category found for disorder 'Major or Mild Vascular Neurocognitive Disorder' (Best match: 'Anxiety Disorders' with score 66).
+2024-11-25 14:57:05,533:WARNING:No suitable category found for disorder 'Major or Mild Neurocognitive Disorder Due to Traumatic Brain Injury' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,533:WARNING:No suitable category found for disorder 'Substance/Medication-Induced Major or Mild Neurocognitive Disorder' (Best match: 'Anxiety Disorders' with score 66).
+2024-11-25 14:57:05,534:WARNING:No suitable category found for disorder 'Major or Mild Neurocognitive Disorder Due to HIV Infection' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,535:WARNING:No suitable category found for disorder 'Major or Mild Neurocognitive Disorder Due to Prion Disease' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,536:WARNING:No suitable category found for disorder 'Major or Mild Neurocognitive Disorder Due to Parkinson’s Disease' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,536:WARNING:No suitable category found for disorder 'Major or Mild Neurocognitive Disorder Due to Huntington’s Disease' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,538:WARNING:No suitable category found for disorder 'Major or Mild Neurocognitive Disorder Due to Another Medical Condition' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,539:WARNING:No suitable category found for disorder 'Major or Mild Neurocognitive Disorder Due to Multiple Etiologies' (Best match: 'Anxiety Disorders' with score 64).
+2024-11-25 14:57:05,539:WARNING:No suitable category found for disorder 'Unspecified Neurocognitive Disorder' (Best match: 'Anxiety Disorders' with score 66).
+2024-11-25 14:57:05,540:WARNING:No suitable category found for disorder 'Paranoid Personality Disorder' (Best match: 'Anxiety Disorders' with score 71).
+2024-11-25 14:57:05,540:WARNING:No suitable category found for disorder 'Schizoid Personality Disorder' (Best match: 'Anxiety Disorders' with score 71).
+2024-11-25 14:57:05,541:WARNING:No suitable category found for disorder 'Schizotypal Personality Disorder' (Best match: 'Anxiety Disorders' with score 73).
+2024-11-25 14:57:05,541:WARNING:No suitable category found for disorder 'Antisocial Personality Disorder' (Best match: 'Anxiety Disorders' with score 71).
+2024-11-25 14:57:05,542:WARNING:No suitable category found for disorder 'Borderline Personality Disorder' (Best match: 'Anxiety Disorders' with score 71).
+2024-11-25 14:57:05,543:WARNING:No suitable category found for disorder 'Histrionic Personality Disorder' (Best match: 'Anxiety Disorders' with score 71).
+2024-11-25 14:57:05,544:WARNING:No suitable category found for disorder 'Narcissistic Personality Disorder' (Best match: 'Anxiety Disorders' with score 71).
+2024-11-25 14:57:05,544:WARNING:No suitable category found for disorder 'Avoidant Personality Disorder' (Best match: 'Anxiety Disorders' with score 71).
+2024-11-25 14:57:05,545:WARNING:No suitable category found for disorder 'Dependent Personality Disorder' (Best match: 'Anxiety Disorders' with score 71).
+2024-11-25 14:57:05,545:INFO:Fuzzy matched 'Obsessive-Compulsive Personality Disorder' to category 'Obsessive-Compulsive and Related Disorders' with score 80.
+2024-11-25 14:57:05,545:INFO:Assigned category_id 6 to disorder 'Obsessive-Compulsive Personality Disorder'.
+2024-11-25 14:57:05,546:WARNING:No suitable category found for disorder 'Voyeuristic Disorder' (Best match: 'Depressive Disorders' with score 65).
+2024-11-25 14:57:05,547:WARNING:No suitable category found for disorder 'Exhibitionistic Disorder' (Best match: 'Anxiety Disorders' with score 59).
+2024-11-25 14:57:05,548:WARNING:No suitable category found for disorder 'Frotteuristic Disorder' (Best match: 'Depressive Disorders' with score 62).
+2024-11-25 14:57:05,548:WARNING:No suitable category found for disorder 'Sexual Sadism Disorder' (Best match: 'Obsessive-Compulsive and Related Disorders' with score 58).
+2024-11-25 14:57:05,549:WARNING:No suitable category found for disorder 'Sexual Masochism Disorder' (Best match: 'Schizophrenia Spectrum and Other Psychotic Disorders' with score 54).
+2024-11-25 14:57:05,550:WARNING:No suitable category found for disorder 'Pedophilic Disorder' (Best match: 'Depressive Disorders' with score 62).
+2024-11-25 14:57:05,551:WARNING:No suitable category found for disorder 'Fetishistic Disorder' (Best match: 'Depressive Disorders' with score 65).
+2024-11-25 14:57:05,551:WARNING:No suitable category found for disorder 'Transvestic Disorder' (Best match: 'Anxiety Disorders' with score 70).
+2024-11-25 14:57:05,559:INFO:Updated disorders saved to C:\Users\obell\onedrive\desktop\springboard-projects\capstone-project-one-a594b10cc10749ee801fe8f275555050\database\disorders_with_ids.json.
+2024-11-25 14:57:05,559:WARNING:Total unmapped disorders: 157. Please review and update DISORDER_CATEGORY_MAP accordingly.
+2024-11-25 14:57:05,560:INFO:BEGIN (implicit)
+2024-11-25 14:57:05,560:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,561:INFO:[cached since 0.2233s ago] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,564:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,566:INFO:[cached since 0.2277s ago] {'table_name': 'categories', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,568:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,570:INFO:[cached since 0.2311s ago] {'table_name': 'disorders', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,572:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,573:INFO:[cached since 0.2345s ago] {'table_name': 'clusters', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,575:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,576:INFO:[cached since 0.2385s ago] {'table_name': 'steps', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,579:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,583:INFO:[cached since 0.2448s ago] {'table_name': 'differential_diagnosis', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,586:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,588:INFO:[cached since 0.2495s ago] {'table_name': 'signs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,591:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,593:INFO:[cached since 0.2539s ago] {'table_name': 'sign_examples', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,596:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,598:INFO:[cached since 0.2597s ago] {'table_name': 'symptoms', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,600:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,603:INFO:[cached since 0.2645s ago] {'table_name': 'symptom_examples', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,606:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,608:INFO:[cached since 0.2694s ago] {'table_name': 'disorders_signs', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,610:INFO:SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2024-11-25 14:57:05,613:INFO:[cached since 0.2749s ago] {'table_name': 'disorders_symptoms', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2024-11-25 14:57:05,617:INFO:COMMIT
+2024-11-25 14:57:05,619:INFO:Database tables ensured to be created.
+2024-11-25 14:57:05,623:INFO:Loaded 213 disorders from C:\Users\obell\onedrive\desktop\springboard-projects\capstone-project-one-a594b10cc10749ee801fe8f275555050\database\disorders_with_ids.json.
+2024-11-25 14:57:05,623:WARNING:Skipping disorder 'Intellectual Developmental Disorder (Intellectual Disability)' due to missing category_id.
+2024-11-25 14:57:05,623:WARNING:Skipping disorder 'Global Developmental Delay' due to missing category_id.
+2024-11-25 14:57:05,623:WARNING:Skipping disorder 'Unspecified Intellectual Developmental Disorder (Intellectual Disability)' due to missing category_id.
+2024-11-25 14:57:05,623:WARNING:Skipping disorder 'Language Disorder' due to missing category_id.
+2024-11-25 14:57:05,623:WARNING:Skipping disorder 'Speech Sound Disorder' due to missing category_id.
+2024-11-25 14:57:05,623:WARNING:Skipping disorder 'Childhood-Onset Fluency Disorder (Stuttering)' due to missing category_id.
+2024-11-25 14:57:05,662:INFO:BEGIN (implicit)
+2024-11-25 14:57:05,665:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,668:INFO:[generated in 0.00236s] {'name_1': 'Social (Pragmatic) Communication Disorder', 'param_1': 1}
+2024-11-25 14:57:05,679:INFO:Disorder 'Social (Pragmatic) Communication Disorder' already exists in the database. Skipping.
+2024-11-25 14:57:05,679:WARNING:Skipping disorder 'Unspecified Communication Disorder' due to missing category_id.
+2024-11-25 14:57:05,680:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,681:INFO:[cached since 0.01656s ago] {'name_1': 'Autism Spectrum Disorder (ASD)', 'param_1': 1}
+2024-11-25 14:57:05,684:INFO:Disorder 'Autism Spectrum Disorder (ASD)' already exists in the database. Skipping.
+2024-11-25 14:57:05,684:WARNING:Skipping disorder 'Attention-Deficit/Hyperactivity Disorder (ADHD)' due to missing category_id.
+2024-11-25 14:57:05,684:WARNING:Skipping disorder 'Other Specified Attention-Deficit/Hyperactivity Disorder' due to missing category_id.
+2024-11-25 14:57:05,684:WARNING:Skipping disorder 'Unspecified Attention-Deficit/Hyperactivity Disorder' due to missing category_id.
+2024-11-25 14:57:05,684:WARNING:Skipping disorder 'Specific Learning Disorder' due to missing category_id.
+2024-11-25 14:57:05,684:WARNING:Skipping disorder 'Developmental Coordination Disorder' due to missing category_id.
+2024-11-25 14:57:05,686:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,687:INFO:[cached since 0.02246s ago] {'name_1': 'Stereotypic Movement Disorder', 'param_1': 1}
+2024-11-25 14:57:05,689:INFO:Disorder 'Stereotypic Movement Disorder' already exists in the database. Skipping.
+2024-11-25 14:57:05,690:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,693:INFO:[cached since 0.0276s ago] {'name_1': 'Tic Disorders', 'param_1': 1}
+2024-11-25 14:57:05,699:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,701:INFO:[generated in 0.00165s] {'name': 'Tic Disorders', 'description': "A group of conditions characterized by sudden, rapid, recurrent, non-rhythmic motor movements or vocalizations. These include Tourette's Disorder, Persistent (Chronic) Motor or Vocal Tic Disorder, and Provisional Tic Disorder.", 'criteria': 'Diagnostic Features:\n• Tourette’s Disorder: Multiple motor tics and at least one vocal tic, present for more than a year.\n• Persistent (Chronic) Mo ... (976 characters truncated) ... erate behaviors) may influence diagnosis.\n\nSex- and Gender-Related Diagnostic Issues:\n• More common in males, with higher severity often reported.', 'category_id': 2, 'cluster_id': None}
+2024-11-25 14:57:05,719:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,721:INFO:[cached since 0.05568s ago] {'name_1': 'Other Specified Tic Disorder', 'param_1': 1}
+2024-11-25 14:57:05,722:WARNING:Skipping disorder 'Unspecified Tic Disorder' due to missing category_id.
+2024-11-25 14:57:05,724:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,725:INFO:[cached since 0.02584s ago] {'name': 'Other Specified Tic Disorder', 'description': 'A diagnosis given when tic symptoms cause significant distress or impairment but do not meet the full criteria for any specific tic disorder.', 'criteria': '', 'category_id': 2, 'cluster_id': None}
+2024-11-25 14:57:05,727:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,729:INFO:[cached since 0.06358s ago] {'name_1': 'Other Specified Neurodevelopmental Disorder', 'param_1': 1}
+2024-11-25 14:57:05,731:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,733:INFO:[cached since 0.03345s ago] {'name': 'Other Specified Neurodevelopmental Disorder', 'description': 'Symptoms of a neurodevelopmental disorder that cause significant distress or impairment but do not meet full criteria for any specific condition.', 'criteria': 'Examples:\n• Symptoms of ADHD in partial remission.', 'category_id': 1, 'cluster_id': None}
+2024-11-25 14:57:05,736:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,737:INFO:[cached since 0.07251s ago] {'name_1': 'Unspecified Neurodevelopmental Disorder', 'param_1': 1}
+2024-11-25 14:57:05,740:INFO:Disorder 'Unspecified Neurodevelopmental Disorder' already exists in the database. Skipping.
+2024-11-25 14:57:05,742:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,743:INFO:[cached since 0.07804s ago] {'name_1': 'Schizotypal (Personality) Disorder', 'param_1': 1}
+2024-11-25 14:57:05,745:INFO:Disorder 'Schizotypal (Personality) Disorder' already exists in the database. Skipping.
+2024-11-25 14:57:05,745:WARNING:Skipping disorder 'Delusional Disorder' due to missing category_id.
+2024-11-25 14:57:05,745:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,747:INFO:[cached since 0.08239s ago] {'name_1': 'Brief Psychotic Disorder', 'param_1': 1}
+2024-11-25 14:57:05,748:WARNING:Skipping disorder 'Schizophreniform Disorder' due to missing category_id.
+2024-11-25 14:57:05,750:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,751:INFO:[cached since 0.05194s ago] {'name': 'Brief Psychotic Disorder', 'description': 'A psychotic disorder characterized by the sudden onset of one or more psychotic symptoms (e.g., delusions, hallucinations) lasting less than one month, with eventual full recovery.', 'criteria': 'Diagnostic Features:\n• Sudden onset of psychotic symptoms (e.g., delusions, hallucinations, disorganized speech) lasting less than one month.\n• Ful ... (331 characters truncated) ... se:\n• Typically occurs in adolescence or early adulthood.\n• Risk of recurrence is higher in individuals with predisposition to psychotic disorders.', 'category_id': 2, 'cluster_id': None}
+2024-11-25 14:57:05,755:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,756:INFO:[cached since 0.09155s ago] {'name_1': 'Schizophrenia', 'param_1': 1}
+2024-11-25 14:57:05,759:INFO:Disorder 'Schizophrenia' already exists in the database. Skipping.
+2024-11-25 14:57:05,759:WARNING:Skipping disorder 'Schizoaffective Disorder' due to missing category_id.
+2024-11-25 14:57:05,759:WARNING:Skipping disorder 'Substance/Medication-Induced Psychotic Disorder' due to missing category_id.
+2024-11-25 14:57:05,759:WARNING:Skipping disorder 'Psychotic Disorder Due to Another Medical Condition' due to missing category_id.
+2024-11-25 14:57:05,759:WARNING:Skipping disorder 'Catatonia Associated With Another Mental Disorder (Catatonia Specifier)' due to missing category_id.
+2024-11-25 14:57:05,759:WARNING:Skipping disorder 'Catatonic Disorder Due to Another Medical Condition' due to missing category_id.
+2024-11-25 14:57:05,759:WARNING:Skipping disorder 'Unspecified Catatonia' due to missing category_id.
+2024-11-25 14:57:05,760:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,760:INFO:[cached since 0.09604s ago] {'name_1': 'Other Specified Schizophrenia Spectrum and Other Psychotic Disorder', 'param_1': 1}
+2024-11-25 14:57:05,763:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,764:INFO:[cached since 0.06489s ago] {'name': 'Other Specified Schizophrenia Spectrum and Other Psychotic Disorder', 'description': 'A category used for psychotic symptoms that cause significant distress or impairment but do not meet full criteria for any specific psychotic disorder.', 'criteria': '', 'category_id': 2, 'cluster_id': None}
+2024-11-25 14:57:05,766:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,767:INFO:[cached since 0.102s ago] {'name_1': 'Unspecified Schizophrenia Spectrum and Other Psychotic Disorder', 'param_1': 1}
+2024-11-25 14:57:05,769:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,770:INFO:[cached since 0.07068s ago] {'name': 'Unspecified Schizophrenia Spectrum and Other Psychotic Disorder', 'description': 'A diagnosis used when psychotic symptoms cause significant distress or impairment but there is insufficient information to make a specific diagnosis.', 'criteria': '', 'category_id': 2, 'cluster_id': None}
+2024-11-25 14:57:05,772:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,774:INFO:[cached since 0.109s ago] {'name_1': 'Bipolar I Disorder', 'param_1': 1}
+2024-11-25 14:57:05,776:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,777:INFO:[cached since 0.0784s ago] {'name': 'Bipolar I Disorder', 'description': 'Bipolar I Disorder is characterized by at least one manic episode lasting at least one week, involving elevated, expansive, or irritable mood and abnormally increased activity or energy. Depressive episodes are common but not required for diagnosis.', 'criteria': 'Specifiers:\n• With anxious distress\n• With mixed features\n• With rapid cycling\n• With melancholic features\n• With atypical features\n• With psyc ... (1187 characters truncated) ... ender-Related Diagnostic Issues:\n• Males are more likely to have manic episodes, while females are more likely to have mixed or depressive episodes.', 'category_id': 3, 'cluster_id': None}
+2024-11-25 14:57:05,780:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,782:INFO:[cached since 0.1167s ago] {'name_1': 'Bipolar II Disorder', 'param_1': 1}
+2024-11-25 14:57:05,783:WARNING:Skipping disorder 'Cyclothymic Disorder' due to missing category_id.
+2024-11-25 14:57:05,784:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,786:INFO:[cached since 0.08661s ago] {'name': 'Bipolar II Disorder', 'description': 'Bipolar II Disorder is characterized by at least one hypomanic episode and one major depressive episode. Hypomania does not cause severe functional impairment or require hospitalization.', 'criteria': 'Specifiers:\n• Same specifiers as Bipolar I Disorder.\n\nDiagnostic Features:\n• Hypomanic episodes last at least four days and are noticeable by oth ... (593 characters truncated) ... ay affect the recognition of hypomania.\n\nSex- and Gender-Related Diagnostic Issues:\n• Females may have more rapid cycling and depressive symptoms.', 'category_id': 3, 'cluster_id': None}
+2024-11-25 14:57:05,792:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,793:INFO:[cached since 0.128s ago] {'name_1': 'Substance/Medication-Induced Bipolar and Related Disorder', 'param_1': 1}
+2024-11-25 14:57:05,795:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,796:INFO:[cached since 0.09733s ago] {'name': 'Substance/Medication-Induced Bipolar and Related Disorder', 'description': 'This disorder involves a prominent and persistent mood disturbance (e.g., mania, hypomania) that develops during or shortly after substance intoxication, withdrawal, or medication     use.', 'criteria': 'Specifiers:\n• With onset during intoxication\n• With onset during withdrawal\n\nDiagnostic Features:\n• Mood disturbance is temporally related to su ... (124 characters truncated) ... irritability, euphoria, or hyperactivity.\n\nRisk and Prognostic Factors:\n• Substances   commonly involved: Stimulants, steroids, and hallucinogens.', 'category_id': 3, 'cluster_id': None}
+2024-11-25 14:57:05,800:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,802:INFO:[cached since 0.1377s ago] {'name_1': 'Bipolar and Related Disorder Due to Another Medical Condition', 'param_1': 1}
+2024-11-25 14:57:05,806:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,807:INFO:[cached since 0.1082s ago] {'name': 'Bipolar and Related Disorder Due to Another Medical Condition', 'description': 'This disorder involves manic or hypomanic symptoms that are directly attributable to    a medical condition (e.g., hyperthyroidism, multiple sclerosis).', 'criteria': 'Specifiers:\n• With manic features\n• With manic- or hypomanic-like episode\n• With mixed features\n\nDiagnostic Features:\n• The mood disturbance is ... (113 characters truncated) ... y another mental disorder.\n\nAssociated Features:\n• May occur in conjunction with other neurocognitive changes     caused by the medical condition.', 'category_id': 3, 'cluster_id': None}
+2024-11-25 14:57:05,810:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,811:INFO:[cached since 0.1466s ago] {'name_1': 'Other Specified Bipolar and Related Disorder', 'param_1': 1}
+2024-11-25 14:57:05,813:INFO:Disorder 'Other Specified Bipolar and Related Disorder' already exists in the database. Skipping.
+2024-11-25 14:57:05,814:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,815:INFO:[cached since 0.1502s ago] {'name_1': 'Unspecified Bipolar and Related Disorder', 'param_1': 1}
+2024-11-25 14:57:05,818:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,821:INFO:[cached since 0.1216s ago] {'name': 'Unspecified Bipolar and Related Disorder', 'description': 'This diagnosis is used when symptoms of bipolarity cause significant impairment but insufficient information is available to make a specific diagnosis (e.g., in emergency room settings)   ', 'criteria': 'No additional criteria provided.', 'category_id': 3, 'cluster_id': None}
+2024-11-25 14:57:05,824:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,825:INFO:[cached since 0.1603s ago] {'name_1': 'Disruptive Mood Dysregulation Disorder (DMDD)', 'param_1': 1}
+2024-11-25 14:57:05,827:INFO:Disorder 'Disruptive Mood Dysregulation Disorder (DMDD)' already exists in the database. Skipping.
+2024-11-25 14:57:05,828:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,828:INFO:[cached since 0.1643s ago] {'name_1': 'Major Depressive Disorder (MDD)', 'param_1': 1}
+2024-11-25 14:57:05,832:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,832:INFO:[cached since 0.1334s ago] {'name': 'Major Depressive Disorder (MDD)', 'description': 'MDD is characterized by one or more major depressive episodes, with at least five symptoms (e.g., depressed mood, anhedonia, changes in weight, sleep disturbances) present for at least two weeks. Symptoms cause significant distress or impairment.', 'criteria': 'Specifiers:\n• With anxious distress\n• With mixed features\n• With melancholic features\n• With atypical features\n• With psychotic features\n• With ... (855 characters truncated) ... inate in non-Western cultures.\n\nSex- and Gender-Related Diagnostic Issues:\n• Higher prevalence in females, often associated with hormonal factors.', 'category_id': 4, 'cluster_id': None}
+2024-11-25 14:57:05,836:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,839:INFO:[cached since 0.1748s ago] {'name_1': 'Persistent Depressive Disorder (Dysthymia)', 'param_1': 1}
+2024-11-25 14:57:05,842:WARNING:Skipping disorder 'Premenstrual Dysphoric Disorder (PMDD)' due to missing category_id.
+2024-11-25 14:57:05,843:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,844:INFO:[cached since 0.1447s ago] {'name': 'Persistent Depressive Disorder (Dysthymia)', 'description': 'Persistent Depressive Disorder involves a chronic depressed mood lasting at least two years (one year for children/adolescents) with additional depressive symptoms.', 'criteria': 'Specifiers:\n• Same specifiers as MDD.\n\nDiagnostic Features:\n• Symptoms are less severe than MDD but longer-lasting.\n• There may be intermittent  ... (319 characters truncated) ... .\n• Risk of developing MDD.\n\nRisk and Prognostic Factors:\n• Same as MDD.\n\nSex- and Gender-Related Diagnostic Issues:\n• More common in females.', 'category_id': 4, 'cluster_id': None}
+2024-11-25 14:57:05,846:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,847:INFO:[cached since 0.1826s ago] {'name_1': 'Substance/Medication-Induced Depressive Disorder', 'param_1': 1}
+2024-11-25 14:57:05,851:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,851:INFO:[cached since 0.1528s ago] {'name': 'Substance/Medication-Induced Depressive Disorder', 'description': 'This disorder involves depressive symptoms directly caused by substance intoxication, withdrawal, or medication use.', 'criteria': 'Specifiers:\n• With onset during intoxication\n• With onset during withdrawal\n\nDiagnostic Features:\n• Symptoms occur soon after substance use or w ... (149 characters truncated) ... aries by substance; particularly common with alcohol and sedative use.\n\nRisk and Prognostic Factors:\n• Long-term use of substances increases risk.', 'category_id': 4, 'cluster_id': None}
+2024-11-25 14:57:05,854:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,855:INFO:[cached since 0.1907s ago] {'name_1': 'Depressive Disorder Due to Another Medical Condition', 'param_1': 1}
+2024-11-25 14:57:05,858:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,859:INFO:[cached since 0.1604s ago] {'name': 'Depressive Disorder Due to Another Medical Condition', 'description': 'This disorder involves depressive symptoms caused by a medical condition, such as hypothyroidism or stroke.', 'criteria': 'Specifiers:\n• With depressive features\n• With major depressive-like episode\n• With mixed features\n\nDiagnostic Features:\n• Symptoms are temporal ... (28 characters truncated) ... ndition.\n• Symptoms are not better explained by another mental disorder.\n\nAssociated Features:\n• Medical conditions may also exacerbate symptoms.', 'category_id': 4, 'cluster_id': None}
+2024-11-25 14:57:05,862:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,864:INFO:[cached since 0.1993s ago] {'name_1': 'Other Specified Depressive Disorder', 'param_1': 1}
+2024-11-25 14:57:05,867:INFO:Disorder 'Other Specified Depressive Disorder' already exists in the database. Skipping.
+2024-11-25 14:57:05,868:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,870:INFO:[cached since 0.2045s ago] {'name_1': 'Unspecified Depressive Disorder', 'param_1': 1}
+2024-11-25 14:57:05,872:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,872:INFO:[cached since 0.1739s ago] {'name': 'Unspecified Depressive Disorder', 'description': 'This diagnosis is used when depressive symptoms cause significant distress or impairment but insufficient information is available to make a specific diagnosis (e.g., in emergency settings).', 'criteria': 'No additional criteria specified.', 'category_id': 4, 'cluster_id': None}
+2024-11-25 14:57:05,877:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,878:INFO:[cached since 0.2131s ago] {'name_1': 'Separation Anxiety Disorder', 'param_1': 1}
+2024-11-25 14:57:05,880:INFO:Disorder 'Separation Anxiety Disorder' already exists in the database. Skipping.
+2024-11-25 14:57:05,880:WARNING:Skipping disorder 'Selective Mutism' due to missing category_id.
+2024-11-25 14:57:05,880:WARNING:Skipping disorder 'Specific Phobia' due to missing category_id.
+2024-11-25 14:57:05,882:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,884:INFO:[cached since 0.2188s ago] {'name_1': 'Social Anxiety Disorder (Social Phobia)', 'param_1': 1}
+2024-11-25 14:57:05,886:WARNING:Skipping disorder 'Panic Disorder' due to missing category_id.
+2024-11-25 14:57:05,886:WARNING:Skipping disorder 'Agoraphobia' due to missing category_id.
+2024-11-25 14:57:05,887:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,888:INFO:[cached since 0.1895s ago] {'name': 'Social Anxiety Disorder (Social Phobia)', 'description': 'Social Anxiety Disorder is marked by intense fear or anxiety in social or performance situations where an individual may be scrutinized by others (e. ... (88 characters truncated) ...  these situations with extreme distress. The anxiety is disproportionate to the actual threat and can interfere significantly with daily functioning.', 'criteria': 'Specifiers:\n• Performance only: Fear limited to speaking or performing in public.\n\nDiagnostic Features:\n• Fear of being humiliated, embarrassed,  ... (655 characters truncated) ... blic behavior may affect diagnosis.\n\nSex- and Gender-Related Diagnostic Issues:\n• More common in females, but males may seek treatment more often.', 'category_id': 5, 'cluster_id': None}
+2024-11-25 14:57:05,892:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,894:INFO:[cached since 0.2286s ago] {'name_1': 'Generalized Anxiety Disorder (GAD)', 'param_1': 1}
+2024-11-25 14:57:05,895:INFO:Disorder 'Generalized Anxiety Disorder (GAD)' already exists in the database. Skipping.
+2024-11-25 14:57:05,896:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,898:INFO:[cached since 0.2324s ago] {'name_1': 'Substance/Medication-Induced Anxiety Disorder', 'param_1': 1}
+2024-11-25 14:57:05,899:INFO:Disorder 'Substance/Medication-Induced Anxiety Disorder' already exists in the database. Skipping.
+2024-11-25 14:57:05,900:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,912:INFO:[cached since 0.2471s ago] {'name_1': 'Anxiety Disorder Due to Another Medical Condition', 'param_1': 1}
+2024-11-25 14:57:05,915:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,917:INFO:[cached since 0.2171s ago] {'name': 'Anxiety Disorder Due to Another Medical Condition', 'description': 'Anxiety Disorder Due to Another Medical Condition involves prominent anxiety symptoms directly caused by a medical condition (e.g., hyperthyroidism,  ... (24 characters truncated) ... e anxiety can manifest as generalized anxiety, panic attacks, or obsessive-compulsive symptoms, and it must cause significant distress or impairment.', 'criteria': 'Specifiers:\n• With panic attacks.\n• With generalized anxiety.\n\nDiagnostic Features:\n• Evidence that anxiety symptoms are the direct physiologica ... (389 characters truncated) ... isk and Prognostic Factors:\n• Medical conditions: Conditions affecting the central nervous system or endocrine systems are most commonly associated.', 'category_id': 5, 'cluster_id': None}
+2024-11-25 14:57:05,919:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,920:INFO:[cached since 0.2553s ago] {'name_1': 'Other Specified Anxiety Disorder', 'param_1': 1}
+2024-11-25 14:57:05,922:INFO:Disorder 'Other Specified Anxiety Disorder' already exists in the database. Skipping.
+2024-11-25 14:57:05,922:WARNING:Skipping disorder 'Obsessive-Compulsive Disorder (OCD)' due to missing category_id.
+2024-11-25 14:57:05,922:WARNING:Skipping disorder 'Body Dysmorphic Disorder (BDD)' due to missing category_id.
+2024-11-25 14:57:05,922:WARNING:Skipping disorder 'Hoarding Disorder' due to missing category_id.
+2024-11-25 14:57:05,922:WARNING:Skipping disorder 'Trichotillomania (Hair-Pulling Disorder)' due to missing category_id.
+2024-11-25 14:57:05,922:WARNING:Skipping disorder 'Excoriation (Skin-Picking) Disorder' due to missing category_id.
+2024-11-25 14:57:05,924:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,925:INFO:[cached since 0.2601s ago] {'name_1': 'Substance/Medication-Induced Obsessive-Compulsive and Related Disorder', 'param_1': 1}
+2024-11-25 14:57:05,928:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,929:INFO:[cached since 0.23s ago] {'name': 'Substance/Medication-Induced Obsessive-Compulsive and Related Disorder', 'description': 'This disorder involves obsessive-compulsive symptoms caused directly by substance intoxication, withdrawal, or medication use.', 'criteria': 'Specifiers:\n• With onset during intoxication.\n• With onset during withdrawal.\n• With onset after medication use.\n\nDiagnostic Features:\n• Obsessive-compulsive symptoms related to substance use.\n• Symptoms develop after exposure to a substance or medication.', 'category_id': 6, 'cluster_id': None}
+2024-11-25 14:57:05,932:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,933:INFO:[cached since 0.2683s ago] {'name_1': 'Obsessive-Compulsive and Related Disorder Due to Another Medical Condition', 'param_1': 1}
+2024-11-25 14:57:05,936:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,937:INFO:[cached since 0.2375s ago] {'name': 'Obsessive-Compulsive and Related Disorder Due to Another Medical Condition', 'description': 'This disorder involves obsessive-compulsive symptoms that are directly caused by a medical condition (e.g., neurological disorder).', 'criteria': 'Specifiers:\n• With obsessive-compulsive symptoms.\n• With appearance preoccupations.\n• With hoarding symptoms.\n• With hair-pulling symptoms.\n• With skin-picking symptoms.\n\nDiagnostic Features:\n• Symptoms are directly attributable to a medical condition.', 'category_id': 6, 'cluster_id': None}
+2024-11-25 14:57:05,940:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,941:INFO:[cached since 0.2771s ago] {'name_1': 'Other Specified Obsessive-Compulsive and Related Disorder', 'param_1': 1}
+2024-11-25 14:57:05,945:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,946:INFO:[cached since 0.2467s ago] {'name': 'Other Specified Obsessive-Compulsive and Related Disorder', 'description': 'This category applies to conditions with significant obsessive-compulsive symptoms that do not meet the criteria for specific disorders (e.g., obsessional jealousy or body-focused repetitive behaviors).', 'criteria': '', 'category_id': 3, 'cluster_id': None}
+2024-11-25 14:57:05,948:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,950:INFO:[cached since 0.2848s ago] {'name_1': 'Unspecified Obsessive-Compulsive and Related Disorder', 'param_1': 1}
+2024-11-25 14:57:05,952:WARNING:Skipping disorder 'Reactive Attachment Disorder (RAD)' due to missing category_id.
+2024-11-25 14:57:05,952:WARNING:Skipping disorder 'Disinhibited Social Engagement Disorder (DSED)' due to missing category_id.
+2024-11-25 14:57:05,952:WARNING:Skipping disorder 'Posttraumatic Stress Disorder (PTSD)' due to missing category_id.
+2024-11-25 14:57:05,952:WARNING:Skipping disorder 'Acute Stress Disorder (ASD)' due to missing category_id.
+2024-11-25 14:57:05,953:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,954:INFO:[cached since 0.2542s ago] {'name': 'Unspecified Obsessive-Compulsive and Related Disorder', 'description': 'This category applies to cases where obsessive-compulsive symptoms cause distress or impairment but do not meet full criteria for a specific disorder, and the clinician chooses not to specify the reason.', 'criteria': '', 'category_id': 3, 'cluster_id': None}
+2024-11-25 14:57:05,956:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,957:INFO:[cached since 0.2921s ago] {'name_1': 'Adjustment Disorders', 'param_1': 1}
+2024-11-25 14:57:05,959:WARNING:Skipping disorder 'Prolonged Grief Disorder' due to missing category_id.
+2024-11-25 14:57:05,960:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,961:INFO:[cached since 0.2619s ago] {'name': 'Adjustment Disorders', 'description': 'Adjustment Disorders involve emotional or behavioral symptoms in response to an identifiable stressor. Symptoms develop within three months of the stressor and cause significant distress or functional impairment.', 'criteria': 'Specifiers:\n• With depressed mood.\n• With anxiety.\n• With mixed anxiety and depressed mood.\n• With disturbance of conduct.\n• With mixed disturba ... (238 characters truncated) ... nce rates are unclear.\n\nDevelopment and Course:\n• Symptoms begin shortly after the stressor and resolve within six months after the stressor ends.', 'category_id': 2, 'cluster_id': None}
+2024-11-25 14:57:05,963:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,964:INFO:[cached since 0.2994s ago] {'name_1': 'Other Specified Trauma- and Stressor-Related Disorder', 'param_1': 1}
+2024-11-25 14:57:05,966:INFO:Disorder 'Other Specified Trauma- and Stressor-Related Disorder' already exists in the database. Skipping.
+2024-11-25 14:57:05,967:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,970:INFO:[cached since 0.3043s ago] {'name_1': 'Unspecified Trauma- and Stressor-Related Disorder', 'param_1': 1}
+2024-11-25 14:57:05,972:WARNING:Skipping disorder 'Dissociative Identity Disorder (DID)' due to missing category_id.
+2024-11-25 14:57:05,972:WARNING:Skipping disorder 'Dissociative Amnesia' due to missing category_id.
+2024-11-25 14:57:05,972:WARNING:Skipping disorder 'Depersonalization/Derealization Disorder' due to missing category_id.
+2024-11-25 14:57:05,972:WARNING:Skipping disorder 'Other Specified Dissociative Disorder' due to missing category_id.
+2024-11-25 14:57:05,972:WARNING:Skipping disorder 'Unspecified Dissociative Disorder' due to missing category_id.
+2024-11-25 14:57:05,973:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,974:INFO:[cached since 0.2756s ago] {'name': 'Unspecified Trauma- and Stressor-Related Disorder', 'description': 'This category applies to trauma- and stressor-related presentations that cause significant distress or impairment but do not meet the criteria for a specific diagnosis, and the clinician chooses not to specify the reasons.', 'criteria': '', 'category_id': 3, 'cluster_id': None}
+2024-11-25 14:57:05,977:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,980:INFO:[cached since 0.3147s ago] {'name_1': 'Somatic Symptom Disorder', 'param_1': 1}
+2024-11-25 14:57:05,982:INFO:Disorder 'Somatic Symptom Disorder' already exists in the database. Skipping.
+2024-11-25 14:57:05,982:WARNING:Skipping disorder 'Illness Anxiety Disorder' due to missing category_id.
+2024-11-25 14:57:05,982:WARNING:Skipping disorder 'Functional Neurological Symptom Disorder (Conversion Disorder)' due to missing category_id.
+2024-11-25 14:57:05,982:WARNING:Skipping disorder 'Psychological Factors Affecting Other Medical Conditions' due to missing category_id.
+2024-11-25 14:57:05,982:WARNING:Skipping disorder 'Factitious Disorder' due to missing category_id.
+2024-11-25 14:57:05,984:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,985:INFO:[cached since 0.3201s ago] {'name_1': 'Other Specified Somatic Symptom and Related Disorder', 'param_1': 1}
+2024-11-25 14:57:05,989:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,989:INFO:[cached since 0.2906s ago] {'name': 'Other Specified Somatic Symptom and Related Disorder', 'description': 'This category applies to presentations where somatic symptoms cause significant distress or impairment but do not meet full criteria for any specific somatic symptom-related disorder. The clinician specifies the reason for the diagnosis (e.g., brief somatic symptom disorder).', 'criteria': '', 'category_id': 3, 'cluster_id': None}
+2024-11-25 14:57:05,992:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:05,993:INFO:[cached since 0.3281s ago] {'name_1': 'Unspecified Somatic Symptom and Related Disorder', 'param_1': 1}
+2024-11-25 14:57:05,994:WARNING:Skipping disorder 'Pica' due to missing category_id.
+2024-11-25 14:57:05,994:WARNING:Skipping disorder 'Rumination Disorder' due to missing category_id.
+2024-11-25 14:57:05,995:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:05,997:INFO:[cached since 0.2975s ago] {'name': 'Unspecified Somatic Symptom and Related Disorder', 'description': 'This category is used when somatic symptoms cause significant distress or impairment but insufficient information is available to make a more specific diagnosis. It is often used in emergency settings or when symptom duration is unclear.', 'criteria': '', 'category_id': 3, 'cluster_id': None}
+2024-11-25 14:57:06,000:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,001:INFO:[cached since 0.3356s ago] {'name_1': 'Avoidant/Restrictive Food Intake Disorder (ARFID)', 'param_1': 1}
+2024-11-25 14:57:06,002:INFO:Disorder 'Avoidant/Restrictive Food Intake Disorder (ARFID)' already exists in the database. Skipping.
+2024-11-25 14:57:06,003:WARNING:Skipping disorder 'Anorexia Nervosa' due to missing category_id.
+2024-11-25 14:57:06,003:WARNING:Skipping disorder 'Bulimia Nervosa' due to missing category_id.
+2024-11-25 14:57:06,003:WARNING:Skipping disorder 'Binge-Eating Disorder' due to missing category_id.
+2024-11-25 14:57:06,003:WARNING:Skipping disorder 'Other Specified Feeding or Eating Disorder' due to missing category_id.
+2024-11-25 14:57:06,003:WARNING:Skipping disorder 'Unspecified Feeding or Eating Disorder' due to missing category_id.
+2024-11-25 14:57:06,003:WARNING:Skipping disorder 'Enuresis' due to missing category_id.
+2024-11-25 14:57:06,003:WARNING:Skipping disorder 'Encopresis' due to missing category_id.
+2024-11-25 14:57:06,003:WARNING:Skipping disorder 'Other Specified Elimination Disorder' due to missing category_id.
+2024-11-25 14:57:06,003:WARNING:Skipping disorder 'Unspecified Elimination Disorder' due to missing category_id.
+2024-11-25 14:57:06,003:WARNING:Skipping disorder 'Insomnia Disorder' due to missing category_id.
+2024-11-25 14:57:06,003:WARNING:Skipping disorder 'Hypersomnolence Disorder' due to missing category_id.
+2024-11-25 14:57:06,003:WARNING:Skipping disorder 'Narcolepsy' due to missing category_id.
+2024-11-25 14:57:06,003:WARNING:Skipping disorder 'Obstructive Sleep Apnea Hypopnea' due to missing category_id.
+2024-11-25 14:57:06,003:WARNING:Skipping disorder 'Central Sleep Apnea' due to missing category_id.
+2024-11-25 14:57:06,003:WARNING:Skipping disorder 'Sleep-Related Hypoventilation' due to missing category_id.
+2024-11-25 14:57:06,004:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,007:INFO:[cached since 0.3415s ago] {'name_1': 'Circadian Rhythm Sleep-Wake Disorders', 'param_1': 1}
+2024-11-25 14:57:06,010:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,011:INFO:[cached since 0.3117s ago] {'name': 'Circadian Rhythm Sleep-Wake Disorders', 'description': 'Circadian Rhythm Sleep-Wake Disorders involve a misalignment between the individual’s sleep-wake schedule and their environment, leading to insomnia or excessive sleepiness.', 'criteria': 'Specifiers:\n• Delayed Sleep Phase.\n• Advanced Sleep Phase.\n• Non-24-Hour Sleep-Wake Type.\n• Irregular Sleep-Wake Type.', 'category_id': 4, 'cluster_id': None}
+2024-11-25 14:57:06,013:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,015:INFO:[cached since 0.3501s ago] {'name_1': 'Non-Rapid Eye Movement Sleep Arousal Disorders', 'param_1': 1}
+2024-11-25 14:57:06,017:WARNING:Skipping disorder 'Nightmare Disorder' due to missing category_id.
+2024-11-25 14:57:06,017:WARNING:Skipping disorder 'Rapid Eye Movement Sleep Behavior Disorder' due to missing category_id.
+2024-11-25 14:57:06,018:WARNING:Skipping disorder 'Restless Legs Syndrome' due to missing category_id.
+2024-11-25 14:57:06,018:WARNING:Skipping disorder 'Substance/Medication-Induced Sleep Disorder' due to missing category_id.
+2024-11-25 14:57:06,019:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,020:INFO:[cached since 0.3203s ago] {'name': 'Non-Rapid Eye Movement Sleep Arousal Disorders', 'description': 'These disorders involve partial arousals from NREM sleep, often resulting in sleepwalking or night terrors.', 'criteria': 'Specifiers:\n• Sleepwalking.\n• Sleep Terrors.', 'category_id': 1, 'cluster_id': None}
+2024-11-25 14:57:06,022:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,024:INFO:[cached since 0.3583s ago] {'name_1': 'Other Specified Insomnia Disorder', 'param_1': 1}
+2024-11-25 14:57:06,026:WARNING:Skipping disorder 'Delayed Ejaculation' due to missing category_id.
+2024-11-25 14:57:06,026:WARNING:Skipping disorder 'Erectile Disorder' due to missing category_id.
+2024-11-25 14:57:06,026:WARNING:Skipping disorder 'Female Orgasmic Disorder' due to missing category_id.
+2024-11-25 14:57:06,026:WARNING:Skipping disorder 'Female Sexual Interest/Arousal Disorder' due to missing category_id.
+2024-11-25 14:57:06,026:WARNING:Skipping disorder 'Genito-Pelvic Pain/Penetration Disorder' due to missing category_id.
+2024-11-25 14:57:06,026:WARNING:Skipping disorder 'Male Hypoactive Sexual Desire Disorder' due to missing category_id.
+2024-11-25 14:57:06,026:WARNING:Skipping disorder 'Premature (Early) Ejaculation' due to missing category_id.
+2024-11-25 14:57:06,026:WARNING:Skipping disorder 'Substance/Medication-Induced Sexual Dysfunction' due to missing category_id.
+2024-11-25 14:57:06,027:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,028:INFO:[cached since 0.3283s ago] {'name': 'Other Specified Insomnia Disorder', 'description': 'This diagnosis applies to insomnia symptoms that do not fully meet the criteria for Insomnia Disorder but still cause significant distress or impairment.', 'criteria': '', 'category_id': 2, 'cluster_id': None}
+2024-11-25 14:57:06,029:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,030:INFO:[cached since 0.365s ago] {'name_1': 'Other Specified Sexual Dysfunction', 'param_1': 1}
+2024-11-25 14:57:06,032:WARNING:Skipping disorder 'Unspecified Sexual Dysfunction' due to missing category_id.
+2024-11-25 14:57:06,032:WARNING:Skipping disorder 'Gender Dysphoria in Children' due to missing category_id.
+2024-11-25 14:57:06,032:WARNING:Skipping disorder 'Gender Dysphoria in Adolescents and Adults' due to missing category_id.
+2024-11-25 14:57:06,033:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,034:INFO:[cached since 0.335s ago] {'name': 'Other Specified Sexual Dysfunction', 'description': 'This diagnosis applies to sexual dysfunctions that cause significant distress or impairment but do not meet full criteria for any specific sexual dysfunction disorder.', 'criteria': 'Specifiers:\n• Examples include situational sexual dysfunction or sexual dysfunction due to psychological factors.', 'category_id': 2, 'cluster_id': None}
+2024-11-25 14:57:06,036:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,037:INFO:[cached since 0.3722s ago] {'name_1': 'Other Specified Gender Dysphoria', 'param_1': 1}
+2024-11-25 14:57:06,039:WARNING:Skipping disorder 'Unspecified Gender Dysphoria' due to missing category_id.
+2024-11-25 14:57:06,039:WARNING:Skipping disorder 'Oppositional Defiant Disorder (ODD)' due to missing category_id.
+2024-11-25 14:57:06,039:WARNING:Skipping disorder 'Intermittent Explosive Disorder' due to missing category_id.
+2024-11-25 14:57:06,039:WARNING:Skipping disorder 'Conduct Disorder' due to missing category_id.
+2024-11-25 14:57:06,039:WARNING:Skipping disorder 'Pyromania' due to missing category_id.
+2024-11-25 14:57:06,039:WARNING:Skipping disorder 'Kleptomania' due to missing category_id.
+2024-11-25 14:57:06,040:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,041:INFO:[cached since 0.3419s ago] {'name': 'Other Specified Gender Dysphoria', 'description': 'This category applies to cases where symptoms characteristic of gender dysphoria cause significant distress or impairment but do not fully meet the criteria for Gender Dysphoria. Clinicians specify the particular reason the full criteria are not met (e.g., symptoms of shorter duration).', 'criteria': '', 'category_id': 2, 'cluster_id': None}
+2024-11-25 14:57:06,043:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,045:INFO:[cached since 0.3797s ago] {'name_1': 'Other Specified Disruptive, Impulse-Control, and Conduct Disorder', 'param_1': 1}
+2024-11-25 14:57:06,047:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,049:INFO:[cached since 0.3499s ago] {'name': 'Other Specified Disruptive, Impulse-Control, and Conduct Disorder', 'description': 'This category is used when symptoms characteristic of disruptive, impulse-control, and conduct disorders cause significant distress or impairment but do not meet the full criteria for any specific disorder. The clinician specifies the reason.', 'criteria': '', 'category_id': 3, 'cluster_id': None}
+2024-11-25 14:57:06,051:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,053:INFO:[cached since 0.3878s ago] {'name_1': 'Unspecified Disruptive, Impulse-Control, and Conduct Disorder', 'param_1': 1}
+2024-11-25 14:57:06,054:WARNING:Skipping disorder 'Alcohol Use Disorder' due to missing category_id.
+2024-11-25 14:57:06,054:WARNING:Skipping disorder 'Alcohol Intoxication' due to missing category_id.
+2024-11-25 14:57:06,054:WARNING:Skipping disorder 'Alcohol Withdrawal' due to missing category_id.
+2024-11-25 14:57:06,054:WARNING:Skipping disorder 'Unspecified Alcohol-Related Disorder' due to missing category_id.
+2024-11-25 14:57:06,055:WARNING:Skipping disorder 'Caffeine Intoxication' due to missing category_id.
+2024-11-25 14:57:06,055:WARNING:Skipping disorder 'Caffeine Withdrawal' due to missing category_id.
+2024-11-25 14:57:06,055:WARNING:Skipping disorder 'Unspecified Cannabis-Related Disorder' due to missing category_id.
+2024-11-25 14:57:06,055:WARNING:Skipping disorder 'Unspecified Hallucinogen-Related Disorder' due to missing category_id.
+2024-11-25 14:57:06,055:WARNING:Skipping disorder 'Phencyclidine Use Disorder' due to missing category_id.
+2024-11-25 14:57:06,055:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,056:INFO:[cached since 0.3574s ago] {'name': 'Unspecified Disruptive, Impulse-Control, and Conduct Disorder', 'description': 'Unspecified Disruptive, Impulse-Control, and Conduct Disorder is diagnosed when significant symptoms are present but insufficient information is available to assign a more specific diagnosis or when symptoms do not fully meet criteria for a specific disorder.', 'criteria': '', 'category_id': 3, 'cluster_id': None}
+2024-11-25 14:57:06,059:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,060:INFO:[cached since 0.3952s ago] {'name_1': 'Other Hallucinogen Use Disorder', 'param_1': 1}
+2024-11-25 14:57:06,062:WARNING:Skipping disorder 'Phencyclidine Intoxication' due to missing category_id.
+2024-11-25 14:57:06,063:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,064:INFO:[cached since 0.3655s ago] {'name': 'Other Hallucinogen Use Disorder', 'description': 'Other Hallucinogen Use Disorder involves a problematic pattern of use of hallucinogens other than phencyclidine, leading to distress or impairment.', 'criteria': 'Criteria are similar to those for other substance use disorders.', 'category_id': 2, 'cluster_id': None}
+2024-11-25 14:57:06,067:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,069:INFO:[cached since 0.404s ago] {'name_1': 'Other Hallucinogen Intoxication', 'param_1': 1}
+2024-11-25 14:57:06,070:WARNING:Skipping disorder 'Hallucinogen Persisting Perception Disorder' due to missing category_id.
+2024-11-25 14:57:06,071:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,073:INFO:[cached since 0.3738s ago] {'name': 'Other Hallucinogen Intoxication', 'description': 'Intoxication from other hallucinogens presents with behavioral changes like anxiety or perceptual distortions.', 'criteria': 'Symptoms include:\n\n• Pupil dilation.\n\n• Tachycardia.\n\n• Sweating or chills.\n\n• Tremors or incoordination.', 'category_id': 2, 'cluster_id': None}
+2024-11-25 14:57:06,076:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,078:INFO:[cached since 0.4122s ago] {'name_1': 'Phencyclidine-Induced Mental Disorders', 'param_1': 1}
+2024-11-25 14:57:06,081:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,083:INFO:[cached since 0.3838s ago] {'name': 'Phencyclidine-Induced Mental Disorders', 'description': 'Mental disturbances (e.g., psychosis, mood, or anxiety symptoms) occurring during or shortly after phencyclidine use, attributable to the substance.', 'criteria': 'No additional criteria provided.', 'category_id': 4, 'cluster_id': None}
+2024-11-25 14:57:06,086:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,088:INFO:[cached since 0.4229s ago] {'name_1': 'Hallucinogen-Induced Mental Disorders', 'param_1': 1}
+2024-11-25 14:57:06,090:WARNING:Skipping disorder 'Unspecified Phencyclidine-Related Disorder' due to missing category_id.
+2024-11-25 14:57:06,090:WARNING:Skipping disorder 'Unspecified Hallucinogen-Related Disorder' due to missing category_id.
+2024-11-25 14:57:06,090:WARNING:Skipping disorder 'Inhalant Use Disorder' due to missing category_id.
+2024-11-25 14:57:06,090:WARNING:Skipping disorder 'Inhalant Intoxication' due to missing category_id.
+2024-11-25 14:57:06,091:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,094:INFO:[cached since 0.3952s ago] {'name': 'Hallucinogen-Induced Mental Disorders', 'description': 'Mental disturbances (e.g., hallucinations, delusions, or mood symptoms) occurring during or shortly after hallucinogen use, attributable to the substance.', 'criteria': 'No additional criteria provided.', 'category_id': 4, 'cluster_id': None}
+2024-11-25 14:57:06,098:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,100:INFO:[cached since 0.4354s ago] {'name_1': 'Inhalant-Induced Mental Disorders', 'param_1': 1}
+2024-11-25 14:57:06,103:WARNING:Skipping disorder 'Unspecified Inhalant-Related Disorder' due to missing category_id.
+2024-11-25 14:57:06,103:WARNING:Skipping disorder 'Opioid Use Disorder' due to missing category_id.
+2024-11-25 14:57:06,103:WARNING:Skipping disorder 'Opioid Intoxication' due to missing category_id.
+2024-11-25 14:57:06,103:WARNING:Skipping disorder 'Opioid Withdrawal' due to missing category_id.
+2024-11-25 14:57:06,104:WARNING:Skipping disorder 'Sedative, Hypnotic, or Anxiolytic Use Disorder' due to missing category_id.
+2024-11-25 14:57:06,104:WARNING:Skipping disorder 'Sedative, Hypnotic, or Anxiolytic Intoxication' due to missing category_id.
+2024-11-25 14:57:06,104:WARNING:Skipping disorder 'Sedative, Hypnotic, or Anxiolytic Withdrawal' due to missing category_id.
+2024-11-25 14:57:06,105:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,107:INFO:[cached since 0.4085s ago] {'name': 'Inhalant-Induced Mental Disorders', 'description': 'Mental disturbances (e.g., mood, psychotic, or cognitive symptoms) related to inhalant use.', 'criteria': 'No additional criteria provided.', 'category_id': 2, 'cluster_id': None}
+2024-11-25 14:57:06,112:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,116:INFO:[cached since 0.4509s ago] {'name_1': 'Sedative-, Hypnotic-, or Anxiolytic-Induced Mental Disorders', 'param_1': 1}
+2024-11-25 14:57:06,120:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,121:INFO:[cached since 0.4221s ago] {'name': 'Sedative-, Hypnotic-, or Anxiolytic-Induced Mental Disorders', 'description': "Sedative-, Hypnotic-, or Anxiolytic-Induced Mental Disorders involve mental health disturbances directly caused by the use, intoxication, or withdraw ... (44 characters truncated) ... tances. These disturbances can include mood, anxiety, psychosis, or cognitive impairments and typically resolve when the substance's effects subside.", 'criteria': "Diagnostic Features:\n\n• Symptoms of a mental disorder (e.g., anxiety, depression, psychosis, or memory impairment) that develop during or soon afte ... (84 characters truncated) ... ent must be evident and temporally related to the mental disturbance.\n\n• The symptoms cannot be better explained by an independent mental disorder.", 'category_id': 1, 'cluster_id': None}
+2024-11-25 14:57:06,124:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,128:INFO:[cached since 0.4627s ago] {'name_1': 'Unspecified Sedative-, Hypnotic-, or Anxiolytic-Related Disorder', 'param_1': 1}
+2024-11-25 14:57:06,131:WARNING:Skipping disorder 'Stimulant Use Disorder' due to missing category_id.
+2024-11-25 14:57:06,131:WARNING:Skipping disorder 'Stimulant Intoxication' due to missing category_id.
+2024-11-25 14:57:06,131:WARNING:Skipping disorder 'Stimulant Withdrawal' due to missing category_id.
+2024-11-25 14:57:06,133:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,134:INFO:[cached since 0.4353s ago] {'name': 'Unspecified Sedative-, Hypnotic-, or Anxiolytic-Related Disorder', 'description': 'Unspecified Sedative-, Hypnotic-, or Anxiolytic-Related Disorder is diagnosed when the symptoms are related to the use of sedative, hypnotic, or anxiolytic substances but do not meet the criteria for specific related disorders or there is insufficient information to make a detailed diagnosis.', 'criteria': 'Diagnostic Features:\n\n• Symptoms linked to sedative, hypnotic, or anxiolytic use causing distress or impairment in functioning.\n\n• Symptoms do not meet the criteria for intoxication, withdrawal, or another induced mental disorder.', 'category_id': 3, 'cluster_id': None}
+2024-11-25 14:57:06,137:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,140:INFO:[cached since 0.4748s ago] {'name_1': 'Stimulant-Induced Mental Disorders', 'param_1': 1}
+2024-11-25 14:57:06,142:WARNING:Skipping disorder 'Unspecified Stimulant-Related Disorder' due to missing category_id.
+2024-11-25 14:57:06,142:WARNING:Skipping disorder 'Tobacco Use Disorder' due to missing category_id.
+2024-11-25 14:57:06,143:WARNING:Skipping disorder 'Tobacco Withdrawal' due to missing category_id.
+2024-11-25 14:57:06,143:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,145:INFO:[cached since 0.4456s ago] {'name': 'Stimulant-Induced Mental Disorders', 'description': 'Stimulant-Induced Mental Disorders include anxiety, psychosis, or mood disturbances resulting from stimulant intoxication or withdrawal.', 'criteria': 'Diagnostic Features:\n\n• Symptoms resolve with the cessation of stimulant effects.\n\n• Not better explained by a primary mental health disorder.', 'category_id': 2, 'cluster_id': None}
+2024-11-25 14:57:06,149:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,151:INFO:[cached since 0.4852s ago] {'name_1': 'Tobacco-Induced Mental Disorders', 'param_1': 1}
+2024-11-25 14:57:06,153:WARNING:Skipping disorder 'Unspecified Tobacco-Related Disorder' due to missing category_id.
+2024-11-25 14:57:06,153:WARNING:Skipping disorder 'Other (or Unknown) Substance Use Disorder' due to missing category_id.
+2024-11-25 14:57:06,153:WARNING:Skipping disorder 'Other (or Unknown) Substance Intoxication' due to missing category_id.
+2024-11-25 14:57:06,153:WARNING:Skipping disorder 'Other (or Unknown) Substance Withdrawal' due to missing category_id.
+2024-11-25 14:57:06,154:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,155:INFO:[cached since 0.4554s ago] {'name': 'Tobacco-Induced Mental Disorders', 'description': 'Tobacco-Induced Mental Disorders involve mood or anxiety disturbances caused by nicotine use or withdrawal.', 'criteria': 'Diagnostic Features:\n\n• Temporally related to tobacco use or cessation.', 'category_id': 2, 'cluster_id': None}
+2024-11-25 14:57:06,158:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,160:INFO:[cached since 0.4949s ago] {'name_1': 'Other (or Unknown) Substance–Induced Mental Disorders', 'param_1': 1}
+2024-11-25 14:57:06,163:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,163:INFO:[cached since 0.4651s ago] {'name': 'Other (or Unknown) Substance–Induced Mental Disorders', 'description': 'Mental health symptoms caused by an unknown or unspecified substance.', 'criteria': 'No additional criteria provided.', 'category_id': 1, 'cluster_id': None}
+2024-11-25 14:57:06,166:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,168:INFO:[cached since 0.5034s ago] {'name_1': 'Unspecified Other (or Unknown) Substance–Related Disorder', 'param_1': 1}
+2024-11-25 14:57:06,170:WARNING:Skipping disorder 'Gambling Disorder' due to missing category_id.
+2024-11-25 14:57:06,170:WARNING:Skipping disorder 'Delirium' due to missing category_id.
+2024-11-25 14:57:06,171:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,172:INFO:[cached since 0.4731s ago] {'name': 'Unspecified Other (or Unknown) Substance–Related Disorder', 'description': 'Symptoms related to unknown substances that do not fit established categories but cause distress or dysfunction.', 'criteria': 'No additional criteria provided.', 'category_id': 3, 'cluster_id': None}
+2024-11-25 14:57:06,176:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,177:INFO:[cached since 0.5119s ago] {'name_1': 'Other Specified Delirium', 'param_1': 1}
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Unspecified Delirium' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Major Neurocognitive Disorder' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Mild Neurocognitive Disorder' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Major or Mild Neurocognitive Disorder Due to Alzheimer’s Disease' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Major or Mild Frontotemporal Neurocognitive Disorder' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Major or Mild Neurocognitive Disorder With Lewy Bodies' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Major or Mild Vascular Neurocognitive Disorder' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Major or Mild Neurocognitive Disorder Due to Traumatic Brain Injury' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Substance/Medication-Induced Major or Mild Neurocognitive Disorder' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Major or Mild Neurocognitive Disorder Due to HIV Infection' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Major or Mild Neurocognitive Disorder Due to Prion Disease' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Major or Mild Neurocognitive Disorder Due to Parkinson’s Disease' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Major or Mild Neurocognitive Disorder Due to Huntington’s Disease' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Major or Mild Neurocognitive Disorder Due to Another Medical Condition' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Major or Mild Neurocognitive Disorder Due to Multiple Etiologies' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Unspecified Neurocognitive Disorder' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Paranoid Personality Disorder' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Schizoid Personality Disorder' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Schizotypal Personality Disorder' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Antisocial Personality Disorder' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Borderline Personality Disorder' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Histrionic Personality Disorder' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Narcissistic Personality Disorder' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Avoidant Personality Disorder' due to missing category_id.
+2024-11-25 14:57:06,179:WARNING:Skipping disorder 'Dependent Personality Disorder' due to missing category_id.
+2024-11-25 14:57:06,180:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,182:INFO:[cached since 0.4827s ago] {'name': 'Other Specified Delirium', 'description': 'Used when symptoms of delirium cause significant distress or impairment but do not meet the full diagnostic criteria, with the specific reason documented (e.g., subsyndromal delirium).', 'criteria': 'No additional criteria provided.', 'category_id': 2, 'cluster_id': None}
+2024-11-25 14:57:06,184:INFO:SELECT disorders.id AS disorders_id, disorders.name AS disorders_name, disorders.description AS disorders_description, disorders.criteria AS disorders_criteria, disorders.category_id AS disorders_category_id, disorders.cluster_id AS disorders_cluster_id 
+FROM disorders 
+WHERE disorders.name = %(name_1)s 
+ LIMIT %(param_1)s
+2024-11-25 14:57:06,186:INFO:[cached since 0.5209s ago] {'name_1': 'Obsessive-Compulsive Personality Disorder', 'param_1': 1}
+2024-11-25 14:57:06,188:WARNING:Skipping disorder 'Voyeuristic Disorder' due to missing category_id.
+2024-11-25 14:57:06,188:WARNING:Skipping disorder 'Exhibitionistic Disorder' due to missing category_id.
+2024-11-25 14:57:06,188:WARNING:Skipping disorder 'Frotteuristic Disorder' due to missing category_id.
+2024-11-25 14:57:06,188:WARNING:Skipping disorder 'Sexual Sadism Disorder' due to missing category_id.
+2024-11-25 14:57:06,188:WARNING:Skipping disorder 'Sexual Masochism Disorder' due to missing category_id.
+2024-11-25 14:57:06,188:WARNING:Skipping disorder 'Pedophilic Disorder' due to missing category_id.
+2024-11-25 14:57:06,188:WARNING:Skipping disorder 'Fetishistic Disorder' due to missing category_id.
+2024-11-25 14:57:06,189:WARNING:Skipping disorder 'Transvestic Disorder' due to missing category_id.
+2024-11-25 14:57:06,189:INFO:INSERT INTO disorders (name, description, criteria, category_id, cluster_id) VALUES (%(name)s, %(description)s, %(criteria)s, %(category_id)s, %(cluster_id)s) RETURNING disorders.id
+2024-11-25 14:57:06,192:INFO:[cached since 0.492s ago] {'name': 'Obsessive-Compulsive Personality Disorder', 'description': 'Obsessive-Compulsive Personality Disorder involves preoccupation with orderliness, perfectionism, and control at the expense of flexibility and efficiency.', 'criteria': '\n\n• Preoccupation with details, rules, or schedules.\n\n• Perfectionism interfering with task completion.\n\n• Excessive devotion to work at the expense of leisure.\n\n• Rigidity and stubbornness.\n\n• Reluctance to delegate tasks.', 'category_id': 6, 'cluster_id': None}
+2024-11-25 14:57:06,196:INFO:COMMIT
+2024-11-25 14:57:06,200:INFO:Successfully seeded disorders into the database.

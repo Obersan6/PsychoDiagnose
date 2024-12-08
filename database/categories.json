@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "name": "Neurodevelopmental Disorders",
+        "description": "Neurodevelopmental Disorders are a group of conditions characterized by developmental impairments that typically appear in early childhood. These disorders are marked by signs and symptoms affecting personal, social, academic, and occupational functioning. Individuals may show delays or difficulties with cognitive abilities, language, motor skills, behavior, or social interaction. Common signs and symptoms include challenges in focusing, learning, adapting to social cues, and managing motor coordination. Diagnosing these disorders requires a thorough assessment of the specific impairments in development, ensuring that symptoms are not better explained by other medical or environmental factors."
+    },
+    {
+        "id": 2,
+        "name": "Schizophrenia Spectrum and Other Psychotic Disorders",
+        "description": "Schizophrenia Spectrum and Other Psychotic Disorders are a group of serious mental health conditions marked by profound disruptions in thinking, perception, and emotional responsiveness. These disorders often involve a combination of signs and symptoms, such as hallucinations, delusions, disorganized thinking, and abnormal motor behaviors, which can significantly impact personal, social, and occupational functioning. Individuals may experience difficulty distinguishing reality from their thoughts and perceptions. Common signs and symptoms include perceptual disturbances (such as hearing voices), fixed false beliefs, erratic speech, and diminished emotional expression. Diagnosing these disorders requires a careful assessment of the presence, duration, and severity of these symptoms, while also ruling out other medical, neurological, or substance-related causes."
+    },
+    {
+        "id": 3,
+        "name": "Bipolar and Related Disorders",
+        "description": "These disorders are characterized by significant mood changes that alternate between high-energy, elevated moods (known as mania or hypomania) and low-energy, depressed states. These mood episodes affect a personâ€™s thoughts, behaviors, and overall functioning in personal, social, academic, or occupational settings. People with bipolar disorders may experience periods of increased energy, reduced need for sleep, racing thoughts, or impulsive decisions during manic episodes, while depressive episodes often bring sadness, loss of interest in activities, fatigue, and difficulty concentrating. Diagnosis requires careful observation of these mood cycles over time, ensuring that the symptoms are not due to other medical conditions or substance use."
+    },
+    {
+        "id": 4,
+        "name": "Depressive Disorders",
+        "description": "Depressive Disorders are a group of conditions characterized by persistent feelings of sadness, emptiness, or irritability that significantly affect a personâ€™s ability to function. These disorders go beyond temporary feelings of sadness and can impact various areas of life, including personal, social, academic, and occupational functioning. Common signs and symptoms include loss of interest in activities, changes in appetite or sleep patterns, fatigue, difficulty concentrating, and feelings of worthlessness or hopelessness. Some individuals may experience physical aches or slowed movements. Depressive disorders vary in duration, severity, and specific symptoms, but all require a careful assessment to rule out other causes, such as medical conditions or substance use. Diagnosis focuses on the presence, persistence, and impact of these symptoms to ensure an accurate understanding of each individualâ€™s experience."
+    },
+    {
+        "id": 5,
+        "name": "Anxiety Disorders",
+        "description": "Anxiety Disorders are characterized by excessive fear, worry, or nervousness that is difficult to control and interferes with daily activities. These disorders go beyond normal feelings of anxiety by being more intense, persistent, and often triggered by specific situations, objects, or general life stress. Common signs and symptoms include constant worry, restlessness, muscle tension, difficulty concentrating, and physical symptoms like rapid heartbeat or sweating. In some cases, individuals may avoid certain situations or places to manage their anxiety. Each type of anxiety disorder has unique features, whether it involves panic attacks, social fears, or specific phobias. Diagnosis involves a careful assessment to ensure the symptoms are not due to medical conditions or substance use, and to determine the specific nature and pattern of the anxiety."
+    },
+    {
+        "id": 6,
+        "name": "Obsessive-Compulsive and Related Disorders",
+        "description": "Obsessive-Compulsive and Related Disorders are marked by persistent, intrusive thoughts or urges (obsessions) and repetitive behaviors or mental acts (compulsions) that individuals feel compelled to perform. These conditions can lead to significant distress and interfere with daily life, as individuals may spend considerable time managing these urges and actions. Obsessions often provoke intense anxiety or discomfort, such as fears of contamination or harm. In response, individuals may engage in observable behaviors like repeated hand-washing, checking, or organizing. In some cases, individuals may exhibit actions like skin picking or hair pulling, which can result in visible physical effects. Each disorder in this category has unique features, but they share a focus on managing distressing thoughts or compulsive behaviors. Diagnosis involves a careful assessment of the persistence, nature, and impact of these patterns, ensuring the experiences are not due to other medical or substance-related conditions."
+    },
+    {
+        "id": 7,
+        "name": "Trauma- and Stressor-Related Disorders",
+        "description": "These disorders arise after exposure to traumatic or highly stressful events and can result in emotional, cognitive, and behavioral changes. Common features include reliving the traumatic event, emotional numbness, heightened startle response (signs), and intrusive memories or nightmares (symptoms). Individuals may also exhibit avoidance of reminders of the trauma, irritability, and negative changes in mood or thinking. Diagnosis emphasizes the relationship between the traumatic event and the individualâ€™s signs and symptoms, ensuring they cannot be attributed to other conditions."
+    },
+    {
+        "id": 8,
+        "name": "Dissociative Disorders",
+        "description": "Dissociative Disorders involve a disconnection in memory, identity, or perception, often triggered by traumatic experiences. Individuals may experience gaps in memory or feel detached from their surroundings (symptoms), and, in some cases, take on different identities (observable in behavior as signs). Dissociative episodes can disrupt daily life, making it challenging for individuals to function consistently. Diagnosis focuses on understanding these disconnections, ensuring they are not due to other medical or mental health conditions."
+    },
+    {
+        "id": 9,
+        "name": "Somatic Symptom and Related Disorders",
+        "description": "These disorders are characterized by a focus on physical symptoms that cause significant distress or interfere with daily life. Signs may include excessive medical consultations and visible discomfort, while symptoms include the individual’s experiences of pain, fatigue, or other bodily sensations. The individual’s concern over their health is often disproportionate to any medical findings. Diagnosis involves evaluating the distress and behavior associated with the symptoms rather than focusing solely on physical causes."
+    },
+    {
+        "id": 10,
+        "name": "Feeding and Eating Disorders",
+        "description": "Feeding and Eating Disorders involve disturbances in eating behaviors that can harm physical health and psychological well-being. Signs include changes in weight, eating rituals, or visible avoidance of food, while symptoms may include distress around body image or intense fear of gaining weight. These disorders can range from restrictive eating patterns to binge eating. Diagnosis requires assessment of both observable behaviors and the individual’s thoughts and feelings about food, body image, and weight."
+    },
+    {
+        "id": 11,
+        "name": "Elimination Disorders",
+        "description": "These disorders are marked by the inappropriate release of urine or feces, often beyond the age where continence is expected. The behavior is observable and thus a sign, often causing distress or functional impairment. Enuresis (urine) and encopresis (feces) are the primary disorders in this category. Diagnosis includes evaluating patterns, ruling out medical causes, and considering psychological impacts on the individual."
+    },
+    {
+        "id": 12,
+        "name": "Sleep-Wake Disorders",
+        "description": "Sleep-Wake Disorders affect sleep patterns and can impair daytime functioning. Common signs include irregular sleep schedules, excessive daytime sleepiness, or episodes of interrupted breathing (such as sleep apnea). Symptoms may include insomnia, excessive sleepiness, or distress around sleeping. Diagnosis requires a thorough assessment of sleep habits and related physical factors to distinguish between various sleep disorders."
+    },
+    {
+        "id": 13,
+        "name": "Sexual Dysfunctions",
+        "description": "Sexual Dysfunctions involve issues with the sexual response cycle that cause distress and impact relationships. Signs may include a visible lack of response in sexual situations, while symptoms include experiences of pain, anxiety, or difficulty achieving arousal or satisfaction. These conditions are diagnosed by assessing both the physical and emotional aspects of sexual experiences, ensuring that symptoms are not due to medical conditions or substance use."
+    },
+    {
+        "id": 14,
+        "name": "Gender Dysphoria",
+        "description": "Gender Dysphoria is characterized by a marked incongruence between an individual’s experienced gender and their assigned sex at birth, leading to significant distress. Signs can include visible changes in behavior or appearance to align with one’s identified gender. Symptoms include feelings of discomfort or dissatisfaction with one’s body and assigned gender role. Diagnosis focuses on understanding this distress and how it impacts daily life and well-being."
+    },
+    {
+        "id": 15,
+        "name": "Disruptive, Impulse-Control, and Conduct Disorders",
+        "description": "These disorders are characterized by problems with self-control, affecting behavior and emotional regulation. Signs include aggressive outbursts, defiance, or rule-breaking, while symptoms might involve internal experiences of frustration or difficulty controlling urges. These disorders can lead to significant conflict in social, academic, or occupational settings. Diagnosis evaluates the impact of these behaviors, ensuring that they are not better explained by other mental health conditions."
+    },
+    {
+        "id": 16,
+        "name": "Substance-Related and Addictive Disorders",
+        "description": "Substance-Related and Addictive Disorders involve the misuse of drugs, alcohol, or addictive behaviors, leading to functional impairment. Signs include observable changes in behavior, such as neglecting responsibilities or engaging in risky activities, and symptoms may include cravings or withdrawal effects when the substance is not used. Diagnosis assesses patterns of use, impact on daily life, and signs of dependence or addiction."
+    },
+    {
+        "id": 17,
+        "name": "Neurocognitive Disorders",
+        "description": "These disorders are marked by a decline in cognitive functioning, affecting memory, attention, language, or other cognitive skills. Signs include observable confusion, difficulty completing tasks, and repetitive behaviors, while symptoms may include subjective experiences of memory loss or confusion. Neurocognitive Disorders are diagnosed by assessing the level of cognitive impairment, ruling out reversible causes, and considering the impact on daily functioning."
+    },
+    {
+        "id": 18,
+        "name": "Personality Disorders",
+        "description": "Personality Disorders are characterized by enduring patterns of behavior, thinking, and feeling that deviate significantly from cultural norms, impacting interpersonal relationships. Signs include observable behaviors such as impulsivity, manipulation, or detachment. Symptoms include internal experiences of distress related to self-image, mood instability, or fear of abandonment. Diagnosis requires assessing these patterns over time, ensuring they are not better accounted for by other mental health disorders."
+    },
+    {
+        "id": 19,
+        "name": "Paraphilic Disorders",
+        "description": "Paraphilic Disorders involve intense, atypical sexual interests that may cause distress or impairment or harm others. Signs include observable behaviors related to these interests, and symptoms may include intense urges or fantasies. Diagnosis considers both the individual’s distress and any risk posed to others, distinguishing these interests from non-disordered preferences."
+    },
+    {
+        "id": 20,
+        "name": "Other Mental Disorders",
+        "description": "This category includes disorders that do not fit neatly into other categories but still require clinical attention. These conditions may involve unique or atypical presentations of signs and symptoms, such as mood changes or cognitive issues. Diagnosis in this category requires a careful assessment to ensure that these presentations do not fit into any other defined category."
+    },
+    {
+        "id": 21,
+        "name": "Medication-Induced Movement Disorders and Other Adverse Effects of Medication",
+        "description": "These disorders involve physical or psychological reactions to medication use. Signs include observable movements like tremors, rigidity, or tics caused by medications, while symptoms may include feelings of restlessness or distress related to these movements. Diagnosis assesses the link between medication and the observed effects, often requiring adjustments in treatment to mitigate these adverse reactions."
+    }
+]
