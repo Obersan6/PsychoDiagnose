@@ -12,10 +12,11 @@ Displays:
   
  {% block content %}
    <div class="container">
+    <br><br><br><br><br>
      <h1>{{ symptom.name }}</h1>
      <p>{{ symptom.description }}</p>
  
-     <h2>Examples:</h2>
+     <!-- <h2>Examples:</h2> -->
      <ul>
          {% for example in symptom_examples %}
            <li> {{ example.example }}</li>
@@ -25,16 +26,18 @@ Displays:
      <h2>Disorders Associated with this Symptom":</h2>
      <ul>
          {% for disorder in disorders %}
-           <li>{{ disorder.name }}</li>
+           <li>
+            <a href="{{url_for('dsm.get_disorder', disorder_id=disorder.id)}}">{{disorder.name }}</a>
+          </li>
          {% endfor %}
      </ul>
  
-     <!-- Search for elements related to signs -->
+     <!-- Search for elements related to signs
       <form method="POST" action="{{ url_for('psychopathology.search_symptom') }}">
          {{ form.hidden_tag}}
          {{ form.search_query(placeholder="Search symptoms...", class="form-control mt-3") }}
          <button type="submit" class="btn btn-primary mt-3">Search</button>
-      </form>"
+      </form>" -->
    </div>
   
  {% endblock %}

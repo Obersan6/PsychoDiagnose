@@ -12,30 +12,33 @@ Displays:
  
 {% block content %}
   <div class="container">
+    <br><br><br><br><br>
     <h1>{{ sign.name }}</h1>
     <p>{{ sign.description }}</p>
 
-    <h2>Examples:</h2>
+    <!-- <h2>Examples:</h2>
     <ul>
         {% for example in sign_examples %}
           <li> {{ example.example }}</li>
         {% endfor %}
-    </ul>
+    </ul> -->
 
     <h2>Disorders Associated with this Sign":</h2>
     <ul>
         {% for disorder in disorders %}
-          <li>{{ disorder.name }}</li>
+          <li>
+            <a href="{{ url_for('dsm.get_disorder', disorder_id=disorder.id) }}">{{disorder.name}}</a>
+          </li>
         {% endfor %}
     </ul>
 
     <!-- Search for elements related to signs -->
-     <form method="POST" action="{{ url_for('psychopathology.search_sign') }}">
+     <!-- <form method="POST" action="{{ url_for('psychopathology.search_sign') }}">
         {{ form.hidden_tag}}
         {{ form.search_query(placeholder="Search signs...", class="form-control mt-3") }}
         <button type="submit" class="btn btn-primary mt-3">Search</button>
      </form>"
-  </div>
+  </div> -->
  
 {% endblock %}
 

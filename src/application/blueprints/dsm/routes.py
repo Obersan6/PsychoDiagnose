@@ -272,8 +272,7 @@ def show_steps():
 
     return render_template('dsm/steps.html', steps=steps, form=form)
 
-# Handling searching form at route show_steps
-
+# Handling searching form at route show_steps - I don't need it for now.
 @dsm_bp.route('/steps/search', methods=['POST'])
 def search_step():
     """Handle the search form submission for a specific step."""
@@ -307,16 +306,27 @@ def search_step():
 # Step route
 @dsm_bp.route('/steps/<int:step_id>', methods=['GET'])
 def get_step(step_id):
-    """Fetch and display a specific step."""
+    """Show details for a specific step."""
 
     if not g.user:
         flash('Unauthorized. Please login', 'danger')
         return redirect(url_for('user.signin'))
-    
-    # Fetch the step
-    step = Step.query.get_or_404(step_id)
-    return render_template('dsm/step.html', step=step)
 
+    # Get the current step
+    step = Step.query.get_or_404(step_id)
+
+    # Get the next step by ID
+    next_step = Step.query.filter(Step.id > step.id).order_by(Step.id.asc()).first()
+
+    # Get the previous step by ID
+    previous_step = Step.query.filter(Step.id < step.id).order_by(Step.id.desc()).first()
+
+    return render_template(
+        'dsm/step.html',
+        step=step,
+        next_step=next_step,
+        previous_step=previous_step,
+    )
 
 # Differential diagnosis route
 # BECAUSE WE ALREADY GET 'DIFF. DIAGNOSIS' THE ONLY WAY IT SHOULD BE RETRIEVED WHICH IS ALONG A DISORDER (DIAGNOSIS) I'LL ONLY USE THIS ROUTE TO DISPLAY THE DESCRIPTION OF WHAT DIFF. DIAGNOSIS IS

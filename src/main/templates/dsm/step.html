@@ -6,12 +6,25 @@
 
 {% block content %}
 <div class="container">
+    <br><br><br><br><br><br>
     <h1>Step {{ step.step_number }}: {{ step.step_name }}</h1>
     <p>{{ step.description }}</p>
+
+    <!-- Navigation buttons -->
+    <div>
+        {% if previous_step %}
+            <a href="{{ url_for('dsm.get_step', step_id=previous_step.id) }}" class="btn btn-primary">
+                Previous: Step {{ previous_step.step_number }}
+            </a>
+        {% endif %}
+        {% if next_step %}
+            <a href="{{ url_for('dsm.get_step', step_id=next_step.id) }}" class="btn btn-primary ms-2">
+                Next: Step {{ next_step.step_number }}
+            </a>
+        {% endif %}
+    </div>
 
     <!-- Link to go back to the list of all steps -->
     <a href="{{ url_for('dsm.show_steps') }}" class="btn btn-secondary mt-3">Back to Steps List</a>
 </div>
 {% endblock %}
-
-    

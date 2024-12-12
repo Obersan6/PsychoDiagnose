@@ -34,20 +34,40 @@ def search_sign():
     form = SearchForm()
     if form.validate_on_submit():
         search_query = form.search_query.data.strip()
-        sign = Sign.query.filter(Sign.name.ilike(f"%{search_query}%")).first()
 
-        if sign:
-            # Redirect to the specific sign's page if a match is found
-            return redirect(url_for('psychopathology.get_sign', sign_id=sign.id))
+        # Check if the input is a number (for ID search)
+        if search_query.isdigit():
+            sign = Sign.query.filter_by(id=int(search_query)).first()
         else:
-            # Flash message if no sign is found and redirect to show_signs
-            flash("No sign found matching that query.", "danger")
-            return redirect(url_for('psychopathology.show_signs'))
+            # Otherwise search by name
+            sign = Sign.query.filter(Sign.name.ilike(f"%{search_query}%")).first()
+        
+        # If there is a match for sign, redirect to the sign's page
+        if sign:
+            return redirect(url_for('psychopathology.get_sign', sign_id=sign.id))
+        
+        # Flash message if form validation fails
+        flash('Please enter a valid term', 'dange')
+        return redirect(url_for('psychopathology.show_signs'))
 
-    # Flash message if form validation fails
-    flash("Please enter a valid search term.", "danger")
-    return redirect(url_for('psychopathology.show_signs'))
+# Autocomplete route to the search sign input
+@psychopathology_bp.route('/signs/autocomplete', methods=['GET'])
+def autocomplete_sign():
+    """Provides a JSON list of sign names matchin the user's input query."""
 
+    query = request.args.get('query', '').strip()
+
+    # If no query provided, return empty list
+    if not query:
+        return jsonify([])
+    
+    # Perform a case-insensitive match
+    matching_signs = Sign.query.filter(Sign.name.ilike(f"{query}%")).all()
+
+    # Return only the names of the signs
+    sign_names = [sign.name for sign in matching_signs]
+
+    return jsonify(sign_names)
 
 # Sign route
 @psychopathology_bp.route('/signs/<int:sign_id>', methods=['GET'])
@@ -66,11 +86,12 @@ def get_sign(sign_id):
     
     # Retrieve the sign and related data
     sign = Sign.query.get_or_404(sign_id)
-    sign_examples = SignExample.query.filter_by(sign_id=sign.id).all()
+    # sign_examples = SignExample.query.filter_by(sign_id=sign.id).all()
+
     form = SearchForm()
 
-    # Retrieve syndromes (disorders) associated with this sign through the DisorderSign table
-    syndromes = (
+    # Retrieve disorders associated with this sign through the DisorderSign table
+    disorders = (
         Disorder.query
         .join(DisorderSign, Disorder.id == DisorderSign.disorder_id)
         .filter(DisorderSign.sign_id == sign.id)
@@ -80,9 +101,9 @@ def get_sign(sign_id):
     return render_template(
         'psychopathology/sign.html', 
         sign=sign, 
-        sign_examples=sign_examples,  
+        # sign_examples=sign_examples,  
         form=form, 
-        syndromes=syndromes
+        disorders=disorders
     )
 
 # All symptoms route
@@ -107,19 +128,46 @@ def search_symptom():
     form = SearchForm()
     if form.validate_on_submit():
         search_query = form.search_query.data.strip()
-        symptom = Symptom.query.filter(Symptom.name.ilike(f"%{search_query}")).first()
-            
-        if symptom:
-            # Redirect to the specific symptom's page if a match is found
-            return redirect(url_for('psychopathology.get_symptom', symptom_id=symptom.id))
-        else: 
-            # Flash message if no symptom is found and redirect to show_symptoms
-            flash('No symptom found matcing that query.', 'danger')
-            return redirect(url_for('psychopathology.show_symptoms'))
+
+        # Check if the input is a number (for ID search)
+        if search_query.isdigit():
+            symptom = Symptom.query.filter_by(id=int(search_query)).first()
+        else:
+            # Otherwise search by name
+            symptom = Symptom.query.filter(Symptom.name.ilike(f"%{search_query}%")).first()
         
+        # If there's a match for symptom, redirect to symptom's page
+        if symptom:
+            return redirect(url_for('psychopathology.get_symptom', symptom_id=symptom.id))
+        
+ 
     # Flash message if form validation fails
     flash("Please enter a valid search query.", "danger")
     return redirect(url_for('psychopathology.show_symptoms'))
+
+# Autocomplete route to the search symptom input
+@psychopathology_bp.route('/symptoms/autocomplete', methods=['GET'])
+def autocomplete_symptom():
+    """Provides a JSON list of symptom names matching the user's input query."""    
+
+    query = request.args.get('query', '').strip()
+    print(f"Received query: {query}")  # Debugging log
+
+    # If no query provided, return an empty list
+    if not query:
+        return jsonify([])
+
+    # Perform a case-insensitive match
+    matching_symptoms = Symptom.query.filter(Symptom.name.ilike(f"{query}%")).all()
+    print(f"Matching symptoms: {matching_symptoms}")  # Debugging log
+
+    # Return only the names of the symptoms
+    symptom_names = [symptom.name for symptom in matching_symptoms]
+    print(f"Symptom names: {symptom_names}")  # Debugging log
+
+    return jsonify(symptom_names)
+
+
 
 # Symptom route
 @psychopathology_bp.route('/symptoms/<int:symptom_id>',  methods=['GET'])
@@ -137,7 +185,7 @@ def get_symptom(symptom_id):
 
     # Retrieve the symptom and related data
     symptom = Symptom.query.get_or_404(symptom_id)
-    symptom_examples = SymptomExample.query.filter_by(symptom_id=symptom.id).all()
+    # symptom_examples = SymptomExample.query.filter_by(symptom_id=symptom.id).all()
     form = SearchForm()
 
     # Retrieve disorders associated with this symptom through the DisorderSymptom table
@@ -147,7 +195,12 @@ def get_symptom(symptom_id):
         .filter(DisorderSymptom.symptom_id == symptom.id).all()
     )
 
-    return render_template('psychopathology/symptom.html', symptom=symptom, symptom_examples=symptom_examples, form=form, disorders=disorders)
+    return render_template(
+        'psychopathology/symptom.html', 
+        symptom=symptom, 
+        # symptom_examples=symptom_examples, 
+        form=form, 
+        disorders=disorders)
 
 
 
