@@ -1,25 +1,219 @@
-
-/* Styling for the autocomplete suggestions
-#suggestions-list {
-    position: absolute;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    max-height: 200px;
-    overflow-y: auto;
-    z-index: 1000;
-    display: none; /* Hidden by default */
-/* }
-
-.suggestion-item {
-    padding: 10px;
-    cursor: pointer;
+/* Navbar */
+.navbar {
+    height: 5rem;
 }
 
-.suggestion-item:hover {
-    background-color: #f0f0f0;
-}  */
+/* logo (homepage link) */
+.navbar-brand {
+    margin-left: 20px;
+    font-size: 1.5rem !important;
+    display: flex;
+    align-items: center;
+}
+.navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.58) !important;    
+}
 
-/* NEW VERSION FOR STYLING */
+/* Navbar Links */
+.navbar-nav .nav-link {
+    margin-right: 10px !important;
+    font-size: 1rem !important; 
+    color: white;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+/* Hover State for Nav Links */
+.navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.58) !important; 
+}
+
+/* Authentication Links */
+.navbar-nav.ms-auto .nav-link {
+    margin-right: 0 !important;
+}
+
+.auth {
+    margin-right: 20px;
+}
+
+/* Optional: For dropdown items */
+.dropdown-item {
+    font-size: 1rem; 
+}
+
+/* Main Content */
+/* Welcome Section */
+.title-1 {
+    margin-top: 8rem !important;
+    padding-bottom: 5rem;
+    font-size: 5rem;
+}
+
+.log-line {
+    margin-top: 5rem !important;
+    padding-bottom: 5rem;
+    font-size: 2.5rem;
+}
+.cursive {
+    font-style: italic;
+}
+
+/* About Section */
+.title-2 {
+    font-size: 3rem !important;
+    padding-top: 3.4rem !important;
+    padding-bottom: 5rem;
+}
+
+.title-3 {
+   font-size: 2rem !important;
+   padding-bottom: 2.5rem;
+}
+
+/* Sections text */
+.section-text {
+    font-size: 1.5rem;
+}
+
+/* General Section Spacing */
+.page-section {
+    padding-top: 4rem; /* Consistent spacing inside each section */
+    padding-bottom: 8rem !important; /* Consistent spacing inside each section */
+    margin: 0; /* Prevent unwanted white spaces between sections */
+}
+
+/* Specific Section Adjustments */
+.bg-light {
+    padding-top: 5rem !important; /* Extra spacing for light sections */
+}
+
+.bg-soft-blue {
+    padding-top: 5rem !important; /* Extra spacing for soft blue sections */
+}
+
+.about {
+    margin-top: 0 !important; /* Avoid margin conflicts */
+    padding-top: 6rem !important; /* Specific spacing for about section */
+}
+
+
+/* Card Customizations (Optional) */
+.card {
+    border: none; /* Remove card borders for a cleaner look */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #333; /* Darker text for better readability */
+}
+/* Custom Card Background */
+.card-custom {
+    /* background-color:#e0f7fa; */
+    background-color: #85dbfb; /*Light cyan background*/
+    /* Alternatively, use a different shade:*/
+       /* background-color: #b3e5fc; for a slightly different light blue */
+}
+.card-custom .card-title {
+    /* color: #d129e0; Dark teal color for titles */
+    /* color: #4729e0; */
+    color:rgb(64, 124, 235);
+    /* color: #00796b; */
+} 
+.card-custom .card-text {
+    /* color: #004d40;
+    color: #851ae8; /* Darker teal for text */
+    /*color: #4e1ae8; */
+    color: #22408c;
+}
+/* Feature Icons */
+.feature-icon {
+    font-size: 3rem;
+    color: #007bff; /* Primary blue color */
+    transition: transform 0.3s, color 0.3s;
+}
+
+.feature-icon:hover {
+    color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Full-width buttons inside cards */
+.card .btn {
+    width: 100%;
+}
+
+/* Remove spacing between the last section and footer */
+.page-section:last-of-type {
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+}
+
+/* Footer spacing adjustments */
+footer {
+    background-color: #85dbfb !important; /* Ensure background color is applied */
+    color: #333 !important; /* Ensure text color is applied */
+    margin-top: 0 !important; /* Remove any top margin */
+    height: 10rem !important; /* Fixed height */
+    padding: 0 !important; /* Remove any additional padding */
+    
+    /* Flexbox for centering */
+    display: flex !important; /* Force Flexbox layout */
+    justify-content: center !important; /* Horizontally center content */
+    align-items: center !important; /* Vertically center content */
+    text-align: center !important; /* Center-align text inside the footer */
+    width: 100% !important; /* Ensure the footer spans the full width */
+}
+
+
+
+
+/* Mobile (small screens) */
+@media (max-width: 576px) {
+    .navbar-nav .nav-link {
+        font-size: 0.9rem !important; /* Slightly smaller font size */
+        margin-right: 5px !important;
+    }
+    .auth {
+        margin-right: 10px !important; /* Adjust spacing */
+    }
+    .navbar-brand {
+        font-size: 1.2rem !important; /* Slightly smaller logo */
+    }
+}
+
+/* Tablets (medium screens) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem !important;
+        margin-right: 8px !important;
+    }
+    .auth {
+        margin-right: 15px !important;
+    }
+    .navbar-brand {
+        font-size: 1.4rem !important;
+    }
+}
+
+/* Laptops and Larger Screens */
+@media (min-width: 769px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem !important;
+        margin-right: 10px !important;
+    }
+    .auth {
+        margin-right: 20px !important;
+    }
+}
+
+
+/* Search inputs  */ 
 .suggestions-container {
     position: absolute;
     z-index: 1000;
@@ -38,3 +232,6 @@
 .suggestion-item:hover {
     background-color: #f0f0f0;
 }
+
+
+    
