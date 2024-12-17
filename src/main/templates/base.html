@@ -103,17 +103,17 @@ IMPROVEMENTS OF THE NAVBAR:
               </li>
               <li class="nav-item">
                 <a href="{{ url_for('user.user_profile', user_id=g.user.id) }}" class="nav-link">
-                    {% if g.user.img_url and g.user.img_url.strip() != "" %}
-                        <img src="{{ url_for('static', filename=g.user.img_url) }}" 
-                             alt="{{ g.user.username }}'s profile picture" 
-                             width="40" 
-                             height="40" 
-                             class="rounded-circle">
-                    {% else %}
-                        <i class="bi bi-person-circle" style="font-size: 2rem; color: rgb(11, 34, 244);"></i>
-                    {% endif %}
-                </a>
-            </li>
+                  {% if g.user.img_url and g.user.img_url.strip() != "" %}
+                  <img src="{{ url_for('static', filename=g.user.img_url) }}" 
+                       alt="{{ g.user.username }}'s profile picture" 
+                       width="40" 
+                       height="40" 
+                       class="rounded-circle">
+              {% else %}
+                  <i class="bi bi-person-circle" style="font-size: 2rem; color: rgb(11, 34, 244);"></i>
+              {% endif %}
+          </a>
+      </li>
             
           {% endif %}
         </ul>

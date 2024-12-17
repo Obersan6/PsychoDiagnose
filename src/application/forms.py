@@ -1,8 +1,9 @@
 """Forms for Diagnosis Tool"""
 
 from flask_wtf import FlaskForm
-from wtforms import StringField, IntegerField, PasswordField, SubmitField
+from wtforms import StringField, IntegerField, PasswordField, SubmitField, BooleanField
 from wtforms.validators import DataRequired, Email, Length, Optional, URL, ValidationError
+from flask_wtf.file import FileField, FileAllowed 
 from src.application.models import db, connect_db, User, Step, Sign, SignExample
 
 ##############################################################################################
@@ -30,9 +31,10 @@ class SignupForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired(), unique_username, Length(max=50)])
     email = StringField('Email', validators=[DataRequired(), Email(), unique_email, Length(max=254)])
     password = PasswordField('Password', validators=[DataRequired(), Length(max=128)])
-    img_url = StringField('(Optional) Image URL', validators=[Optional(), URL()])
+    img_url = FileField('(Optional) Profile Image', validators=[Optional(), FileAllowed(['jpg', 'png', 'jpeg'], 'Images only!')])
     submit = SubmitField('Register New User')
 
+# Signin form
 class SigninForm(FlaskForm):
     """Form for the user to sing-in."""
 
@@ -45,9 +47,15 @@ class UserProfileForm(FlaskForm):
 
     first_name = StringField('First Name', validators=[DataRequired(), Length(max=150)])
     last_name = StringField('Last Name', validators=[DataRequired(), Length(max=150)])
-    img_url = StringField('(Optional) Image URL', validators=[Optional(), URL()])
+    # Optional file upload
+    img_url = FileField('(Optional) Update Profile Image', 
+                        validators=[FileAllowed(['jpg', 'png', 'jpeg'], 'Images only!')])
+    # Optional remove image
+    # remove_image = BooleanField('Remove current image?')
     password = PasswordField('Password', validators=[DataRequired(), Length(max=128)])
     submit = SubmitField('Update Profile')
+
+
 
 class StepForm(FlaskForm):
     "Form to retrieve a Dianostic Step."

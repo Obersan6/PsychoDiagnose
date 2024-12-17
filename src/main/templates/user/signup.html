@@ -13,12 +13,12 @@
   <div class="signup-card shadow-lg p-5 rounded">
     <!-- Welcome Message -->
     <div class="text-center mb-4">
-      <h2 class="signup-title-1">Join Diagnose Assistant Today!</h2>
+      <h2 class="signup-title-1">Join PsychoDiagnose Assistant Today!</h2>
       <h3 class="signup-title-2">Sign Up</h3>
     </div>
 
     <!-- Sign Up Form -->
-    <form method="POST" id="signup-form" class="signup-form">
+    <form method="POST" id="signup-form" enctype="multipart/form-data"   class="signup-form">
       {{ form.hidden_tag() }}
 
       <!-- Render only input fields, exclude SubmitField -->

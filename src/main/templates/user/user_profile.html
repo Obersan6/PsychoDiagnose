@@ -9,7 +9,17 @@
 <div id="user-profile-page" class="container-fluid d-flex align-items-center justify-content-center min-vh-100">
   <div class="profile-card shadow-lg p-5 rounded text-center">
     <!-- Profile Picture -->
-    <img src="{{ url_for('static', filename=user.img_url) }}" alt="{{ user.username }}'s profile picture" id="profile-avatar" class="rounded-circle mb-4" width="120" height="120">
+     {% if user.img_url %}
+     <img src="{{ url_for('static', filename=user.img_url) }}"
+     alt="{{ user.username }}'s profile picture"
+     id="profile-avatar"
+     class="rounded-circle mb-4"
+     width="120"
+     height="120">
+     {% else %}
+       <!-- Default Bootstrap icon -->
+       <i class="bi bi-person-circle" style="font-size: 8rem; color: rgb(11, 34, 244);"></i>
+     {% endif %}
 
     <!-- User Details -->
     <h2 class="profile-title">{{ user.first_name }} {{ user.last_name }}</h2>

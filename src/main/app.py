@@ -1,5 +1,6 @@
 """Flask app for dsm-diagnosis tool."""
 
+import os
 from flask import Flask, g, session
 from flask_migrate import Migrate
 from flask_wtf import CSRFProtect
@@ -8,7 +9,6 @@ from flask_debugtoolbar import DebugToolbarExtension
 from src.application.models import db, connect_db, User, Category, Disorder, Cluster, Step, DifferentialDiagnosis, Sign, SignExample, Symptom, SymptomExample, DisorderSign, DisorderSymptom  
 from src.application.secret_keys import SECRET_KEY, SQLALCHEMY_DATABASE_URI  # Import both vars from secret_keys.py
 from src.config import DevelopmentConfig, ProductionConfig, CURR_USER_KEY
-import os
 
 # Initialize the app
 # app = Flask(__name__)
@@ -24,6 +24,14 @@ else:
 # Set the secret key and database URI from the secret_keys.py file
 app.config['SECRET_KEY'] = SECRET_KEY
 app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
+
+# Set UPLOAD_FOLDER for file uploads
+UPLOAD_FOLDER = os.path.join(app.root_path, '../application/static/uploads')
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+# Ensure the uploads folder exists
+if not os.path.exists(UPLOAD_FOLDER):
+    os.makedirs(UPLOAD_FOLDER)
 
 # Initialize CSRF Protection
 csrf = CSRFProtect(app)
@@ -57,8 +65,8 @@ app.register_blueprint(dsm_bp)
 app.register_blueprint(psychopathology_bp)
 
 # Create database tables (if needed)
-with app.app_context():
-    db.create_all()
+# with app.app_context():
+#     db.create_all()
 
 @app.before_request
 def add_user_to_g():

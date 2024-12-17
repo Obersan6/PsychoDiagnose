@@ -3,61 +3,105 @@ from sqlalchemy.exc import IntegrityError
 from src.config import CURR_USER_KEY
 from src.application.models import db, connect_db, User
 from src.application.forms import SignupForm, SigninForm, UserProfileForm
+from src.application.utils.file_utils import allowed_file, save_file
+from flask import current_app
+from src.application.models import db, connect_db, User, bcrypt
+
 
 
 user_bp = Blueprint('user', __name__, template_folder='templates/user') #CHECK IF I NEED TO REMOVE 'template_folder' since I didn't make subdirectories, this should be unnecessary.
 
 
+
 #############################################################################
 # User Routes
 
-# @user_bp.before_request
-# def add_user_to_g():
-#     """If user is logged in, add current user to Flask global."""
-
-#     if CURR_USER_KEY in session:
-#         g.user = User.query.get(session[CURR_USER_KEY])
-#         g.logged_in = True  # Set logged_in to True if a user is logged in
-#     else:
-#         g.user = None
-#         g.logged_in = False  # Set logged_in to False if no user is logged in
 
 # Signup route
+# @user_bp.route('/signup', methods=['GET', 'POST'])
+# def signup():
+#     form = SignupForm()
+#     img_file = form.img_url.data
+#     img_path = None # Default to None
+
+#     if form.validate_on_submit():
+#         # Save the file if valid
+#         if img_file and allowed_file(img_file.filename):
+#             img_path = save_file(current_app.config['UPLOAD_FOLDER'], img_file)
+        # else remains None
+
+        # try: BELOW THIS LINE ANOTHER VERSION
+            # hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
+            # new_user = User(
+            #     first_name=form.first_name.data,
+            #     last_name=form.last_name.data,
+            #     username=form.username.data,
+            #     email=form.email.data,
+            #     password_hash=hashed_password,
+            #     img_url=img_path  # Save None if no image uploaded
+            # )
+            # db.session.add(new_user)
+            # User.signup(
+            # username=form.username.data,
+            # email=form.email.data,
+            # first_name=form.first_name.data,
+            # last_name=form.last_name.data,
+            # password=form.password.data,
+            # img_url=img_path  # Pass None or uploaded file path
+            # )
+            # Pass None if no image is uploaded
+            # ABOVE THIS LINE ANOTHER VERSION OF USER
+    #         new_user = User.signup(
+    #             username=form.username.data,
+    #             email=form.email.data,
+    #             first_name=form.first_name.data,
+    #             last_name=form.last_name.data,
+    #             password=form.password.data,
+    #             img_url=img_path if img_path else None
+    #         )
+    #         db.session.commit()
+    #         session[CURR_USER_KEY] = new_user.id
+    #         flash('Account created successfully!')
+    #         return redirect(url_for('homepage.homepage'))
+
+    #     except IntegrityError:
+    #         db.session.rollback()
+    #         flash('Username already exists. Please try again.')
+
+    # return render_template('user/signup.html', form=form)
+
 @user_bp.route('/signup', methods=['GET', 'POST'])
 def signup():
-    """"Handle user signup.
-    - Create a new user.
-    - If form not valid, show form.
-    - If there already is a user with that 'username': flash message and show form again."""
-    
     form = SignupForm()
+    img_file = form.img_url.data
+    img_path = None # Default to None
 
     if form.validate_on_submit():
+        # Save the file if valid
+        if img_file and allowed_file(img_file.filename):
+            img_path = save_file(current_app.config['UPLOAD_FOLDER'], img_file)
+        # else:
+        #    img_path = None  # Explicitly set to None if no image is uploaded
+
         try:
             new_user = User.signup(
-                first_name=form.first_name.data,
-                last_name=form.last_name.data,
                 username=form.username.data,
                 email=form.email.data,
-                password=form.password.data,  
-                img_url=form.img_url.data or None
+                first_name=form.first_name.data,
+                last_name=form.last_name.data,
+                password=form.password.data,
+                img_url=img_path if img_path else None
             )
             db.session.commit()
+            session[CURR_USER_KEY] = new_user.id
+            flash('Account created successfully!')
+            return redirect(url_for('homepage.homepage'))
 
         except IntegrityError:
-            db.session.rollback() # Always roll back after and exception is raised
-            flash('Username already exist. Please try again')
-            return render_template('user/signup.html', form=form)
-        
-        session[CURR_USER_KEY] = new_user.id
+            db.session.rollback()
+            flash('Username already exists. Please try again.')
 
-        flash('Account created successfully! You are now logged in.')
-
-        return redirect(url_for('homepage.homepage'))
-    
-    else:
-        return render_template('user/signup.html', form=form)
-
+    return render_template('user/signup.html', form=form)  
 # Signin route
 @user_bp.route('/signin', methods=['GET', 'POST'])
 def signin():
@@ -119,6 +163,16 @@ def edit_profile(user_id):
         user.first_name = form.first_name.data
         user.last_name = form.last_name.data
         user.img_url = form.img_url.data or user.img_url  # Maintain current image if not provided
+
+        # if form.remove_image.data:
+        #     user.img_url = None
+        # else:
+        #     # The user might have uploaded a new file
+        #     img_file = form.img_url.data
+        #     if img_file and allowed_file(img_file.filename):
+        #         new_path = save_file(current_app.config['UPLOAD_FOLDER'], img_file)
+        #         user.img_url = new_path
+        #     # If no file was uploaded, we keep the existing user.img_url
 
         try:
             # Commit changes to the database

@@ -30,7 +30,7 @@ class User(db.Model):
     first_name = db.Column(db.String(150), nullable=False)
     last_name = db.Column(db.String(150), nullable=False)
     password_hash = db.Column(db.String(128), nullable=False)
-    img_url = db.Column(db.String(500), nullable=True, default="None")
+    img_url = db.Column(db.String(500), nullable=True)
 
     def __repr__(self):
         return f"<User id={self.id} username={self.username} email={self.email}>"
@@ -47,7 +47,7 @@ class User(db.Model):
             first_name=first_name,
             last_name=last_name,
             password_hash=hashed_password,
-            img_url=img_url or "static/images/default-pic.png"
+            img_url=img_url if img_url else None  # Ensures None, not "None"
         )
 
         db.session.add(user)
@@ -66,7 +66,7 @@ class User(db.Model):
             if is_auth:
                 return user
 
-        return False
+        return None
 
 # DSM-5-TR AREA 
 
