@@ -2,24 +2,39 @@
 
 {% extends 'base.html' %}
 
-{% block title %}{{ cluster.name }}{% endblock %}
+{% block title %}Cluster: {{ cluster.name }}{% endblock %}
 
 {% block content %}
-  <br><br><br><br><br>
-  <h1>{{ cluster.name }}</h1>
-  <p>{{ cluster.description }}</p>
+<div id="cluster-details-page" class="container-fluid d-flex flex-column min-vh-100">
+  <!-- Main Content -->
+  <div class="row flex-grow-1">
+    <!-- Left Column: Cluster Details -->
+    <div class="col-md-8">
+      <div class="cluster-card shadow-sm p-4 rounded mb-4">
+        <h1 class="cluster-title">{{ cluster.name }}</h1>
+        <p class="cluster-description">{{ cluster.description }}</p>
+      </div>
+    </div>
 
-  <h2>List of disorders in this cluster:</h2>
-<ul>
-  {% for disorder in disorders %}
-    <li>
-      <a href="{{ url_for('dsm.get_disorder', category_id=cluster.category_id, disorder_id=disorder.id) }}">
-        {{ disorder.name }}
-      </a>
-    </li>
-  {% else %}
-    <p>No disorders found in this cluster.</p>
-  {% endfor %}
-</ul>
-
+    <!-- Right Column: List of Disorders -->
+    <div class="col-md-4">
+      <h2 class="disorders-title">List of Disorders in this Cluster</h2>
+      {% if disorders %}
+      <ul class="list-group disorders-list mt-3">
+        {% for disorder in disorders %}
+        <li class="list-group-item d-flex align-items-center">
+          <i class="bi bi-arrow-right-circle me-2 disorder-icon" aria-hidden="true"></i>
+          <a href="{{ url_for('dsm.get_disorder', category_id=cluster.category_id, disorder_id=disorder.id) }}" class="disorder-link">
+            {{ disorder.name }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="no-disorders mt-3">No disorders found in this cluster.</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
 {% endblock %}
+

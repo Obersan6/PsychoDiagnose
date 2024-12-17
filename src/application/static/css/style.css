@@ -37,21 +37,30 @@
     margin-right: 20px;
 }
 
+
 /* Optional: For dropdown items */
 .dropdown-item {
     font-size: 1rem; 
 }
 
+
+
+
+
+
+
+
+
 /* Main Content */
 /* Welcome Section */
 .title-1 {
-    margin-top: 8rem !important;
-    padding-bottom: 5rem;
-    font-size: 5rem;
+    margin-top: 6rem !important;
+    padding-bottom: 2.5rem;
+    font-size: 3.5rem;
 }
 
 .log-line {
-    margin-top: 5rem !important;
+    margin-top: 2.5rem !important;
     padding-bottom: 5rem;
     font-size: 2.5rem;
 }
@@ -61,7 +70,7 @@
 
 /* About Section */
 .title-2 {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
     padding-top: 3.4rem !important;
     padding-bottom: 5rem;
 }
@@ -154,11 +163,1615 @@
     padding-bottom: 0;
 }
 
+/* sign-in */
+/* Sign In Page */
+#signin-page {
+    background-color: #f9f9f9; /* Light background for readability */
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Sign-In Card */
+#signin-page .signin-card {
+    background-color: #ffffff;
+    max-width: 600px; /* Spacious form width */
+    width: 100%;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
+    border: 1px solid #ddd;
+}
+
+/* Titles */
+#signin-page .signin-title-1 {
+    font-size: 2.8rem;
+    color: #343a40;
+    font-weight: bold;
+}
+
+#signin-page .signin-title-2 {
+    font-size: 1.8rem;
+    color: #495057;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* Form Inputs */
+#signin-page .signin-input {
+    height: 50px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#signin-page .signin-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Submit Button Styling */
+#signin-page .signin-btn {
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#signin-page .signin-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Error Message Styling */
+#signin-page .text-danger {
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #signin-page .signin-card {
+        padding: 30px;
+    }
+
+    #signin-page .signin-title-1 {
+        font-size: 2.4rem;
+    }
+
+    #signin-page .signin-title-2 {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* signup */
+/* Sign Up Page */
+#signup-page {
+    background-color: #f9f9f9; /* Light background for readability */
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sign-Up Card */
+#signup-page .signup-card {
+    background-color: #ffffff;
+    max-width: 600px; /* Spacious form width */
+    width: 100%;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
+    border: 1px solid #ddd;
+}
+
+/* Titles */
+#signup-page .signup-title-1 {
+    font-size: 2.4rem;
+    color: #343a40;
+    font-weight: bold;
+}
+
+#signup-page .signup-title-2 {
+    font-size: 1.6rem;
+    color: #495057;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* Form Inputs */
+#signup-page .signup-input {
+    height: 50px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#signup-page .signup-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Submit Button */
+#signup-page .signup-btn {
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#signup-page .signup-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Error Message Styling */
+#signup-page .text-danger {
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #signup-page .signup-card {
+        padding: 30px;
+    }
+
+    #signup-page .signup-title-1 {
+        font-size: 2rem;
+    }
+
+    #signup-page .signup-title-2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* user_profile.html */
+/* User Profile Page */
+#user-profile-page {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Profile Card */
+#user-profile-page .profile-card {
+    background-color: #ffffff;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Profile Picture */
+#user-profile-page #profile-avatar {
+    border: 3px solid #007bff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles and Info */
+#user-profile-page .profile-title {
+    font-size: 1.8rem;
+    color: #343a40;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#user-profile-page .profile-info {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+#user-profile-page .profile-btn {
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#user-profile-page .btn-primary.profile-btn {
+    background-color: #007bff;
+    border: none;
+}
+
+#user-profile-page .btn-primary.profile-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+#user-profile-page .btn-danger.profile-btn {
+    background-color: #dc3545;
+    border: none;
+}
+
+#user-profile-page .btn-danger.profile-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.02);
+}
+
+
+/* edit_profile.html */
+/* Edit Profile Page */
+#edit-profile-page {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Edit Profile Card */
+#edit-profile-page .edit-profile-card {
+    background-color: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
+    border: 1px solid #ddd;
+}
+
+/* Page Title */
+#edit-profile-page .edit-profile-title {
+    font-size: 1.8rem;
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Form Labels */
+#edit-profile-page .edit-profile-label {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Form Inputs */
+#edit-profile-page .edit-profile-input {
+    height: 50px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#edit-profile-page .edit-profile-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Submit Button */
+#edit-profile-page .edit-profile-btn {
+    height: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#edit-profile-page .edit-profile-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Cancel Button */
+#edit-profile-page .edit-profile-cancel-btn {
+    height: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #6c757d;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#edit-profile-page .edit-profile-cancel-btn:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Error Message Styling */
+#edit-profile-page .text-danger {
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #edit-profile-page .edit-profile-card {
+        padding: 30px;
+    }
+
+    #edit-profile-page .edit-profile-title {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* sign.html */
+/* Ensure the page stretches to fill the viewport */
+#sign-details-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Flex-grow ensures the main content fills available space */
+#sign-details-page .flex-grow-1 {
+    flex: 1;
+}
+
+/* Sign Card Styling */
+#sign-details-page .sign-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+#sign-details-page .sign-title {
+    font-size: 2.5rem;
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#sign-details-page .sign-description {
+    font-size: 1.5rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Associated Disorders Section */
+#sign-details-page .associated-title {
+    font-size: 1.8rem;
+    color: #495057;
+    font-weight: 600;
+}
+
+#sign-details-page .disorders-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#sign-details-page .disorders-list .list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#sign-details-page .disorders-list .list-group-item:hover {
+    background-color: #e2e6ea;
+    transform: translateY(-2px);
+}
+
+#sign-details-page .disorder-icon {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-right: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#sign-details-page .disorder-icon:hover {
+    color: #0056b3;
+    transform: scale(1.3);
+}
+
+#sign-details-page .disorder-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#sign-details-page .disorder-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* No Disorders Message */
+#sign-details-page .no-disorders {
+    font-size: 1.1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+
+/* symptom.html */
+/* Symptom Details Page */
+#symptom-details-page {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Ensure the content fills space and pushes footer to the bottom */
+#symptom-details-page .flex-grow-1 {
+    flex: 1;
+}
+
+/* Symptom Card */
+#symptom-details-page .symptom-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+
+#symptom-details-page .symptom-title {
+    font-size: 2.5rem;
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#symptom-details-page .symptom-description {
+    font-size: 1.5rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Associated Disorders Section */
+#symptom-details-page .associated-title {
+    font-size: 1.8rem;
+    color: #495057;
+    font-weight: 600;
+}
+
+#symptom-details-page .disorders-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#symptom-details-page .disorders-list .list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#symptom-details-page .disorders-list .list-group-item:hover {
+    background-color: #e2e6ea;
+    transform: translateY(-2px);
+}
+
+#symptom-details-page .disorder-icon {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-right: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#symptom-details-page .disorder-icon:hover {
+    color: #0056b3;
+    transform: scale(1.3);
+}
+
+#symptom-details-page .disorder-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#symptom-details-page .disorder-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* No Disorders Message */
+#symptom-details-page .no-disorders {
+    font-size: 1.1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+
+
+/* step.html */
+/* Step Details Page */
+#step-details-page {
+    background-color: #f9f9f9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Ensure the content fills space and pushes footer to the bottom */
+#step-details-page .flex-grow-1 {
+    flex: 1;
+}
+
+/* Step Card */
+#step-details-page .step-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+#step-details-page .step-title {
+    font-size: 2.5rem;
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#step-details-page .step-description {
+    font-size: 1.5rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Navigation Buttons */
+#step-details-page .navigation-buttons .step-nav-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#step-details-page .navigation-buttons .step-nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Back Button */
+#step-details-page .step-back-btn {
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #6c757d;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#step-details-page .step-back-btn:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #step-details-page .step-card {
+        padding: 30px;
+    }
+
+    #step-details-page .step-title {
+        font-size: 2rem;
+    }
+}
+
+
+
+/* category.html */
+/* Category Details Page */
+/* Category Details Page */
+/* Category Details Page */
+#category-details-page {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Ensure the content fills space */
+#category-details-page .flex-grow-1 {
+    flex: 1;
+}
+
+/* Category Card */
+#category-details-page .category-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+#category-details-page .category-title {
+    font-size: 2.5rem;
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#category-details-page .category-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Clusters Section */
+#category-details-page .clusters-title,
+#category-details-page .disorders-title {
+    font-size: 1.8rem;
+    color: #495057;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#category-details-page .cluster-list,
+#category-details-page .disorders-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#category-details-page .list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#category-details-page .list-group-item:hover {
+    background-color: #e9f5fc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cluster Link Styling */
+#category-details-page .cluster-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+#category-details-page .cluster-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+#category-details-page .cluster-icon {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-right: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#category-details-page .list-group-item:hover .cluster-icon {
+    color: #0056b3;
+    transform: scale(1.2);
+}
+
+/* Disorders Section */
+#category-details-page .disorder-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+#category-details-page .disorder-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+#category-details-page .disorder-icon {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-right: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#category-details-page .list-group-item:hover .disorder-icon {
+    color: #0056b3;
+    transform: scale(1.2);
+}
+
+/* No Clusters Message */
+#category-details-page .no-clusters {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #category-details-page .category-card {
+        padding: 20px;
+    }
+
+    #category-details-page .category-title {
+        font-size: 2rem;
+    }
+
+    #category-details-page .clusters-title,
+    #category-details-page .disorders-title {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/* cluster.html */
+/* Cluster Details Page */
+#cluster-details-page {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Ensure the content fills available space and pushes footer to the bottom */
+#cluster-details-page .row.flex-grow-1 {
+    flex: 1;
+}
+
+/* Cluster Card */
+#cluster-details-page .cluster-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Reduced padding to prevent overflow */
+    overflow: hidden; /* Prevents large content overflow */
+    word-wrap: break-word; /* Ensures text wraps properly */
+}
+
+#cluster-details-page .cluster-title {
+    font-size: 2rem;
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#cluster-details-page .cluster-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Disorders Section */
+#cluster-details-page .disorders-title {
+    font-size: 1.5rem;
+    color: #495057;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#cluster-details-page .disorders-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#cluster-details-page .list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#cluster-details-page .list-group-item:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Disorder Link Styling */
+#cluster-details-page .disorder-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#cluster-details-page .disorder-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Disorder Icon Styling */
+#cluster-details-page .disorder-icon {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-right: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#cluster-details-page .list-group-item:hover .disorder-icon {
+    color: #0056b3;
+    transform: scale(1.2);
+}
+
+/* No Disorders Message */
+#cluster-details-page .no-disorders {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #cluster-details-page .cluster-card {
+        padding: 15px;
+    }
+
+    #cluster-details-page .cluster-title {
+        font-size: 1.8rem;
+    }
+
+    #cluster-details-page .disorders-title {
+        font-size: 1.3rem;
+    }
+}
+
+
+
+
+
+/* disorder.html */
+/* Disorder Page */
+#disorder-details-page {
+    padding: 20px;
+}
+
+/* Disorder Card */
+#disorder-details-page .disorder-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+#disorder-details-page .disorder-title {
+    font-size: 2.5rem;
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#disorder-details-page .section-title,
+#disorder-details-page .criteria-title,
+#disorder-details-page .cluster-title,
+#disorder-details-page .category-title {
+    font-size: 1.5rem;
+    color: #495057;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#disorder-details-page .category-description,
+#disorder-details-page .cluster-title p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Related Lists */
+#disorder-details-page .list-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#disorder-details-page .list-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+#disorder-details-page .related-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#disorder-details-page .related-list .list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#disorder-details-page .related-list .list-group-item:hover {
+    background-color: #e2e6ea;
+    transform: translateY(-2px);
+}
+
+#disorder-details-page .disorder-icon {
+    color: #007bff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+#disorder-details-page .related-list .list-group-item:hover .disorder-icon {
+    color: #0056b3;
+}
+
+/* Links */
+#disorder-details-page a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#disorder-details-page a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Fallback Messages */
+#disorder-details-page .no-items,
+#disorder-details-page .no-cluster {
+    color: #777;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Scope styles to the signs page */
+#signs-page {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for better readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Search container styles */
+#signs-page .search-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#signs-page .search-container form {
+    display: flex;
+    gap: 10px;
+}
+
+#signs-page .search-container button {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+/* Custom styling for titles */
+#signs-page .signs-title-1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #343a40;
+    font-weight: bold;
+}
+
+#signs-page .signs-title-2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #495057;
+    font-weight: 600;
+}
+
+/* Paragraph styles for signs */
+#signs-page .signs-section-text {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Styled lists */
+#signs-page .signs-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#signs-page .signs-list .list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+ 
+
+#signs-page .signs-list .list-group-item:hover {
+    background-color: #e2e6ea; /* Light gray hover effect */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+ 
+/* Styling the Font Awesome icon */
+#signs-page .signs-list .list-group-item .vibrant-icon {
+    font-size: 1.4rem; /* Larger for emphasis */
+    color: #007bff; /*Bootstrap primary blue for consistency */
+    transition: color 0.3s ease, transform 0.3s ease; /*Smooth animations */
+} 
+
+
+/* #signs-page .signs-list .list-group-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+ #signs-page .signs-list .list-group-item:hover .vibrant-icon {
+    color: #ff5722; /* Vibrant orange for hover effect */
+    transform: scale(1.3); /*Slight zoom on hover*/
+ }  
+
+
+ #signs-page .signs-list .list-group-item i {
+    font-size: 1.2rem;
+    color: #007bff; /* Matches link color */
+    transition: color 0.3s ease;
+ }
+
+#signs-page .signs-list .list-group-item:hover i {
+    color: #0056b3; /* Matches hover state of the link */
+} 
+
+
+
+
+#signs-page .signs-list .list-group-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#signs-page .signs-list .list-group-item a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Symptoms */
+/* Scope styles to the symptoms page */
+#symptoms-page {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for better readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Search container styles */
+#symptoms-page .search-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#symptoms-page .search-container form {
+    display: flex;
+    gap: 10px;
+}
+
+#symptoms-page .search-container button {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+/* Custom styling for titles */
+#symptoms-page .symptoms-title-1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #343a40;
+    font-weight: bold;
+}
+
+#symptoms-page .symptoms-title-2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #495057;
+    font-weight: 600;
+}
+
+/* Paragraph styles for symptoms */
+#symptoms-page .symptoms-section-text {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Styled lists */
+#symptoms-page .symptoms-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#symptoms-page .symptoms-list .list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#symptoms-page .symptoms-list .list-group-item:hover {
+    background-color: #e2e6ea; /* Light gray hover effect */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Styling the Font Awesome icon */
+#symptoms-page .symptoms-list .list-group-item .vibrant-icon {
+    font-size: 1.4rem; /* Larger for emphasis */
+    color: #007bff; /* Bootstrap primary blue for consistency */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#symptoms-page .symptoms-list .list-group-item:hover .vibrant-icon {
+    color: #ff5722; /* Vibrant orange for hover effect */
+    transform: scale(1.3); /* Slight zoom on hover */
+}
+
+#symptoms-page .symptoms-list .list-group-item i {
+    font-size: 1.2rem;
+    color: #007bff; /* Matches link color */
+    transition: color 0.3s ease;
+}
+
+#symptoms-page .symptoms-list .list-group-item:hover i {
+    color: #0056b3; /* Matches hover state of the link */
+}
+
+#symptoms-page .symptoms-list .list-group-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#symptoms-page .symptoms-list .list-group-item a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Categories */
+/* Scope styles to the categories page */
+#categories-page {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for better readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Search container styles */
+#categories-page .search-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#categories-page .search-container form {
+    display: flex;
+    gap: 10px;
+}
+
+#categories-page .search-container button {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+/* Custom styling for titles */
+#categories-page .categories-title-1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #343a40;
+    font-weight: bold;
+}
+
+#categories-page .categories-title-2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #495057;
+    font-weight: 600;
+}
+
+/* Paragraph styles for categories */
+#categories-page .categories-section-text {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Styled lists */
+#categories-page .categories-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#categories-page .categories-list .list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#categories-page .categories-list .list-group-item:hover {
+    background-color: #e2e6ea; /* Light gray hover effect */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Styling the Font Awesome icon */
+#categories-page .categories-list .list-group-item .vibrant-icon {
+    font-size: 1.4rem; /* Larger for emphasis */
+    color: #007bff; /* Bootstrap primary blue for consistency */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#categories-page .categories-list .list-group-item:hover .vibrant-icon {
+    color: #ff5722; /* Vibrant orange for hover effect */
+    transform: scale(1.3); /* Slight zoom on hover */
+}
+
+#categories-page .categories-list .list-group-item i {
+    font-size: 1.2rem;
+    color: #007bff; /* Matches link color */
+    transition: color 0.3s ease;
+}
+
+#categories-page .categories-list .list-group-item:hover i {
+    color: #0056b3; /* Matches hover state of the link */
+}
+
+#categories-page .categories-list .list-group-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#categories-page .categories-list .list-group-item a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* clusters */
+/* Scope styles to the clusters page */
+#clusters-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title and description styling */
+#clusters-page .clusters-title-1 {
+    font-size: 2.5rem;
+    color: #343a40;
+    font-weight: bold;
+    margin-top: 5rem;
+    margin-bottom: 20px;
+}
+
+.cluster-card-title {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.cluster-icon {
+    padding-top: 2rem;
+}
+
+#clusters-page .clusters-section-text {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 2rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+/* Card styles for clusters */
+.cluster-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 2rem;
+    height: 20rem;
+    
+}
+
+.cluster-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cluster-card .card-body {
+    padding: 20px;
+    text-align: center;
+    background-color: #85dbfb;
+    background-color: rgb(223, 238, 244);
+    background-color: whitesmoke;
+}
+
+.cluster-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    color: #333;
+    padding-top: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+.cluster-card .btn {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cluster-card .btn:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+
+/* disorders */
+/* Disorders Page */
+#disorders-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Container Styles */
+#disorders-page .search-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#disorders-page .search-container form {
+    display: flex;
+    gap: 10px;
+}
+
+#disorders-page .search-container button {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+/* Title Styling */
+#disorders-page .disorders-title-1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #343a40;
+    font-weight: bold;
+}
+
+#disorders-page .disorders-title-2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #495057;
+    font-weight: 600;
+}
+
+/* Paragraph Styling */
+#disorders-page .disorders-section-text {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Disorders List Styling */
+#disorders-page .disorders-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#disorders-page .disorders-list .list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#disorders-page .disorders-list .list-group-item:hover {
+    background-color: #e2e6ea;
+    transform: translateY(-2px);
+}
+
+/* Icon Styling */
+#disorders-page .disorders-list .list-group-item i {
+    font-size: 1.4rem;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+#disorders-page .disorders-list .list-group-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#disorders-page .disorders-list .list-group-item a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+
+
+/* Differential Diagnosis Page */
+#differential-diagnosis-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles */
+.differential-title-1 {
+    font-size: 2.5rem;
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.differential-title-2 {
+    font-size: 1.8rem;
+    color: #495057;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Paragraph Styles */
+.differential-section-text {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* List Styles */
+.differential-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.differential-list li {
+    margin-bottom: 15px;
+}
+
+.differential-list li strong {
+    color: #007bff;
+}
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
 /* Footer spacing adjustments */
 footer {
     background-color: #85dbfb !important; /* Ensure background color is applied */
     color: #333 !important; /* Ensure text color is applied */
     margin-top: 0 !important; /* Remove any top margin */
+    margin-bottom: 0 !important;
     height: 10rem !important; /* Fixed height */
     padding: 0 !important; /* Remove any additional padding */
     
@@ -170,6 +1783,27 @@ footer {
     width: 100% !important; /* Ensure the footer spans the full width */
 }
 
+
+/* Align card and h1 horizontally */
+/* User Card Adjustments */
+.user-card {
+    max-width: 15rem;
+    margin: 0 auto; /* Center-align card in its column */
+}
+
+/* Main Content Adjustments */
+.logged {
+    font-size: 2rem;
+    line-height: 1;
+    word-break: break-word;
+    margin-bottom: 1rem;
+}
+
+.text-logged {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #555; /* Optional: Softer text color */
+}
 
 
 

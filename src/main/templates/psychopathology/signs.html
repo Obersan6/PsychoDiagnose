@@ -2,64 +2,92 @@
 
 {% extends 'base.html' %}
 
-{% block title %}Sigs{% endblock %}
- 
+{% block title %}Signs{% endblock %}
+
 {% block content %}
-  <div class="container">
-    <br><br><br><br><br><br>
-    <h1>Signs</h1>
-    <h2>What is a Sign?</h2>
-    <br>
-    <p>A <strong>sign</strong> can be defined as an observable or measurable physical or behavioral characteristic that may suggest a deviation from what is typically expected in health or functioning. Signs are objective indicators that can be observed by others, such as clinicians or caretakers, without relying on the person’s self-report.</p>
-    <br>
-    <p>In the context of diagnostics, a sign does not automatically indicate the presence of a pathology. Signs can occur in varying degrees and may be influenced by temporary factors, lifestyle, or environmental contexts. Therefore, while certain signs may correlate with specific disorders, the presence of a sign alone is not sufficient for a diagnosis.</p>
-    <br>
-    <h2>Difference between a sign and a symptom:</h2>
-    <p><strong>Signs</strong> can be observed by others, while <strong>symptoms</strong> are subjective and reported by the person experiencing them.</p>
-    <p>Both are crucial for understanding health because they give clues about what might be going on, but signs can be independently verified, while symptoms rely on the person’s description.</p>
-    <br>
-    <h2>Examples of a sign</h2>
-    <p>Here are a few examples of signs that are often observed in psychological assessments. Remember, these signs can sometimes indicate a health concern but might also occur in individuals without any pathology:</p>
-    <ul>
-      <li><strong>Agitation:</strong> Observable restlessness or inability to remain calm, which may be a sign of anxiety, mania, or other conditions but can also occur temporarily under stress.</li>
-      <li><strong>Speech Irregularities:</strong>Slurred or pressured speech can be signs of neurological issues or mood disorders but can also occur from fatigue, alcohol consumption, or stress.</li>
-      <li><strong>Tremors:</strong>Shaking or involuntary movements in a part of the body, which may suggest neurological or physiological concerns but can also be related to stress or caffeine intake.</li>
-    </ul>
-
-    <h2>List of signs:</h2>
-    <ul>
-        {% for sign in signs %}
-          <li> 
-          <a href="{{ url_for('psychopathology.get_sign', sign_id=sign.id) }}">{{ sign.name }}</a>
-          </li>
-        {% endfor %}
-    </ul>
-
-
-    <!-- Search for elements related to signs -->
-     <form method="POST" action="{{ url_for('psychopathology.search_sign') }}">
-        {{ form.hidden_tag()}}
-        {{ form.search_query(placeholder="Search signs...", class="form-control mt-3", id="search_sign") }}
-        <div id="suggestions-sign" class="suggestions-container"></div>
-        <button type="submit" class="btn btn-primary mt-3">Search Sign</button>
-     </form>
-
-     <div class="container">
-      <!-- Flash Messages -->
-      {% with messages = get_flashed_messages(with_categories=true) %}
-        {% if messages %}
-          <div class="mt-3">
-            {% for category, message in messages %}
-              <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
-                {{ message }}
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              </div>
-            {% endfor %}
-          </div>
-        {% endif %}
-      {% endwith %}
-      
+<div id="signs-page" class="container">
+  <!-- Search Bar at the Top -->
+  <div class="search-container">
+    <form method="POST" action="{{ url_for('psychopathology.search_sign') }}" class="d-flex align-items-center">
+      {{ form.hidden_tag() }}
+      {{ form.search_query(placeholder="Search signs...", class="form-control me-2", id="search_sign") }}
+      <button type="submit" class="btn btn-outline-info">Search</button>
+    </form>
+    <div id="suggestions-sign" class="suggestions-container mt-2"></div>
   </div>
- 
+
+  <!-- Page Content -->
+  <div class="row mt-5">
+    <!-- Left Column: Main Content -->
+    <div class="col-md-8">
+      <h1 class="signs-title-1">Signs</h1>
+      <h2 class="mb-4 signs-title-2">What is a Sign?</h2>
+      <p class="signs-section-text">
+        A <strong>sign</strong> can be defined as an observable or measurable physical or behavioral characteristic that may suggest a deviation from what is typically expected in health or functioning. Signs are objective indicators that can be observed by others, such as clinicians or caretakers, without relying on the person’s self-report.
+      </p>
+      <p class="signs-section-text">
+        In the context of diagnostics, a sign does not automatically indicate the presence of a pathology. Signs can occur in varying degrees and may be influenced by temporary factors, lifestyle, or environmental contexts. Therefore, while certain signs may correlate with specific disorders, the presence of a sign alone is not sufficient for a diagnosis.
+      </p>
+      <h2 class="mb-4 signs-title-2">Difference between a Sign and a Symptom:</h2>
+      <p class="signs-section-text">
+        <strong>Signs</strong> can be observed by others, while <strong>symptoms</strong> are subjective and reported by the person experiencing them.
+      </p>
+      <p class="signs-section-text">
+        Both are crucial for understanding health because they give clues about what might be going on, but signs can be independently verified, while symptoms rely on the person’s description.
+      </p>
+      <h2 class="mb-4 signs-title-2">Examples of a Sign</h2>
+      <p class="signs-section-text">
+        Here are a few examples of signs that are often observed in psychological assessments. Remember, these signs can sometimes indicate a health concern but might also occur in individuals without any pathology:
+      </p>
+      <ul class="signs-list">
+        <li>
+          <strong>Agitation:</strong> Observable restlessness or inability to remain calm, which may be a sign of anxiety, mania, or other conditions but can also occur temporarily under stress.
+        </li>
+        <li>
+          <strong>Speech Irregularities:</strong> Slurred or pressured speech can be signs of neurological issues or mood disorders but can also occur from fatigue, alcohol consumption, or stress.
+        </li>
+        <li>
+          <strong>Tremors:</strong> Shaking or involuntary movements in a part of the body, which may suggest neurological or physiological concerns but can also be related to stress or caffeine intake.
+        </li>
+      </ul>
+    </div>  
+
+    
+
+    <!-- Right Column: List of Signs -->
+    <div class="col-md-4">
+      <h2 class="signs-title-2">List of Signs</h2>
+      <ul class="list-group signs-list">
+        {% for sign in signs %}
+        <li class="list-group-item">
+          <!-- icon -->
+          <!-- <i class="bi bi-heart-pulse-fill me-2" aria-hidden="true"></i> -->
+          <!-- <i class="bi bi-cloud me-2" aria-hidden="true"></i> -->
+          <!-- <i class="bi bi-puzzle me-2" aria-hidden="true"></i> -->
+          <!-- <i class="bi bi-lightbulb me-2" aria-hidden="true"></i> -->
+          <i class="bi bi-search me-2 vibrant-icon" aria-hidden="true"></i>
+          <a href="{{ url_for('psychopathology.get_sign', sign_id=sign.id) }}">{{ sign.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <!-- Flash Messages -->
+  <div class="container mt-3">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <div>
+      {% for category, message in messages %}
+      <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% endwith %}
+  </div>
+</div>
 {% endblock %}
 

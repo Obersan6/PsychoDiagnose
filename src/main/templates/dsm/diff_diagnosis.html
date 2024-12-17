@@ -6,41 +6,50 @@ This route only offers a description of what a 'Diff. Diagnosis' is, why is impo
  - Style it -->
  {% extends 'base.html' %}
 
- {% block title %}Steps{% endblock %}
+ {% block title %}Differential Diagnosis{% endblock %}
  
+ {% block content %}
+ <div id="differential-diagnosis-page" class="container">
+   <!-- Page Content -->
+   <div class="row mt-5">
+     <!-- Left Column: Main Content -->
+     <div class="col-md-12">
+       <h1 class="differential-title-1">Differential Diagnosis</h1>
+       <p class="differential-section-text">
+         Differential diagnosis is foundational to ethical and effective clinical practice. By systematically excluding alternative diagnoses and carefully aligning symptoms with the DSM-5-TR criteria, clinicians make informed decisions that optimize care and enhance the patient’s mental health outcomes.
+       </p>
  
-{% block content %}
-  <h1>Differential Diagnosis</h1>
-  <p>Differential diagnosis is foundational to ethical and effective clinical practice. By systematically excluding alternative diagnoses and carefully aligning symptoms with the DSM-5-TR criteria, clinicians make informed decisions that optimize care and enhance the patient’s mental health outcomes.</p>
-  <h2>Definition</h2>
-  <p>In mental health, differential diagnosis is the process of distinguishing a specific disorder from other possible conditions that share similar symptoms. Within the DSM-5-TR framework, differential diagnosis helps clinicians ensure that a diagnosis accurately reflects a patient’s mental health condition, considering both the patient’s symptom profile and other factors that could influence their presentation.</p>
-
-  <h2>When to Perform a Differential Diagnosis</h2>
-  <p>Differential diagnosis should be done when:</p>
-  <ul>
-    <li><p><strong>Symptoms Overlap Across Disorders:</strong> Many mental health disorders have overlapping symptoms (e.g., mood disturbances, anxiety symptoms, cognitive impairments), so it's essential to distinguish among possible diagnoses.</p></li>
-    <li><p><strong>Unclear Clinical Picture:</strong> When symptoms do not clearly align with a single disorder or when patients meet criteria for multiple disorders, a careful differential diagnosis helps refine the final diagnosis.</p></li>
-    <li><p><strong>Evaluating Comorbid Conditions:</strong> If a patient has multiple mental health conditions, differentiating between symptoms of each can guide treatment.</p></li>
-  </ul>
-
-  <h2>Why Differential Diagnosis is Important</h2>
-  <p>Differential diagnosis is crucial because:</p>
-  <ul>
-    <li><p><strong>Guides Appropriate Treatment:</strong>Each disorder has specific treatment guidelines. An accurate diagnosis ensures that interventions are effective and targeted.</p></li>
-    <li><p><strong>Prevents Misdiagnosis:</strong>By ruling out other disorders, clinicians reduce the risk of incorrect or inappropriate treatments, which could lead to worsening symptoms.</p></li>
-    <li><p><strong>Facilitates Clearer Understanding:</strong> A well-defined diagnosis can improve the patient’s and clinician’s understanding of the symptoms, offering clarity and aiding in patient education.</p></li> 
-  </ul>
-
-  <h2>How to Conduct a Differential Diagnosis</h2>
-  <p>In the DSM-5-TR, differential diagnosis is a structured process:</p>
-  <ul>
-    <li><p><strong>Comprehensive Clinical Assessment:</strong> Gather a thorough history, including symptom duration, intensity, and onset, and use standardized assessment tools to measure symptoms objectively.</p></li>
-    <li><p><strong>Follow DSM-5-TR Diagnostic Criteria:</strong>Compare the patient’s symptoms against criteria for multiple disorders, carefully noting differences and nuances in symptom clusters.</p></li>
-    <li><p><strong>Rule Out Medical Conditions:</strong>Determine if symptoms could result from medical conditions (e.g., thyroid issues, brain injury), substance use, or medications rather than a mental health disorder.</p></li>
-    <li><p><strong>Evaluate for Comorbidity:</strong>Consider that a patient could have more than one disorder. Identify which symptoms are primary to the condition being diagnosed and which may belong to additional diagnoses.</p></li>
-    <li><p><strong>Consider Contextual Factors:</strong>DSM-5-TR places a significant emphasis on considering the individual’s environment, cultural background, and life experiences to avoid misinterpreting symptoms as part of a disorder when they may be responses to external factors.</p></li>
-    <li><p><strong>Document the Process:</strong>Record the reasoning for including and excluding each potential diagnosis. This documentation is essential for future reference and may guide treatment adjustments if symptoms evolve.</p></li>
-  </ul>
-  
-{% endblock %}
-    
+       <h2 class="differential-title-2">Definition</h2>
+       <p class="differential-section-text">
+         In mental health, differential diagnosis is the process of distinguishing a specific disorder from other possible conditions that share similar symptoms. Within the DSM-5-TR framework, differential diagnosis helps clinicians ensure that a diagnosis accurately reflects a patient’s mental health condition, considering both the patient’s symptom profile and other factors that could influence their presentation.
+       </p>
+ 
+       <h2 class="differential-title-2">When to Perform a Differential Diagnosis</h2>
+       <p class="differential-section-text">Differential diagnosis should be done when:</p>
+       <ul class="differential-list">
+         <li><strong>Symptoms Overlap Across Disorders:</strong> Many mental health disorders have overlapping symptoms (e.g., mood disturbances, anxiety symptoms, cognitive impairments), so it's essential to distinguish among possible diagnoses.</li>
+         <li><strong>Unclear Clinical Picture:</strong> When symptoms do not clearly align with a single disorder or when patients meet criteria for multiple disorders, a careful differential diagnosis helps refine the final diagnosis.</li>
+         <li><strong>Evaluating Comorbid Conditions:</strong> If a patient has multiple mental health conditions, differentiating between symptoms of each can guide treatment.</li>
+       </ul>
+ 
+       <h2 class="differential-title-2">Why Differential Diagnosis is Important</h2>
+       <ul class="differential-list">
+         <li><strong>Guides Appropriate Treatment:</strong> Each disorder has specific treatment guidelines. An accurate diagnosis ensures that interventions are effective and targeted.</li>
+         <li><strong>Prevents Misdiagnosis:</strong> By ruling out other disorders, clinicians reduce the risk of incorrect or inappropriate treatments, which could lead to worsening symptoms.</li>
+         <li><strong>Facilitates Clearer Understanding:</strong> A well-defined diagnosis can improve the patient’s and clinician’s understanding of the symptoms, offering clarity and aiding in patient education.</li>
+       </ul>
+ 
+       <h2 class="differential-title-2">How to Conduct a Differential Diagnosis</h2>
+       <ul class="differential-list">
+         <li><strong>Comprehensive Clinical Assessment:</strong> Gather a thorough history, including symptom duration, intensity, and onset, and use standardized assessment tools to measure symptoms objectively.</li>
+         <li><strong>Follow DSM-5-TR Diagnostic Criteria:</strong> Compare the patient’s symptoms against criteria for multiple disorders, carefully noting differences and nuances in symptom clusters.</li>
+         <li><strong>Rule Out Medical Conditions:</strong> Determine if symptoms could result from medical conditions (e.g., thyroid issues, brain injury), substance use, or medications rather than a mental health disorder.</li>
+         <li><strong>Evaluate for Comorbidity:</strong> Consider that a patient could have more than one disorder. Identify which symptoms are primary to the condition being diagnosed and which may belong to additional diagnoses.</li>
+         <li><strong>Consider Contextual Factors:</strong> DSM-5-TR places a significant emphasis on considering the individual’s environment, cultural background, and life experiences to avoid misinterpreting symptoms as part of a disorder when they may be responses to external factors.</li>
+         <li><strong>Document the Process:</strong> Record the reasoning for including and excluding each potential diagnosis. This documentation is essential for future reference and may guide treatment adjustments if symptoms evolve.</li>
+       </ul>
+     </div>
+   </div>
+ </div>
+ {% endblock %}
+ 

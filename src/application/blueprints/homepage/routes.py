@@ -44,6 +44,8 @@ def homepage():
     form = SearchForm()
 
     if g.user:
+        # Pass img_url as is, since it defaults to None
+        img_url = g.user.img_url if g.user.img_url and g.user.img_url.strip() != "" else None
         # Process form submission
         if form.validate_on_submit():
             search_query = form.search_query.data.strip()
@@ -54,7 +56,8 @@ def homepage():
             'home.html',
             user_logged_in=True,
             username=g.user.username,
-            img_url=g.user.img_url,
+            # img_url=g.user.img_url,
+            img_url=img_url,
             form=form
         )
     else:

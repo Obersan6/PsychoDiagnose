@@ -5,32 +5,40 @@
 {% block title %}Disorders{% endblock %}
 
 {% block content %}
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-  <h1>List of Disorders</h1>
-  <h3>What is a disorder?</h3>
-  <br>
-  <p>A disorder, according to the DSM-5-TR, is a clinically significant disturbance in an individual’s cognition, emotion regulation, or behavior that reflects a dysfunction in psychological, biological, or developmental processes. Disorders are typically associated with significant distress or impairment in personal, social, academic, or occupational functioning. Diagnosis requires careful evaluation to ensure symptoms are not better explained by cultural norms, temporary stressors, or medical conditions.</p>
-  <ul class="list-group" id="disorders">
-  {% for disorder in disorders %}
-        <li class="list-groupt-item">
-          <a href="/disorders/{{ disorder.id }}">{{ disorder.name }}</a>
-        </li>
-  {% endfor %}
-  </ul>
-
-  <!-- Search for disorder related to show_disorders page -->
-  <form method="POST" action="{{ url_for('dsm.search_disorder') }}">
-    {{ form.hidden_tag() }}
-    {{ form.search_query(placeholder="Search disorder...", class="form-control mt-3", id="search_disorder") }}
-    <div id="suggestions-disorder" class="suggestions-container"></div>
-    <button type="submit" class="btn btn-primary mt-3">Search Disorder</button>
-  </form>
-
- 
+<div id="disorders-page" class="container">
+  <!-- Search Bar -->
+  <div class="search-container">
+    <form method="POST" action="{{ url_for('dsm.search_disorder') }}" class="d-flex align-items-center">
+      {{ form.hidden_tag() }}
+      {{ form.search_query(placeholder="Search disorders...", class="form-control me-2", id="search_disorder") }}
+      <button type="submit" class="btn btn-outline-info">Search</button>
+    </form>
+    <div id="suggestions-disorder" class="suggestions-container mt-2"></div>
   </div>
+
+  <!-- Page Content -->
+  <div class="row mt-5">
+    <!-- Left Column: General Information -->
+    <div class="col-md-8">
+      <h1 class="disorders-title-1">Disorders</h1>
+      <h2 class="disorders-title-2">What is a Disorder?</h2>
+      <p class="disorders-section-text">
+        A <strong>disorder</strong>, according to the DSM-5-TR, is a clinically significant disturbance in an individual’s cognition, emotion regulation, or behavior that reflects a dysfunction in psychological, biological, or developmental processes. Disorders are typically associated with significant distress or impairment in personal, social, academic, or occupational functioning. Diagnosis requires careful evaluation to ensure symptoms are not better explained by cultural norms, temporary stressors, or medical conditions.
+      </p>
+    </div>
+
+    <!-- Right Column: List of Disorders -->
+    <div class="col-md-4">
+      <h2 class="disorders-title-2">List of Disorders</h2>
+      <ul class="list-group disorders-list">
+        {% for disorder in disorders %}
+        <li class="list-group-item">
+          <i class="bi bi-layers me-2"></i>
+          <a href="{{ url_for('dsm.get_disorder', disorder_id=disorder.id) }}">{{ disorder.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
 {% endblock %}

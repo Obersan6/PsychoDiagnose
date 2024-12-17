@@ -9,55 +9,115 @@
     - List of symptoms -->
 
     {% extends 'base.html' %}
-    {% block title %}{disorder.name}{% endblock %}
+
+    {% block title %}{{ disorder.name }}{% endblock %}
     
     {% block content %}
-      <h1>{{ disorder.name }}</h1>
-      <h3>Category: {{ category.name }}</h3>
-      <p>{{ category.description }}</p>
+    <div id="disorder-details-page" class="container mt-5">
+      <div class="row">
+        <!-- Left Column: Main Content -->
+        <div class="col-md-8">
+          <!-- Disorder Title and Description -->
+          <div class="disorder-card shadow-sm p-4 rounded mb-4">
+            <h1 class="disorder-title">{{ disorder.name }}</h1>
+            <h4 class="category-info">Category: {{ category.name }}</h4>
+            <p class="category-description">{{ category.description }}</p>
     
-      {% if cluster %}
-        <h4>Cluster:</h4>
-        <p><strong>{{ cluster.name }}</strong>: {{ cluster.description }}</p>
-      {% else %}
-        <p>This disorder does not belong to any clusters.</p>
-      {% endif %}
-
-      <h2>Disorder Description:</h2>
-      <p>{{ disorder.description }}</p>
-      <h3>Criteria:</h3>
-      <p>{{ disorder.criteria }}</p>
+            {% if cluster %}
+            <h5 class="mt-3 cluster-info">
+              Cluster: <strong>{{ cluster.name }}</strong>
+            </h5>
+            <p class="cluster-description">{{ cluster.description }}</p>
+            {% else %}
+            <p class="no-cluster mt-3">This disorder does not belong to any clusters.</p>
+            {% endif %}
+          </div>
     
-      <h2>List of Signs:</h2>
-      <ul>
-        {% for disorder_sign in signs %}
-          <li>
-            <a href="{{ url_for('psychopathology.get_sign', sign_id=disorder_sign.sign.id) }}">{{ disorder_sign.sign.name }}</a>
-          </li>
-        {% else %}
-          <p>No signs available for this disorder.</p>
-        {% endfor %}
-      </ul>
-      
-      <h2>List of Symptoms:</h2>
-      <ul>
-        {% for disorder_symptom in symptoms %}
-          <li>
-            <a href="{{ url_for('psychopathology.get_symptom', symptom_id=disorder_symptom.symptom.id) }}">{{ disorder_symptom.symptom.name }}</a>
-          </li>
-        {% else %}
-          <p>No symptoms available for this disorder.</p>
-        {% endfor %}
-      </ul>
+          <!-- Disorder Description -->
+          <div class="section mt-4">
+            <h2 class="section-title">Disorder Description</h2>
+            <p class="section-text">{{ disorder.description }}</p>
+          </div>
     
-      <h2>Differential Diagnosis:</h2>
-      <ul>
-        {% for diff in differential_diagnoses %}
-          <li>
-            {{ diff.description }}
-          </li>
-        {% endfor %}
-      </ul>
+          <!-- Criteria -->
+          <div class="section mt-4">
+            <h2 class="section-title">Criteria</h2>
+            <p class="section-text">{{ disorder.criteria }}</p>
+          </div>
+    
+          <!-- List of Signs -->
+          <div class="section mt-4">
+            <h2 class="section-title">List of Signs</h2>
+            {% if signs %}
+            <ul class="list-group mt-3">
+              {% for disorder_sign in signs %}
+              <li class="list-group-item d-flex align-items-center">
+                <i class="bi bi-clipboard-check me-2 sign-icon"></i>
+                <a href="{{ url_for('psychopathology.get_sign', sign_id=disorder_sign.sign.id) }}" class="sign-link">
+                  {{ disorder_sign.sign.name }}
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+            {% else %}
+            <p class="no-content mt-3">No signs available for this disorder.</p>
+            {% endif %}
+          </div>
+    
+          <!-- List of Symptoms -->
+          <div class="section mt-4">
+            <h2 class="section-title">List of Symptoms</h2>
+            {% if symptoms %}
+            <ul class="list-group mt-3">
+              {% for disorder_symptom in symptoms %}
+              <li class="list-group-item d-flex align-items-center">
+                <i class="bi bi-exclamation-circle me-2 symptom-icon"></i>
+                <a href="{{ url_for('psychopathology.get_symptom', symptom_id=disorder_symptom.symptom.id) }}" class="symptom-link">
+                  {{ disorder_symptom.symptom.name }}
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+            {% else %}
+            <p class="no-content mt-3">No symptoms available for this disorder.</p>
+            {% endif %}
+          </div>
+    
+          <!-- Differential Diagnosis -->
+          <div class="section mt-4">
+            <h2 class="section-title">Differential Diagnosis</h2>
+            {% if differential_diagnoses %}
+            <ul class="list-group mt-3">
+              {% for diff in differential_diagnoses %}
+              <li class="list-group-item">
+                {{ diff.description }}
+              </li>
+              {% endfor %}
+            </ul>
+            {% else %}
+            <p class="no-content mt-3">No differential diagnoses available.</p>
+            {% endif %}
+          </div>
+        </div>
+    
+        <!-- Right Column: Quick Links -->
+        <div class="col-md-4">
+          <div class="quick-links-card p-3 shadow-sm rounded">
+            <h3 class="quick-links-title mb-3">Quick Links</h3>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="{{ url_for('dsm.show_categories') }}">All Categories</a>
+              </li>
+              <li class="list-group-item">
+                <a href="{{ url_for('dsm.show_clusters') }}">All Clusters</a>
+              </li>
+              <li class="list-group-item">
+                <a href="{{ url_for('dsm.show_disorders') }}">All Disorders</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     {% endblock %}
-    
     

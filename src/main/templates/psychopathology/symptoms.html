@@ -3,64 +3,86 @@
 {% extends 'base.html' %}
 
 {% block title %}Symptoms{% endblock %}
- 
+
 {% block content %}
-<div class="container">
-<br><br><br><br><br><br>
-  
 
-    <h1>Symptoms</h1>
-    <h2>What is a Symptom?</h2>
-    <br>
-    <p>A <strong>symptom</strong> is a subjective experience or sensation reported by an individual that may indicate a deviation from typical well-being or functioning. Symptoms are internal experiences, such as pain, sadness, or fatigue, and cannot be directly observed or measured by others; they rely solely on the individual’s self-report.</p>
-    <p>In the context of diagnostics, a symptom does not automatically indicate the presence of a pathology. Symptoms can vary in intensity and may be influenced by temporary factors, lifestyle, or environmental contexts. Therefore, while certain symptoms may correlate with specific disorders, the presence of a symptom alone is not sufficient for a diagnosis.</p>
-    <br>
-    <h2>Difference between a symptom and a sign:</h2>
-    <p><strong>Symptoms</strong> are subjective and reported by the person experiencing them while <stron>signs</stron> can be observed by others.</p>
-    <p>Both are crucial for understanding health because they give clues about what might be going on, but symptoms rely on the person’s description while signs can be independently verified.</p>
-    <br>
-    <h2>Examples of a symptom</h2>
-    <p>Here are some examples of symptoms commonly noted in psychopathology. These symptoms are indicators of possible mental health conditions, but, their presence alone does not confirm a diagnosis. They are part of a broader picture that helps in understanding the individual’s experiences and potential diagnoses.</p>
-    <ul>
-      <li><strong>Sadness or Persistent Low Mood:</strong> Feelings of sadness or a consistently low mood, often associated with depressive disorders.</li>
-      <li><strong>Insomnia or Hypersomnia:</strong> Difficulty falling asleep, staying asleep, or excessive sleeping, which may appear in mood or anxiety disorders.</li>
-      <li><strong>Hallucinations:</strong> Sensory experiences, such as hearing or seeing things that aren’t present, commonly associated with psychotic disorders like schizophrenia.</li>
-    </ul>
-
-    <h2>List of symptom:</h2>
-    <ul>
-        {% for symptom in symptoms %}
-          <li>
-          <a href="{{ url_for('psychopathology.get_symptom', symptom_id=symptom.id) }}">{{ symptom.name }}</a>
-          </li>
-        {% endfor %}
-    </ul>
-
-
-    <!-- Search for elements related to signs -->
-     <form method="POST" action="{{ url_for('psychopathology.search_symptom') }}">
-        {{ form.hidden_tag()}}
-        {{ form.search_query(placeholder="Search symptom...", class="form-control mt-3", id="search-symptom") }}
-        <div id="suggestions-symptom" class="suggestions-container"></div>
-        <button type="submit" class="btn btn-primary mt-3">Search symptom</button>
-     </form>
-
-     
-      <!-- Flash Messages -->
-      {% with messages = get_flashed_messages(with_categories=true) %}
-        {% if messages %}
-          <div class="mt-3">
-            {% for category, message in messages %}
-              <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
-                {{ message }}
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              </div>
-            {% endfor %}
-          </div>
-        {% endif %}
-      {% endwith %}
-      
+<!-- Search Bar -->
+<div id="symptoms-page" class="container">
+  <!-- Search Bar at the Top -->
+  <div class="search-container">
+    <form method="POST" action="{{ url_for('psychopathology.search_symptom') }}" class="d-flex align-items-center">
+      {{ form.hidden_tag() }}
+      {{ form.search_query(placeholder="Search symptoms...", class="form-control me-2", id="search_symptom") }}
+      <button type="submit" class="btn btn-outline-info">Search</button>
+    </form>
+    <div id="suggestions-symptom" class="suggestions-container mt-2"></div>
   </div>
+
+  <!-- Page Content -->
+  <div class="row mt-5">
+    <!-- Left Column: Main Content -->
+    <div class="col-md-8">
+      <h1 class="symptoms-title-1">Symptoms</h1>
+      <h2 class="mb-4 symptoms-title-2">What is a Symptom?</h2>
+      <p class="symptoms-section-text">
+        A <strong>symptom</strong> is a subjective experience or sensation reported by an individual that may indicate a deviation from typical well-being or functioning. Symptoms are internal experiences, such as pain, sadness, or fatigue, and cannot be directly observed or measured by others; they rely solely on the individual’s self-report.
+      </p>
+      <p class="symptoms-section-text">
+        In the context of diagnostics, a symptom does not automatically indicate the presence of a pathology. Symptoms can vary in intensity and may be influenced by temporary factors, lifestyle, or environmental contexts. Therefore, while certain symptoms may correlate with specific disorders, the presence of a symptom alone is not sufficient for a diagnosis.
+      </p>
+      <h2 class="mb-4 symptoms-title-2">Difference between a Symptom and a Sign:</h2>
+      <p class="symptoms-section-text">
+        <strong>Symptoms</strong> are subjective and reported by the person experiencing them, while <strong>signs</strong> can be observed by others.
+      </p>
+      <p class="symptoms-section-text">
+        Both are crucial for understanding health because they give clues about what might be going on, but symptoms rely on the person’s description, while signs can be independently verified.
+      </p>
+      <h2 class="mb-4 symptoms-title-2">Examples of a Symptom</h2>
+      <p class="symptoms-section-text">
+        Here are some examples of symptoms commonly noted in psychopathology. These symptoms are indicators of possible mental health conditions, but their presence alone does not confirm a diagnosis. They are part of a broader picture that helps in understanding the individual’s experiences and potential diagnoses.
+      </p>
+      <ul class="symptoms-list">
+        <li>
+          <strong>Sadness or Persistent Low Mood:</strong> Feelings of sadness or a consistently low mood, often associated with depressive disorders.
+        </li>
+        <li>
+          <strong>Insomnia or Hypersomnia:</strong> Difficulty falling asleep, staying asleep, or excessive sleeping, which may appear in mood or anxiety disorders.
+        </li>
+        <li>
+          <strong>Hallucinations:</strong> Sensory experiences, such as hearing or seeing things that aren’t present, commonly associated with psychotic disorders like schizophrenia.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right Column: List of Symptoms -->
+    <div class="col-md-4">
+      <h2 class="symptoms-title-2">List of Symptoms</h2>
+      <ul class="list-group symptoms-list">
+        {% for symptom in symptoms %}
+        <li class="list-group-item">
+          <i class="bi bi-search me-2 vibrant-icon" aria-hidden="true"></i>
+          <a href="{{ url_for('psychopathology.get_symptom', symptom_id=symptom.id) }}">{{ symptom.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <!-- Flash Messages -->
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div class="mt-3">
+        {% for category, message in messages %}
+          <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+    
+</div>
  
 {% endblock %}
 

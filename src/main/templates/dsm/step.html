@@ -5,26 +5,35 @@
 {% block title %}Step Details{% endblock %}
 
 {% block content %}
-<div class="container">
-    <br><br><br><br><br><br>
-    <h1>Step {{ step.step_number }}: {{ step.step_name }}</h1>
-    <p>{{ step.description }}</p>
-
-    <!-- Navigation buttons -->
-    <div>
-        {% if previous_step %}
-            <a href="{{ url_for('dsm.get_step', step_id=previous_step.id) }}" class="btn btn-primary">
-                Previous: Step {{ previous_step.step_number }}
-            </a>
-        {% endif %}
-        {% if next_step %}
-            <a href="{{ url_for('dsm.get_step', step_id=next_step.id) }}" class="btn btn-primary ms-2">
-                Next: Step {{ next_step.step_number }}
-            </a>
-        {% endif %}
+<div id="step-details-page" class="container-fluid d-flex flex-column min-vh-100">
+  <!-- Main Content -->
+  <div class="flex-grow-1">
+    <!-- Step Details Card -->
+    <div class="step-card shadow-lg p-5 rounded">
+      <h1 class="step-title">Step {{ step.step_number }}: {{ step.step_name }}</h1>
+      <p class="step-description">{{ step.description }}</p>
     </div>
 
-    <!-- Link to go back to the list of all steps -->
-    <a href="{{ url_for('dsm.show_steps') }}" class="btn btn-secondary mt-3">Back to Steps List</a>
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons mt-4 d-flex justify-content-between">
+      {% if previous_step %}
+      <a href="{{ url_for('dsm.get_step', step_id=previous_step.id) }}" class="btn btn-primary step-nav-btn">
+        Previous: Step {{ previous_step.step_number }}
+      </a>
+      {% else %}
+      <div></div> <!-- Empty div for spacing -->
+      {% endif %}
+      {% if next_step %}
+      <a href="{{ url_for('dsm.get_step', step_id=next_step.id) }}" class="btn btn-primary step-nav-btn">
+        Next: Step {{ next_step.step_number }}
+      </a>
+      {% endif %}
+    </div>
+
+    <!-- Back to Steps List -->
+    <div class="text-center mt-4">
+      <a href="{{ url_for('dsm.show_steps') }}" class="btn btn-secondary step-back-btn">Back to Steps List</a>
+    </div>
+  </div>
 </div>
 {% endblock %}

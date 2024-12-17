@@ -6,39 +6,36 @@ Displays:
  - Disorders with that sign
  - Search input to look for related elements to this route  -->
 
-{% extends 'base.html' %}
+ {% extends 'base.html' %}
 
 {% block title %}Sign Details{% endblock %}
- 
+
 {% block content %}
-  <div class="container">
-    <br><br><br><br><br>
-    <h1>{{ sign.name }}</h1>
-    <p>{{ sign.description }}</p>
+<div id="sign-details-page" class="container-fluid d-flex flex-column min-vh-100">
+  <!-- Main Content -->
+  <div class="flex-grow-1">
+    <!-- Sign Name and Description -->
+    <div class="sign-card shadow-lg p-5 rounded">
+      <h1 class="sign-title">{{ sign.name }}</h1>
+      <p class="sign-description">{{ sign.description }}</p>
+    </div>
 
-    <!-- <h2>Examples:</h2>
-    <ul>
-        {% for example in sign_examples %}
-          <li> {{ example.example }}</li>
-        {% endfor %}
-    </ul> -->
-
-    <h2>Disorders Associated with this Sign":</h2>
-    <ul>
+    <!-- Associated Disorders Section -->
+    <div class="associated-disorders-section mt-5">
+      <h2 class="associated-title">Disorders Associated with this Sign:</h2>
+      {% if disorders %}
+      <ul class="list-group disorders-list mt-3">
         {% for disorder in disorders %}
-          <li>
-            <a href="{{ url_for('dsm.get_disorder', disorder_id=disorder.id) }}">{{disorder.name}}</a>
-          </li>
+        <li class="list-group-item d-flex align-items-center">
+          <i class="bi bi-arrow-right-circle me-2 disorder-icon" aria-hidden="true"></i>
+          <a href="{{ url_for('dsm.get_disorder', disorder_id=disorder.id) }}" class="disorder-link">{{ disorder.name }}</a>
+        </li>
         {% endfor %}
-    </ul>
-
-    <!-- Search for elements related to signs -->
-     <!-- <form method="POST" action="{{ url_for('psychopathology.search_sign') }}">
-        {{ form.hidden_tag}}
-        {{ form.search_query(placeholder="Search signs...", class="form-control mt-3") }}
-        <button type="submit" class="btn btn-primary mt-3">Search</button>
-     </form>"
-  </div> -->
- 
+      </ul>
+      {% else %}
+      <p class="no-disorders mt-3">No disorders are currently associated with this sign.</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
 {% endblock %}
-

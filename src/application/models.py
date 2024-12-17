@@ -30,7 +30,7 @@ class User(db.Model):
     first_name = db.Column(db.String(150), nullable=False)
     last_name = db.Column(db.String(150), nullable=False)
     password_hash = db.Column(db.String(128), nullable=False)
-    img_url = db.Column(db.String(500), nullable=True, default="src/application/static/images/default-pic.png")
+    img_url = db.Column(db.String(500), nullable=True, default="None")
 
     def __repr__(self):
         return f"<User id={self.id} username={self.username} email={self.email}>"

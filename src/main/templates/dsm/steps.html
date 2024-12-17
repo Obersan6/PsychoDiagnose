@@ -1,30 +1,36 @@
-<!-- Steps List and search area for a step -->
-
 {% extends 'base.html' %}
 
 {% block title %}Steps{% endblock %}
 
 {% block content %}
 
-<div class="container">
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1>Diagnostic Steps</h1>
-    <h3>Diagnostic Steps following guidelines of the DSM-5-TR.</h3>
-    <p>This is a list of steps that will guide you through the diagnostic process.</p>
-    <p>Each step ensures a structured, comprehensive approach to mental health diagnosis, consistent with DSM-5-TR guidelines.</p>
+<div class="container text-center py-5">
+    <h1 class="title-1">Diagnostic Steps</h1>
+    <h3 class="title-3">Diagnostic Steps following guidelines of the DSM-5-TR</h3>
+    <p class="section-text">
+        This is a list of steps that will guide you through the diagnostic process.
+        Each step ensures a structured, comprehensive approach to mental health diagnosis, consistent with <strong>DSM-5-TR</strong> guidelines.
+    </p>
 
     <!-- List of Steps -->
-    <ul class="list-group" id="categories">
+    <div class="row g-4 mt-4">
         {% for step in steps %}
-        <li class="list-group-item">
-            <a href="{{ url_for('dsm.get_step', step_id=step.id) }}">{{ step.step_number }}: {{ step.step_name }}</a>
-        </li>
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm step-card">
+                <div class="card-body">
+                    <i class="bi bi-list-check step-icon mb-3"></i>
+                    <h5 class="card-title">Step {{ step.step_number }}</h5>
+                    <p class="card-text">{{ step.step_name }}</p>
+                    <a href="{{ url_for('dsm.get_step', step_id=step.id) }}" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
         {% endfor %}
-    </ul>
+    </div>
 </div>
+
+{% endblock %}
+
 
 <!-- <form method="POST" action="{{ url_for('dsm.search_step') }}" id="step_form">
     {{ form.hidden_tag() }}
@@ -36,6 +42,4 @@
     <button type="submit" class="btn btn-primary mt-3">Search Step</button>
 </form> -->
 
-</div>
 
-{% endblock %}

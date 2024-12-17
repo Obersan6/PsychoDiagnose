@@ -4,51 +4,56 @@
 
     {% extends 'base.html' %}
 
-    {% block title %}Categories{% endblock %}
-    
-    {% block content %}
-    
-    <div class="container">
-        <br>
-        <br>
-        <br>
-        <br>
-        <h1>Diagnostic Categories in the DSM-5-TR</h1>
-        <br>
-        <br>
-    
-        <p>These are the diagnostic categories in the DSM-5-TR.</p>
-        <br>
-        <br>
-        <p>Each category groups related mental disorders and organizes them into specific diagnoses.</p>
+{% block title %}Categories{% endblock %}
 
-        <br>
+{% block content %}
+<div id="categories-page" class="container">
+  <!-- Search Bar at the Top -->
+  <div class="search-container">
+    <form method="POST" action="{{ url_for('dsm.search_category') }}" class="d-flex align-items-center">
+      {{ form.hidden_tag() }}
+      {{ form.search_query(placeholder="Search category...", class="form-control me-2", id="search_category") }}
+      <button type="submit" class="btn btn-outline-info">Search</button>
+    </form>
+    <div id="suggestions-category" class="suggestions-container mt-2"></div>
+  </div>
 
-        <p>Some categories include clusters, which act as subcategories.</p>
-       
-        <p>Clusters group related disorders within a category into smaller, more specific groups.</p>
-    
-        <ul class="list-group" id="categories">
-            {% for category in categories %}
-            <li class="list-group-item">
-                <a href="{{ url_for('dsm.get_category', category_id=category.id) }}">{{ category.name }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-
-        <!-- Search for a category -->
-        <form method="POST" action="{{ url_for('dsm.search_category') }}">
-            {{ form.hidden_tag() }}
-            {{ form.search_query(placeholder="Search category...", class="form-control mt-3", id="search_category") }}
-            <div id="suggestions-category" class="suggestions-container"></div>
-            <button type="submit" class="btn btn-primary mt-3">Search Category</button>
-        </form>              
-
+  <!-- Page Content -->
+  <div class="row mt-5">
+    <!-- Left Column: Main Content -->
+    <div class="col-md-8">
+      <h1 class="categories-title-1">Diagnostic Categories in the DSM-5-TR</h1>
+      <p class="categories-section-text">
+        The DSM-5-TR organizes related mental disorders into categories based on shared core features, symptomatology, and underlying mechanisms. These categories structure mental health conditions into distinct domains characterized by clinically significant patterns of thoughts, emotions, and behaviors. This framework enables clinicians and researchers to diagnose, study, and treat mental disorders with consistency and precision.
+      </p>
+      <p class="categories-section-text">
+        Each category includes a range of specific disorders that may differ in severity, duration, or associated features but align under a unifying theme. For instance, the category of Mood Disorders encompasses conditions like major depressive disorder and bipolar disorder, both marked by disturbances in mood, though they present with distinct diagnostic criteria.
+      </p>
+      <h2 class="mb-4 categories-title-2">Clusters and Subcategories</h2>
+      <p class="categories-section-text">
+        Another form of categorization within the <strong>DSM-5-TR</strong> is <strong>clusters</strong>, which are exclusive to personality disorders.
+      </p>
+      <p class="categories-section-text">
+        In addition, the <strong>DSM-5-TR</strong> includes subcategories within certain diagnostic categories, though these are not as formally defined or widely used as <strong>clusters</strong>. <em>Subcategories</em> group disorders that share closely related characteristics or symptom profiles within a broader diagnostic category. Unlike <strong>clusters</strong>, which are specific to <em>personality disorders</em>, subcategories can appear across various sections of the <strong>DSM-5-TR</strong> to provide additional structure and classification.
+      </p>
     </div>
-    
-    {% endblock %}
 
-    {% block scripts %}
-    <script src="{{ url_for('static', filename='js/autocomplete.js')}}"></script>
-    {% endblock %}
-    
+    <!-- Right Column: List of Categories -->
+    <div class="col-md-4">
+      <h2 class="categories-title-2">List of Categories</h2>
+      <ul class="list-group categories-list">
+        {% for category in categories %}
+        <li class="list-group-item">
+          <i class="bi bi-search me-2 vibrant-icon" aria-hidden="true"></i>
+          <a href="{{ url_for('dsm.get_category', category_id=category.id) }}">{{ category.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/autocomplete.js')}}"></script>
+{% endblock %}
