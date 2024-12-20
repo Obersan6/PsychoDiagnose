@@ -44,7 +44,8 @@ def show_categories():
         return redirect(url_for('user.signin'))
     
     else: 
-        categories = Category.query.all()
+        # categories = Category.query.all() 
+        categories = Category.query.order_by(Category.name.asc()).all()
         form = SearchForm()
 
         return render_template('dsm/categories.html', categories=categories, form=form)
@@ -128,7 +129,7 @@ def show_disorders():
         flash('Unauthorized. Please login', 'danger')
         return redirect(url_for('user.signin'))
     
-    disorders = Disorder.query.all()
+    disorders = Disorder.query.order_by(Disorder.name.asc()).all()
     form = SearchForm()
 
     return render_template('dsm/disorders.html', disorders=disorders, form=form)

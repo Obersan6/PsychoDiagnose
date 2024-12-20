@@ -20,7 +20,7 @@ def show_signs():
         flash('Unauthorized. Please login', 'danger')
         return redirect(url_for('user.signin'))
 
-    signs = Sign.query.all()
+    signs = Sign.query.order_by(Sign.name.asc()).all()
     form = SearchForm()
 
     return render_template('psychopathology/signs.html', signs=signs, form=form)
@@ -115,7 +115,7 @@ def show_symptoms():
         flash('Unauthorized. Please login', 'danger')
         return redirect(url_for('user.signin'))
 
-    symptoms = Symptom.query.all()
+    symptoms = Symptom.query.order_by(Symptom.name.asc()).all()
     form = SearchForm()
 
     return render_template('psychopathology/symptoms.html', symptoms=symptoms, form=form)

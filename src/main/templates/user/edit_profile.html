@@ -17,15 +17,18 @@
       {{ form.csrf_token() }}
   
       <!-- Show current profile image -->
-      {% if user.img_url %}
       <div class="text-center mb-3">
+        {% if user.img_url %}  
           <img src="{{ url_for('static', filename=user.img_url) }}" 
                alt="{{ user.username }}'s current profile picture" 
                class="rounded-circle" width="100" height="100">
-      {% else %}
-          <i class="bi bi-person-circle" style="font-size: 5rem; color: rgb(11, 34, 244);"></i>
+        {% else %}
+          <div class="icon-container">
+            <i class="bi bi-person-circle" style="font-size: 5rem; color: rgb(11, 34, 244);"></i>
+          </div>
+        {% endif %}
       </div>
-      {% endif %}
+    
   
       <!-- Input fields -->
       {% for field in form if field.name != 'remove_image' and field.widget.input_type != 'hidden' and field.widget.input_type != 'submit' %}
@@ -37,17 +40,18 @@
           {% endfor %}
       </div>
       {% endfor %}
-  
+
       <!-- Remove image option -->
-      <div class="form-check mt-3">
-        <input class="form-check-input" type="checkbox" id="removeImageCheckbox" name="remove_image">
-        <label class="form-check-label fw-bold text-danger" for="removeImageCheckbox">
-          Remove current profile image? 
+      <div class="custom-checkbox-wrapper mt-3">
+        <input class="custom-checkbox" type="checkbox" id="removeImageCheckbox" name="remove_image">
+        <label class="custom-checkbox-label" for="removeImageCheckbox">
+          Remove current profile image
         </label>
       </div>
+   
   
       <!-- Action Buttons -->
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between mt-4">
           {{ form.submit(class="btn btn-primary edit-profile-btn") }}
           <a href="{{ url_for('user.user_profile', user_id=user.id) }}" class="btn btn-secondary edit-profile-cancel-btn">Cancel</a>
       </div>

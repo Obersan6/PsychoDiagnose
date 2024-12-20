@@ -47,6 +47,9 @@ static\uploads\
 # Virtual Environment
 venv/
 
+# Log files
+*.log
+populate_data.log
 
 
 

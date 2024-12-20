@@ -225,4 +225,216 @@ def search_category():
 
 
 
+    <!-- style.css -->
+    /* Footer spacing adjustments */
+    footer {
+        background-color: #85dbfb !important; /* Ensure background color is applied */
+        color: #333 !important; /* Ensure text color is applied */
+        margin-top: 0 !important; /* Remove any top margin */
+        margin-bottom: 0 !important;
+        height: 10rem !important; /* Fixed height */
+        padding: 0 !important; /* Remove any additional padding */
+        
+        /* Flexbox for centering */
+        display: flex !important; /* Force Flexbox layout */
+        justify-content: center !important; /* Horizontally center content */
+        align-items: center !important; /* Vertically center content */
+        text-align: center !important; /* Center-align text inside the footer */
+        width: 100% !important; /* Ensure the footer spans the full width */
+    }
+    
+    
+    /* Align card and h1 horizontally */
+    /* User Card Adjustments */
+    .user-card {
+        max-width: 15rem;
+        margin: 0 auto; /* Center-align card in its column */
+    }
+    
+    /* Main Content Adjustments */
+    .logged {
+        font-size: 2rem;
+        line-height: 1;
+        word-break: break-word;
+        margin-bottom: 1rem;
+    }
+    
+    .text-logged {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        color: #555; /* Optional: Softer text color */
+    }
+    
+    <!-- user profile page style.css  -->
+    * user_profile.html */
+    /* User Profile Page */
+    #user-profile-page {
+        background-color: #f9f9f9;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Profile Card */
+    #user-profile-page .profile-card {
+        background-color: #ffffff;
+        max-width: 500px;
+        width: 100%;
+        border-radius: 12px;
+        padding: 40px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd;
+    }
+    
+    /* Profile Picture */
+    #user-profile-page #profile-avatar {
+        border: 3px solid #007bff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Titles and Info */
+    #user-profile-page .profile-title {
+        font-size: 1.8rem;
+        color: #343a40;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+    #user-profile-page .profile-info {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 10px;
+    }
+    
+    /* Buttons */
+    #user-profile-page .profile-btn {
+        height: 50px;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+    
+    #user-profile-page .btn-primary.profile-btn {
+        background-color: #007bff;
+        border: none;
+    }
+    
+    #user-profile-page .btn-primary.profile-btn:hover {
+        background-color: #0056b3;
+        transform: scale(1.02);
+    }
+    
+    #user-profile-page .btn-danger.profile-btn {
+        background-color: #dc3545;
+        border: none;
+    }
+    
+    #user-profile-page .btn-danger.profile-btn:hover {
+        background-color: #c82333;
+        transform: scale(1.02);
+    }
+    
+    
+    /* edit_profile.html */
+    /* Edit Profile Page */
+    #edit-profile-page {
+        background-color: #f9f9f9;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Edit Profile Card */
+    #edit-profile-page .edit-profile-card {
+        background-color: #ffffff;
+        max-width: 600px;
+        width: 100%;
+        border-radius: 12px;
+        padding: 40px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
+        border: 1px solid #ddd;
+    }
+    
+    /* Page Title */
+    #edit-profile-page .edit-profile-title {
+        font-size: 1.8rem;
+        color: #343a40;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    /* Form Labels */
+    #edit-profile-page .edit-profile-label {
+        font-size: 1rem;
+        color: #555;
+    }
+    
+    /* Form Inputs */
+    #edit-profile-page .edit-profile-input {
+        height: 50px;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+    
+    #edit-profile-page .edit-profile-input:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+        outline: none;
+    }
+    
+    /* Submit Button */
+    #edit-profile-page .edit-profile-btn {
+        height: 50px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        background-color: #007bff;
+        border: none;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+    
+    #edit-profile-page .edit-profile-btn:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Cancel Button */
+    #edit-profile-page .edit-profile-cancel-btn {
+        height: 50px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        background-color: #6c757d;
+        border: none;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+    
+    #edit-profile-page .edit-profile-cancel-btn:hover {
+        background-color: #5a6268;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Error Message Styling */
+    #edit-profile-page .text-danger {
+        font-size: 0.9rem;
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        #edit-profile-page .edit-profile-card {
+            padding: 30px;
+        }
+    
+        #edit-profile-page .edit-profile-title {
+            font-size: 1.5rem;
+        }
+    }
     

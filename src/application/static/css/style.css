@@ -1,4 +1,4 @@
-/* Navbar */
+/**************************** Navbar ****************************/
 .navbar {
     height: 5rem;
 }
@@ -45,12 +45,7 @@
 
 
 
-
-
-
-
-
-
+/**************************** Homepage when user is loggedout ****************************/
 /* Main Content */
 /* Welcome Section */
 .title-1 {
@@ -107,7 +102,7 @@
 }
 
 
-/* Card Customizations (Optional) */
+/* Card Customizations  */
 .card {
     border: none; /* Remove card borders for a cleaner look */
 }
@@ -162,6 +157,137 @@
     margin-bottom: 0 !important;
     padding-bottom: 0;
 }
+
+
+
+/**************************** Homepage when user is logged-in ****************************/
+/*************** User Homepage  ***************/
+
+.user-homepage {
+    padding: 3rem;
+}
+
+/* User Profile Card */
+.user-profile-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 18rem;
+    margin: 0 auto; /* Center-align card in its column */
+}
+
+.user-profile-card .card-body {
+    padding: 20px;
+}
+
+.user-profile-card .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Main Content Adjustments */
+.user-homepage .title-1-logged {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    padding-top: 3rem;
+    margin-left: 1.5rem;
+}
+
+.user-homepage .text-logged {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 3rem !important;
+    margin-left: 1.5rem;
+}
+
+/* Footer Spacing and Full-Width */
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #85dbfb;
+    color: #333;
+    height: 10rem; /* Fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Optional: Add a subtle top border */
+}
+/****** Screen Responsiveness *******/
+/* Small Devices (Mobiles) */
+@media (max-width: 576px) {
+    #user-homepage {
+        padding: 10px;
+    }
+
+    .user-profile-card {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #user-homepage .logged {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    #user-homepage .text-logged {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 577px) and (max-width: 992px) {
+    #user-homepage {
+        padding: 20px;
+    }
+
+    #user-homepage .logged {
+        font-size: 2rem;
+    }
+
+    #user-homepage .text-logged {
+        font-size: 1.1rem;
+    }
+}
+
+/* Large Devices (Laptops and Desktops) */
+@media (min-width: 993px) {
+    #user-homepage .logged {
+        font-size: 2.5rem;
+    }
+
+    #user-homepage .text-logged {
+        font-size: 1.2rem;
+    }
+}
+
+/* Extra Large Devices */
+@media (min-width: 1200px) {
+    #user-homepage {
+        padding: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* sign-in */
 /* Sign In Page */
@@ -337,78 +463,7 @@
     }
 }
 
-/* user_profile.html */
-/* User Profile Page */
-#user-profile-page {
-    background-color: #f9f9f9;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Profile Card */
-#user-profile-page .profile-card {
-    background-color: #ffffff;
-    max-width: 500px;
-    width: 100%;
-    border-radius: 12px;
-    padding: 40px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
-}
-
-/* Profile Picture */
-#user-profile-page #profile-avatar {
-    border: 3px solid #007bff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Titles and Info */
-#user-profile-page .profile-title {
-    font-size: 1.8rem;
-    color: #343a40;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-#user-profile-page .profile-info {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-/* Buttons */
-#user-profile-page .profile-btn {
-    height: 50px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
-
-#user-profile-page .btn-primary.profile-btn {
-    background-color: #007bff;
-    border: none;
-}
-
-#user-profile-page .btn-primary.profile-btn:hover {
-    background-color: #0056b3;
-    transform: scale(1.02);
-}
-
-#user-profile-page .btn-danger.profile-btn {
-    background-color: #dc3545;
-    border: none;
-}
-
-#user-profile-page .btn-danger.profile-btn:hover {
-    background-color: #c82333;
-    transform: scale(1.02);
-}
-
-
-/* edit_profile.html */
+/*************************** Edit Profile Page **************************/
 /* Edit Profile Page */
 #edit-profile-page {
     background-color: #f9f9f9;
@@ -425,7 +480,7 @@
     width: 100%;
     border-radius: 12px;
     padding: 40px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
 }
 
@@ -457,6 +512,35 @@
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
     outline: none;
+}
+
+/* Custom Checkbox */
+.custom-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 2px solid #007bff;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.custom-checkbox:checked {
+    background-color: #007bff;
+    border-color: #0056b3;
+}
+
+.custom-checkbox-label {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #555;
+    cursor: pointer;
 }
 
 /* Submit Button */
@@ -493,11 +577,6 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Error Message Styling */
-#edit-profile-page .text-danger {
-    font-size: 0.9rem;
-}
-
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     #edit-profile-page .edit-profile-card {
@@ -507,6 +586,24 @@
     #edit-profile-page .edit-profile-title {
         font-size: 1.5rem;
     }
+
+    .custom-checkbox-label {
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer Adjustments */
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #85dbfb;
+    color: #333;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
@@ -1765,45 +1862,6 @@
   
 
   
-
-/* Footer spacing adjustments */
-footer {
-    background-color: #85dbfb !important; /* Ensure background color is applied */
-    color: #333 !important; /* Ensure text color is applied */
-    margin-top: 0 !important; /* Remove any top margin */
-    margin-bottom: 0 !important;
-    height: 10rem !important; /* Fixed height */
-    padding: 0 !important; /* Remove any additional padding */
-    
-    /* Flexbox for centering */
-    display: flex !important; /* Force Flexbox layout */
-    justify-content: center !important; /* Horizontally center content */
-    align-items: center !important; /* Vertically center content */
-    text-align: center !important; /* Center-align text inside the footer */
-    width: 100% !important; /* Ensure the footer spans the full width */
-}
-
-
-/* Align card and h1 horizontally */
-/* User Card Adjustments */
-.user-card {
-    max-width: 15rem;
-    margin: 0 auto; /* Center-align card in its column */
-}
-
-/* Main Content Adjustments */
-.logged {
-    font-size: 2rem;
-    line-height: 1;
-    word-break: break-word;
-    margin-bottom: 1rem;
-}
-
-.text-logged {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    color: #555; /* Optional: Softer text color */
-}
 
 
 
