@@ -1,10 +1,12 @@
 """Forms for Diagnosis Tool"""
 
 from flask_wtf import FlaskForm
-from wtforms import StringField, IntegerField, PasswordField, SubmitField, BooleanField
+from wtforms import StringField, IntegerField, PasswordField, SubmitField, BooleanField, FileField
 from wtforms.validators import DataRequired, Email, Length, Optional, URL, ValidationError
 from flask_wtf.file import FileField, FileAllowed 
 from src.application.models import db, connect_db, User, Step, Sign, SignExample
+from flask_wtf.file import FileField, FileAllowed
+
 
 ##############################################################################################
 # CUSTOM VALIDATORS
@@ -33,6 +35,7 @@ class SignupForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired(), Length(max=128)])
     img_url = FileField('(Optional) Profile Image', validators=[Optional(), FileAllowed(['jpg', 'png', 'jpeg'], 'Images only!')])
     submit = SubmitField('Register New User')
+    
 
 # Signin form
 class SigninForm(FlaskForm):
@@ -42,6 +45,7 @@ class SigninForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired(), Length(max=128)])
     submit = SubmitField('Signin User')
 
+# Update Profile Form
 class UserProfileForm(FlaskForm):
     """For to update user's profile."""
 
@@ -51,9 +55,10 @@ class UserProfileForm(FlaskForm):
     img_url = FileField('(Optional) Update Profile Image', 
                         validators=[FileAllowed(['jpg', 'png', 'jpeg'], 'Images only!')])
     # Optional remove image
-    # remove_image = BooleanField('Remove current image?')
+    remove_image = BooleanField('Remove current image?')
     password = PasswordField('Password', validators=[DataRequired(), Length(max=128)])
     submit = SubmitField('Update Profile')
+
 
 
 

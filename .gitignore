@@ -1,9 +1,52 @@
-venv/
+# History files
+.history/
 
-src/__pycache__
+# vscode
+.vscode/
 
+# Docs 
+docs/Borradores.html
 docs/Capstone-guidelines.md
+docs/Categories_Subcategories_Disorders.docx
+docs/Clusters-and-descriptions.docx
+docs/Definition-of-a-Cluster-and-category.docx
+docs/directory_structure.md
+docs/Disorders.docx
+docs/dsm_content_for_db.txt
+docs/explanations_and_steps.md
+docs/FLASK_APP-var.md
+docs/LANDING_PAGE-LOGGEDOUT_USER.docx
+docs/List-of-categories-and-descriptions-only.docx
+docs/PERSONALITY-DISORDERS-CLUSTERS-AND-DISORDERS-ADDITIONAL-INFO.docx
+docs/SIGNS_PAGE.docx
+docs/STEPS_PAGE.docx
+docs/SYMPTOMS-BY-CATEGORY.docx
+docs/SYMPTOMS_PAGE.docx
 
+# __pycache__ files
+src/__pycache__/
+src/application/__pycache__/
+src/application/blueprints/__pycache__/
+src/application/blueprints/dsm/__pycache__/
+src/application/blueprints/homepage/__pycache__/
+src/application/blueprints/psychopathology/__pycache__/
+src/application/blueprints/user/__pycache__/
+src/application/static/utils/__pycache__/
+src/main/__pycache__/
+
+# Images and upload files
+src/application/static/images/
+src/application/static/uploads/
+
+# Secret keys files
 src/secret_keys.py
 
-docs/
+# static folder
+static\uploads\
+
+# Virtual Environment
+venv/
+
+
+
+

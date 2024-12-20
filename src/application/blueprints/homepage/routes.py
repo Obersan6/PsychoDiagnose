@@ -83,29 +83,49 @@ homepage_bp = Blueprint('homepage', __name__, template_folder=template_path)
 #             'homepage/home.html',
 #             user_logged_in=False
 #         )
-@homepage_bp.route('/', methods=['GET', 'POST'])
+
+# Previous homepage that worked with search bar
+# @homepage_bp.route('/', methods=['GET', 'POST'])
+# def homepage():
+#     """Home page.
+#     - If user is logged out, show signed-out homepage (home.html).
+#     - If user is logged in, show signed-in homepage with user details and a search form."""
+    
+#     form = SearchForm()
+
+#     if g.user:
+#         # Process form submission
+#         if form.validate_on_submit():
+#             search_query = form.search_query.data.strip()
+#             return redirect(url_for('homepage.search', query=search_query))
+
+#         # Pass the user object and form to the template
+#         return render_template(
+#             'home.html',
+#             user_logged_in=True,
+#             user=g.user,  # Pass the entire user object
+#             form=form
+#         )
+#     else:
+#         # Render template without form or user details for logged-out users
+#         return render_template('home.html', user_logged_in=False)
+
+#  this one works
+@homepage_bp.route('/', methods=['GET'])
 def homepage():
     """Home page.
     - If user is logged out, show signed-out homepage (home.html).
-    - If user is logged in, show signed-in homepage with user details and a search form."""
+    - If user is logged in, show signed-in homepage with user details."""
     
-    form = SearchForm()
-
     if g.user:
-        # Process form submission
-        if form.validate_on_submit():
-            search_query = form.search_query.data.strip()
-            return redirect(url_for('homepage.search', query=search_query))
-
-        # Pass the user object and form to the template
+        # Pass the user object to the template
         return render_template(
             'home.html',
             user_logged_in=True,
-            user=g.user,  # Pass the entire user object
-            form=form
+            user=g.user  # Pass the entire user object
         )
     else:
-        # Render template without form or user details for logged-out users
+        # Render template without user details for logged-out users
         return render_template('home.html', user_logged_in=False)
 
 

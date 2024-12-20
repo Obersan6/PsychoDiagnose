@@ -4,6 +4,7 @@ from sqlalchemy import Column, Integer, String, Text, ForeignKey, Table, UniqueC
 from sqlalchemy.orm import relationship
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
+# from datetime import datetime
 
 db = SQLAlchemy()
 bcrypt = Bcrypt()
@@ -30,7 +31,9 @@ class User(db.Model):
     first_name = db.Column(db.String(150), nullable=False)
     last_name = db.Column(db.String(150), nullable=False)
     password_hash = db.Column(db.String(128), nullable=False)
-    img_url = db.Column(db.String(500), nullable=True)
+    img_url = db.Column(db.String(500), nullable=False, default='/static/uploads/default.jpg')
+    # created_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    # updated_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow)
 
     def __repr__(self):
         return f"<User id={self.id} username={self.username} email={self.email}>"

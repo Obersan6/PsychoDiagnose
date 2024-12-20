@@ -114,73 +114,165 @@
 // }
 
 // Autocomplete suggestions for search engines
+// async function setupAutocomplete(inputId, suggestionsContainerId, endpoint) {
+//     const input = document.getElementById(inputId);
+//     const suggestionsContainer = document.getElementById(suggestionsContainerId);
+
+//     if (!input || !suggestionsContainer) {
+//         console.error(`Invalid input or suggestions container: ${inputId}, ${suggestionsContainerId}`);
+//         return;
+//     }
+
+//     input.addEventListener('input', async () => {
+//         const query = input.value.trim();
+//         console.log(`User query: ${query}`); // Debug log
+
+//         // Clear suggestions if input is empty
+//         if (!query) {
+//             suggestionsContainer.innerHTML = '';
+//             return;
+//         }
+
+//         try {
+//             const response = await fetch(`${endpoint}?query=${query}`);
+//             console.log(`Fetch response status: ${response.status}`); // Debug log
+//             if (!response.ok) {
+//                 throw new Error(`HTTP error! Status: ${response.status}`);
+//             }
+
+//             const suggestions = await response.json();
+//             console.log(`Suggestions received: ${JSON.stringify(suggestions)}`); // Debug log
+
+//             // Clear previous suggestions
+//             suggestionsContainer.innerHTML = '';
+
+//             // If no suggestions, exit early
+//             if (!suggestions.length) {
+//                 return;
+//             }
+
+//             // Populate suggestions
+//             suggestions.forEach(suggestion => {
+//                 const suggestionItem = document.createElement('div');
+//                 suggestionItem.textContent = suggestion;
+//                 suggestionItem.classList.add('suggestion-item');
+
+//                 // Handle click on suggestion
+//                 suggestionItem.addEventListener('click', () => {
+//                     input.value = suggestion;
+//                     suggestionsContainer.innerHTML = '';
+//                 });
+
+//                 suggestionsContainer.appendChild(suggestionItem);
+//             });
+//         } catch (error) {
+//             console.error(`Error fetching suggestions from ${endpoint}:`, error);
+//         }
+//     });
+
+//     // Clear suggestions on blur
+//     input.addEventListener('blur', () => {
+//         setTimeout(() => (suggestionsContainer.innerHTML = ''), 100);
+//     });
+// }
+
+// // Apply autocomplete to both inputs
+// setupAutocomplete('search_category', 'suggestions-category', '/categories/autocomplete');
+// setupAutocomplete('search_disorder', 'suggestions-disorder', '/disorders/autocomplete');
+// setupAutocomplete('search_sign', 'suggestions-sign', '/signs/autocomplete');
+// setupAutocomplete('search_symptom', 'suggestions-symptom', '/symptoms/autocomplete');
+
 async function setupAutocomplete(inputId, suggestionsContainerId, endpoint) {
     const input = document.getElementById(inputId);
     const suggestionsContainer = document.getElementById(suggestionsContainerId);
 
-    if (!input || !suggestionsContainer) {
-        console.error(`Invalid input or suggestions container: ${inputId}, ${suggestionsContainerId}`);
-        return;
-    }
+    let suggestions = [];
+    let selectedIndex = -1;
+    let isInteractingWithSuggestions = false;
 
+    // Fetch and display suggestions when the user types
     input.addEventListener('input', async () => {
         const query = input.value.trim();
-        console.log(`User query: ${query}`); // Debug log
 
-        // Clear suggestions if input is empty
-        if (!query) {
-            suggestionsContainer.innerHTML = '';
-            return;
-        }
+        // Reset suggestions and index
+        suggestions = [];
+        selectedIndex = -1;
+        suggestionsContainer.innerHTML = '';
+
+        if (!query) return;
 
         try {
-            const response = await fetch(`${endpoint}?query=${query}`);
-            console.log(`Fetch response status: ${response.status}`); // Debug log
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
+            // Fetch matching suggestions
+            const response = await fetch(`${endpoint}?query=${encodeURIComponent(query)}`);
+            if (!response.ok) throw new Error(`Error: ${response.statusText}`);
 
-            const suggestions = await response.json();
-            console.log(`Suggestions received: ${JSON.stringify(suggestions)}`); // Debug log
-
-            // Clear previous suggestions
-            suggestionsContainer.innerHTML = '';
-
-            // If no suggestions, exit early
-            if (!suggestions.length) {
-                return;
-            }
+            suggestions = await response.json();
 
             // Populate suggestions
-            suggestions.forEach(suggestion => {
+            suggestions.forEach((suggestion, index) => {
                 const suggestionItem = document.createElement('div');
                 suggestionItem.textContent = suggestion;
                 suggestionItem.classList.add('suggestion-item');
+                suggestionItem.dataset.index = index;
 
                 // Handle click on suggestion
-                suggestionItem.addEventListener('click', () => {
-                    input.value = suggestion;
-                    suggestionsContainer.innerHTML = '';
+                suggestionItem.addEventListener('mousedown', () => {
+                    isInteractingWithSuggestions = true; // Mark interaction
+                    input.value = suggestion; // Set input value to selected suggestion
+                    suggestionsContainer.innerHTML = ''; // Clear suggestions
+                    input.form.submit(); // Submit the form
                 });
 
                 suggestionsContainer.appendChild(suggestionItem);
             });
         } catch (error) {
-            console.error(`Error fetching suggestions from ${endpoint}:`, error);
+            console.error(`Autocomplete error: ${error}`);
         }
     });
 
-    // Clear suggestions on blur
+    // Handle keyboard navigation and selection
+    input.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+            e.preventDefault();
+            if (e.key === 'ArrowDown') {
+                selectedIndex = (selectedIndex + 1) % suggestions.length;
+            } else if (e.key === 'ArrowUp') {
+                selectedIndex = (selectedIndex - 1 + suggestions.length) % suggestions.length;
+            }
+            updateSuggestionHighlight(suggestionsContainer, selectedIndex);
+        } else if (e.key === 'Enter') {
+            e.preventDefault();
+            if (selectedIndex >= 0) {
+                input.value = suggestions[selectedIndex]; // Use selected suggestion
+                suggestionsContainer.innerHTML = ''; // Clear suggestions
+                input.form.submit(); // Submit the form
+            }
+        }
+    });
+
+    // Clear suggestions when input loses focus (delayed to allow click events)
     input.addEventListener('blur', () => {
-        setTimeout(() => (suggestionsContainer.innerHTML = ''), 100);
+        if (!isInteractingWithSuggestions) {
+            setTimeout(() => (suggestionsContainer.innerHTML = ''), 100);
+        }
+        isInteractingWithSuggestions = false; // Reset interaction flag
     });
 }
 
-// Apply autocomplete to both inputs
+// Highlight the currently selected suggestion
+function updateSuggestionHighlight(container, index) {
+    const items = container.querySelectorAll('.suggestion-item');
+    items.forEach((item, idx) => {
+        item.classList.toggle('highlighted', idx === index);
+    });
+}
+
+// Apply the autocomplete function to the search inputs
 setupAutocomplete('search_category', 'suggestions-category', '/categories/autocomplete');
 setupAutocomplete('search_disorder', 'suggestions-disorder', '/disorders/autocomplete');
 setupAutocomplete('search_sign', 'suggestions-sign', '/signs/autocomplete');
 setupAutocomplete('search_symptom', 'suggestions-symptom', '/symptoms/autocomplete');
+
 
 
 // // Handle click on dropdown for category and append onto card
@@ -193,3 +285,4 @@ setupAutocomplete('search_symptom', 'suggestions-symptom', '/symptoms/autocomple
 //     card.innerHTML = <div class="card-body">${selectedCategory}</div>
 //     cardContainer.appendChild(card);
 // });
+

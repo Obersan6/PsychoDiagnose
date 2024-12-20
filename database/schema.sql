@@ -8,7 +8,9 @@ CREATE TABLE users (
     first_name VARCHAR(150) NOT NULL,
     last_name VARCHAR(150) NOT NULL,
     password VARCHAR(128) NOT NULL,
-    img_url VARCHAR(500)
+    img_url VARCHAR(500) DEFAULT '/static/uploads/default.jpg',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 -- DSM-5-TR AREA 
