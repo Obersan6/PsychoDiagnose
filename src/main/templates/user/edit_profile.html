@@ -22,11 +22,13 @@
           <img src="{{ url_for('static', filename=user.img_url) }}" 
                alt="{{ user.username }}'s current profile picture" 
                class="rounded-circle" width="100" height="100">
+      {% else %}
+          <i class="bi bi-person-circle" style="font-size: 5rem; color: rgb(11, 34, 244);"></i>
       </div>
       {% endif %}
   
       <!-- Input fields -->
-      {% for field in form if field.widget.input_type != 'hidden' and field.widget.input_type != 'submit' %}
+      {% for field in form if field.name != 'remove_image' and field.widget.input_type != 'hidden' and field.widget.input_type != 'submit' %}
       <div class="form-group mb-4">
           {{ field.label(class="form-label edit-profile-label") }}
           {{ field(class="form-control edit-profile-input", placeholder=field.label.text) }}
@@ -37,9 +39,11 @@
       {% endfor %}
   
       <!-- Remove image option -->
-      <div class="form-check mb-4">
-          <input type="checkbox" class="form-check-input" id="removeImage" name="remove_image">
-          <label class="form-check-label" for="removeImage">Delete Current Image</label>
+      <div class="form-check mt-3">
+        <input class="form-check-input" type="checkbox" id="removeImageCheckbox" name="remove_image">
+        <label class="form-check-label fw-bold text-danger" for="removeImageCheckbox">
+          Remove current profile image? 
+        </label>
       </div>
   
       <!-- Action Buttons -->
