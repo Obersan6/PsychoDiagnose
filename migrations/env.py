@@ -22,14 +22,24 @@ def get_engine():
     except (TypeError, AttributeError):
         # this works with Flask-SQLAlchemy>=3
         return current_app.extensions['migrate'].db.engine
-
-
+    
 def get_engine_url():
     try:
-        return get_engine().url.render_as_string(hide_password=False).replace(
-            '%', '%%')
+        url = get_engine().url.render_as_string(hide_password=False).replace('%', '%%')
+        logger.info(f"Database URL: {url}")  # Log the database URL
+        return url
     except AttributeError:
-        return str(get_engine().url).replace('%', '%%')
+        url = str(get_engine().url).replace('%', '%%')
+        logger.info(f"Database URL: {url}")  # Log the database URL
+        return url
+
+
+# def get_engine_url():
+#     try:
+#         return get_engine().url.render_as_string(hide_password=False).replace(
+#             '%', '%%')
+#     except AttributeError:
+#         return str(get_engine().url).replace('%', '%%')
 
 
 # add your model's MetaData object here

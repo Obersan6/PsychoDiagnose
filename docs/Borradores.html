@@ -437,4 +437,23 @@ def search_category():
             font-size: 1.5rem;
         }
     }
-    
+  
+
+<!-- app.py nuevo -->
+def create_app(config_class=None):
+"""Factory to create a Flask application."""
+app = Flask(__name__, static_folder='../application/static')
+
+# Set the configuration
+config_class = config_class or DevelopmentConfig
+app.config.from_object(config_class)
+
+# Use SECRET_KEY from environment or config file
+app.config['SECRET_KEY'] = SECRET_KEY  # This can remain here
+
+# No need to explicitly set SQLALCHEMY_DATABASE_URI here
+# The configuration class will manage it (via config.py)
+
+# Configure Flask Debug Toolbar to not intercept redirects
+app.config["DEBUG_TB_INTERCEPT_REDIRECTS"] = False
+...

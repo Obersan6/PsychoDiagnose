@@ -7,10 +7,10 @@ CREATE TABLE users (
     email VARCHAR(254) NOT NULL UNIQUE,
     first_name VARCHAR(150) NOT NULL,
     last_name VARCHAR(150) NOT NULL,
-    password VARCHAR(128) NOT NULL,
-    img_url VARCHAR(500) DEFAULT '/static/uploads/default.jpg',
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    password_hash VARCHAR(128) NOT NULL,
+    img_url VARCHAR(500) DEFAULT '/static/uploads/default.jpg'
+    -- created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    -- updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 -- DSM-5-TR AREA 
@@ -30,20 +30,6 @@ CREATE TABLE categories (
     id SERIAL PRIMARY KEY,
     name VARCHAR(150) NOT NULL UNIQUE, 
     description TEXT NOT NULL
-)
-
--- Describes disorders, and it's a diagnosis.
--- It references tables: 'categories', and 'clusters'.
--- It's referenced by the tables: 'steps', 'disorders_signs', 'disorders_symptoms', and 'differential_diagnosis'.
-CREATE TABLE disorders (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(150) NOT NULL,
-    description TEXT NOT NULL,
-    criteria TEXT NOT NULL
-    category_id INTEGER NOT NULL,
-    cluster_id INTEGER,
-    FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE,
-    FOREIGN KEY (cluster_id) REFERENCES clusters(id) ON DELETE SET NULL
 );
 
 -- For those categories which have sub-groups of disorders.
@@ -56,6 +42,21 @@ CREATE TABLE clusters (
     FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE
 );
 
+-- Describes disorders, and it's a diagnosis.
+-- It references tables: 'categories', and 'clusters'.
+-- It's referenced by the tables: 'steps', 'disorders_signs', 'disorders_symptoms', and 'differential_diagnosis'.
+CREATE TABLE disorders (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(150) NOT NULL,
+    description TEXT NOT NULL,
+    criteria TEXT NOT NULL,
+    category_id INTEGER NOT NULL,
+    cluster_id INTEGER,
+    FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE,
+    FOREIGN KEY (cluster_id) REFERENCES clusters(id) ON DELETE SET NULL
+);
+
+
 -- Describes the steps of the diagnostic process.
 -- References 'disorders'.
 CREATE TABLE steps (
@@ -66,8 +67,11 @@ CREATE TABLE steps (
     disorder_id INTEGER NULL,  -- Allow NULL values for this version
     FOREIGN KEY (disorder_id) REFERENCES disorders(id) ON DELETE CASCADE,
     -- Change UNIQUE constraints to include only non-NULL `disorder_id`
-    UNIQUE (disorder_id, step_number) WHERE disorder_id IS NOT NULL,
-    UNIQUE (disorder_id, step_name) WHERE disorder_id IS NOT NULL
+    -- UNIQUE (disorder_id, step_number) WHERE disorder_id IS NOT NULL,
+    -- UNIQUE (disorder_id, step_name) WHERE disorder_id IS NOT NULL
+    CONSTRAINT unique_step_number UNIQUE (disorder_id, step_number),
+    CONSTRAINT unique_step_name UNIQUE (disorder_id, step_name)
+
 );
 
 -- Junction table - References 'disorders'.

@@ -1,7 +1,7 @@
 import os
 
 class Config:
-    # Base configuration for all environments
+    """Base configuration for all environments."""
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_ECHO = True
     DEBUG_TB_INTERCEPT_MODIFICATIONS = False

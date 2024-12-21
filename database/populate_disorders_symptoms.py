@@ -11,8 +11,66 @@ sys.path.insert(0, project_root)
 from src.application.models import db, DisorderSymptom  # Import DisorderSymptom model
 from src.main.app import app  # Import the Flask app
 
+# # Path to the JSON file
+# json_file_path = os.path.join(current_dir, "disorders_symptoms.json")
+
+# def populate_disorders_symptoms():
+#     """Populate the disorders_symptoms table from a JSON file."""
+#     with app.app_context():  # Use Flask app context
+#         try:
+#             # Load data from the JSON file
+#             with open(json_file_path, "r", encoding="utf-8") as file:
+#                 disorders_symptoms_data = json.load(file)
+
+#             print(f"Loaded {len(disorders_symptoms_data)} records from {json_file_path}.")
+
+#             # Insert data into the table
+#             for record in disorders_symptoms_data:
+#                 disorder_id = record.get("disorder_id")
+#                 symptom_id = record.get("symptom_id")
+
+#                 # Skip invalid records
+#                 if not disorder_id or not symptom_id:
+#                     print(f"Skipping invalid record: {record}")
+#                     continue
+
+#                 # Prepare the insert statement
+#                 insert_stmt = insert(DisorderSymptom).values(
+#                     disorder_id=disorder_id,
+#                     symptom_id=symptom_id,
+#                 )
+
+#                 # Handle conflicts by ignoring duplicates
+#                 on_conflict_stmt = insert_stmt.on_conflict_do_nothing()
+
+#                 # Execute the statement
+#                 db.session.execute(on_conflict_stmt)
+
+#             # Commit the transaction
+#             db.session.commit()
+#             print("disorders_symptoms table populated successfully.")
+
+#         except Exception as e:
+#             db.session.rollback()  # Rollback the transaction on error
+#             print(f"An error occurred: {e}")
+
+#         finally:
+#             db.session.close()  # Close the session
+
+# if __name__ == "__main__":
+#     populate_disorders_symptoms()
+
+
+# NEW VERSION TO POPULATE
 # Path to the JSON file
 json_file_path = os.path.join(current_dir, "disorders_symptoms.json")
+
+def validate_disorder_symptom(record):
+    """Validate a disorder_symptom record before inserting it."""
+    if record.get("disorder_id") is None or record.get("symptom_id") is None:
+        print(f"Skipping invalid record: {record}")
+        return False
+    return True
 
 def populate_disorders_symptoms():
     """Populate the disorders_symptoms table from a JSON file."""
@@ -24,15 +82,14 @@ def populate_disorders_symptoms():
 
             print(f"Loaded {len(disorders_symptoms_data)} records from {json_file_path}.")
 
+            # Validate and filter records
+            valid_records = [record for record in disorders_symptoms_data if validate_disorder_symptom(record)]
+            print(f"{len(valid_records)} valid records to insert.")
+
             # Insert data into the table
-            for record in disorders_symptoms_data:
+            for record in valid_records:
                 disorder_id = record.get("disorder_id")
                 symptom_id = record.get("symptom_id")
-
-                # Skip invalid records
-                if not disorder_id or not symptom_id:
-                    print(f"Skipping invalid record: {record}")
-                    continue
 
                 # Prepare the insert statement
                 insert_stmt = insert(DisorderSymptom).values(
