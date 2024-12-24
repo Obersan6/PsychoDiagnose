@@ -1,4 +1,14 @@
-<!-- Edit user profile -->
+<!-- 
+  Template: edit_profile.html
+  Purpose: Allows users to edit their profile information, including their profile picture.
+  Context: This template is part of the user management functionality in the application.
+           It dynamically displays the user's current profile information and provides input fields for updating details.
+  Features:
+    - Displays the current profile image or a placeholder if none exists.
+    - Editable input fields for user information with validation feedback.
+    - Option to remove the current profile image.
+    - Buttons for saving changes or canceling edits.
+-->
 
 {% extends 'base.html' %}
 
@@ -16,13 +26,14 @@
     <form method="POST" action="{{ url_for('user.edit_profile', user_id=user.id) }}" enctype="multipart/form-data">
       {{ form.csrf_token() }}
   
-      <!-- Show current profile image -->
+      <!-- Display current profile image -->
       <div class="text-center mb-3">
         {% if user.img_url %}  
           <img src="{{ url_for('static', filename=user.img_url) }}" 
                alt="{{ user.username }}'s current profile picture" 
                class="rounded-circle" width="100" height="100">
         {% else %}
+         <!-- Display a placeholder icon if no profile image exists -->
           <div class="icon-container">
             <i class="bi bi-person-circle" style="font-size: 5rem; color: rgb(11, 34, 244);"></i>
           </div>
@@ -30,7 +41,7 @@
       </div>
     
   
-      <!-- Input fields -->
+      <!-- Input fields for Profile Information-->
       {% for field in form if field.name != 'remove_image' and field.widget.input_type != 'hidden' and field.widget.input_type != 'submit' %}
       <div class="form-group mb-4">
           {{ field.label(class="form-label edit-profile-label") }}
@@ -41,7 +52,7 @@
       </div>
       {% endfor %}
 
-      <!-- Remove image option -->
+      <!-- Option to Remove Current Profile Image -->
       <div class="custom-checkbox-wrapper mt-3">
         <input class="custom-checkbox" type="checkbox" id="removeImageCheckbox" name="remove_image">
         <label class="custom-checkbox-label" for="removeImageCheckbox">
@@ -52,7 +63,9 @@
   
       <!-- Action Buttons -->
       <div class="d-flex justify-content-between mt-4">
+          <!-- Submit Button -->
           {{ form.submit(class="btn btn-primary edit-profile-btn") }}
+          <!-- Cancel Button -->
           <a href="{{ url_for('user.user_profile', user_id=user.id) }}" class="btn btn-secondary edit-profile-cancel-btn">Cancel</a>
       </div>
   </form>

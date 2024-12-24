@@ -1,4 +1,8 @@
-<!-- Show cluster, description and list of disorders in the cluster -->
+<!-- 
+ Template: cluster.html
+ Purpose: Displays details about a specific diagnostic cluster, including:
+    - The cluster name and description
+    - A list of disorders associated with the cluster -->
 
 {% extends 'base.html' %}
 
@@ -8,7 +12,7 @@
 <div id="cluster-details-page" class="container-fluid d-flex flex-column min-vh-100">
   <!-- Main Content -->
   <div class="row flex-grow-1">
-    <!-- Left Column: Cluster Details -->
+    <!-- Left Column: Displays cluster details -->
     <div class="col-md-8">
       <div class="cluster-card shadow-sm p-4 rounded mb-4">
         <h1 class="cluster-title">{{ cluster.name }}</h1>
@@ -16,13 +20,14 @@
       </div>
     </div>
 
-    <!-- Right Column: List of Disorders -->
+    <!-- Right Column: List of Disorders in the Cluster-->
     <div class="col-md-4">
       <h2 class="disorders-title">List of Disorders in this Cluster</h2>
       {% if disorders %}
       <ul class="list-group disorders-list mt-3">
         {% for disorder in disorders %}
         <li class="list-group-item d-flex align-items-center">
+           <!-- Link to specific disorder details -->
           <i class="bi bi-arrow-right-circle me-2 disorder-icon" aria-hidden="true"></i>
           <a href="{{ url_for('dsm.get_disorder', category_id=cluster.category_id, disorder_id=disorder.id) }}" class="disorder-link">
             {{ disorder.name }}
@@ -31,6 +36,7 @@
         {% endfor %}
       </ul>
       {% else %}
+      <!-- Message displayed if no disorders are found -->
       <p class="no-disorders mt-3">No disorders found in this cluster.</p>
       {% endif %}
     </div>

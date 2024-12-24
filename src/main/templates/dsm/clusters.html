@@ -1,11 +1,16 @@
-<!-- Show a list with all the clusters. -->
+<!-- 
+  Template: clusters.html
+  Purpose: Displays clusters.
+-->
+
+
 {% extends 'base.html' %}
 
 {% block title %}Clusters{% endblock %}
 
 {% block content %}
 <div id="clusters-page" class="container">
-  <!-- Title and Description -->
+  <!-- Title and Introductory Description -->
   <h1 class="clusters-title-1">Clusters</h1>
   <p class="clusters-section-text">
     Clusters group related disorders within a category into smaller, more specific groups. These clusters are exclusive to personality disorders and help clinicians refine diagnoses by focusing on shared traits and patterns.
@@ -13,19 +18,21 @@
 
   <!-- List of Clusters -->
   {% if clusters %}
+  <!-- Grid Layout for Clusters -->
   <div class="row justify-content-center mt-4">
     {% for cluster in clusters %}
+    <!-- Individual Cluster Card -->
     <div class="col-md-4">
       <div class="card cluster-card mb-4">
         <div class="card-body d-flex flex-column">
-          <!-- Icon and Title -->
+          <!-- Icon and Cluster Name -->
           <h2 class="cluster-card-title">
              {{ cluster.name }}
           </h2>
           <i class="bi bi-layers me-2 cluster-icon" style="font-size: 3rem; color: #007bff;"></i>
           
           
-          <!-- Button at the Bottom -->
+          <!-- Link to Cluster Details -->
           <div class="mt-auto">
             <a href="{{ url_for('dsm.get_cluster', cluster_id=cluster.id) }}" class="btn btn-primary">
               View Details
@@ -37,6 +44,7 @@
     {% endfor %}
   </div>
   {% else %}
+  <!-- Message if no clusters are available -->
   <p class="text-muted text-center">No clusters available.</p>
   {% endif %}
 </div>

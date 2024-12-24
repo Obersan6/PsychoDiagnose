@@ -1,4 +1,13 @@
-<!-- Display a list of all the symptoms and a one input search form -->
+<!-- 
+  Template: symptom.html
+  Purpose: Displays a list of all symptom along with descriptions, examples, and a search functionality for users to explore symptoms.
+  Context: Part of the DSM-5-TR educational application, this template provides users with an overview of signs, their significance, and their association with specific disorders.
+  Features:
+    - Search bar for filtering symptom.
+    - Explanation of symptom and their importance in diagnostics.
+    - Dynamic list of symptom with links to detailed views.
+    - Flash messages for user feedback.
+-->
 
 {% extends 'base.html' %}
 
@@ -6,21 +15,23 @@
 
 {% block content %}
 
-<!-- Search Bar -->
 <div id="symptoms-page" class="container">
-  <!-- Search Bar at the Top -->
+  <!-- Search Bar Section -->
   <div class="search-container">
     <form method="POST" action="{{ url_for('psychopathology.search_symptom') }}" class="d-flex align-items-center">
+      <!-- CSRF Token -->
       {{ form.hidden_tag() }}
+      <!-- Search Input -->
       {{ form.search_query(placeholder="Search symptoms...", class="form-control me-2", id="search_symptom") }}
       <button type="submit" class="btn btn-outline-info">Search</button>
     </form>
+     <!-- Autocomplete Suggestions -->
     <div id="suggestions-symptom" class="suggestions-container mt-2"></div>
   </div>
 
-  <!-- Page Content -->
+  <!-- Page Content Section -->
   <div class="row mt-5">
-    <!-- Left Column: Main Content -->
+    <!-- Left Column: Explanation of Symptoms -->
     <div class="col-md-8">
       <h1 class="symptoms-title-1">Symptoms</h1>
       <h2 class="mb-4 symptoms-title-2">What is a Symptom?</h2>
@@ -54,11 +65,12 @@
       </ul>
     </div>
 
-    <!-- Right Column: List of Symptoms -->
+    <!-- Right Column: Dynamic List of Symptoms -->
     <div class="col-md-4">
       <h2 class="symptoms-title-2">List of Symptoms</h2>
       <ul class="list-group symptoms-list">
         {% for symptom in symptoms %}
+        <!-- Individual Symptoms Link -->
         <li class="list-group-item">
           <i class="bi bi-search me-2 vibrant-icon" aria-hidden="true"></i>
           <a href="{{ url_for('psychopathology.get_symptom', symptom_id=symptom.id) }}">{{ symptom.name }}</a>
@@ -68,7 +80,7 @@
     </div>
   </div>
 
-  <!-- Flash Messages -->
+  <!-- Flash Messages Section-->
   {% with messages = get_flashed_messages(with_categories=true) %}
     {% if messages %}
       <div class="mt-3">

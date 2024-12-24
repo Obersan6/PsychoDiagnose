@@ -4,6 +4,9 @@
 # vscode
 .vscode/
 
+# Diagram files
+database/diagrams/schema_diagram_DRAFT.png
+
 # Docs 
 docs/Borradores.html
 docs/Capstone-guidelines.md
@@ -22,8 +25,12 @@ docs/SIGNS_PAGE.docx
 docs/STEPS_PAGE.docx
 docs/SYMPTOMS-BY-CATEGORY.docx
 docs/SYMPTOMS_PAGE.docx
+docs/Concept-map.jpeg
 
 # __pycache__ files
+database/__pycache__/
+migrations/__pycache__/
+migrations/versions/__pycache__/
 src/__pycache__/
 src/application/__pycache__/
 src/application/blueprints/__pycache__/
@@ -33,6 +40,8 @@ src/application/blueprints/psychopathology/__pycache__/
 src/application/blueprints/user/__pycache__/
 src/application/static/utils/__pycache__/
 src/main/__pycache__/
+tests/__pycache__/
+*.pyc
 
 # Images and upload files
 src/application/static/images/

@@ -2,28 +2,34 @@ import logging
 from logging.config import fileConfig
 
 from flask import current_app
-
 from alembic import context
 
-# this is the Alembic Config object, which provides
-# access to the values within the .ini file in use.
+# Load Alembic configuration from the .ini file in use
 config = context.config
 
-# Interpret the config file for Python logging.
-# This line sets up loggers basically.
+# Configure logging based on the Alembic .ini file
 fileConfig(config.config_file_name)
 logger = logging.getLogger('alembic.env')
 
 
 def get_engine():
+    """Retrieve the SQLAlchemy Engine instance.
+
+    Handles compatibility between Flask-SQLAlchemy versions (<3 and >=3).
+    """
     try:
-        # this works with Flask-SQLAlchemy<3 and Alchemical
+        # For Flask-SQLAlchemy < 3 or Alchemical
         return current_app.extensions['migrate'].db.get_engine()
     except (TypeError, AttributeError):
-        # this works with Flask-SQLAlchemy>=3
+        # For Flask-SQLAlchemy >= 3
         return current_app.extensions['migrate'].db.engine
     
 def get_engine_url():
+    """Get the database URL for Alembic configuration.
+
+    This method renders the database URL and logs it. It ensures
+    password obfuscation if required.
+    """
     try:
         url = get_engine().url.render_as_string(hide_password=False).replace('%', '%%')
         logger.info(f"Database URL: {url}")  # Log the database URL
@@ -33,45 +39,28 @@ def get_engine_url():
         logger.info(f"Database URL: {url}")  # Log the database URL
         return url
 
-
-# def get_engine_url():
-#     try:
-#         return get_engine().url.render_as_string(hide_password=False).replace(
-#             '%', '%%')
-#     except AttributeError:
-#         return str(get_engine().url).replace('%', '%%')
-
-
-# add your model's MetaData object here
-# for 'autogenerate' support
-# from myapp import mymodel
-# target_metadata = mymodel.Base.metadata
+# Set the SQLAlchemy database URL for Alembic
 config.set_main_option('sqlalchemy.url', get_engine_url())
 target_db = current_app.extensions['migrate'].db
 
-# other values from the config, defined by the needs of env.py,
-# can be acquired:
-# my_important_option = config.get_main_option("my_important_option")
-# ... etc.
-
 
 def get_metadata():
+    """Retrieve the SQLAlchemy metadata object.
+
+    Supports both single and multiple metadata configurations.
+    """
+    
     if hasattr(target_db, 'metadatas'):
         return target_db.metadatas[None]
     return target_db.metadata
 
 
 def run_migrations_offline():
-    """Run migrations in 'offline' mode.
+    """Run migrations in offline mode.
 
-    This configures the context with just a URL
-    and not an Engine, though an Engine is acceptable
-    here as well.  By skipping the Engine creation
-    we don't even need a DBAPI to be available.
-
-    Calls to context.execute() here emit the given string to the
-    script output.
-
+    In this mode, migrations are configured using only a database URL,
+    skipping the need for an active database connection. Outputs
+    SQL statements to the migration script.
     """
     url = config.get_main_option("sqlalchemy.url")
     context.configure(
@@ -83,17 +72,17 @@ def run_migrations_offline():
 
 
 def run_migrations_online():
-    """Run migrations in 'online' mode.
+    """Run migrations in online mode.
 
-    In this scenario we need to create an Engine
-    and associate a connection with the context.
+    In this mode, an Engine and active connection are required to
+    execute migrations. Schema changes are applied directly to
+    the database.
 
+    Includes a callback to prevent auto-migration when there are no schema changes.
     """
 
-    # this callback is used to prevent an auto-migration from being generated
-    # when there are no changes to the schema
-    # reference: http://alembic.zzzcomputing.com/en/latest/cookbook.html
     def process_revision_directives(context, revision, directives):
+        """Prevent unnecessary auto-migration files if no schema changes are detected."""
         if getattr(config.cmd_opts, 'autogenerate', False):
             script = directives[0]
             if script.upgrade_ops.is_empty():
@@ -116,7 +105,7 @@ def run_migrations_online():
         with context.begin_transaction():
             context.run_migrations()
 
-
+# Determine migration mode and execute accordingly
 if context.is_offline_mode():
     run_migrations_offline()
 else:

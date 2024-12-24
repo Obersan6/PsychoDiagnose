@@ -1,3 +1,12 @@
+<!-- 
+  Template: steps.html
+  Purpose: Displays a list of diagnostic steps based on the DSM-5-TR guidelines.
+  Context: This template is part of the DSM-5-TR educational application, serving as an overview page that introduces users to the steps of the diagnostic process.
+  Features: 
+    - Title and description of the diagnostic steps.
+    - Dynamically rendered list of steps with links to detailed pages for each step.
+-->
+
 {% extends 'base.html' %}
 
 {% block title %}Steps{% endblock %}
@@ -5,6 +14,7 @@
 {% block content %}
 
 <div class="container text-center py-5">
+     <!-- Page Title and Introduction -->
     <h1 class="title-1">Diagnostic Steps</h1>
     <h3 class="title-3">Diagnostic Steps following guidelines of the DSM-5-TR</h3>
     <p class="section-text">
@@ -15,12 +25,15 @@
     <!-- List of Steps -->
     <div class="row g-4 mt-4">
         {% for step in steps %}
+        <!-- Individual Step Card -->
         <div class="col-md-6 col-lg-4">
             <div class="card h-100 shadow-sm step-card">
                 <div class="card-body">
+                    <!-- Step Icon and Title -->
                     <i class="bi bi-list-check step-icon mb-3"></i>
                     <h5 class="card-title">Step {{ step.step_number }}</h5>
                     <p class="card-text">{{ step.step_name }}</p>
+                    <!-- Link to Step Details -->
                     <a href="{{ url_for('dsm.get_step', step_id=step.id) }}" class="btn btn-primary">Learn More</a>
                 </div>
             </div>

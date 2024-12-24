@@ -7,7 +7,6 @@ from src.config import CURR_USER_KEY
 from sqlalchemy import func
 import os
 
-# homepage_bp = Blueprint('homepage', __name__, template_folder='../../main/templates/homepage')
 
 # Define an absolute path for the template folder
 template_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../main/templates/homepage'))
@@ -17,12 +16,16 @@ homepage_bp = Blueprint('homepage', __name__, template_folder=template_path)
 
 
 #############################################################################
+# ROUTES
 
-
-
+# Homepage
 @homepage_bp.route('/', methods=['GET'])
 def homepage():
-    """Home page."""
+    """
+    Renders the homepage.
+    - Displays a different view depending on whether the user is logged in or not.
+    - Provides access to login, signup, or personalized features.
+    """
     print("Rendering homepage route.")
     print("Is user logged in:", bool(g.user))
     try:
@@ -34,55 +37,3 @@ def homepage():
     except Exception as e:
         print("Error rendering template:", str(e))
         raise
-
-
-# Search form to search for most of the elements of the application
-# @homepage_bp.route('/search', methods=['GET'])
-# def search():
-#     """Handle the search form submission and search across models for an exact match."""
-    
-#     query = request.args.get('query', '').strip()
-
-#     if not query:
-#         flash("Please enter a search term.", "warning")
-#         return redirect(url_for('homepage.homepage'))
-    
-#     # Define models to search, specifying (Model, Blueprint Name, Route Name, Field)
-#     search_models = [
-#         (Sign, 'psychopathology_bp', 'get_sign', 'name'),
-#         (Symptom, 'psychopathology_bp', 'get_symptom', 'name'),
-#         (Step, 'dsm_bp', 'get_step', 'name_or_number'),
-#         (Category, 'dsm_bp', 'get_category', 'name'),
-#         (Cluster, 'dsm_bp', 'get_cluster', 'name')
-#         (Disorder, 'dsm_bp', 'get_disorder', 'name')
-#     ]
-
-#     matched_item = None
-#     matched_blueprint = None
-#     matched_route = None
-
-#     for model, blueprint, route, field in search_models:
-#         if model.__name__ == 'Step' and field == 'name_or_number':
-#             # For Steps, match either by name or number
-#             match_by_name = model.query.filter(func.lower(model.step_name) == query.lower()).first()
-#             match_by_number = model.query.filter(model.step_number == int(query)).first() if query.isdigit() else None
-            
-#             # Set matched_item to the first non-None match
-#             matched_item = match_by_name or match_by_number
-#         else:
-#             # For other models, match by name only
-#             matched_item = model.query.filter(func.lower(getattr(model, field)) == query.lower()).first()
-
-#         if matched_item:
-#             matched_blueprint = blueprint
-#             matched_route = route
-#             break  # Stop searching once a match is found
-
-#     # Ensure matched_item has been found and has an id attribute before redirecting
-#     if matched_item and hasattr(matched_item, 'id'):
-#         return redirect(url_for(f'{matched_blueprint}.{matched_route}', id=matched_item.id))
-#     else:
-#         flash(f"No exact match found for '{query}'. Please try again.", "warning")
-#         return redirect(url_for('homepage.homepage'))
-
-

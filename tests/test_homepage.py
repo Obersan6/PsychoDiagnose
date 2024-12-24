@@ -11,7 +11,7 @@ class HomepageBlueprintTestCase(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        """Set up test database and seed data for the test class."""
+        """Set up test database and populate data for the test class."""
         cls.app = create_app(TestingConfig)
         cls.app_context = cls.app.app_context()
         cls.app_context.push()
@@ -43,7 +43,7 @@ class HomepageBlueprintTestCase(unittest.TestCase):
         """Test homepage view for logged-out users."""
         response = self.client.get("/")
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b"Welcome", response.data)  # Adjust to match content of your homepage template for logged-out users.
+        self.assertIn(b"Welcome", response.data)  
 
     def test_homepage_logged_in(self):
         """Test homepage view for logged-in users."""

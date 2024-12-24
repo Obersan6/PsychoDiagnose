@@ -1,9 +1,10 @@
-<!-- Diagnostic Category -->
-<!-- Show Diagnostic Category:
-    - Name of category
-    - Description of category
-    - List of clusters if the disorder has clusters
-    - List of disorders within the category -->
+<!-- 
+  Template: category.html
+  Purpose: Displays details about a specific diagnostic category, including:
+           - The category name and description.
+           - A list of clusters (if any) within the category.
+           - A list of disorders associated with the category.
+-->
 
     {% extends 'base.html' %}
     {% block title %}Category: {{ category.name }}{% endblock %}
@@ -11,15 +12,15 @@
     {% block content %}
     <div id="category-details-page" class="container mt-5">
       <div class="row">
-        <!-- Left Column: Category Details -->
+        <!-- Left Column: Displays category details and clusters -->
         <div class="col-md-8">
-          <!-- Category Card -->
+          <!-- Category Card: Shows the name and description of the diagnostic category -->
           <div class="category-card shadow-sm p-4 rounded mb-4">
             <h1 class="category-title">{{ category.name }}</h1>
             <p class="category-description">{{ category.description }}</p>
           </div>
     
-          <!-- Clusters Section -->
+          <!-- Clusters Section: Lists clusters within the category, if applicable -->
           <div class="clusters-section mb-4">
             <h2 class="clusters-title">Clusters</h2>
             {% if clusters %}
@@ -34,12 +35,13 @@
               {% endfor %}
             </ul>
             {% else %}
+             <!-- Message displayed if no clusters are present -->
             <p class="no-clusters mt-3">{{ category.name }} doesn't have clusters.</p>
             {% endif %}
           </div>
         </div>
     
-        <!-- Right Column: List of Disorders -->
+        <!-- Right Column: Displays a list of disorders within the category -->
         <div class="col-md-4">
           <h2 class="disorders-title">List of Disorders</h2>
           <ul class="list-group disorders-list mt-3">

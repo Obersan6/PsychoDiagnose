@@ -1,10 +1,10 @@
-<!-- Sign page -->
 <!-- 
-Displays:
- - The sign
- - Sign examples
- - Disorders with that sign
- - Search input to look for related elements to this route  -->
+  Template: sign.html
+  Purpose: Displays detailed information about a specific sign, including:
+           - The sign's name and description.
+           - A list of associated disorders dynamically rendered based on data.
+  Context: Part of the DSM-5-TR educational application, this template provides a focused view of a specific sign and its relevance in diagnosing mental health disorders.
+-->
 
  {% extends 'base.html' %}
 
@@ -33,6 +33,7 @@ Displays:
         {% endfor %}
       </ul>
       {% else %}
+      <!-- Message if No Associated Disorders are Found -->
       <p class="no-disorders mt-3">No disorders are currently associated with this sign.</p>
       {% endif %}
     </div>

@@ -1,4 +1,8 @@
-<!-- Show all disorders. -->
+<!-- 
+  Template: disorders.html
+  Purpose: Displays a list of all disorders and provides a search functionality to filter them.
+  Context: This template is part of the DSM-5-TR educational application. It allows users to explore a general description of disorders and dynamically renders a list of all available disorders in the system.
+-->
 
 {% extends 'base.html' %}
 
@@ -6,19 +10,20 @@
 
 {% block content %}
 <div id="disorders-page" class="container">
-  <!-- Search Bar -->
+  <!-- Search Bar: Allows users to search for specific disorders -->
   <div class="search-container">
     <form method="POST" action="{{ url_for('dsm.search_disorder') }}" class="d-flex align-items-center">
       {{ form.hidden_tag() }}
       {{ form.search_query(placeholder="Search disorders...", class="form-control me-2", id="search_disorder") }}
       <button type="submit" class="btn btn-outline-info">Search</button>
     </form>
+    <!-- Container for autocomplete suggestions -->
     <div id="suggestions-disorder" class="suggestions-container mt-2"></div>
   </div>
 
-  <!-- Page Content -->
+  <!-- Main Page Content -->
   <div class="row mt-5">
-    <!-- Left Column: General Information -->
+    <!-- Left Column: General Information about Disorders -->
     <div class="col-md-8">
       <h1 class="disorders-title-1">Disorders</h1>
       <h2 class="disorders-title-2">What is a Disorder?</h2>
@@ -27,7 +32,7 @@
       </p>
     </div>
 
-    <!-- Right Column: List of Disorders -->
+    <!-- Right Column: Dynamically Generated List of Disorders -->
     <div class="col-md-4">
       <h2 class="disorders-title-2">List of Disorders</h2>
       <ul class="list-group disorders-list">

@@ -1,10 +1,10 @@
-<!-- Symptom page -->
 <!-- 
-Displays:
- - The symptom
- - Symptom examples
- - Disorders with that symptom
- - Search input to look for related elements to this route  -->
+  Template: symptom.html
+  Purpose: Displays detailed information about a specific symptom, including:
+           - The symptom's name and description.
+           - A list of associated disorders dynamically rendered based on data.
+  Context: Part of the DSM-5-TR educational application, this template provides a focused view of a specific symptom and its relevance in diagnosing mental health disorders.
+-->
 
  {% extends 'base.html' %}
 
@@ -27,12 +27,14 @@ Displays:
        <ul class="list-group disorders-list mt-3">
          {% for disorder in disorders %}
          <li class="list-group-item d-flex align-items-center">
+           <!-- Link to Specific Disorder -->
            <i class="bi bi-arrow-right-circle me-2 disorder-icon" aria-hidden="true"></i>
            <a href="{{ url_for('dsm.get_disorder', disorder_id=disorder.id) }}" class="disorder-link">{{ disorder.name }}</a>
          </li>
          {% endfor %}
        </ul>
        {% else %}
+       <!-- Message if No Associated Disorders are Found -->
        <p class="no-disorders mt-3">No disorders are currently associated with this symptom.</p>
        {% endif %}
      </div>

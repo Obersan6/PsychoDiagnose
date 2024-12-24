@@ -1,8 +1,12 @@
-<!-- Register new user
-
-- Signup form
-- Navbar without signup/signin/signout area
-- Decide whether to include a hyperlink to 'signin' or place it on the Navbar. -->
+<!-- 
+  Template: signup.html
+  Purpose: Provides a registration form for new users to create an account.
+  Context: Part of the user authentication system, this page renders a sign-up form with validation feedback and integrates CSRF protection.
+  Navbar Consideration: Decide whether to add a "Sign In" hyperlink on this page or include it in the navbar for consistent navigation.
+  Features:
+    - Dynamic form rendering with validation feedback.
+    - Handles CSRF protection and multipart data for potential image uploads.
+-->
 
 {% extends 'base.html' %}
 
@@ -21,7 +25,7 @@
     <form method="POST" id="signup-form" enctype="multipart/form-data"   class="signup-form">
       {{ form.hidden_tag() }}
 
-      <!-- Render only input fields, exclude SubmitField -->
+      <!-- Input Fields -->
       {% for field in form if field.widget.input_type != 'hidden' and field.widget.input_type != 'submit' %}
       <div class="mb-4">
         {{ field(placeholder=field.label.text, class="form-control signup-input") }}
@@ -31,7 +35,7 @@
       </div>
       {% endfor %}
 
-      <!-- Explicitly Render Submit Button -->
+      <!-- Submit Button -->
       <div class="d-grid">
         {{ form.submit(class="btn btn-primary signup-btn") }}
       </div>

@@ -1,4 +1,13 @@
-<!-- Display a list of all the signs and a one input search form -->
+<!-- 
+  Template: signs.html
+  Purpose: Displays a list of all signs along with descriptions, examples, and a search functionality for users to explore signs.
+  Context: Part of the DSM-5-TR educational application, this template provides users with an overview of signs, their significance, and their association with specific disorders.
+  Features:
+    - Search bar for filtering signs.
+    - Explanation of signs and their importance in diagnostics.
+    - Dynamic list of signs with links to detailed views.
+    - Flash messages for user feedback.
+-->
 
 {% extends 'base.html' %}
 
@@ -6,19 +15,22 @@
 
 {% block content %}
 <div id="signs-page" class="container">
-  <!-- Search Bar at the Top -->
+  <!-- Search Bar Section -->
   <div class="search-container">
     <form method="POST" action="{{ url_for('psychopathology.search_sign') }}" class="d-flex align-items-center">
+      <!-- CSRF Token -->
       {{ form.hidden_tag() }}
+      <!-- Search Input -->
       {{ form.search_query(placeholder="Search signs...", class="form-control me-2", id="search_sign") }}
       <button type="submit" class="btn btn-outline-info">Search</button>
     </form>
+    <!-- Autocomplete Suggestions -->
     <div id="suggestions-sign" class="suggestions-container mt-2"></div>
   </div>
 
-  <!-- Page Content -->
+  <!-- Page Content Section -->
   <div class="row mt-5">
-    <!-- Left Column: Main Content -->
+    <!-- Left Column: Explanation of Signs -->
     <div class="col-md-8">
       <h1 class="signs-title-1">Signs</h1>
       <h2 class="mb-4 signs-title-2">What is a Sign?</h2>
@@ -53,18 +65,13 @@
     </div>  
 
     
-
     <!-- Right Column: List of Signs -->
     <div class="col-md-4">
       <h2 class="signs-title-2">List of Signs</h2>
       <ul class="list-group signs-list">
         {% for sign in signs %}
+         <!-- Individual Sign Link -->
         <li class="list-group-item">
-          <!-- icon -->
-          <!-- <i class="bi bi-heart-pulse-fill me-2" aria-hidden="true"></i> -->
-          <!-- <i class="bi bi-cloud me-2" aria-hidden="true"></i> -->
-          <!-- <i class="bi bi-puzzle me-2" aria-hidden="true"></i> -->
-          <!-- <i class="bi bi-lightbulb me-2" aria-hidden="true"></i> -->
           <i class="bi bi-search me-2 vibrant-icon" aria-hidden="true"></i>
           <a href="{{ url_for('psychopathology.get_sign', sign_id=sign.id) }}">{{ sign.name }}</a>
         </li>

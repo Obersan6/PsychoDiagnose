@@ -1,6 +1,6 @@
 -- USER AREA
 
--- user sign-up, login/logout purposes only
+-- Table for user account management (sign-up, login/logout).
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     username VARCHAR(50) NOT NULL UNIQUE,
@@ -9,31 +9,21 @@ CREATE TABLE users (
     last_name VARCHAR(150) NOT NULL,
     password_hash VARCHAR(128) NOT NULL,
     img_url VARCHAR(500) DEFAULT '/static/uploads/default.jpg'
-    -- created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    -- updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+); 
 
--- DSM-5-TR AREA 
+-- DSM AREA
 
--- Provides an introduction to what the DSM-5 is, what it is for, sections, and general use
--- MOVE THIS COMMENT TO THE ROUTE --> SECTION II WILL HAVE A HYPERLINK (NOT THROUGH THE TABLE, JUST ON THE FRONTEND)
--- I'M REMOVING THIS TABLE BECAUSE I'M NOT GOING TO USE IT CONSIDERING THE INFO IT'S GOING TO BE STATIC AND NEVER DYNAMIC (FOR THE CAPSTONE PURPOSES).
--- CREATE TABLE dsm (
---     id SERIAL PRIMARY KEY,
---     manual_info TEXT NOT NULL,
---     sections TEXT NOT NULL
--- )
-
--- Categories description (each category contains several disorders). 
--- Referenced by the tables: 'disorders', and 'clusters'. Some categories have "clusters" (they group some disorders of the category into a sub-category).
+-- Table for DSM categories, each containing multiple disorders.
+-- Referenced by 'disorders' and 'clusters'.
+-- Some categories may group disorders into "clusters" (subcategories).
 CREATE TABLE categories (
     id SERIAL PRIMARY KEY,
     name VARCHAR(150) NOT NULL UNIQUE, 
     description TEXT NOT NULL
 );
 
--- For those categories which have sub-groups of disorders.
--- References table: 'categories' 
+-- A subcategory type
+-- References the 'categories' table.
 CREATE TABLE clusters (
     id SERIAL PRIMARY KEY,
     name VARCHAR(150) NOT NULL,
@@ -42,9 +32,9 @@ CREATE TABLE clusters (
     FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE
 );
 
--- Describes disorders, and it's a diagnosis.
--- It references tables: 'categories', and 'clusters'.
--- It's referenced by the tables: 'steps', 'disorders_signs', 'disorders_symptoms', and 'differential_diagnosis'.
+-- Table for DSM disorders.
+-- References 'categories' and optionally 'clusters'.
+-- Referenced by 'steps', 'disorders_signs', 'disorders_symptoms', and 'differential_diagnosis'.
 CREATE TABLE disorders (
     id SERIAL PRIMARY KEY,
     name VARCHAR(150) NOT NULL,
@@ -56,22 +46,17 @@ CREATE TABLE disorders (
     FOREIGN KEY (cluster_id) REFERENCES clusters(id) ON DELETE SET NULL
 );
 
-
--- Describes the steps of the diagnostic process.
+-- Table for diagnostic steps.
 -- References 'disorders'.
 CREATE TABLE steps (
     id SERIAL PRIMARY KEY,
     step_number INTEGER NOT NULL,
     step_name VARCHAR(150) NOT NULL,
     description TEXT NOT NULL,
-    disorder_id INTEGER NULL,  -- Allow NULL values for this version
+    disorder_id INTEGER NULL,  -- Allow NULL values for this version of the app
     FOREIGN KEY (disorder_id) REFERENCES disorders(id) ON DELETE CASCADE,
-    -- Change UNIQUE constraints to include only non-NULL `disorder_id`
-    -- UNIQUE (disorder_id, step_number) WHERE disorder_id IS NOT NULL,
-    -- UNIQUE (disorder_id, step_name) WHERE disorder_id IS NOT NULL
     CONSTRAINT unique_step_number UNIQUE (disorder_id, step_number),
     CONSTRAINT unique_step_name UNIQUE (disorder_id, step_name)
-
 );
 
 -- Junction table - References 'disorders'.
@@ -87,9 +72,10 @@ CREATE TABLE differential_diagnosis (
 
 
 
--- PSYCHOPATHOLOGY ITEMS (Present in the DSM-5-TR)
+-- PSYCHOPATHOLOGY ITEMS 
 
--- Referenced by 'sign_examples', and 'disorders_signs'
+-- Table for defining DSM signs (observable clinical features).
+-- Referenced by 'disorders_signs'.
 CREATE TABLE signs (
     id SERIAL PRIMARY KEY,
     name VARCHAR(150) NOT NULL,
@@ -105,7 +91,8 @@ CREATE TABLE sign_examples (
     FOREIGN KEY (sign_id) REFERENCES signs(id) ON DELETE CASCADE
 );
 
--- Referenced by 'symptom_examples', and 'disorders_symptoms'.
+-- Table for defining DSM symptoms (reported clinical features).
+-- Referenced by 'disorders_symptoms'.
 CREATE TABLE symptoms (
     id SERIAL PRIMARY KEY,
     name VARCHAR(150) NOT NULL,
@@ -121,7 +108,7 @@ CREATE TABLE symptom_examples (
     FOREIGN KEY (symptom_id) REFERENCES symptoms(id) ON DELETE CASCADE
 );
 
--- Junction table - References 'disorders', and 'signs'
+-- Junction table linking disorders and signs.
 CREATE TABLE disorders_signs (
     disorder_id INTEGER NOT NULL,
     sign_id INTEGER NOT NULL,
@@ -130,7 +117,7 @@ CREATE TABLE disorders_signs (
     FOREIGN KEY (sign_id) REFERENCES signs(id) ON DELETE CASCADE
 );
 
--- Junction table - References 'disorders', and 'symptoms'
+-- Junction table linking disorders and symptoms.
 CREATE TABLE disorders_symptoms (
     disorder_id INTEGER NOT NULL,
     symptom_id INTEGER NOT NULL,

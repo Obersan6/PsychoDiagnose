@@ -1,4 +1,11 @@
-<!-- Display a step -->
+<!-- 
+  Template: step.html
+  Purpose: Displays details about a specific step in a diagnostic process, including:
+           - Step name and description.
+           - Navigation buttons to move between steps.
+           - A link back to the full list of steps.
+  Context: Part of the DSM-5-TR educational application, this template allows users to view detailed information about individual diagnostic steps in sequence.
+-->
 
 {% extends 'base.html' %}
 
@@ -6,7 +13,7 @@
 
 {% block content %}
 <div id="step-details-page" class="container-fluid d-flex flex-column min-vh-100">
-  <!-- Main Content -->
+  <!-- Main Content: Step Details -->
   <div class="flex-grow-1">
     <!-- Step Details Card -->
     <div class="step-card shadow-lg p-5 rounded">
@@ -14,16 +21,18 @@
       <p class="step-description">{{ step.description }}</p>
     </div>
 
-    <!-- Navigation Buttons -->
+    <!-- Navigation Buttons: Move between steps -->
     <div class="navigation-buttons mt-4 d-flex justify-content-between">
       {% if previous_step %}
       <a href="{{ url_for('dsm.get_step', step_id=previous_step.id) }}" class="btn btn-primary step-nav-btn">
         Previous: Step {{ previous_step.step_number }}
       </a>
       {% else %}
-      <div></div> <!-- Empty div for spacing -->
+      <!-- Empty div for alignment when no previous step -->
+      <div></div> 
       {% endif %}
       {% if next_step %}
+      <!-- Link to the next step -->
       <a href="{{ url_for('dsm.get_step', step_id=next_step.id) }}" class="btn btn-primary step-nav-btn">
         Next: Step {{ next_step.step_number }}
       </a>

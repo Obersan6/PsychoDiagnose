@@ -1,26 +1,28 @@
-<!-- Syndrome Categories 
-    - Each category has several disorders.
-    - Some categories have clusters (they group some disorders of the category into a sub-category.) -->
+<!-- 
+ Template: categories.html 
+ Purpose: Displays diagnostic categories and their descriptions, including search functionality and a list of categories.--> 
+  
 
-    {% extends 'base.html' %}
+{% extends 'base.html' %}
 
 {% block title %}Categories{% endblock %}
 
 {% block content %}
 <div id="categories-page" class="container">
-  <!-- Search Bar at the Top -->
+  <!-- Search Bar for filtering diagnostic categories -->
   <div class="search-container">
     <form method="POST" action="{{ url_for('dsm.search_category') }}" class="d-flex align-items-center">
       {{ form.hidden_tag() }}
       {{ form.search_query(placeholder="Search category...", class="form-control me-2", id="search_category") }}
       <button type="submit" class="btn btn-outline-info">Search</button>
     </form>
+    <!-- Container for autocomplete suggestions -->
     <div id="suggestions-category" class="suggestions-container mt-2"></div>
   </div>
 
   <!-- Page Content -->
   <div class="row mt-5">
-    <!-- Left Column: Main Content -->
+    <!-- Left Column: Descriptions and Explanations of DSM-5-TR Categories -->
     <div class="col-md-8">
       <h1 class="categories-title-1">Diagnostic Categories in the DSM-5-TR</h1>
       <p class="categories-section-text">
@@ -38,12 +40,13 @@
       </p>
     </div>
 
-    <!-- Right Column: List of Categories -->
+    <!-- Right Column: Dynamically Generated List of Categories -->
     <div class="col-md-4">
       <h2 class="categories-title-2">List of Categories</h2>
       <ul class="list-group categories-list">
         {% for category in categories %}
         <li class="list-group-item">
+          <!-- Link to a specific category page -->
           <i class="bi bi-search me-2 vibrant-icon" aria-hidden="true"></i>
           <a href="{{ url_for('dsm.get_category', category_id=category.id) }}">{{ category.name }}</a>
         </li>

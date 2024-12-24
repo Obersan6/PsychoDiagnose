@@ -1,7 +1,9 @@
-<!-- Sign-in form
-
-- On the Navbar: Signup | Signout 
-Decide whether leave them or create a hyperlink for 'signin' -->
+<!-- 
+  Template: signin.html
+  Purpose: Provides a user-friendly form for existing users to sign in to the application.
+  Context: Part of the user authentication system. This page renders a sign-in form with validation feedback and integrates CSRF protection.
+  Navbar Consideration: Decide whether to add a "Signin" link to the navbar for easier navigation, or leave the navbar with "Signup" and "Signout" options only.
+-->
 
 {% extends 'base.html' %}
 
@@ -20,7 +22,7 @@ Decide whether leave them or create a hyperlink for 'signin' -->
     <form method="POST" id="signin-form" class="signin-form">
       {{ form.hidden_tag() }}
 
-      <!-- Render only input fields, exclude SubmitField -->
+      <!-- Render only input fields -->
       {% for field in form if field.widget.input_type != 'hidden' and field.widget.input_type != 'submit' %}
       <div class="mb-4">
         {{ field(placeholder=field.label.text, class="form-control signin-input") }}
@@ -30,7 +32,7 @@ Decide whether leave them or create a hyperlink for 'signin' -->
       </div>
       {% endfor %}
 
-      <!-- Explicitly Render Submit Button -->
+      <!-- Submit Button -->
       <div class="d-grid">
         {{ form.submit(class="btn btn-primary signin-btn") }}
       </div>

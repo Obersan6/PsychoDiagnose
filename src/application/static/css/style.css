@@ -1,13 +1,15 @@
-/**************************** Navbar ****************************/
+/**************************** Navbar  Styles****************************/
+
+/* General Navbar Styling */
 .navbar {
-    height: 5rem;
+    height: 5rem; /* Set consistent height for the navbar */
 }
 
 /* logo (homepage link) */
 .navbar-brand {
-    margin-left: 20px;
-    font-size: 1.5rem !important;
-    display: flex;
+    margin-left: 20px; /* Add spacing to the left of the logo */
+    font-size: 1.5rem !important; /* Adjust font size for better visibility */
+    display: flex; /* Align logo elements horizontally */
     align-items: center;
 }
 .navbar-brand:hover {
@@ -16,58 +18,57 @@
 
 /* Navbar Links */
 .navbar-nav .nav-link {
-    margin-right: 10px !important;
+    margin-right: 10px !important; /* Add spacing between links */
     font-size: 1rem !important; 
-    color: white;
+    color: white; /* Ensure links are visible on dark backgrounds */
     padding-left: 8px !important;
     padding-right: 8px !important;
 }
-
 /* Hover State for Nav Links */
 .navbar-nav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.58) !important; 
+    color: rgba(255, 255, 255, 0.58) !important; /* Subtle color change on hover */
 }
 
-/* Authentication Links */
+/* Authentication Links (Right-Aligned) */
 .navbar-nav.ms-auto .nav-link {
-    margin-right: 0 !important;
+    margin-right: 0 !important; /* Override default spacing for alignment */
 }
-
 .auth {
-    margin-right: 20px;
+    margin-right: 20px; /* Add consistent spacing for authentication links */
 }
 
-
-/* Optional: For dropdown items */
+/* Dropdown items */
 .dropdown-item {
-    font-size: 1rem; 
+    font-size: 1rem; /* Uniform font size for dropdown items */
 }
 
 
+/**************************** Homepage Styles (Logged-Out User) ****************************/
 
-/**************************** Homepage when user is loggedout ****************************/
-/* Main Content */
-/* Welcome Section */
+/******** Main Content ********/
+
+/* Welcome Section Styling */
 .title-1 {
-    margin-top: 6rem !important;
-    padding-bottom: 2.5rem;
-    font-size: 3.5rem;
+    margin-top: 6rem !important; /* Add spacing above the title */
+    padding-bottom: 2.5rem; /* Add spacing below the title */
+    font-size: 3.5rem; /* Large font size for emphasis */
 }
 
 .log-line {
-    margin-top: 2.5rem !important;
-    padding-bottom: 5rem;
-    font-size: 2.5rem;
+    margin-top: 2.5rem !important; /* Spacing for balance */
+    padding-bottom: 5rem; /* Additional spacing below the line */
+    font-size: 2.5rem; /* Slightly smaller font size */
 }
+
 .cursive {
     font-style: italic;
 }
 
-/* About Section */
+/* About Section Styling */
 .title-2 {
-    font-size: 2.5rem !important;
-    padding-top: 3.4rem !important;
-    padding-bottom: 5rem;
+    font-size: 2.5rem !important; /* Set a consistent font size */
+    padding-top: 3.4rem !important; /* Add spacing above the title */
+    padding-bottom: 5rem; /* Add spacing below the title */
 }
 
 .title-3 {
@@ -77,14 +78,14 @@
 
 /* Sections text */
 .section-text {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Uniform font size for readability */
 }
 
 /* General Section Spacing */
 .page-section {
     padding-top: 4rem; /* Consistent spacing inside each section */
-    padding-bottom: 8rem !important; /* Consistent spacing inside each section */
-    margin: 0; /* Prevent unwanted white spaces between sections */
+    padding-bottom: 8rem !important; /* Consistent bottom padding */
+    margin: 0; /* Prevent extra white spaces between sections */
 }
 
 /* Specific Section Adjustments */
@@ -101,10 +102,9 @@
     padding-top: 6rem !important; /* Specific spacing for about section */
 }
 
-
 /* Card Customizations  */
 .card {
-    border: none; /* Remove card borders for a cleaner look */
+    border: none; /* Remove default card borders for a cleaner look */
 }
 
 .card-title {
@@ -118,32 +118,24 @@
 }
 /* Custom Card Background */
 .card-custom {
-    /* background-color:#e0f7fa; */
-    background-color: #85dbfb; /*Light cyan background*/
-    /* Alternatively, use a different shade:*/
-       /* background-color: #b3e5fc; for a slightly different light blue */
+    background-color: #85dbfb; 
 }
 .card-custom .card-title {
-    /* color: #d129e0; Dark teal color for titles */
-    /* color: #4729e0; */
     color:rgb(64, 124, 235);
-    /* color: #00796b; */
 } 
 .card-custom .card-text {
-    /* color: #004d40;
-    color: #851ae8; /* Darker teal for text */
-    /*color: #4e1ae8; */
     color: #22408c;
 }
+
 /* Feature Icons */
 .feature-icon {
     font-size: 3rem;
-    color: #007bff; /* Primary blue color */
-    transition: transform 0.3s, color 0.3s;
+    color: #007bff; 
+    transition: transform 0.3s, color 0.3s; /* Smooth hover effect */
 }
 
 .feature-icon:hover {
-    color: #0056b3; /* Darker blue on hover */
+    color: #0056b3; 
     transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
@@ -159,32 +151,13 @@
 }
 
 
+/**************************** Homepage (Logged-In User) ****************************/
 
-/**************************** Homepage when user is logged-in ****************************/
-/*************** User Homepage  ***************/
+/*************** User Homepage Styles  ***************/
 
+/* General Layout */
 .user-homepage {
-    padding: 3rem;
-}
-
-/* User Profile Card */
-.user-profile-card {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 18rem;
-    margin: 0 auto; /* Center-align card in its column */
-}
-
-.user-profile-card .card-body {
-    padding: 20px;
-}
-
-.user-profile-card .card-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #495057;
+    padding: 3rem; /* Add consistent padding around the homepage content */
 }
 
 /* Main Content Adjustments */
@@ -201,36 +174,23 @@
     color: #555;
     margin-top: 3rem !important;
     margin-left: 1.5rem;
-}
+} 
 
-/* Footer Spacing and Full-Width */
-footer {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #85dbfb;
-    color: #333;
-    height: 10rem; /* Fixed height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-top: 1px solid #ddd; /* Optional: Add a subtle top border */
-}
-/****** Screen Responsiveness *******/
-/* Small Devices (Mobiles) */
+/****** Responsive Adjustments *******/
+
+/* Small Devices (Mobile Screens) */
 @media (max-width: 576px) {
     #user-homepage {
-        padding: 10px;
+        padding: 10px; /* Reduce padding for smaller screens */
     }
 
     .user-profile-card {
-        max-width: 100%;
-        margin-bottom: 20px;
+        max-width: 100%; /* Ensure cards span full width */
+        margin-bottom: 20px; /* Add spacing between cards */
     }
 
     #user-homepage .logged {
-        font-size: 1.8rem;
+        font-size: 1.8rem; /* Adjust title font size */
         text-align: center;
     }
 
@@ -243,11 +203,11 @@ footer {
 /* Medium Devices (Tablets) */
 @media (min-width: 577px) and (max-width: 992px) {
     #user-homepage {
-        padding: 20px;
+        padding: 20px; /* Moderate padding for medium screens */
     }
 
     #user-homepage .logged {
-        font-size: 2rem;
+        font-size: 2rem; /* Slightly larger font size for titles */
     }
 
     #user-homepage .text-logged {
@@ -258,7 +218,7 @@ footer {
 /* Large Devices (Laptops and Desktops) */
 @media (min-width: 993px) {
     #user-homepage .logged {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Restore default font size for titles */
     }
 
     #user-homepage .text-logged {
@@ -273,37 +233,22 @@ footer {
     }
 }
 
+/*********************************** Sign-in Page***********************************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* sign-in */
-/* Sign In Page */
+/* Page Background*/
 #signin-page {
-    background-color: #f9f9f9; /* Light background for readability */
+    background-color: #f9f9f9; 
     min-height: 100vh; /* Full viewport height */
 }
 
-/* Sign-In Card */
+/* Sign-In Card Styling */
 #signin-page .signin-card {
     background-color: #ffffff;
-    max-width: 600px; /* Spacious form width */
+    max-width: 600px; 
     width: 100%;
     border-radius: 12px;
     padding: 40px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
     border: 1px solid #ddd;
 }
 
@@ -345,7 +290,7 @@ footer {
     background-color: #007bff;
     border: none;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Smooth hover effect */
 }
 
 #signin-page .signin-btn:hover {
@@ -362,7 +307,7 @@ footer {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     #signin-page .signin-card {
-        padding: 30px;
+        padding: 30px; 
     }
 
     #signin-page .signin-title-1 {
@@ -375,24 +320,25 @@ footer {
 }
 
 
-/* signup */
-/* Sign Up Page */
+/*********************************** Signup Page ***********************************/
+
+/* Page Background */
 #signup-page {
-    background-color: #f9f9f9; /* Light background for readability */
+    background-color: #f9f9f9; 
     min-height: 100vh; /* Full viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Flex layout for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
 }
 
-/* Sign-Up Card */
+/* Sign-Up Card Styling*/
 #signup-page .signup-card {
     background-color: #ffffff;
-    max-width: 600px; /* Spacious form width */
+    max-width: 600px; 
     width: 100%;
     border-radius: 12px;
     padding: 40px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern look */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
     border: 1px solid #ddd;
 }
 
@@ -422,8 +368,8 @@ footer {
 
 #signup-page .signup-input:focus {
     border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
-    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Subtle glow effect */
+    outline: none; /* Remove default outline */
 }
 
 /* Submit Button */
@@ -463,17 +409,19 @@ footer {
     }
 }
 
-/*************************** Edit Profile Page **************************/
-/* Edit Profile Page */
+
+/*********************************** Edit Profile Page *********************************/
+
+/*  General Page Layout  */
 #edit-profile-page {
     background-color: #f9f9f9;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    min-height: 100vh; /* Ensure full viewport height */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
 }
 
-/* Edit Profile Card */
+/* Edit Profile Card Styling  */
 #edit-profile-page .edit-profile-card {
     background-color: #ffffff;
     max-width: 600px;
@@ -484,7 +432,7 @@ footer {
     border: 1px solid #ddd;
 }
 
-/* Page Title */
+/* Page Title Styling */
 #edit-profile-page .edit-profile-title {
     font-size: 1.8rem;
     color: #343a40;
@@ -502,7 +450,7 @@ footer {
 #edit-profile-page .edit-profile-input {
     height: 50px;
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem; /* Add inner spacing */
     border-radius: 8px;
     border: 1px solid #ddd;
     box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -510,14 +458,14 @@ footer {
 
 #edit-profile-page .edit-profile-input:focus {
     border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
-    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Subtle glow effect */
+    outline: none; /* Remove default outline */
 }
 
-/* Custom Checkbox */
+/* Custom Checkbox Styling */
 .custom-checkbox-wrapper {
-    display: flex;
-    align-items: center;
+    display: flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Vertically center checkbox and label */
 }
 
 .custom-checkbox {
@@ -525,10 +473,10 @@ footer {
     height: 20px;
     border-radius: 4px;
     border: 2px solid #007bff;
-    appearance: none;
-    outline: none;
-    cursor: pointer;
-    transition: background-color 0.2s, border-color 0.2s;
+    appearance: none; /* Remove default checkbox styling */
+    outline: none; /* Remove default focus outline */
+    cursor: pointer; /* Add pointer cursor for interactivity */
+    transition: background-color 0.2s, border-color 0.2s; /* Smooth transitions */
 }
 
 .custom-checkbox:checked {
@@ -540,10 +488,10 @@ footer {
     margin-left: 10px;
     font-size: 1rem;
     color: #555;
-    cursor: pointer;
+    cursor: pointer; /* Add pointer cursor for interactivity */
 }
 
-/* Submit Button */
+/* Submit Button Styling */
 #edit-profile-page .edit-profile-btn {
     height: 50px;
     font-size: 1.1rem;
@@ -551,7 +499,7 @@ footer {
     background-color: #007bff;
     border: none;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Smooth hover effect */
 }
 
 #edit-profile-page .edit-profile-btn:hover {
@@ -560,7 +508,7 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Cancel Button */
+/* Cancel Button Styling */
 #edit-profile-page .edit-profile-cancel-btn {
     height: 50px;
     font-size: 1.1rem;
@@ -568,7 +516,7 @@ footer {
     background-color: #6c757d;
     border: none;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Smooth hover effect */
 }
 
 #edit-profile-page .edit-profile-cancel-btn:hover {
@@ -592,34 +540,20 @@ footer {
     }
 }
 
-/* Footer Adjustments */
-footer {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #85dbfb;
-    color: #333;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+/************************************** Sign Page **************************************/
 
-
-/* sign.html */
-/* Ensure the page stretches to fill the viewport */
+/* General Layout */
 #sign-details-page {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #f9f9f9;
-    padding: 20px;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack content vertically */
+    min-height: 100vh; /* Ensure the page fills the viewport */
+    background-color: #f9f9f9; 
+    padding: 20px; 
 }
 
-/* Flex-grow ensures the main content fills available space */
+/* Main Content Area */
 #sign-details-page .flex-grow-1 {
-    flex: 1;
+    flex: 1; /* Allow main content to grow and fill available space */
 }
 
 /* Sign Card Styling */
@@ -664,25 +598,25 @@ footer {
     margin-bottom: 10px;
     padding: 10px 15px;
     display: flex;
-    align-items: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    align-items: center; /* Center items vertically */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
 }
 
 #sign-details-page .disorders-list .list-group-item:hover {
-    background-color: #e2e6ea;
-    transform: translateY(-2px);
+    background-color: #e2e6ea; /* Slight background change on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
 }
 
 #sign-details-page .disorder-icon {
     font-size: 1.2rem;
     color: #007bff;
     margin-right: 10px;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 
 #sign-details-page .disorder-icon:hover {
     color: #0056b3;
-    transform: scale(1.3);
+    transform: scale(1.3); /* Slightly enlarge on hover */
 }
 
 #sign-details-page .disorder-link {
@@ -690,7 +624,7 @@ footer {
     color: #007bff;
     font-size: 1rem;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Smooth color change */
 }
 
 #sign-details-page .disorder-link:hover {
@@ -705,21 +639,21 @@ footer {
     margin-top: 10px;
 }
 
+/************************************** Symptom page **************************************/
 
-/* symptom.html */
-/* Symptom Details Page */
+/* Symptom Details Page Layout */
 #symptom-details-page {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    flex-direction: column; /* Stack content vertically */
+    min-height: 100vh; /* Ensure the page fills the viewport */
 }
 
-/* Ensure the content fills space and pushes footer to the bottom */
+/* Main Content Area */
 #symptom-details-page .flex-grow-1 {
-    flex: 1;
+    flex: 1; /* Allow main content to grow and fill available space */
 }
 
 /* Symptom Card */
@@ -730,7 +664,6 @@ footer {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
 }
-
 
 #symptom-details-page .symptom-title {
     font-size: 2.5rem;
@@ -766,7 +699,7 @@ footer {
     padding: 10px 15px;
     display: flex;
     align-items: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
 }
 
 #symptom-details-page .disorders-list .list-group-item:hover {
@@ -778,7 +711,7 @@ footer {
     font-size: 1.2rem;
     color: #007bff;
     margin-right: 10px;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 
 #symptom-details-page .disorder-icon:hover {
@@ -791,7 +724,7 @@ footer {
     color: #007bff;
     font-size: 1rem;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Smooth color change on hover */
 }
 
 #symptom-details-page .disorder-link:hover {
@@ -806,24 +739,23 @@ footer {
     margin-top: 10px;
 }
 
+/************************************** Step Details Page **************************************/
 
-
-/* step.html */
-/* Step Details Page */
+/* General Page Layout */
 #step-details-page {
-    background-color: #f9f9f9;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; /* Stack content vertically */
+    min-height: 100vh; /* Ensure the page fills the viewport */
 }
 
-/* Ensure the content fills space and pushes footer to the bottom */
+/* Main Content Area */
 #step-details-page .flex-grow-1 {
-    flex: 1;
+    flex: 1; /* Allow main content to grow and fill available space */
 }
 
-/* Step Card */
+/* Step Card Styling*/
 #step-details-page .step-card {
     background-color: #ffffff;
     border-radius: 12px;
@@ -851,15 +783,15 @@ footer {
     font-weight: bold;
     height: 50px;
     border-radius: 8px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Smooth hover effect */
 }
 
 #step-details-page .navigation-buttons .step-nav-btn:hover {
-    transform: translateY(-2px);
+    transform: translateY(-2px); /* Slight upward movement on hover */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Back Button */
+/* Back Button Styling */
 #step-details-page .step-back-btn {
     height: 50px;
     font-size: 1rem;
@@ -867,12 +799,12 @@ footer {
     border-radius: 8px;
     background-color: #6c757d;
     border: none;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Smooth hover effect */
 }
 
 #step-details-page .step-back-btn:hover {
     background-color: #5a6268;
-    transform: translateY(-2px);
+    transform: translateY(-2px); /* Slight upward movement on hover */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -888,22 +820,20 @@ footer {
 }
 
 
+/************************************** Category page **************************************/
 
-/* category.html */
-/* Category Details Page */
-/* Category Details Page */
-/* Category Details Page */
+/* General Page Layout */
 #category-details-page {
     background-color: #f9f9f9;
     padding: 20px;
 }
 
-/* Ensure the content fills space */
+/* Content Layout */
 #category-details-page .flex-grow-1 {
-    flex: 1;
+    flex: 1; /* Ensure content fills available space */
 }
 
-/* Category Card */
+/* Category Card Styling*/
 #category-details-page .category-card {
     background-color: #ffffff;
     border: 1px solid #ddd;
@@ -948,14 +878,14 @@ footer {
     margin-bottom: 10px;
     padding: 10px 15px;
     display: flex;
-    align-items: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    align-items: center; /* Vertically align content */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
 }
 
 #category-details-page .list-group-item:hover {
-    background-color: #e9f5fc;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #e9f5fc; /* Slight background change on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add depth on hover */
 }
 
 /* Cluster Link Styling */
@@ -964,7 +894,7 @@ footer {
     color: #007bff;
     font-size: 1rem;
     font-weight: 500;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth hover effect */
 }
 
 #category-details-page .cluster-link:hover {
@@ -976,12 +906,12 @@ footer {
     font-size: 1.2rem;
     color: #007bff;
     margin-right: 10px;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
 }
 
 #category-details-page .list-group-item:hover .cluster-icon {
     color: #0056b3;
-    transform: scale(1.2);
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
 }
 
 /* Disorders Section */
@@ -990,7 +920,7 @@ footer {
     color: #007bff;
     font-size: 1rem;
     font-weight: 500;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth hover effect */
 }
 
 #category-details-page .disorder-link:hover {
@@ -1007,7 +937,7 @@ footer {
 
 #category-details-page .list-group-item:hover .disorder-icon {
     color: #0056b3;
-    transform: scale(1.2);
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
 }
 
 /* No Clusters Message */
@@ -1034,9 +964,9 @@ footer {
 }
 
 
+/************************************** Cluster page **************************************/
 
-/* cluster.html */
-/* Cluster Details Page */
+/* General Layout */
 #cluster-details-page {
     padding: 20px;
     display: flex;
@@ -1044,9 +974,9 @@ footer {
     min-height: 100vh;
 }
 
-/* Ensure the content fills available space and pushes footer to the bottom */
+/* Ensure content fills available space and pushes footer to the bottom */
 #cluster-details-page .row.flex-grow-1 {
-    flex: 1;
+    flex: 1; /* Allow content to grow and fill space */
 }
 
 /* Cluster Card */
@@ -1095,13 +1025,13 @@ footer {
     padding: 10px 15px;
     display: flex;
     align-items: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /*Smooth hover effect*/
 }
 
 #cluster-details-page .list-group-item:hover {
-    background-color: #f8f9fa;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa; /* Slight background change on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add depth on hover */
 }
 
 /* Disorder Link Styling */
@@ -1110,7 +1040,7 @@ footer {
     color: #007bff;
     font-size: 1rem;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Smooth color change */
 }
 
 #cluster-details-page .disorder-link:hover {
@@ -1123,12 +1053,12 @@ footer {
     font-size: 1.2rem;
     color: #007bff;
     margin-right: 10px;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease; /*Smooth hover effect*/
 }
 
 #cluster-details-page .list-group-item:hover .disorder-icon {
     color: #0056b3;
-    transform: scale(1.2);
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
 }
 
 /* No Disorders Message */
@@ -1154,11 +1084,9 @@ footer {
 }
 
 
+/************************************** Disorder page **************************************/
 
-
-
-/* disorder.html */
-/* Disorder Page */
+/* General Layout */
 #disorder-details-page {
     padding: 20px;
 }
@@ -1223,12 +1151,12 @@ footer {
     border: 1px solid #ddd;
     margin-bottom: 8px;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
 }
 
 #disorder-details-page .related-list .list-group-item:hover {
     background-color: #e2e6ea;
-    transform: translateY(-2px);
+    transform: translateY(-2px); /* Slight lift effect */
 }
 
 #disorder-details-page .disorder-icon {
@@ -1263,19 +1191,9 @@ footer {
 }
 
 
+/************************************** Signs page **************************************/
 
-
-
-
-
-
-
-
-
-
-
-
-/* Scope styles to the signs page */
+/* General Layout */
 #signs-page {
     padding: 20px;
     background-color: #f9f9f9; /* Light background for better readability */
@@ -1306,7 +1224,7 @@ footer {
     border-radius: 5px;
 }
 
-/* Custom styling for titles */
+/* Titles */
 #signs-page .signs-title-1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -1322,7 +1240,7 @@ footer {
     font-weight: 600;
 }
 
-/* Paragraph styles for signs */
+/* Section Text */
 #signs-page .signs-section-text {
     line-height: 1.8;
     margin-bottom: 20px;
@@ -1343,7 +1261,7 @@ footer {
     border-radius: 5px;
     margin-bottom: 10px;
     padding: 10px 15px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smmooth hover effect */
 }
  
 
@@ -1352,36 +1270,27 @@ footer {
     transform: translateY(-2px); /* Subtle lift effect */
 }
  
-/* Styling the Font Awesome icon */
+/* Styling Boostrap icon */
 #signs-page .signs-list .list-group-item .vibrant-icon {
-    font-size: 1.4rem; /* Larger for emphasis */
-    color: #007bff; /*Bootstrap primary blue for consistency */
+    font-size: 1.4rem; 
+    color: #007bff; 
     transition: color 0.3s ease, transform 0.3s ease; /*Smooth animations */
 } 
 
-
-/* #signs-page .signs-list .list-group-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-} */
  #signs-page .signs-list .list-group-item:hover .vibrant-icon {
-    color: #ff5722; /* Vibrant orange for hover effect */
+    color: #ff5722; 
     transform: scale(1.3); /*Slight zoom on hover*/
  }  
 
-
  #signs-page .signs-list .list-group-item i {
     font-size: 1.2rem;
-    color: #007bff; /* Matches link color */
+    color: #007bff; 
     transition: color 0.3s ease;
  }
 
 #signs-page .signs-list .list-group-item:hover i {
-    color: #0056b3; /* Matches hover state of the link */
+    color: #0056b3; 
 } 
-
-
-
 
 #signs-page .signs-list .list-group-item a {
     text-decoration: none;
@@ -1396,11 +1305,12 @@ footer {
     text-decoration: underline;
 }
 
-/* Symptoms */
-/* Scope styles to the symptoms page */
+/************************************** Symptoms page **************************************/
+
+/* General Layout */
 #symptoms-page {
     padding: 20px;
-    background-color: #f9f9f9; /* Light background for better readability */
+    background-color: #f9f9f9; 
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -1419,7 +1329,7 @@ footer {
 
 #symptoms-page .search-container form {
     display: flex;
-    gap: 10px;
+    gap: 10px; /* Add spacing between elements */
 }
 
 #symptoms-page .search-container button {
@@ -1428,7 +1338,7 @@ footer {
     border-radius: 5px;
 }
 
-/* Custom styling for titles */
+/* Titles */
 #symptoms-page .symptoms-title-1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -1444,7 +1354,7 @@ footer {
     font-weight: 600;
 }
 
-/* Paragraph styles for symptoms */
+/* Section Text */
 #symptoms-page .symptoms-section-text {
     line-height: 1.8;
     margin-bottom: 20px;
@@ -1465,7 +1375,7 @@ footer {
     border-radius: 5px;
     margin-bottom: 10px;
     padding: 10px 15px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
 }
 
 #symptoms-page .symptoms-list .list-group-item:hover {
@@ -1473,26 +1383,26 @@ footer {
     transform: translateY(-2px); /* Subtle lift effect */
 }
 
-/* Styling the Font Awesome icon */
+/* Styling Bootstrap icon */
 #symptoms-page .symptoms-list .list-group-item .vibrant-icon {
-    font-size: 1.4rem; /* Larger for emphasis */
-    color: #007bff; /* Bootstrap primary blue for consistency */
+    font-size: 1.4rem; 
+    color: #007bff; 
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 #symptoms-page .symptoms-list .list-group-item:hover .vibrant-icon {
-    color: #ff5722; /* Vibrant orange for hover effect */
+    color: #ff5722; 
     transform: scale(1.3); /* Slight zoom on hover */
 }
 
 #symptoms-page .symptoms-list .list-group-item i {
     font-size: 1.2rem;
-    color: #007bff; /* Matches link color */
+    color: #007bff; 
     transition: color 0.3s ease;
 }
 
 #symptoms-page .symptoms-list .list-group-item:hover i {
-    color: #0056b3; /* Matches hover state of the link */
+    color: #0056b3; 
 }
 
 #symptoms-page .symptoms-list .list-group-item a {
@@ -1508,11 +1418,13 @@ footer {
     text-decoration: underline;
 }
 
-/* Categories */
-/* Scope styles to the categories page */
+
+/************************************** Categories page **************************************/
+
+/* General Layout */
 #categories-page {
     padding: 20px;
-    background-color: #f9f9f9; /* Light background for better readability */
+    background-color: #f9f9f9; 
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -1531,7 +1443,7 @@ footer {
 
 #categories-page .search-container form {
     display: flex;
-    gap: 10px;
+    gap: 10px; /*Add spacing between elements*/
 }
 
 #categories-page .search-container button {
@@ -1540,7 +1452,7 @@ footer {
     border-radius: 5px;
 }
 
-/* Custom styling for titles */
+/* Titles */
 #categories-page .categories-title-1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -1556,7 +1468,7 @@ footer {
     font-weight: 600;
 }
 
-/* Paragraph styles for categories */
+/* Section text */
 #categories-page .categories-section-text {
     line-height: 1.8;
     margin-bottom: 20px;
@@ -1577,7 +1489,7 @@ footer {
     border-radius: 5px;
     margin-bottom: 10px;
     padding: 10px 15px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smoothe hover effect */
 }
 
 #categories-page .categories-list .list-group-item:hover {
@@ -1585,26 +1497,26 @@ footer {
     transform: translateY(-2px); /* Subtle lift effect */
 }
 
-/* Styling the Font Awesome icon */
+/* Boostrap icon styling */
 #categories-page .categories-list .list-group-item .vibrant-icon {
-    font-size: 1.4rem; /* Larger for emphasis */
-    color: #007bff; /* Bootstrap primary blue for consistency */
-    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 1.4rem;
+    color: #007bff; 
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects*/
 }
 
 #categories-page .categories-list .list-group-item:hover .vibrant-icon {
-    color: #ff5722; /* Vibrant orange for hover effect */
+    color: #ff5722; 
     transform: scale(1.3); /* Slight zoom on hover */
 }
 
 #categories-page .categories-list .list-group-item i {
     font-size: 1.2rem;
-    color: #007bff; /* Matches link color */
+    color: #007bff; 
     transition: color 0.3s ease;
 }
 
 #categories-page .categories-list .list-group-item:hover i {
-    color: #0056b3; /* Matches hover state of the link */
+    color: #0056b3; 
 }
 
 #categories-page .categories-list .list-group-item a {
@@ -1620,8 +1532,10 @@ footer {
     text-decoration: underline;
 }
 
-/* clusters */
-/* Scope styles to the clusters page */
+
+/************************************** Clusters page **************************************/
+
+/* General layout */
 #clusters-page {
     padding: 20px;
     background-color: #f9f9f9;
@@ -1688,7 +1602,7 @@ footer {
     margin-bottom: 10px;
 }
 
-/* Button styling */
+/* Button inside cluster cards */
 .cluster-card .btn {
     font-size: 0.9rem;
     padding: 10px 15px;
@@ -1702,8 +1616,9 @@ footer {
 }
 
 
-/* disorders */
-/* Disorders Page */
+/************************************** Disorders page **************************************/
+
+/* General layout */
 #disorders-page {
     padding: 20px;
     background-color: #f9f9f9;
@@ -1750,7 +1665,7 @@ footer {
     font-weight: 600;
 }
 
-/* Paragraph Styling */
+/* Text Styling */
 #disorders-page .disorders-section-text {
     line-height: 1.8;
     margin-bottom: 20px;
@@ -1800,8 +1715,9 @@ footer {
 }
 
 
+/************************************** Diff. Diagnosis Page **************************************/
 
-/* Differential Diagnosis Page */
+/* General Layout */
 #differential-diagnosis-page {
     padding: 20px;
     background-color: #f9f9f9;
@@ -1849,33 +1765,21 @@ footer {
 }
 
 
+/************************************** Globally Applied Styles **************************************/
 
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-
-
+/**** Responsive Design ****/
 
 /* Mobile (small screens) */
 @media (max-width: 576px) {
     .navbar-nav .nav-link {
-        font-size: 0.9rem !important; /* Slightly smaller font size */
+        font-size: 0.9rem !important; 
         margin-right: 5px !important;
     }
     .auth {
-        margin-right: 10px !important; /* Adjust spacing */
+        margin-right: 10px !important; 
     }
     .navbar-brand {
-        font-size: 1.2rem !important; /* Slightly smaller logo */
+        font-size: 1.2rem !important; 
     }
 }
 
@@ -1904,6 +1808,7 @@ footer {
     }
 }
 
+/********* Search Bar Suggestions *********/
 
 /* Search inputs  */ 
 .suggestions-container {
@@ -1925,5 +1830,71 @@ footer {
     background-color: #f0f0f0;
 }
 
+/********* Burger Menu *********/
 
-    
+/* Navbar dropdown fix for small screens */
+@media (max-width: 576px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 4rem; /* Position below navbar */
+        left: 0;
+        right: 0;
+        background-color: #0dcaf0; /* Match navbar background */
+        z-index: 1050; /* Ensure it's above other elements */
+        padding: 1rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        position: static; /* Prevent it from floating */
+        background-color: #0dcaf0; /* Match navbar background */
+        color: white;
+        border: none;
+    }
+
+    .dropdown-item {
+        color: #ffffff;
+        padding: 10px 15px;
+    }
+
+    .dropdown-item:hover {
+        background-color: #0bb5d6;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+}
+
+/********* Footer *********/
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    margin-top: auto; /* Ensure it stays at the bottom when content is small */
+    padding: 1rem 0;
+    background-color: #85dbfb;
+    color: #333;
+    height: 10rem; /* Fixed height */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    border-top: 1px solid #ddd;
+}
+
+/* Ensure the body and html elements take full height for footer positioning */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; /* Pushes footer to the bottom of the page */
+}

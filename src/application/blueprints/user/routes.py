@@ -10,102 +10,22 @@ from werkzeug.utils import secure_filename
 import os
 
 
-user_bp = Blueprint('user', __name__, template_folder='templates/user') #CHECK IF I NEED TO REMOVE 'template_folder' since I didn't make subdirectories, this should be unnecessary.
-
+user_bp = Blueprint('user', __name__, template_folder='templates/user') 
 
 
 #############################################################################
 # User Routes
 
 
-# Signup route
-# @user_bp.route('/signup', methods=['GET', 'POST'])
-# def signup():
-#     form = SignupForm()
-#     img_file = form.img_url.data
-#     img_path = None # Default to None
-
-#     if form.validate_on_submit():
-#         # Save the file if valid
-#         if img_file and allowed_file(img_file.filename):
-#             img_path = save_file(current_app.config['UPLOAD_FOLDER'], img_file)
-        # else remains None
-
-        # try: BELOW THIS LINE ANOTHER VERSION
-            # hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-            # new_user = User(
-            #     first_name=form.first_name.data,
-            #     last_name=form.last_name.data,
-            #     username=form.username.data,
-            #     email=form.email.data,
-            #     password_hash=hashed_password,
-            #     img_url=img_path  # Save None if no image uploaded
-            # )
-            # db.session.add(new_user)
-            # User.signup(
-            # username=form.username.data,
-            # email=form.email.data,
-            # first_name=form.first_name.data,
-            # last_name=form.last_name.data,
-            # password=form.password.data,
-            # img_url=img_path  # Pass None or uploaded file path
-            # )
-            # Pass None if no image is uploaded
-            # ABOVE THIS LINE ANOTHER VERSION OF USER
-    #         new_user = User.signup(
-    #             username=form.username.data,
-    #             email=form.email.data,
-    #             first_name=form.first_name.data,
-    #             last_name=form.last_name.data,
-    #             password=form.password.data,
-    #             img_url=img_path if img_path else None
-    #         )
-    #         db.session.commit()
-    #         session[CURR_USER_KEY] = new_user.id
-    #         flash('Account created successfully!')
-    #         return redirect(url_for('homepage.homepage'))
-
-    #     except IntegrityError:
-    #         db.session.rollback()
-    #         flash('Username already exists. Please try again.')
-
-    # return render_template('user/signup.html', form=form)
-
-# @user_bp.route('/signup', methods=['GET', 'POST'])
-# def signup():
-#     form = SignupForm()
-#     img_file = form.img_url.data
-#     img_path = None # Default to None
-
-#     if form.validate_on_submit():
-#         # Save the file if valid
-#         if img_file and allowed_file(img_file.filename):
-#             img_path = save_file(current_app.config['UPLOAD_FOLDER'], img_file)
-#         # else:
-#         #    img_path = None  # Explicitly set to None if no image is uploaded
-
-#         try:
-#             new_user = User.signup(
-#                 username=form.username.data,
-#                 email=form.email.data,
-#                 first_name=form.first_name.data,
-#                 last_name=form.last_name.data,
-#                 password=form.password.data,
-#                 img_url=img_path if img_path else None
-#             )
-#             db.session.commit()
-#             session[CURR_USER_KEY] = new_user.id
-#             flash('Account created successfully!')
-#             return redirect(url_for('homepage.homepage'))
-
-#         except IntegrityError:
-#             db.session.rollback()
-#             flash('Username already exists. Please try again.')
-
-#     return render_template('user/signup.html', form=form)  
-
+# User signup 
 @user_bp.route('/signup', methods=['GET', 'POST'])
 def signup():
+    """
+    Handle user signup.
+    - GET: Display the signup form.
+    - POST: Validate the form, create a new user, handle image upload, and log the user in.
+    - Redirects to the homepage upon success or flashes errors for issues like duplicate usernames/emails.
+    """
     form = SignupForm()
     img_file = form.img_url.data
     img_path = None  # Default to None
@@ -127,11 +47,12 @@ def signup():
             except Exception as e:
                 flash(f"Image upload failed: {e}", 'danger')
 
-        # Default image if no file is uploaded
+        # Assign default image if no file is provided
         if not img_path:
             img_path = "/static/uploads/default.jpg"
 
         try:
+            # Create a new user and commit to the database
             new_user = User.signup(
                 username=form.username.data,
                 email=form.email.data,
@@ -141,7 +62,7 @@ def signup():
                 img_url=img_path
             )
             db.session.commit()
-            session[CURR_USER_KEY] = new_user.id
+            session[CURR_USER_KEY] = new_user.id # Log the user in
             flash('Account created successfully!', 'success')
             return redirect(url_for('homepage.homepage'))
 
@@ -152,10 +73,15 @@ def signup():
     return render_template('user/signup.html', form=form)
 
 
-# Signin route
+# User signin 
 @user_bp.route('/signin', methods=['GET', 'POST'])
 def signin():
-    """Handle user login."""
+    """
+    Handle user login.
+    - GET: Display the login form.
+    - POST: Authenticate the user and log them in.
+    - Redirects to the homepage if successful or flashes errors for invalid credentials.
+    """
 
     form = SigninForm()
     
@@ -172,19 +98,27 @@ def signin():
     return render_template('user/signin.html', form=form)
 
 
-# logout route
+# User logout 
 @user_bp.route('/logout', methods=['POST'])
 def logout():
-    """Logout the current user."""
+    """
+    Handle user logout.
+    - Logs out the current user by clearing their session.
+    - Redirects to the homepage after logout.
+    """
 
-    session.pop(CURR_USER_KEY, None) # Removes only the current user's key from the session
+    session.pop(CURR_USER_KEY, None) 
     flash("You have been logged out.")
     return redirect(url_for('homepage.homepage'))
 
-# User profile and update user profile route 
+# User profile  
 @user_bp.route('/user/<int:user_id>/profile', methods=['GET']) 
 def user_profile(user_id):
-    """Show user profile and edit user profile."""
+    """
+    Display the logged-in user's profile.
+    - Ensures the user is logged in before rendering the profile page.
+    - Redirects to the signin page if unauthorized.
+    """
 
     if not g.user:
         flash('Access unauthorized.')
@@ -192,154 +126,15 @@ def user_profile(user_id):
     
     return render_template('user/user_profile.html', user=g.user)
 
-# Edit user profile route
-# @user_bp.route('/user/<int:user_id>/profile/edit', methods=['GET', 'POST'])
-# def edit_profile(user_id):
-#     """Edit current user profile."""
-    
-#     # Ensure that g.user exists and matches the user_id
-#     if not g.user or g.user.id != user_id:
-#         flash('Access unauthorized', 'danger')
-#         return redirect(url_for('user.signin'))
-
-#     user = g.user
-#     form = UserProfileForm(obj=user)
-
-#     if form.validate_on_submit():
-#         # Temporarily remove password check for testing purposes
-#         print("Password verification skipped for testing.")
-
-#         # Update user fields
-#         user.first_name = form.first_name.data
-#         user.last_name = form.last_name.data
-#         user.img_url = form.img_url.data or user.img_url  # Maintain current image if not provided
-
-#         # THIS WAS COMMENTED OUT BEFORE THE REST OF THE ROUT
-#         # if form.remove_image.data:
-#         #     user.img_url = None
-#         # else:
-#         #     # The user might have uploaded a new file
-#         #     img_file = form.img_url.data
-#         #     if img_file and allowed_file(img_file.filename):
-#         #         new_path = save_file(current_app.config['UPLOAD_FOLDER'], img_file)
-#         #         user.img_url = new_path
-#         #     # If no file was uploaded, we keep the existing user.img_url
-
-
-
-#         try:
-#             # Commit changes to the database
-#             db.session.commit()
-#             flash('Profile updated successfully!', 'success')
-#             print("Commit successful.")
-#             return redirect(url_for('user.user_profile', user_id=user.id))
-#         except Exception as e:
-#             # Handle errors during commit
-#             db.session.rollback()
-#             flash('Error updating profile. Please try again.', 'danger')
-#             print("Commit failed. Exception:", e)
-#     else:
-#         print("Form validation failed with errors:", form.errors)  # Log form errors if validation fails
-
-#     return render_template('user/edit_profile.html', form=form, user=user)
-
-# @user_bp.route('/user/<int:user_id>/profile/edit', methods=['GET', 'POST'])
-# def edit_profile(user_id):
-#     """Edit current user profile."""
-#     if not g.user or g.user.id != user_id:
-#         flash('Access unauthorized', 'danger')
-#         return redirect(url_for('user.signin'))
-
-#     user = g.user
-#     form = UserProfileForm(obj=user)
-
-#     if form.validate_on_submit():
-#         # Update user fields
-#         user.first_name = form.first_name.data
-#         user.last_name = form.last_name.data
-
-#         # Handle image upload
-#         if form.img_url.data and hasattr(form.img_url.data, 'filename'):
-#             # Define upload folder
-#             upload_folder = os.path.join('static', 'uploads')
-#             if not os.path.exists(upload_folder):
-#                 os.makedirs(upload_folder)
-
-#             # Save uploaded file
-#             filename = secure_filename(form.img_url.data.filename)
-#             image_path = os.path.join(upload_folder, filename)
-#             form.img_url.data.save(image_path)
-
-#             # Save relative path to database
-#             user.img_url = f'uploads/{filename}'
-
-#         # Handle image removal
-#         if 'remove_image' in request.form:
-#             # Optionally delete the file from the server
-#             if user.img_url:
-#                 image_path = os.path.join('static', user.img_url)
-#                 if os.path.exists(image_path):
-#                     os.remove(image_path)
-
-#             user.img_url = None
-
-#         try:
-#             # Commit changes to the database
-#             db.session.commit()
-#             flash('Profile updated successfully!', 'success')
-#             return redirect(url_for('user.user_profile', user_id=user.id))
-#         except Exception as e:
-#             db.session.rollback()
-#             flash('Error updating profile. Please try again.', 'danger')
-#             print("Commit failed. Exception:", e)
-
-#     return render_template('user/edit_profile.html', form=form, user=user)
-
-# @user_bp.route('/user/<int:user_id>/profile/edit', methods=['GET', 'POST'])
-# def edit_profile(user_id):
-#     """Edit current user profile."""
-    
-#     # Ensure that g.user exists and matches the user_id
-#     if not g.user or g.user.id != user_id:
-#         flash('Access unauthorized', 'danger')
-#         return redirect(url_for('user.signin'))
-
-#     user = g.user
-#     form = UserProfileForm(obj=user)
-
-#     if form.validate_on_submit():
-#         # Update user fields
-#         user.first_name = form.first_name.data
-#         user.last_name = form.last_name.data
-
-#         # Handle image upload
-#         if form.img_url.data:
-#             # Save the uploaded file to a directory (e.g., 'static/uploads')
-#             image_path = f'static/uploads/{form.img_url.data.filename}'
-#             form.img_url.data.save(image_path)
-#             user.img_url = image_path  # Update with the new file path
-
-#         # Handle image removal (e.g., checkbox in the form to remove image)
-#         if 'remove_image' in request.form:
-#             user.img_url = None
-
-#         try:
-#             # Commit changes to the database
-#             db.session.commit()
-#             flash('Profile updated successfully!', 'success')
-#             return redirect(url_for('user.user_profile', user_id=user.id))
-#         except Exception as e:
-#             db.session.rollback()
-#             flash('Error updating profile. Please try again.', 'danger')
-#             print("Commit failed. Exception:", e)
-
-#     return render_template('user/edit_profile.html', form=form, user=user)
-
-
-
+# Edit user profile 
 @user_bp.route('/user/<int:user_id>/profile/edit', methods=['GET', 'POST'])
 def edit_profile(user_id):
-    """Edit current user profile."""
+    """
+    Handle user profile editing.
+    - GET: Display the profile editing form.
+    - POST: Update user information, including name and image, with options for image upload or removal.
+    - Ensures only the logged-in user can edit their profile.
+    """
     if not g.user or g.user.id != user_id:
         flash('Access unauthorized', 'danger')
         return redirect(url_for('user.signin'))
@@ -348,13 +143,12 @@ def edit_profile(user_id):
     form = UserProfileForm(obj=user)
 
     if form.validate_on_submit():
-        # Update user fields
+        # Update user's name and last name
         user.first_name = form.first_name.data
         user.last_name = form.last_name.data
 
-        # Handle image upload
+        # Handle image upload or replacement
         if form.img_url.data and hasattr(form.img_url.data, 'filename'):
-            # Define upload folder
             upload_folder = os.path.join('static', 'uploads')
             if not os.path.exists(upload_folder):
                 os.makedirs(upload_folder)
@@ -365,12 +159,10 @@ def edit_profile(user_id):
                 if os.path.exists(old_image_path):
                     os.remove(old_image_path)
 
-            # Save uploaded file
+            # Save uploaded image
             filename = secure_filename(form.img_url.data.filename)
             image_path = os.path.join(upload_folder, filename)
             form.img_url.data.save(image_path)
-
-            # Save relative path to database
             user.img_url = f'uploads/{filename}'
 
         # Handle image removal
@@ -382,8 +174,7 @@ def edit_profile(user_id):
 
             user.img_url = None
 
-        try:
-            # Commit changes to the database
+        try: 
             db.session.commit()
             flash('Profile updated successfully!', 'success')
             return redirect(url_for('user.user_profile', user_id=user.id))
@@ -394,12 +185,14 @@ def edit_profile(user_id):
 
     return render_template('user/edit_profile.html', form=form, user=user)
 
-
-
-# Delete user route 
+# Delete user  
 @user_bp.route('/user/<int:user_id>/profile/delete', methods=['POST']) 
 def delete_user_profile(user_id):
-    """Delete user profile."""
+    """
+    Handle user profile deletion.
+    - Ensures only the logged-in user can delete their profile.
+    - Logs out the user, deletes their account, and redirects to the homepage.
+    """
 
     if not g.user:
         flash('Unauthorized action', 'danger')
@@ -407,7 +200,7 @@ def delete_user_profile(user_id):
     
     logout()
 
-    db.session.delete(g.user)
+    db.session.delete(g.user) 
     db.session.commit()
     flash('User deleted', 'success')
 

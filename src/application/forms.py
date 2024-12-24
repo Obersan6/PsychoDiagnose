@@ -11,22 +11,36 @@ from flask_wtf.file import FileField, FileAllowed
 ##############################################################################################
 # CUSTOM VALIDATORS
 
-# Function to validate unique username field value
+
 def unique_username(form, field):
+    """
+    Validator to ensure unique username.
+    
+    Checks if the username already exists in the database and raises a ValidationError
+    if it does.
+    """
     if User.query.filter_by(username=field.data).first():
         raise ValidationError('This username already exists, try another one.')
 
 # Function to validate unique email field value
 def unique_email(form, field):
+    """
+    Validator to ensure unique email.
+    
+    Checks if the email already exists in the database and raises a ValidationError
+    if it does.
+    """
     if User.query.filter_by(email=field.data).first():
         raise ValidationError('This email already exists, try another one.')
+    
 
 ##############################################################################################
 # FORM CLASSES 
 
+
 # Signup form
 class SignupForm(FlaskForm):
-    """Form that will add a new user to the db."""
+    """Form to register a new user in the database."""
 
     first_name = StringField('First Name', validators=[DataRequired(), Length(max=150)])
     last_name = StringField('Last Name', validators=[DataRequired(), Length(max=150)])
@@ -39,7 +53,7 @@ class SignupForm(FlaskForm):
 
 # Signin form
 class SigninForm(FlaskForm):
-    """Form for the user to sing-in."""
+    """Form for the user sing-in."""
 
     username = StringField('Username', validators=[DataRequired(), Length(max=50)])
     password = PasswordField('Password', validators=[DataRequired(), Length(max=128)])
@@ -59,39 +73,17 @@ class UserProfileForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired(), Length(max=128)])
     submit = SubmitField('Update Profile')
 
-
-
-
+# Step Form
 class StepForm(FlaskForm):
-    "Form to retrieve a Dianostic Step."
-
-    ### NEW VERSION OF THE FORM ONLY ONE FIELD FOR BOTH
+    """Form to search for a diagnostic step."""
     
     search_query = StringField('Search Step', validators=[DataRequired()])
     submit = SubmitField('Search')
 
-    # step_number = IntegerField('Step Number', validators=[Optional()])
-    # step_name = StringField('Step Name', validators=[Optional(), Length(max=150)])
-    # submit = SubmitField('Search')
 
-    # def validate(self):
-    #     """Custom validation to ensure at least one field is filled"""
-
-    #     if not super(StepForm, self).validate():
-    #         return False
-        
-    #     if not self.step_number.data and not self.step_name.data:
-    #         error_message = 'Please enter either step number or step name'
-    #         self.step_number.errors.append(error_message)
-    #         self.step_name.errors.append(error_message)
-    #         return False
-        
-    #     return True
-
-# Look for a sign input form
-# OLGA REMEMBER TO CHANGE THIS NAME HERE AND EVERYWHERE IN THE APPLICATION 
+# Search Bar form
 class SearchForm(FlaskForm):
-    """One input form to search for an element."""
+    """Form with a single input field to search for elements."""
 
     search_query = StringField('Search', validators=[DataRequired()])
     submit = SubmitField('Search')

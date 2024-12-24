@@ -4,24 +4,27 @@ from sqlalchemy import Column, Integer, String, Text, ForeignKey, Table, UniqueC
 from sqlalchemy.orm import relationship
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
+from sqlalchemy import UniqueConstraint
 # from datetime import datetime
 
 db = SQLAlchemy()
 bcrypt = Bcrypt()
 
 def connect_db(app):
-    """Connect to database."""
+    """Connect the Flask app to the database."""
     db.app = app
     db.init_app(app)
     bcrypt.init_app(app)
 
+################################################################################################
 # Models
 
 # USER AREA
 
-# User sign-up, login/logout purposes only 
 class User(db.Model):
-    """User sign-up, login/logout purposes only."""
+    """Represents a user account for authentication and profile management.
+
+    Supports features such as sign-up, login/logout, and profile customization."""
 
     __tablename__ = 'users'
 
@@ -32,16 +35,28 @@ class User(db.Model):
     last_name = db.Column(db.String(150), nullable=False)
     password_hash = db.Column(db.String(128), nullable=False)
     img_url = db.Column(db.String(500), nullable=False, default='/static/uploads/default.jpg')
-    # created_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-    # updated_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow)
-
+    
     def __repr__(self):
+        """Provide a human-readable representation of a User."""
         return f"<User id={self.id} username={self.username} email={self.email}>"
 
-    # Register new user
     @classmethod
     def signup(cls, username, email, first_name, last_name, password, img_url=None):
-        """Register user w/hashed password & return user."""
+        """
+        Register a new user with a hashed password.
+
+        Args:
+            username (str): The user's unique username.
+            email (str): The user's unique email address.
+            first_name (str): The user's first name.
+            last_name (str): The user's last name.
+            password (str): The user's password to be hashed.
+            img_url (str, optional): URL of the user's profile image. Defaults to None.
+
+        Returns:
+            User: The newly created User object.
+        """
+
         hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
 
         user = cls(
@@ -57,10 +72,18 @@ class User(db.Model):
 
         return user
     
-    # User authentication and sign-in
     @classmethod
     def authenticate(cls, username, password):
-        """Find user with username and password."""
+        """
+        Authenticate a user by username and password.
+
+        Args:
+            username (str): The user's username.
+            password (str): The user's plaintext password.
+
+        Returns:
+            User | None: The authenticated User object if credentials are valid, else None.
+        """
 
         user = cls.query.filter_by(username=username).first()
 
@@ -71,31 +94,15 @@ class User(db.Model):
 
         return None
 
+################################################################################################
 # DSM-5-TR AREA 
 
-# Introduction to what the DSM-5 is.
-# MOVE THIS COMMENT TO THE ROUTE --> SECTION II WILL HAVE A HYPERLINK (NOT THROUGH THE TABLE, JUST ON THE FRONTEND)
-# I'm going to remove this model because the information I'll use will be static.
-# class DSM(db.Model):
-#     """Provides an introduction to what the DSM-5-TR is, what it is for, sections, and general use."""
 
-#     __tablename__ = 'dsm'
-
-#     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-#     manual_info = db.Column(db.Text, nullable=False)
-#     sections = db.Column(db.Text, nullable=False)
-
-#     def __repr__(self):
-#         return f"<DSM id={self.id}, sections={self.sections}>"
-
-# Categories description
 class Category(db.Model):
     """
-    Categories description: Each category has several disorders.
-    
-    Referenced by the tables:'disorders', and 'clusters'. 
-    
-    Some categories have "clusters" (they group some disorders of the category into a sub-category). 
+    Represents a diagnostic category in the DSM-5-TR.
+
+    Each category includes multiple disorders and, optionally, clusters (subcategories).
     """
 
     __tablename__ = 'categories'
@@ -109,16 +116,15 @@ class Category(db.Model):
     clusters = relationship('Cluster', back_populates='category', cascade='all, delete-orphan')
 
     def __repr__(self):
+        """Provide a human-readable representation of a Category."""
         return f"<Category id={self.id}, name={self.name}>"
 
-# Describes disorders (it's also a diagnosis)
+ 
 class Disorder(db.Model):
     """
-    Represents a specific disorder in the diagnosis process. Each disorder belongs to a category and, optionally, a cluster (sub-category).
+    Represents a specific mental disorder, as defined in the DSM-5-TR.
 
-    It references the tables: 'categories', and 'clusters'.
-
-    It's referenced by the tables: 'steps', 'disorders_signs', 'disorders_symptoms', and 'differential_diagnosis'.
+    Each disorder belongs to a category and, optionally, a cluster.
     """
 
     __tablename__ = 'disorders'
@@ -138,11 +144,17 @@ class Disorder(db.Model):
     disorder_symptoms = relationship('DisorderSymptom', back_populates='disorder', cascade='all, delete-orphan')
     
     def __repr__(self):
+        """Provide a human-readable representation of a Disorder."""
         return f"<Disorder id={self.id} name={self.name} category_id={self.category_id} cluster_id={self.cluster_id}>"
 
-# For those categories that have sub-groups of disorders
+
 class Cluster(db.Model):
-    """References table: 'categories'."""
+    """
+    Represents a cluster, a subcategory within a DSM-5-TR category.
+
+    Clusters group related disorders within the same category.
+    Each cluster is linked to a parent category and can contain multiple disorders.
+    """
 
     __tablename__ = 'clusters'
     
@@ -156,16 +168,16 @@ class Cluster(db.Model):
     disorders = relationship('Disorder', back_populates='cluster')
 
     def __repr__(self):
+        """Provide a string representation of a Cluster."""
         return f"<Cluster id={self.id} name={self.name} category_id={self.category_id}>"
 
-# Describes the steps of the diagnostic process
-from sqlalchemy import UniqueConstraint
 
 class Step(db.Model):
-    """Represents a step in the diagnostic process for a disorder. 
-    Each step outlines part of the process needed to reach an accurate diagnosis.
+    """
+    Represents a diagnostic step for a specific disorder.
 
-    References 'disorders'.
+    Each step details a part of the diagnostic process required to reach an accurate diagnosis.
+    This model is linked to the 'disorders' table, representing the disorder for which the step is defined.
     """
 
     __tablename__ = 'steps'
@@ -179,23 +191,15 @@ class Step(db.Model):
     # Relationship with 'Disorder'
     disorder = db.relationship('Disorder', back_populates='steps')
 
-    # Update or comment out unique constraints as they are now conditional at the database level
-    # __table_args__ = (
-    #     UniqueConstraint('disorder_id', 'step_number', name='uq_disorder_step_number'),
-    #     UniqueConstraint('disorder_id', 'step_name', name='uq_disorder_step_name'),
-    # )
-
     def __repr__(self):
+        """Provide a string representation of a Step."""
         return f"<Step(step_number={self.step_number}, step_name='{self.step_name}', disorder_id={self.disorder_id})>"
 
-    
-# List of potential diagnoses used to rule out other conditions and determine the final diagnosis.
 class DifferentialDiagnosis(db.Model):
     """
-    Represents the process of differential diagnosis. Links a primary disorder to potential alternative diagnoses,
-    helping healthcare professionals rule out other conditions with similar symptoms.
+    Represents potential alternative diagnoses in the process of differential diagnosis.
 
-    Includes both 'differential_disorder_id' and 'disorder_name' for future enhancements.
+    Links a primary disorder to other disorders with similar symptoms to aid in ruling out other conditions.
     """
     
     __tablename__ = 'differential_diagnosis'
@@ -215,16 +219,18 @@ class DifferentialDiagnosis(db.Model):
     differential_disorder = relationship('Disorder', foreign_keys=[differential_disorder_id], backref='secondary_differentials')
     
     def __repr__(self):
+        """Provide a string representation of a DifferentialDiagnosis."""
         return (f"<DifferentialDiagnosis(id={self.id}, disorder_id={self.disorder_id}, "
                 f"differential_disorder_id={self.differential_disorder_id}, disorder_name={self.disorder_name})>")
 
+################################################################################################
+# PSYCHOPATHOLOGY ITEMS 
 
 
-# PSYCHOPATHOLOGY ITEMS (Present in the DSM-5-TR)
-
-# Referenced by 'sign_examples', and 'disorders_signs'.
 class Sign(db.Model):
-    """Represents observable signs used in diagnoses. Signs are objective indicators of a disorder and are linked to specific examples and disorders."""
+    """Represents observable clinical signs used in diagnosis.
+
+    Signs are objective indicators of a disorder and can be linked to examples and disorders."""
 
     __tablename__ = 'signs'
 
@@ -237,11 +243,16 @@ class Sign(db.Model):
     disorder_signs = relationship('DisorderSign', back_populates='sign', cascade='all, delete-orphan')
 
     def __repr__(self):
+        """Provide a string representation of a Sign."""
         return f"<Sign(id={self.id}, name='{self.name}')>"
 
-# Provides examples of a sign
+
 class SignExample(db.Model):
-    """Provides examples of a sign. References 'signs'."""
+    """
+    Represents an example of a clinical sign.
+
+    Examples provide specific instances or manifestations of a clinical sign.
+    """
 
     __tablename__ = 'sign_examples'
 
@@ -252,11 +263,16 @@ class SignExample(db.Model):
     sign = relationship('Sign', back_populates='sign_examples')
 
     def __repr__(self):
+        """Provide a string representation of a SignExample."""
         return f"<SignExample(id={self.id}, sign_id={self.sign_id}, example='{self.example}')>"
 
-# Referenced by 'symptom_examples', and 'disorders_symptoms'.   
+   
 class Symptom(db.Model):
-    """Represents subjective symptoms reported by individuals. Symptoms are associated with specific examples and linked to disorders."""
+    """
+    Represents subjective symptoms reported by individuals during diagnosis.
+
+    Symptoms are linked to examples and disorders through junction tables.
+    """
 
     __tablename__ = 'symptoms'
 
@@ -269,11 +285,14 @@ class Symptom(db.Model):
     disorder_symptoms = relationship('DisorderSymptom', back_populates='symptom', cascade='all, delete-orphan')
 
     def __repr__(self):
+        """Provide a string representation of a Symptom."""
         return f"<Symptom(id={self.id}, name='{self.name}', description='{self.description}')>"
 
-# Provides examples of a symptom.
+
 class SymptomExample(db.Model):
-    """Provides examples of a symptom. References 'symptoms'."""
+    """Represents an example of a clinical symptom.
+
+    Linked to the 'symptoms' model."""
 
     __tablename__ = 'symptom_examples'
 
@@ -281,17 +300,18 @@ class SymptomExample(db.Model):
     symptom_id = db.Column(db.Integer, db.ForeignKey('symptoms.id', ondelete='CASCADE'), nullable=False)
     example = db.Column(db.Text, nullable=False)
 
+    # Relationships
     symptom = relationship('Symptom', back_populates='symptom_examples')
 
     def __repr__(self):
+        """Provide a string representation of a SymptomExample."""
         return f"<SymptomExample(id={self.id}, symptom_id={self.symptom_id}, example='{self.example}')>"
 
 
-# JUNCTION TABLES for signs, symptoms and disorders
-
-# Junction table - References 'disorders', and 'signs'
 class DisorderSign(db.Model):
-    """Junction table connecting disorders to signs. Each record links a specific disorder to its associated signs (observable indicators)."""
+    """Junction table linking disorders to signs.
+
+    Represents connections between a specific disorder and its observable signs."""
 
     __tablename__ = 'disorders_signs'
 
@@ -303,12 +323,14 @@ class DisorderSign(db.Model):
     sign = relationship('Sign', back_populates='disorder_signs')
 
     def __repr__(self):
+        """Provide a string representation of a DisorderSign."""
         return f"<DisorderSign(disorder_id={self.disorder_id}, sign_id={self.sign_id})>"
 
 
-# Junction table - References 'disorders', and 'symptoms'.
 class DisorderSymptom(db.Model):
-    """Junction table connecting disorders to symptoms. Each record links a specific disorder to its associated symptoms (reported subjective experiences)."""
+    """Junction table linking disorders to symptoms.
+
+    Represents a connection between a specific disorder and its reported symptoms."""
 
     __tablename__ = 'disorders_symptoms'
 
@@ -320,6 +342,7 @@ class DisorderSymptom(db.Model):
     symptom = relationship('Symptom', back_populates='disorder_symptoms')
 
     def __repr__(self):
+        """Provide a string representation of a DisorderSymptom."""
         return f"<DisorderSymptom(disorder_id={self.disorder_id}, symptom_id={self.symptom_id})>"
 
 

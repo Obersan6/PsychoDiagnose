@@ -7,7 +7,12 @@ from src.config import CURR_USER_KEY
 
 
 class PsychopathologyBlueprintTestCase(unittest.TestCase):
-    """Tests for the psychopathology blueprint."""
+    """
+    Tests for the psychopathology blueprint.
+    
+    This test case validates the functionality of routes related to
+    signs and symptoms, ensuring proper responses and user access.
+    """
 
     def setUp(self):
         """Set up test app and database before each test."""
@@ -43,12 +48,19 @@ class PsychopathologyBlueprintTestCase(unittest.TestCase):
         self.app_context.pop()
 
     def login_test_user(self):
-        """Simulate logging in the test user."""
+        """
+        Simulate logging in the test user.
+        This is required for testing routes that require an authenticated user."""
         with self.client.session_transaction() as session:
             session[CURR_USER_KEY] = self.test_user_id
 
     def test_show_signs(self):
-        """Test the /signs route."""
+        """
+        Test the /signs route for displaying all signs.
+
+        Validates that the route returns a 200 status code and contains
+        the expected "Signs" text in the response.
+        """
         self.login_test_user()  # Simulate login
         with self.client as client:
             response = client.get("/signs")
@@ -56,7 +68,12 @@ class PsychopathologyBlueprintTestCase(unittest.TestCase):
             self.assertIn(b"Signs", response.data)
 
     def test_get_sign(self):
-        """Test the /signs/<int:sign_id> route."""
+        """
+        Test the /signs/<int:sign_id> route for displaying a specific sign.
+
+        Ensures the route returns a 200 status code and includes the correct
+        sign name in the response data.
+        """
         self.login_test_user()  # Simulate login
         with self.client as client:
             response = client.get(f"/signs/{self.test_sign_id}")
@@ -64,7 +81,13 @@ class PsychopathologyBlueprintTestCase(unittest.TestCase):
             self.assertIn(b"Test Sign", response.data)
 
     def test_show_symptoms(self):
-        """Test the /symptoms route."""
+        """
+        Test the /symptoms route for displaying all symptoms.
+
+        Validates that the route returns a 200 status code and contains
+        the expected "Symptoms" text in the response.
+        """
+
         self.login_test_user()  # Simulate login
         with self.client as client:
             response = client.get("/symptoms")
@@ -72,7 +95,13 @@ class PsychopathologyBlueprintTestCase(unittest.TestCase):
             self.assertIn(b"Symptoms", response.data)
 
     def test_get_symptom(self):
-        """Test the /symptoms/<int:symptom_id> route."""
+        """
+        Test the /symptoms/<int:symptom_id> route for displaying a specific symptom.
+
+        Ensures the route returns a 200 status code and includes the correct
+        symptom name in the response data.
+        """
+
         self.login_test_user()  # Simulate login
         with self.client as client:
             response = client.get(f"/symptoms/{self.test_symptom_id}")

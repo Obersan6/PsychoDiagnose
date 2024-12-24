@@ -1,15 +1,9 @@
-<!-- DSM-5-TR static template -->
-<!-- Provides an introduction to what the DSM-5-TR is, what it is for, sections, and general use.
-
-    __tablename__ = 'dsm'
-
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    manual_info = db.Column(db.Text, nullable=False)
-    sections = db.Column(db.Text, nullable=False)  -->
-<!-- TODOS:
- - Fix the content
- - Style it
-  -->
+<!-- 
+  Template: dsm.html
+  Purpose: Provides an overview of the DSM, focusing on the DSM-5-TR version. 
+           Includes its purpose, key differences, and structure to educate users on its significance in mental health diagnostics.
+  Context: This is a static informational page designed for educational purposes in the DSM-5-TR application.
+-->
 
 {% extends 'base.html' %}
 
@@ -22,6 +16,7 @@
     }
   </style>
 
+  <!-- Introductory Section: Overview of the DSM -->
   <section class="bg-ligth text-center py-5 pb-6 page-section">
     <div class="container">
         <h1 class="display-4 title-1">What is the DSM?</h1>
@@ -29,6 +24,7 @@
     </div>
   </section>
 
+  <!-- Section: Overview of the DSM-5-TR -->
   <section class="bg-soft-blue py-5 pt-6 about mt-5 page-section">
     <div class="container text-center">
         <h2 class="mb-4 title-2">The DSM-5-TR</h2>
@@ -39,14 +35,13 @@
     </div>
   </section>
 
-  
-  
+  <!-- Section: Key Differences in the DSM-5-TR -->
   <section class="bg-light text-center py-5 page-section">
     <div class="container text-center">
       <h2 class="mb-4 title-2">Main Key Differences in the <strong>DSM-5-TR</strong></h2>
   
       <div class="row g-4">
-        <!-- Feature 1 -->
+        <!-- Feature 1: Unified Classification System -->
         <div class="col-md-4 col-lg-4">
           <div class="card h-100 shadow-sm card-custom">
             <div class="card-body">
@@ -57,7 +52,7 @@
           </div>
         </div>
   
-        <!-- Feature 2 -->
+        <!-- Feature 2: Dimensional Diagnoses -->
         <div class="col-md-4 col-lg-4">
           <div class="card h-100 shadow-sm card-custom">
             <div class="card-body">
@@ -68,7 +63,7 @@
           </div>
         </div>
   
-        <!-- Feature 3 -->
+        <!-- Feature 3: New Diagnoses -->
         <div class="col-md-4 col-lg-4">
           <div class="card h-100 shadow-sm card-custom">
             <div class="card-body">
@@ -79,7 +74,7 @@
           </div>
         </div>
   
-        <!-- Feature 4 -->
+        <!-- Feature 4: Cultural Context -->
         <div class="col-md-4 col-lg-4">
           <div class="card h-100 shadow-sm card-custom">
             <div class="card-body">
@@ -90,7 +85,7 @@
           </div>
         </div>
   
-        <!-- Feature 5 -->
+        <!-- Feature 5: Racial and Ethnic Issues -->
         <div class="col-md-4 col-lg-4">
           <div class="card h-100 shadow-sm card-custom">
             <div class="card-body">
@@ -101,7 +96,7 @@
           </div>
         </div>
   
-        <!-- Feature 6 -->
+        <!-- Feature 6: Changes in Diagnostic Criteria-->
         <div class="col-md-4 col-lg-4">
           <div class="card h-100 shadow-sm card-custom">
             <div class="card-body">
@@ -115,14 +110,14 @@
     </div>
   </section>
   
-
+  <!-- Section: Structure of the DSM-5-TR -->
   <section class="bg-soft-blue py-5 page-section">
     <div class="container text-center">
         <h2 class="mb-4 title-2">Structure of the DSM-5-TR</h2>
         <p class="section-text">The<strong> DSM-5-TR</strong>  is organized into three main sections, each serving a specific purpose in the understanding and application of mental health diagnosis.</p>
 
         <div class="row g-4 justify-content-center">
-            <!-- Feature 1 -->
+            <!-- Section I -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm card-custom">
                     <div class="card-body">
@@ -133,7 +128,7 @@
                 </div>
             </div>
 
-            <!-- Feature 2 -->
+            <!-- Section II -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm card-custom">
                     <div class="card-body">
@@ -144,7 +139,7 @@
                 </div>
             </div>
 
-            <!-- Feature 3 -->
+            <!-- Section III -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm card-custom">
                     <div class="card-body">

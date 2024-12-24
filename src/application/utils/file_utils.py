@@ -1,4 +1,3 @@
-# Shared utilities file "allowed_file can be used across blueprints."
 
 import os
 from werkzeug.utils import secure_filename
@@ -14,4 +13,6 @@ def save_file(upload_folder, file):
     filename = secure_filename(file.filename)
     file_path = os.path.join(upload_folder, filename)
     file.save(file_path)
-    return f"/static/uploads/{filename}"  # Relative path for rendering
+    # Return the correct relative path for templates
+    return f"/static/uploads/{filename}"  
+
