@@ -154,7 +154,7 @@ This app is designed to support students facing similar challenges. By guiding u
 
 ## User Flow
 
-![User Flow](docs/userflow.jpeg)
+![User Flow](https://github.com/hatchways-community/capstone-project-one-a594b10cc10749ee801fe8f275555050/blob/dev/docs/userflow.jpeg?raw=true)
 
 ### Testing
 
