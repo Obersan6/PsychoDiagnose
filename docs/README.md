@@ -156,7 +156,6 @@ This app is designed to support students facing similar challenges. By guiding u
 
 ![User Flow](https://github.com/hatchways-community/capstone-project-one-a594b10cc10749ee801fe8f275555050/blob/dev/docs/userflow.jpeg?raw=true)
 
-
 ### Testing
 
 The application includes robust testing functionality to ensure the reliability and correctness of key features.
