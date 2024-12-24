@@ -154,7 +154,7 @@ This app is designed to support students facing similar challenges. By guiding u
 
 ## User Flow
 
-![User Flow](<Standard User Flow.jpeg>)
+![User Flow](docs/userflow.jpeg)
 
 ### Testing
 
