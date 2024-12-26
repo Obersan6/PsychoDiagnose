@@ -28,25 +28,33 @@
   
       <!-- Display current profile image -->
       <div class="text-center mb-3">
-        {% if user.img_url %}  
-          <img src="{{ url_for('static', filename=user.img_url) }}" 
-               alt="{{ user.username }}'s current profile picture" 
-               class="rounded-circle" width="100" height="100">
+        
+        {% if user.img_url == 'uploads/default.jpg' %}
+        <!-- Default Placeholder Icon -->
+        <div class="icon-container">
+          <i class="bi bi-person-circle" style="font-size: 5rem; color: rgb(11, 34, 244);"></i>
+        </div>
         {% else %}
-         <!-- Display a placeholder icon if no profile image exists -->
-          <div class="icon-container">
-            <i class="bi bi-person-circle" style="font-size: 5rem; color: rgb(11, 34, 244);"></i>
-          </div>
+        <!-- Current Profile Picture -->
+        <img 
+          src="{{ url_for('static', filename=user.img_url) }}" 
+          alt="{{ user.username }}'s current profile picture" 
+          class="rounded-circle" 
+          width="100" 
+          height="100">
         {% endif %}
-      </div>
+        </div>
     
   
       <!-- Input fields for Profile Information-->
       {% for field in form if field.name != 'remove_image' and field.widget.input_type != 'hidden' and field.widget.input_type != 'submit' %}
       <div class="form-group mb-4">
+          <!-- Input Field Label -->
           {{ field.label(class="form-label edit-profile-label") }}
+          <!-- Input Field -->
           {{ field(class="form-control edit-profile-input", placeholder=field.label.text) }}
           {% for error in field.errors %}
+          <!-- Error Messages -->
           <div class="text-danger small mt-1">{{ error }}</div>
           {% endfor %}
       </div>
@@ -60,7 +68,6 @@
         </label>
       </div>
    
-  
       <!-- Action Buttons -->
       <div class="d-flex justify-content-between mt-4">
           <!-- Submit Button -->

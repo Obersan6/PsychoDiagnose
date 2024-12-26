@@ -34,7 +34,7 @@ class User(db.Model):
     first_name = db.Column(db.String(150), nullable=False)
     last_name = db.Column(db.String(150), nullable=False)
     password_hash = db.Column(db.String(128), nullable=False)
-    img_url = db.Column(db.String(500), nullable=False, default='/static/uploads/default.jpg')
+    img_url = db.Column(db.String(500), nullable=False, default='uploads/default.jpg')
     
     def __repr__(self):
         """Provide a human-readable representation of a User."""

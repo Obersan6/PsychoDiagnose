@@ -457,3 +457,92 @@ app.config['SECRET_KEY'] = SECRET_KEY  # This can remain here
 # Configure Flask Debug Toolbar to not intercept redirects
 app.config["DEBUG_TB_INTERCEPT_REDIRECTS"] = False
 ...
+<!-- TEMPLATES BEFORE TRYING -->
+ <!-- Logged-In User Content -->
+ <div class="user-homepage" class="container-fluid mt-5 pt-5">
+  <div class="row align-items-center">
+    <!-- User Card: Displays user information -->
+    <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
+        <div class="card user-card shadow text-center">
+          <div class="card-body">
+            {% if user.img_url %}
+             <!-- User's Profile Picture -->
+              <img src="{{ url_for('static', filename=user.img_url) }}" alt="{{ user.username }}'s profile picture" 
+              class="rounded-circle mb-3" width="100" height="100">
+            {% else %}
+            <!-- Default User Icon -->
+              <i class="bi bi-person-circle" style="font-size: 5rem; color: rgb(11, 34, 244);"></i>
+            {% endif %}
+            <h5 class="card-title">{{user.username}}</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- basehtml before -->
+      <li class="nav-item">
+        <a href="{{ url_for('user.user_profile', user_id=g.user.id) }}" class="nav-link">
+          {% if g.user.img_url and g.user.img_url.strip() != "" %}
+          <!-- Profile Picture -->
+          <img src="{{ url_for('static', filename=g.user.img_url) }}" 
+               alt="{{ g.user.username }}'s profile picture" 
+               width="40" 
+               height="40" 
+               class="rounded-circle">
+      {% else %}
+          <!-- Default Icon -->
+          <i class="bi bi-person-circle" style="font-size: 2rem; color: rgb(11, 34, 244);"></i>
+      {% endif %}
+  </a>
+</li>
+{% endif %}
+
+
+<!-- how i set the tables in the db (manually in the db shell)  for everything to work-->
+UPDATE users
+SET img_url = 'uploads/default.jpg'
+WHERE img_url = '/static/uploads/default.jpg';
+
+
+
+<!-- navbar that sort of works in base.html-->
+
+<ul class="navbar-nav ms-auto auth">
+  {% if not g.logged_in %}
+      <li class="nav-item">
+          <a class="nav-link fs-6 text-primary me-2" href="{{ url_for('user.signin') }}">Sign In</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link fs-6 btn btn-outline-light text-primary" href="{{ url_for('user.signup') }}">Sign Up</a>
+      </li>
+  {% else %}
+      <li class="nav-item">
+          <a href="#" class="nav-link fs-6 text-light me-3" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+              Logout
+          </a>
+          <form id="logout-form" action="{{ url_for('user.logout') }}" method="POST" style="display: none;">
+              <!-- CSRF Token -->
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          </form>
+      </li>
+      <li class="nav-item">
+          <a href="{{ url_for('user.user_profile', user_id=g.user.id) }}" class="nav-link">
+              {% if g.user.img_url and g.user.img_url.strip() %}
+                  <!-- Check if the image file exists -->
+                  {% if g.user.img_url.startswith('uploads/') or g.user.img_url.startswith('/static/uploads/') %}
+                      <img src="{{ url_for('static', filename=g.user.img_url.lstrip('/static/')) }}" 
+                           alt="{{ g.user.username }}'s profile picture" 
+                           width="40" 
+                           height="40" 
+                           class="rounded-circle">
+                  {% else %}
+                      <!-- Display Bootstrap Default Icon -->
+                      <i class="bi bi-person-circle" style="font-size: 2rem; color: rgb(11, 34, 244);"></i>
+                  {% endif %}
+              {% else %}
+                  <!-- Display Bootstrap Default Icon -->
+                  <i class="bi bi-person-circle" style="font-size: 2rem; color: rgb(11, 34, 244);"></i>
+              {% endif %}
+          </a>
+      </li>
+  {% endif %}
+</ul>

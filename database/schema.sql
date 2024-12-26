@@ -8,7 +8,7 @@ CREATE TABLE users (
     first_name VARCHAR(150) NOT NULL,
     last_name VARCHAR(150) NOT NULL,
     password_hash VARCHAR(128) NOT NULL,
-    img_url VARCHAR(500) DEFAULT '/static/uploads/default.jpg'
+    img_url VARCHAR(500) DEFAULT 'uploads/default.jpg'
 ); 
 
 -- DSM AREA

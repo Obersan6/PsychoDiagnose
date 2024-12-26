@@ -82,9 +82,10 @@
           </li>         
         </ul>
         
-        <!-- Authentication Links Aligned to the Right -->
+        <!-- Authentication Links Aligned to the Right -->    
         <ul class="navbar-nav ms-auto auth">
           {% if not g.logged_in %}
+          <!-- Show Sign In and Sign Up links if the user is not logged in -->
               <li class="nav-item">
                   <a class="nav-link fs-6 text-primary me-2" href="{{ url_for('user.signin') }}">Sign In</a>
               </li>
@@ -92,33 +93,37 @@
                   <a class="nav-link fs-6 btn btn-outline-light text-primary" href="{{ url_for('user.signup') }}">Sign Up</a>
               </li>
           {% else %}
-          <!-- Logout and Profile Links -->
+          <!-- Logout Link -->
               <li class="nav-item">
+                  <!-- A clickable logout link that submits a hidden POST form for secure logout -->
                   <a href="#" class="nav-link fs-6 text-light me-3" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                       Logout
                   </a>
+                  <!-- Hidden logout form to handle secure POST requests -->
                   <form id="logout-form" action="{{ url_for('user.logout') }}" method="POST" style="display: none;">
-                      <!-- CSRF Token -->
+                      <!-- CSRF Token to prevent cross-site request forgery -->
                       <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
                   </form>
               </li>
+              
+              <!-- Profile Link -->
               <li class="nav-item">
+                <!-- Link to the user's profile page -->
                 <a href="{{ url_for('user.user_profile', user_id=g.user.id) }}" class="nav-link">
-                  {% if g.user.img_url and g.user.img_url.strip() != "" %}
-                  <!-- Profile Picture -->
-                  <img src="{{ url_for('static', filename=g.user.img_url) }}" 
-                       alt="{{ g.user.username }}'s profile picture" 
-                       width="40" 
-                       height="40" 
-                       class="rounded-circle">
-              {% else %}
-                  <!-- Default Icon -->
-                  <i class="bi bi-person-circle" style="font-size: 2rem; color: rgb(11, 34, 244);"></i>
-              {% endif %}
-          </a>
-       </li>
-        {% endif %}
-        </ul> 
+                    {% if g.user.img_url and g.user.img_url != 'uploads/default.jpg' %}
+                        <!-- Display the user's profile picture if available -->
+                        <img src="{{ url_for('static', filename=g.user.img_url) }}" 
+                             alt="{{ g.user.username }}'s profile picture" 
+                             width="40" 
+                             height="40" 
+                             class="rounded-circle">
+                    {% else %}
+                        <!-- Default profile icon if no custom image is set -->
+                        <i class="bi bi-person-circle" style="font-size: 2rem; color: rgb(11, 34, 244);"></i>
+                    {% endif %}
+                </a>
+            </li>
+          {% endif %}
       </div>
     </div>
   </nav>

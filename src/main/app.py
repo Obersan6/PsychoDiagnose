@@ -4,13 +4,14 @@ import os
 from flask import Flask, g, session
 from flask_migrate import Migrate
 from flask_wtf import CSRFProtect
-# from flask_debugtoolbar import DebugToolbarExtension
+from flask_debugtoolbar import DebugToolbarExtension
 from src.application.models import (
     db, connect_db, User, Category, Disorder, Cluster, Step, DifferentialDiagnosis,
     Sign, SignExample, Symptom, SymptomExample, DisorderSign, DisorderSymptom
 )
 from src.application.secret_keys import SECRET_KEY, SQLALCHEMY_DATABASE_URI  # Import both vars from secret_keys.py
 from src.config import DevelopmentConfig, ProductionConfig, CURR_USER_KEY
+
 
 # Initialize the app
 app = Flask(__name__, static_folder='../application/static')
@@ -38,7 +39,7 @@ if not os.path.exists(UPLOAD_FOLDER):
 csrf = CSRFProtect(app)
 
 # Initialize extensions
-# debug = DebugToolbarExtension(app)
+debug = DebugToolbarExtension(app)
 connect_db(app)
 
 # Initialize Flask-Migrate
