@@ -4,19 +4,25 @@ import os
 from flask import Flask, g, session
 from flask_migrate import Migrate
 from flask_wtf import CSRFProtect
-from flask_debugtoolbar import DebugToolbarExtension
+from sqlalchemy.sql import text  
 from src.application.models import (
     db, connect_db, User, Category, Disorder, Cluster, Step, DifferentialDiagnosis,
     Sign, SignExample, Symptom, SymptomExample, DisorderSign, DisorderSymptom
 )
-from src.application.secret_keys import SECRET_KEY, SQLALCHEMY_DATABASE_URI  # Import both vars from secret_keys.py
 from src.config import DevelopmentConfig, ProductionConfig, CURR_USER_KEY
-from sqlalchemy.sql import text  
+
 
 # Initialize the app
 app = Flask(__name__, static_folder='../application/static')
 
-# Set the secret key and database URI from the secret_keys.py file
+# Set the secret key and database URI from environment variables
+SECRET_KEY = os.getenv("SECRET_KEY")
+SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL")
+
+# Ensure the environment variables are set
+if not SECRET_KEY or not SQLALCHEMY_DATABASE_URI:
+    raise RuntimeError("Environment variables SECRET_KEY and DATABASE_URL must be set.")
+
 app.config['SECRET_KEY'] = SECRET_KEY
 app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
 
@@ -26,13 +32,6 @@ if env == 'production':
     app.config.from_object(ProductionConfig)
 else:
     app.config.from_object(DevelopmentConfig)
-
-   # Initialize DebugToolbarExtension only in development mode
-    if not app.debug:  # Double-check to ensure debug mode is enabled
-        app.debug = True
-        print(f"Debug mode is {'on' if app.debug else 'off'}")
-    debug = DebugToolbarExtension(app)
-
 
 # Set UPLOAD_FOLDER for file uploads
 UPLOAD_FOLDER = os.path.join(app.root_path, '../application/static/uploads')
@@ -46,7 +45,6 @@ if not os.path.exists(UPLOAD_FOLDER):
 csrf = CSRFProtect(app)
 
 # Initialize extensions
-# debug = DebugToolbarExtension(app)
 connect_db(app)
 
 # Initialize Flask-Migrate
@@ -77,14 +75,5 @@ def add_user_to_g():
 
 
 
-# @app.route('/test-db')
-# def test_db():
-#     try:
-#         result = db.session.execute(text("SELECT 1")).fetchall()  # Execute raw SQL
-#         return {
-#             "status": "success",
-#             "result": [dict(row._mapping) for row in result]  # Use _mapping for conversion
-#         }, 200
-#     except Exception as e:
-#         return {"status": "failure", "error": str(e)}, 500
+
 

@@ -48,7 +48,7 @@ src/application/static/images/
 src/application/static/uploads/
 
 # Secret keys files
-src/secret_keys.py
+src/application/secret_keys.py
 
 # static folder
 static\uploads\

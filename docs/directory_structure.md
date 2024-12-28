@@ -118,7 +118,11 @@ my_project/
 ├── docs/
 │   ├── Capstone-guidelines.pdf
 │   └── README.md
-│
+│__ migrations
+|   |__ alembic.ini
+|   |__ env.py
+|   |__ script.py.mako
+|
 ├── venv/
 │
 ├── .gitignore
@@ -133,15 +137,20 @@ my_project/
     │   ├── forms.py          # WTForms classes
     │   ├── secret_keys.py    # Secret keys for security
     │   ├── static/
-    |   |__|__css
-    |   |__|__|__style.css
-    |   |__|__js
-    |   |__|__|__autocomplete.js
+    |   |   |__css
+    |   |   |   |__style.css
+    |   |   |__js
+    |   |   |   |__autocomplete.js
+    |   |   |__ uploads
+    |   |___ utils
+    |   |   |__ file_utils.py    
+    |   |   
     │   └── blueprints/
     ├── config.py             # Configuration settings
     └── main/ 
     |   |__ __init__.py
     │   ├── templates/
     │   ├── app.py
-                  # Main entry point for running the app
+    |             # Main entry point for running the app
+    |__ tests/
 ```
