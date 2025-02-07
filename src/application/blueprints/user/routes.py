@@ -91,7 +91,7 @@ def signin():
             flash(f"Hello, {user.username}!")
             return redirect(url_for('homepage.homepage'))
         
-        flash('Invalid username or password.')
+        flash('Invalid username or password.', 'danger')
     
     return render_template('user/signin.html', form=form)
 
