@@ -79,6 +79,7 @@ import os
 from flask import Flask, g, session
 from flask_migrate import Migrate
 from flask_wtf import CSRFProtect
+from flask_debugtoolbar import DebugToolbarExtension
 from sqlalchemy.sql import text  
 from src.application.models import (
     db, connect_db, User, Category, Disorder, Cluster, Step, DifferentialDiagnosis,
