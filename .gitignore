@@ -23,13 +23,52 @@ src/main/__pycache__/
 tests/__pycache__/
 *.pyc
 
+# Docs 
+dabase/Differential Diagnosis.docx
+database/Differential-Diagnosis.docx
+docs/Borradores.html
+docs/Capstone-guidelines.md
+docs/CAPSTONE-IDEAS.docx
+docs/CAPSTONE-PROPOSAL.docx
+docs/Categories_Subcategories_Disorders.docx
+docs/Clusters and descriptions.docx
+docs/Clusters-and-descriptions.docx
+docs/Concept-map.docx
+docs/Definition-of-a-Cluster-and-category.docx
+docs/directory_structure.md
+docs/Disorders.docx
+docs/dsm_content_for_db.txt
+docs/explanations_and_steps.md
+docs/FLASK_APP-var.md  
+docs/LANDING_PAGE-LOGGEDOUT_USER.docx
+docs/List of categories and descriptions only.docx
+docs/LIST OF SIGNS_With notes.docx 
+docs/List-of-categories-and-descriptions-only.docx
+docs/PERSONALITY-DISORDERS-CLUSTERS-AND-DISORDERS-ADDITIONAL-INFO.docx
+docs/README.md 
+docs/SIGNS_PAGE.docx
+docs/STEPS_PAGE.docx
+docs/SYMPTOMS BY CATEGORY.docx
+docs/SYMPTOMS-BY-CATEGORY.docx
+docs/SYMPTOMS_PAGE.docx
+docs/Concept-map.jpeg
+requireements.txt 
 
+# images
+src/application/static/images/
+src/application/static/uploads/
+static/uploads/
+
+# Secret keys files
+src/application/secret_keys.py
+PsychoDiagnosi db in Supabase.docx
 
 # Virtual Environment
 venv/
 
 # Log files
 *.log
+populate_data.log
 
 
 
