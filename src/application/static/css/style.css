@@ -1871,6 +1871,46 @@
     }
 }
 
+/* Navbar dropdown fix for tablet screens */
+@media (min-width: 577px) and (max-width: 992px) {
+    .navbar-collapse {
+        position: fixed;  /* Fix the navbar collapse */
+        top: 5rem;  /* Adjust based on your navbar height */
+        left: 0;
+        right: 0;
+        background-color: #0dcaf0;  /* Match navbar background */
+        z-index: 1050;  /* Keep it on top */
+        padding: 1rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        position: static;
+        background-color: #0dcaf0;
+        color: white;
+        border: none;
+    }
+
+    .dropdown-item {
+        color: #ffffff;
+        padding: 10px 15px;
+    }
+
+    .dropdown-item:hover {
+        background-color: #0bb5d6;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+}
+
+
 /********* Footer *********/
 
 /* Footer Styles */

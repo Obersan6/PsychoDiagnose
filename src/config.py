@@ -7,7 +7,8 @@ class Config:
     
 
 class DevelopmentConfig(Config):
-    DEBUG = True
+    DEBUG = False
+    # No need for SQLALCHEMY_DATABASE_URI here since it's in secret_keys.py
 
 class ProductionConfig(Config):
     DEBUG = False

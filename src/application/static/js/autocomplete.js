@@ -6,6 +6,12 @@ async function setupAutocomplete(inputId, suggestionsContainerId, endpoint) {
     const input = document.getElementById(inputId);
     const suggestionsContainer = document.getElementById(suggestionsContainerId);
 
+    // Exit early if the input field or suggestions container doesn't exist
+    if (!input || !suggestionsContainer) {
+        console.warn(`Autocomplete setup skipped: Element(s) not found for inputId: ${inputId} or suggestionsContainerId: ${suggestionsContainerId}`);
+        return;
+    }
+
     let suggestions = [];
     let selectedIndex = -1;
     let isInteractingWithSuggestions = false;

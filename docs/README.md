@@ -11,7 +11,7 @@ The inspiration for this application comes from my experience as a psychology st
 
 This app is designed to support students facing similar challenges. By guiding users through the structured diagnostic process without providing direct diagnoses, it fosters critical thinking and self-reflection. Its goal is to simplify the learning process, assist with assignments and papers, and provide clarity in the study of psychopathology, diagnostics, therapy, and related subjects. My hope is that this tool saves time and enhances understanding for students, just as I wished it had during my own studies.
 
-[Click here to visit PsychoDiagnose](https://www.example.com)
+[Click here to visit PsychoDiagnose](https://capstone-1-deployment.onrender.com)
 
 ## Features
 

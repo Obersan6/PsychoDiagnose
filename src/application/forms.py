@@ -11,6 +11,9 @@ from flask_wtf.file import FileField, FileAllowed
 ##############################################################################################
 # CUSTOM VALIDATORS
 
+import re
+from wtforms.validators import ValidationError
+
 
 def unique_username(form, field):
     """
@@ -33,6 +36,27 @@ def unique_email(form, field):
     if User.query.filter_by(email=field.data).first():
         raise ValidationError('This email already exists, try another one.')
     
+def strong_password(form, field):
+    """
+    Validates that the password meets strength requirements:
+    - At least 8 characters long
+    - Includes at least one uppercase letter
+    - Includes at least one lowercase letter
+    - Includes at least one digit
+    - Includes at least one special character
+    """
+    password = field.data
+
+    if len(password) < 8:
+        raise ValidationError('Password must be at least 8 characters long.')
+    if not re.search(r'[A-Z]', password):
+        raise ValidationError('Password must include at least one uppercase letter.')
+    if not re.search(r'[a-z]', password):
+        raise ValidationError('Password must include at least one lowercase letter.')
+    if not re.search(r'\d', password):
+        raise ValidationError('Password must include at least one number.')
+    if not re.search(r'[!@#$%^&*(),.?":{}|<>]', password):
+        raise ValidationError('Password must include at least one special character (e.g., !@#$%^&*).')
 
 ##############################################################################################
 # FORM CLASSES 
@@ -46,7 +70,7 @@ class SignupForm(FlaskForm):
     last_name = StringField('Last Name', validators=[DataRequired(), Length(max=150)])
     username = StringField('Username', validators=[DataRequired(), unique_username, Length(max=50)])
     email = StringField('Email', validators=[DataRequired(), Email(), unique_email, Length(max=254)])
-    password = PasswordField('Password', validators=[DataRequired(), Length(max=128)])
+    password = PasswordField('Password', validators=[DataRequired(), Length(max=128), strong_password])
     img_url = FileField('(Optional) Profile Image', validators=[Optional(), FileAllowed(['jpg', 'png', 'jpeg'], 'Images only!')])
     submit = SubmitField('Register New User')
     
@@ -70,7 +94,8 @@ class UserProfileForm(FlaskForm):
                         validators=[FileAllowed(['jpg', 'png', 'jpeg'], 'Images only!')])
     # Optional remove image
     remove_image = BooleanField('Remove current image?')
-    password = PasswordField('Password', validators=[DataRequired(), Length(max=128)])
+    password = PasswordField('Password', validators=[DataRequired(), Length(max=128), strong_password])
+
     submit = SubmitField('Update Profile')
 
 # Step Form
