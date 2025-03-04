@@ -15,3 +15,11 @@ export FLASK_ENV=development  # Optional: Enables debug mode
 ```
 flask run --debug
 ```
+
+## Variables to set it to run the application at the latest stage of development
+
+```
+export FLASK_APP=src.main.app:create_app
+flask run
+```
+

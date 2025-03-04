@@ -7,7 +7,7 @@ class Config:
     DEBUG_TB_INTERCEPT_MODIFICATIONS = False
 
 class DevelopmentConfig(Config):
-    DEBUG = True
+    DEBUG = False
     # No need for SQLALCHEMY_DATABASE_URI here since it's in secret_keys.py
 
 class ProductionConfig(Config):

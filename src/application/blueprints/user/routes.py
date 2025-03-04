@@ -88,7 +88,7 @@ def signin():
 
         if user:
             session[CURR_USER_KEY] = user.id
-            flash(f"Hello, {user.username}!")
+            # flash(f"Hello, {user.username}!")
             return redirect(url_for('homepage.homepage'))
         
         flash('Invalid username or password.', 'danger')
