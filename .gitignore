@@ -24,7 +24,7 @@ tests/__pycache__/
 *.pyc
 
 # Docs 
-dabase/Differential Diagnosis.docx
+database/Differential Diagnosis.docx
 database/Differential-Diagnosis.docx
 docs/Borradores.html
 docs/Capstone-guidelines.md
@@ -44,6 +44,7 @@ docs/LANDING_PAGE-LOGGEDOUT_USER.docx
 docs/List of categories and descriptions only.docx
 docs/LIST OF SIGNS_With notes.docx 
 docs/List-of-categories-and-descriptions-only.docx
+docs/PERSONALITY DISORDERS CLUSTERS AND DISORDERS ADDITIONAL INFO.docx
 docs/PERSONALITY-DISORDERS-CLUSTERS-AND-DISORDERS-ADDITIONAL-INFO.docx
 docs/README.md 
 docs/SIGNS_PAGE.docx
@@ -60,7 +61,7 @@ src/application/static/uploads/
 static/uploads/
 
 # Secret keys files
-src/application/secret_keys.py
+
 PsychoDiagnosi db in Supabase.docx
 
 # Virtual Environment
