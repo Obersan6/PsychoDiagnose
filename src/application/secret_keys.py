@@ -8,4 +8,5 @@ SECRET_KEY = secrets.token_hex(32)
 # SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:Caccolino5@localhost/diagnosis_db'
 
 # Define my SQLALCHEMY_DATABASE_URI for deployment
-SQLALCHEMY_DATABASE_URI = "postgresql://postgres.rdsnxgihfwemtrdynqol@aws-0-eu-west-2.pooler.supabase.com:6543/postgres"
+SQLALCHEMY_DATABASE_URI = postgresql://postgres.rdsnxgihfwemtrdynqol:5SerHappySubitoGia7@aws-0-eu-west-2.pooler.supabase.com:6543/postgres
+
