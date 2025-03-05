@@ -61,7 +61,7 @@ src/application/static/uploads/
 static/uploads/
 
 # Secret keys files
-
+src/application/secret_keys.py
 PsychoDiagnosi db in Supabase.docx
 
 # Virtual Environment
