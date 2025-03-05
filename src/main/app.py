@@ -144,7 +144,10 @@ def create_app(config_name='development'):
     return app
 
 
-# For development runs directly (optional)
-if __name__ == '__main__':
-    app = create_app()
-    app.run(debug=True)
+# # For development runs directly (optional)
+# if __name__ == '__main__':
+#     app = create_app()
+#     app.run(debug=True)
+
+# Create app instance for Gunicorn
+app = create_app()
